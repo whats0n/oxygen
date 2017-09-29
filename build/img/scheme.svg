@@ -1,0 +1,332 @@
+<svg width="1225" height="693" viewBox="0 0 1225 693" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        scheme
+    </title>
+    <defs>
+        <path d="M1128 254v129a3 3 0 0 0 3 3h198a3 3 0 0 0 3-3V169a3 3 0 0 0-3-3h-198a3 3 0 0 0-3 3v81h153v4h-153z" id="b"/>
+        <filter x="-3.4%" y="-2.3%" width="106.9%" height="106.4%" filterUnits="objectBoundingBox" id="a">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="d" x="1128" y="412" width="204" height="115" rx="3"/>
+        <filter x="-3.4%" y="-4.3%" width="106.9%" height="112.2%" filterUnits="objectBoundingBox" id="c">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="f" width="104" height="200" rx="3"/>
+        <filter x="-6.7%" y="-2.5%" width="113.5%" height="107%" filterUnits="objectBoundingBox" id="e">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="h" y="1" width="104" height="40" rx="3"/>
+        <filter x="-6.7%" y="-12.5%" width="113.5%" height="135%" filterUnits="objectBoundingBox" id="g">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="j" width="104" height="70" rx="3"/>
+        <filter x="-6.7%" y="-7.1%" width="113.5%" filterUnits="objectBoundingBox" id="i">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="l" width="84" height="90" rx="3"/>
+        <filter x="-8.3%" y="-5.6%" width="116.7%" height="115.6%" filterUnits="objectBoundingBox" id="k">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="n" width="104" height="70" rx="3"/>
+        <filter x="-6.7%" y="-7.1%" width="113.5%" filterUnits="objectBoundingBox" id="m">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="p" width="104" height="70" rx="3"/>
+        <filter x="-6.7%" y="-7.1%" width="113.5%" filterUnits="objectBoundingBox" id="o">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="r" width="84" height="90" rx="3"/>
+        <filter x="-8.3%" y="-5.6%" width="116.7%" height="115.6%" filterUnits="objectBoundingBox" id="q">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="t" width="104" height="70" rx="3"/>
+        <filter x="-6.7%" y="-7.1%" width="113.5%" filterUnits="objectBoundingBox" id="s">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="v" width="103" height="30" rx="3"/>
+        <filter x="-6.8%" y="-16.7%" width="113.6%" height="146.7%" filterUnits="objectBoundingBox" id="u">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="x" width="103" height="30" rx="3"/>
+        <filter x="-6.8%" y="-16.7%" width="113.6%" height="146.7%" filterUnits="objectBoundingBox" id="w">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="z" width="103" height="30" rx="3"/>
+        <filter x="-6.8%" y="-16.7%" width="113.6%" height="146.7%" filterUnits="objectBoundingBox" id="y">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="B" y="1" width="103" height="50" rx="3"/>
+        <filter x="-6.8%" width="113.6%" height="128%" filterUnits="objectBoundingBox" id="A">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <rect id="D" y="1" width="104" height="40" rx="3"/>
+        <filter x="-6.7%" y="-12.5%" width="113.5%" height="135%" filterUnits="objectBoundingBox" id="C">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g transform="translate(-111 -74)" fill="none" fill-rule="evenodd">
+        <rect fill="#FFF" opacity=".1" x="161" y="134" width="124" height="560" rx="3"/>
+        <rect fill="#FFF" opacity=".1" x="409" y="134" width="872" height="560" rx="3"/>
+        <rect fill="#232629" x="853" y="144" width="124" height="540" rx="3"/>
+        <rect fill="#232629" x="979" y="144" width="124" height="540" rx="3"/>
+        <g opacity=".495">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#30363D" xlink:href="#b"/>
+        </g>
+        <path d="M305 176.5h286.5a5 5 0 0 1 5 5v66a5 5 0 0 0 5 5H662" stroke="#FFF"/>
+        <path d="M706 252.5h81.5a5 5 0 0 0 5-5v-46" stroke="#FFF"/>
+        <path d="M706 252.5h81.5a5 5 0 0 1 5 5v46" stroke="#FFF"/>
+        <path d="M792.5 200.5H1148" stroke="#35A8FF"/>
+        <path d="M305 328.5h286.5a5 5 0 0 0 5-5v-66a5 5 0 0 1 5-5h61" stroke="#FFF"/>
+        <path d="M792.5 303.5H1155" stroke="#36CD98"/>
+        <path d="M792.5 299.5v46a5 5 0 0 0 5 5H1155" stroke="#36CD98"/>
+        <g opacity=".5">
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#30363D" xlink:href="#d"/>
+        </g>
+        <g transform="translate(295 151)">
+            <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+            <use fill="#30363D" xlink:href="#f"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(295 151)">
+            <tspan x="21.41" y="13">Matching </tspan> <tspan x="30.3" y="33">engine</tspan>
+        </text>
+        <g transform="translate(615 151)">
+            <rect fill="#30363D" width="104" height="200" rx="3"/>
+            <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF">
+                <tspan x="16.965" y="13">Conditions</tspan>
+            </text>
+        </g>
+        <g transform="translate(739 180)">
+            <use fill="#000" filter="url(#g)" xlink:href="#h"/>
+            <use fill="#35A8FF" xlink:href="#h"/>
+        </g>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF" transform="translate(739 180)">
+            <tspan x="27.556" y="13">Default</tspan>
+        </text>
+        <g transform="translate(863 166)">
+            <use fill="#000" filter="url(#i)" xlink:href="#j"/>
+            <use fill="#30363D" xlink:href="#j"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(863 166)">
+            <tspan x="23.321" y="19">Borrower</tspan> <tspan x="32.512" y="36">rating</tspan>
+        </text>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF" transform="translate(863 166)">
+            <tspan x="30" y="57">DOWN</tspan>
+        </text>
+        <g transform="translate(491 151)">
+            <use fill="#000" filter="url(#k)" xlink:href="#l"/>
+            <use fill="#30363D" xlink:href="#l"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(491 151)">
+            <tspan x="26.761" y="13">Loan</tspan>
+        </text>
+        <g transform="translate(989 166)">
+            <use fill="#000" filter="url(#m)" xlink:href="#n"/>
+            <use fill="#30363D" xlink:href="#n"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(989 166)">
+            <tspan x="21.263" y="13">Collateral </tspan> <tspan x="17.385" y="33">realisation</tspan>
+        </text>
+        <g transform="translate(863 268)">
+            <use fill="#000" filter="url(#o)" xlink:href="#p"/>
+            <use fill="#30363D" xlink:href="#p"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(863 268)">
+            <tspan x="23.321" y="19">Borrower</tspan> <tspan x="32.512" y="36">rating</tspan>
+        </text>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF" transform="translate(863 268)">
+            <tspan x="41" y="57">UP</tspan>
+        </text>
+        <g transform="translate(491 261)">
+            <use fill="#000" filter="url(#q)" xlink:href="#r"/>
+            <use fill="#30363D" xlink:href="#r"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(491 261)">
+            <tspan x="11.263" y="13">Collateral</tspan>
+        </text>
+        <g transform="translate(989 268)">
+            <use fill="#000" filter="url(#s)" xlink:href="#t"/>
+            <use fill="#30363D" xlink:href="#t"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(989 268)">
+            <tspan x="26.996" y="13">Interest </tspan> <tspan x="17.385" y="33">realisation</tspan>
+        </text>
+        <text transform="rotate(-90 357.5 -54)" font-size="14" font-family="Karla-Regular, Karla" fill="#FFF">
+            <tspan x="16.636" y="13">System fee</tspan>
+        </text>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF">
+            <tspan x="171" y="549">R</tspan> <tspan x="180.016" y="549" font-family="LucidaGrande-Bold, Lucida Grande">i</tspan> <tspan x="184.569" y="549">sk </tspan> <tspan x="171" y="569">management </tspan> <tspan x="171" y="589">toolkit</tspan>  <tspan x="171" y="629" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">Provides </tspan> <tspan x="171" y="649" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">advisory on </tspan> <tspan x="171" y="669" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">market</tspan>
+        </text>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF">
+            <tspan x="295" y="549">Exchange</tspan>  <tspan x="295" y="589" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">Runs </tspan> <tspan x="295" y="609" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">continious </tspan> <tspan x="295" y="629" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">auction</tspan>
+        </text>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF">
+            <tspan x="419" y="549">REPO smart contract</tspan>  <tspan x="419" y="589" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">Core of decentralised orders </tspan> <tspan x="419" y="609" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">processing</tspan>
+        </text>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF">
+            <tspan x="865" y="549">Credit rating </tspan> <tspan x="865" y="569">system</tspan>  <tspan x="865" y="609" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">Supplies </tspan> <tspan x="865" y="629" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">trustful users </tspan> <tspan x="865" y="649" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">ratings</tspan>
+        </text>
+        <g opacity=".499" fill-rule="nonzero">
+            <path d="M792.615 728.836v5.469a.434.434 0 0 1-.425.425.415.415 0 0 1-.427-.425v-5.469c0-1.831-1.038-3.63-3.09-3.63-2.572 0-3.556 2.75-3.556 4.881v4.21a.434.434 0 0 1-.426.425.415.415 0 0 1-.426-.424v-5.47c0-1.83-1.038-3.63-3.091-3.63-2.603 0-3.672 2.047-3.579 4.766 0 .061.03.185 0 .216v4.11c0 .208-.14.401-.349.432-.286.047-.511-.147-.511-.417v-9.34c0-.208.14-.4.349-.432.286-.046.511.147.511.418v1.56c.735-1.313 2.052-2.17 3.579-2.17 1.743 0 3.09 1.096 3.64 2.718.706-1.59 2.085-2.719 3.859-2.719 2.502.008 3.942 2.178 3.942 4.496zm-21.643-3.8v9.324a.434.434 0 0 1-.427.424.415.415 0 0 1-.426-.424v-1.77c-.705 1.406-1.96 2.41-3.556 2.41-2.54 0-3.95-2.201-3.95-4.519v-5.468c0-.217.185-.426.426-.426.247 0 .426.216.426.426v5.468c0 1.83 1.038 3.661 3.09 3.661 2.882 0 3.557-2.687 3.557-5.646v-3.483c0-.247.247-.495.55-.41.186.062.31.239.31.433zm-14.736 4.163c-.185-2.109-1.804-4.032-4.043-4.032-2.238 0-3.827 1.923-4.044 4.032h8.087zm.923.425c0 .239-.202.44-.442.44h-8.56c.217 2.11 1.805 4.033 4.044 4.033 1.534 0 2.665-.58 3.525-1.8.124-.17.31-.279.542-.178a.422.422 0 0 1 .187.602c-.86 1.5-2.573 2.233-4.254 2.233-2.881 0-4.927-2.564-4.927-5.315 0-2.75 2.052-5.314 4.927-5.314 2.874-.008 4.95 2.549 4.958 5.3zm-14.052-4.697c0 .279-.156.425-.395.456-2.51.363-3.642 2.41-3.642 4.797v4.079c0 .208-.138.402-.349.432-.286.047-.51-.146-.51-.417v-9.309c0-.208.139-.4.348-.432.286-.046.511.147.511.418v1.892c.705-1.19 2.115-2.317 3.58-2.317.208.007.457.154.457.401zM731.68 729.2c-.186-2.109-1.805-4.032-4.044-4.032s-3.826 1.923-4.044 4.032h8.088zm.922.425c0 .239-.201.44-.442.44h-8.56c.217 2.11 1.805 4.033 4.044 4.033 1.534 0 2.665-.58 3.524-1.8.124-.17.31-.279.543-.178.124.054.217.17.24.309.023.14-.016.217-.054.293-.86 1.5-2.572 2.233-4.253 2.233-2.882 0-4.926-2.564-4.926-5.315 0-2.75 2.052-5.314 4.926-5.314 2.874-.008 4.95 2.549 4.958 5.3zm-15.339-.757v5.438a.434.434 0 0 1-.425.425.415.415 0 0 1-.426-.425v-5.438c0-1.83-1.039-3.661-3.091-3.661-2.634 0-3.765 2.286-3.61 4.643 0 .061.03.331.03.362v4.08c0 .207-.14.4-.348.431-.287.047-.511-.147-.511-.417v-17.86c0-.216.185-.425.426-.425.248 0 .425.217.425.426v10.104c.737-1.314 2.054-2.202 3.58-2.202 2.51 0 3.95 2.202 3.95 4.52zm-13.998-4.334c.248 0 .426.217.426.426a.415.415 0 0 1-.426.424h-2.293v8.977a.434.434 0 0 1-.426.424.434.434 0 0 1-.426-.424v-8.977h-2.208a.414.414 0 0 1-.425-.424c0-.218.186-.426.425-.426h2.208v-3.283c0-.208.14-.401.348-.432.287-.047.512.146.512.417v3.298h2.285zM691.97 729.2c-.185-2.109-1.805-4.032-4.043-4.032-2.239 0-3.827 1.923-4.044 4.032h8.087zm.915.425c0 .239-.202.44-.442.44h-8.56c.217 2.11 1.805 4.033 4.044 4.033 1.534 0 2.664-.58 3.524-1.8.124-.17.31-.279.542-.178.124.054.218.17.24.309a.414.414 0 0 1-.054.293c-.86 1.5-2.571 2.233-4.252 2.233-2.882 0-4.927-2.564-4.927-5.315 0-2.75 2.053-5.314 4.927-5.314 2.874-.008 4.958 2.549 4.958 5.3z" fill="#FFF"/>
+            <path fill="#EBEBEB" d="M661.44 747.074L672.886 731l-11.446 6.735L650 731z"/>
+            <path fill="#EBEBEB" d="M661.44 735.671l11.44-6.741L661.44 710 650 728.93z"/>
+        </g>
+        <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF">
+            <tspan x="989" y="549">Etherdelta</tspan>  <tspan x="989" y="589" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">Decentralised </tspan> <tspan x="989" y="609" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">exchange </tspan> <tspan x="989" y="629" font-family="Karla-Regular, Karla" font-weight="normal" fill-opacity=".8">integrated</tspan>
+        </text>
+        <text transform="rotate(90 575.5 741.5)" font-size="16" font-family="Karla-Bold, Karla" fill="#FFF" font-weight="bold">
+            <tspan x="83.844" y="15">Lender</tspan>
+        </text>
+        <text transform="rotate(90 453 865)" font-size="16" font-family="Karla-Bold, Karla" fill="#FFF" font-weight="bold">
+            <tspan x="22.471" y="15">Borrower</tspan>
+        </text>
+        <g transform="translate(1148 186)">
+            <use fill="#000" filter="url(#u)" xlink:href="#v"/>
+            <use fill="#30363D" xlink:href="#v"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#35A8FF" transform="translate(1148 186)">
+            <tspan x="15.135" y="13">Repayment</tspan>
+        </text>
+        <g transform="translate(1148 288)">
+            <use fill="#000" filter="url(#w)" xlink:href="#x"/>
+            <use fill="#30363D" xlink:href="#x"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#36CD98" transform="translate(1148 288)">
+            <tspan x="26.496" y="13">Interest</tspan>
+        </text>
+        <g transform="translate(1148 335)">
+            <use fill="#000" filter="url(#y)" xlink:href="#z"/>
+            <use fill="#30363D" xlink:href="#z"/>
+        </g>
+        <text font-family="Karla-Regular, Karla" font-size="14" fill="#36CD98" transform="translate(1148 335)">
+            <tspan x="36.261" y="13">Loan</tspan>
+        </text>
+        <circle cx="15" cy="15" r="14.5" transform="translate(295 491)" stroke-opacity=".5" stroke="#FFF"/>
+        <circle cx="15" cy="15" r="14.5" transform="translate(171 491)" stroke-opacity=".5" stroke="#FFF"/>
+        <g transform="translate(419 491)">
+            <circle stroke-opacity=".5" stroke="#FFF" cx="15" cy="15" r="14.5"/>
+            <path d="M17.5 7.5h-8v15h12v-11h-4v-4z" stroke="#FFF"/>
+            <path d="M9.5 7.5v15h12V11.207L17.793 7.5H9.5z" stroke="#FFF"/>
+            <path fill="#FFF" d="M11 13h2v2h-2z"/>
+            <path fill="#FFF" d="M11 17h2v2h-2z"/>
+            <path fill="#FFF" d="M14 13h5v1h-5z"/>
+            <path fill="#FFF" d="M14 15h3v1h-3z"/>
+            <path fill="#FFF" d="M14 17h5v1h-5z"/>
+            <path fill="#FFF" d="M14 19h4v1h-4z"/>
+        </g>
+        <circle cx="15" cy="15" r="14.5" transform="translate(867 491)" stroke-opacity=".5" stroke="#FFF"/>
+        <g transform="translate(992 491)">
+            <circle stroke-opacity=".5" stroke="#FFF" cx="15" cy="15" r="14.5"/>
+            <g fill-rule="nonzero">
+                <path fill="#FFF" d="M14.96 24.317l5.965-8.375-5.964 3.51L9 15.942z"/>
+                <path d="M14.96 17.796l5.272-3.107-5.271-8.722-5.272 8.722 5.272 3.107z" stroke="#FFF"/>
+                <path d="M14.96 17.796l4.84-2.852-4.84-1.979-4.838 1.98 4.839 2.85z" stroke="#FFF"/>
+            </g>
+        </g>
+        <path d="M444.5 318V98.5a5 5 0 0 1 5-5h41" stroke="#FFF"/>
+        <g transform="translate(430 162)">
+            <circle fill="#FFF" cx="14.5" cy="14.5" r="14.5"/>
+            <text font-family="Karla-Regular, Karla" font-size="20" fill="#000">
+                <tspan x="5.52" y="19.595">%</tspan>
+            </text>
+        </g>
+        <g transform="translate(430 314)">
+            <circle fill="#FFF" cx="14.5" cy="14.5" r="14.5"/>
+            <text font-family="Karla-Regular, Karla" font-size="20" fill="#000">
+                <tspan x="5.52" y="19.595">%</tspan>
+            </text>
+        </g>
+        <path d="M792.5 298.553V464.5a5 5 0 0 0 5 5H1155" stroke="#36CD98"/>
+        <g>
+            <g transform="translate(1149 443)">
+                <use fill="#000" filter="url(#A)" xlink:href="#B"/>
+                <use fill="#30363D" xlink:href="#B"/>
+            </g>
+            <text font-family="Karla-Regular, Karla" font-size="14" fill="#36CD98" transform="translate(1149 443)">
+                <tspan x="19.559" y="12.694">Collateral</tspan> <tspan x="10.195" y="28" font-size="11">(minus interest)</tspan>
+            </text>
+        </g>
+        <g>
+            <g transform="translate(739 282)">
+                <use fill="#000" filter="url(#C)" xlink:href="#D"/>
+                <use fill="#36CD98" xlink:href="#D"/>
+            </g>
+            <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF" transform="translate(739 282)">
+                <tspan x="13.465" y="13">Completion</tspan>
+            </text>
+        </g>
+        <g stroke="#FFF">
+            <path d="M179.5 505.5h13v6h-13z"/>
+            <path d="M178.5 505.5h15V503a1.5 1.5 0 0 0-1.5-1.5h-12a1.5 1.5 0 0 0-1.5 1.5v2.5z"/>
+            <path d="M182.5 504.5h1v2h-1z"/>
+            <path d="M188.5 504.5h1v2h-1z"/>
+            <path d="M182.5 501.51v-2.01a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v2.01"/>
+        </g>
+        <g stroke="#FFF">
+            <path d="M875.5 511.5h3V507a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v4.5z"/>
+            <path d="M880.5 511.5h3V503a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v8.5z"/>
+            <path d="M885.5 511.5h3V500a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v11.5z"/>
+        </g>
+        <path d="M310 513a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-.824a6.176 6.176 0 1 0 0-12.352 6.176 6.176 0 0 0 0 12.352z" fill="#FFF" fill-rule="nonzero"/>
+        <path fill="#000" d="M307 496h3v7h-3z"/>
+        <path fill="#000" d="M310 510h3v7h-3z"/>
+        <path fill="#FFF" d="M304 499h4v4z"/>
+        <path fill="#FFF" d="M316 513h-4v-4z"/>
+        <g>
+            <path d="M114 151h144.43a3 3 0 0 1 2.74 1.778l18.742 42a3 3 0 0 1 0 2.444l-18.742 42a3 3 0 0 1-2.74 1.778H114a3 3 0 0 1-3-3v-84a3 3 0 0 1 3-3z" fill="#30363D" opacity=".502"/>
+            <text transform="rotate(-90 182.5 58.5)" font-size="16" font-family="Karla-Bold, Karla" fill="#FFF" font-weight="bold">
+                <tspan x="19.344" y="15">Lender</tspan>
+            </text>
+            <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(111 151)">
+                <tspan x="72" y="34">Placement</tspan> <tspan x="72" y="54">request</tspan>
+            </text>
+        </g>
+        <g>
+            <path d="M114 261h144.43a3 3 0 0 1 2.74 1.778l18.742 42a3 3 0 0 1 0 2.444l-18.742 42a3 3 0 0 1-2.74 1.778H114a3 3 0 0 1-3-3v-84a3 3 0 0 1 3-3z" fill="#30363D" opacity=".502"/>
+            <text transform="rotate(-90 237.5 112.5)" font-size="16" font-family="Karla-Bold, Karla" fill="#FFF" font-weight="bold">
+                <tspan x="10.471" y="15">Borrower</tspan>
+            </text>
+            <text font-family="Karla-Regular, Karla" font-size="14" fill="#FFF" transform="translate(111 260)">
+                <tspan x="72" y="35">Loan</tspan> <tspan x="72" y="55">request</tspan>
+            </text>
+        </g>
+        <g transform="translate(490 74)">
+            <text font-family="Karla-Bold, Karla" font-size="14" font-weight="bold" fill="#FFF">
+                <tspan x="16.189" y="21">Foundation</tspan>
+            </text>
+            <rect stroke="#FFF" x=".5" y=".5" width="108" height="39" rx="19.5"/>
+        </g>
+        <path fill="#1A1A1A" d="M161 764h1120v3H161z"/>
+    </g>
+</svg>

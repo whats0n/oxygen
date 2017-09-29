@@ -1,36 +1,78 @@
 @function em($size, $context: 16)
-  @return ($size/$context) * 1em
+	@return ($size/$context) * 1em
 
 @function img-url($image)
-  @return url('../img/#{$image}')
+	@return url('../img/#{$image}')
 
 =image($image)
-  background-image: img-url($image)
+	background-image: img-url($image)
 
 =trans($what: all, $dur: 0.2s, $easing: ease)
-  transition: $what $dur $easing
+	transition: $what $dur $easing
 
 =smooth-scroll
-  -webkit-overflow-scrolling: touch
+	-webkit-overflow-scrolling: touch
 
 =smooth-font
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
 =gpu
-  transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
 
 =md
-  +r(1023)
-    @content
+	+r(1023)
+		@content
 
 =sm
-  +r(767)
-    @content
+	+r(767)
+		@content
 
 =xs
-  +r(599)
-    @content
+	+r(599)
+		@content
 
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight)
+	font-family: 'Karla'
+	font-style: $style
+	font-weight: $weight
+
+@font-face
+	+fontdefault(italic, 400)
+	+fontpath('Karla Italic', 'Karla-Italic', karla-italic)
+@font-face
+	+fontdefault(normal, 400)
+	+fontpath('Karla', 'Karla-Regular', karla-regular)
+@font-face
+	+fontdefault(italic, 700)
+	+fontpath('Karla Bold Italic', 'Karla-BoldItalic', karla-bolditalic)
+@font-face
+	+fontdefault(normal, 700)
+	+fontpath('Karla Bold', 'Karla-Bold', karla-bold)
+
+//FONTS CALL
+=f($name, $font-size: null, $line-height: null, $letter-spacing: null)
+	$font-family: null
+	@if $name == "reg"
+		$font-family: "Karla"
+	font-family: $font-family, Helvetica Neue, Helvetica, Arial, sans-serif
+	@if $font-family != null
+		font-weight: normal
+	@if $font-size != null
+		font-size: $font-size * 1px
+	@if $line-height != null
+		line-height: $line-height/$font-size
+	@if $letter-spacing != null
+		letter-spacing: ($letter-spacing / 1000) * 1em
+
+=reg
+	font-family: "America Regular", Helvetica Neue, Helvetica, Arial, sans-serif
+=bold
+	font-family: "America Bold", Helvetica Neue, Helvetica, Arial, sans-serif
+
+//COLORS
 $black: #000
 $white: #fff

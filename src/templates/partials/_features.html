@@ -1,0 +1,45 @@
+{% set keys = [
+	{
+		title: 'Credit rating',
+		text: 'Ethereum-based smart-contract of REPO updates decentralised credit rating, whether the loan was completed successfully or default occurred.'
+	},
+	{
+		title: 'Community-driven orderbook',
+		text: 'Lenders and borrowers push requests to dynamically generated orderbook. Continuous auction results in a number of matched requests. Secured requests are matching faster. '
+	},
+	{
+		title: 'Joint loans',
+		text: 'Lenders and borrowers are able to participate in joint loans. Joint loans are available for secured requests when it was committed by the owner on request setup. '
+	},
+	{
+		title: 'AI-based risk management',
+		text: 'Oxygen neural network aggregates plenty of data sources and offers indicative rates, default-risk coefficients, discount factors and other market advisory.'
+	},
+	{
+		title: 'Truly decentralized platform',
+		text: 'Oxygen delivers a fully decentralized collateral acquisition and settlement system. There is no centralized custody at any stage of swap between users.'
+	},
+	{
+		title: 'B2B Integrations',
+		text: 'Development and implementation of SAAS applications for businesses is a high priority for Oxygen core team. '
+	}
+] %}
+<!-- features -->
+<div class="features">
+	<div class="features__inner inner">
+		<h2 class="features__title title-lg">Key features</h2>
+		<p>Following cutting-edge technologies support market creation of tokens and coins, beneficial for traders and cryptocurrency stakeholders. </p>
+		<div class="features__wrap">
+			{% for data in keys %}
+				<div class="features__col">
+					<div class="features__ico">
+						{{mixins.icon('doc')}}
+					</div>
+					<h4 class="features__title-md title-md">{{data.title}}</h4> 
+					<p>{{data.text}}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- ¯\_(ツ)_/¯ -->

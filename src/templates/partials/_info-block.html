@@ -1,7 +1,143 @@
 <!-- begin info-block -->
 <div class="info-block">
 	<div class="info-block__inner inner">
-		<img src="img/logo-full.svg" alt="logo">
+		<div class="info-block__header">
+			<img src="img/logo-full.svg" alt="logo">
+			<h2 class="title-lg info-block__title">Token crowdsale</h2>
+			<p>The BREATH tokens will be used to cover Oxygen' commission fee with respect to trades and contracts.</p>
+			<p>The fee schedule will be similar to the one used by most exchanges with makers receiving rebates and takes paying full fees at all times. </p>
+		</div>
+		<div class="info-block__body">
+			{% set list = [
+				{
+					title: 'token holders options ',
+					desc: [
+						'Deals in BREATH tokens under more advantageous conditions (up to 50% rebate)',
+						'Advance in the order book queue (if credit-rating permits)',
+						'Last-look on trades',
+						'Liabilities coverage to avoid penalty in case of credit-event',
+						'Voting right on the implementation of new features'
+					]
+				},
+				{
+					title: 'TOTAL SUPPLY ',
+					desc: [ '500 000 000 (Five hundred million) units (limited)' ]
+				},
+				{
+					title: 'EMISSION ',
+					desc: [
+						'Only during the crowdsale',
+						'100% tokens will be issued'
+					]
+				},
+				{
+					title: 'EXCHANGE RATE ',
+					desc: [ '$0,06 = 1 BREATH' ]
+				},
+				{
+					title: 'HARD CAP ',
+					desc: [ '$30 000 000' ]
+				},
+				{
+					title: 'CROWDFUNDING GOAL ',
+					desc: [ 'Service development, floating capital required for market making, international marketing.' ]
+				},
+				{
+					title: 'CROWDFUNDING CURRENCY ',
+					desc: [ 'BTC / ETH' ]
+				},
+				{
+					title: 'CAMPAIGN STARTS ',
+					desc: [ 'Fixed block of the beginning. ' ]
+				},
+				{
+					title: 'CAMPAIGN ENDS',
+					desc: [ '3 weeks or as soon as hard cap is reached.' ]
+				}
+			] %}
+			<ul class="info-list info-block__content">
+				{% for item in list %}
+					<li class="info-list__item">
+						<div class="info-list__title">{{item.title}}</div>
+						<div class="info-list__description">
+							{% for item in item.desc %}
+								<p>{{item | safe}}</p>
+							{% endfor %}
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+			{% set graphs = [
+				{
+					classList: 'sm-graph_green',
+					title: 'Tokens allocation plan',
+					boxes: [
+						{
+							value: '75%',
+							desc: 'Token sale contributors'
+						},
+						{
+							value: '12%',
+							desc: 'Foundation long-term budget'
+						},
+						{
+							value: '12%',
+							desc: 'Team members, advisors, partners and early contributors'
+						},
+						{
+							value: '1%',
+							desc: 'Bounty'
+						}
+					]
+				},
+				{
+					classList: 'sm-graph_blue',
+					title: 'Funds distribution plan',
+					boxes: [
+						{
+							value: '45%',
+							desc: 'Product Development'
+						},
+						{
+							value: '30%',
+							desc: 'Business Development and marketing'
+						},
+						{
+							value: '10%',
+							desc: 'Floating capital required for market making'
+						},
+						{
+							value: '10%',
+							desc: 'Legal activities'
+						},
+						{
+							value: '5%',
+							desc: 'Reserved funds'
+						}
+					]
+				}
+			] %}
+			{% for item in graphs %}
+				<div class="sm-graph {{item.classList}} info-block__graph">
+					<div class="sm-graph__title">{{item.title}}</div>
+					<div class="sm-graph__body">
+						<div class="sm-graph__container">
+							<div class="sm-graph__row">
+								{% for item in item.boxes %}
+									<div class="sm-graph__box" style="width: {{item.value}}">
+										<div class="sm-graph__line">
+											<div class="sm-graph__line-in" style="width: {{item.value}}"></div>
+										</div>
+										<div class="sm-graph__value">{{item.value}}</div>
+										<div class="sm-graph__description">{{item.desc}}</div>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
 	</div>
 </div>
 <!-- end info-block -->
