@@ -8,7 +8,7 @@
     "lint": "eslint --ignore-pattern 'src/js/lib/' --cache --format=node_modules/eslint-formatter-pretty src/js/",
     "lint-fix": "npm run lint -- --fix"
   },
-  "authors": "Coderiver <html@coderiver.com.ua>",
+  "authors": "valeraderevshukov & whats0n",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
