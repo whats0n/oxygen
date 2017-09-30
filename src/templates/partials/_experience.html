@@ -1,0 +1,52 @@
+{% set data = [
+	{
+		img: 'experience-img-1',
+		title: 'Dashboard',
+		text: "Oxygen user homepage gives quick access to personal loaning. Users can easily check the stage of active lending and borrowing contracts and understand at a glance the amount of all crypto assets available considering current margin trading operations.",
+		link: 'SEE THE PREVIEW'
+	},
+	{
+		img: 'experience-img-2',
+		class: 'mod',
+		title: 'Orderbook',
+		text: "In the orderbook department users can choose interesting loans from current borrowing or lending proposals and make a quick order. Smart system enlightens the currencies that are present in user's Oxygen wallet. Every proposal can be extended to uncover the details (e.g. amount of every currency in composed collateral).",
+		link: 'SEE THE PREVIEW'
+	},
+	{
+		img: 'experience-img-3',
+		title: 'Smart contract constructor',
+		text: "If the quick loan is not enough, a user can build a smart contract with maximum detalization. The system will propose relevant fee and perspective amount of collateral for successfull margin trading.",
+		link: 'SEE THE PREVIEW',
+		info: 'All images are for demonstration purposes only. Interest rates and other terms depicted are not representations of valid customer rates. Membership in the OXYGEN platform is required to access real-time updates.'
+	}
+] %}
+
+<!-- experience -->
+<div class="experience">
+	<div class="experience__inner inner">
+		<h3 class="experience__title title-lg">Oxygen experience</h3>
+		<div class="experience__sm-description sm-description">The Oxygen platform and user experience are designed for intuitive loan management. Members can collateralize their blockchain assets, manage repayments and monitor activity in one easy to use platform.</div>
+	</div>
+	<div class="experience__wrap">
+		{% for row in data %}
+			<div class="experience__row {% if row.class %}experience__row_{{row.class}}{% endif %}">
+				<div class="experience__left">
+					<div class="experience__img">
+						<img src="./img/{{row.img}}.jpg" alt="img">
+					</div>
+					{% if row.info %}
+						<div class="experience__info">{{row.info}}</div>
+					{% endif %}
+				</div>
+				<div class="experience__description">
+					<div class="experience__text">
+						<h4 class="experience__title">{{row.title}}</h4>
+						<p>{{row.title}}</p>
+						<a href="#" class="experience__link">{{row.link}}</a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- ¯\_(ツ)_/¯ -->

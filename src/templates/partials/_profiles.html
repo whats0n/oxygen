@@ -1,0 +1,27 @@
+{% set data = [
+	{
+		title: 'Individuals',
+		items: ['Investors', 'Miners', 'Traders']
+	},
+	{
+		class: 'businesses',
+		title: 'Businesses',
+		items: ['Fonds', 'ICOs', 'Exchanges', 'Remittance services']
+	}
+] %}
+<!-- profiles -->
+<div class="profiles">
+	<div class="profiles__inner inner">
+		<h3 class="profiles__title title-lg">Member profiles</h3>
+		<div class="profiles__sm-description sm-description">Who will take more benefits of REPO market on blockchain with the help of Oxygen?</div>
+		{% for row in data %}
+			<div class="profiles__row">
+				<h4 class="profiles__title-md">{{row.title}}</h4>
+				<div class="profiles__wrap">
+					{% for item in row.items %}<div class="profiles__item">{{item}}</div>{% endfor %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- ¯\_(ツ)_/¯ -->
