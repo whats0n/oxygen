@@ -1,0 +1,54 @@
+.profiles
+	padding: 105px 0 215px
+	&__out
+		&:not(:first-child)
+			margin-top: 87px
+	&__title
+		margin-bottom: 22px
+	&__title-md
+		+f(16,19,100,700)
+		text-transform: uppercase
+		.profiles__row_mod &
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+	&__row
+		color: $blue
+		text-align: center
+		font-size: 0
+		&:not(:last-child)
+			margin-bottom: 6px
+		&_mod
+			color: $green 
+	&__wrap
+		position: relative
+		&:not(:first-child)
+			margin-top: 36px
+		.profiles__row_mod &
+			margin-top: 0
+			padding-bottom: 62px
+	&__item
+		position: relative
+		width: 150px
+		height: 168px
+		line-height: 168px
+		font-size: 18px
+		vertical-align: top 
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 50px
+	&__svg
+		position: absolute
+		top: 0
+		left: 0
+		svg,
+		svg path
+			stroke: currentColor
+	&__name
+		position: relative
+		color: $white 
+		max-width: 130px
+		line-height: 1.5
+		vertical-align: middle
+		display: inline-block
