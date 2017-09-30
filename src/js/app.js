@@ -1,3 +1,6 @@
-import sayHello from './lib/sayHello.js';
+import svg4everybody from 'svg4everybody';
+import { TOUCH } from './_utils';
+import { BODY } from './_constants';
 
-sayHello();
+svg4everybody();
+if (!TOUCH()) BODY.addClass('no-touch');
