@@ -68,9 +68,11 @@
 // 	@if $letter-spacing != null
 // 		letter-spacing: ($letter-spacing / 1000) * 1em
 
-=f($font-size: null, $line-height: null, $letter-spacing: null)
+=f($font-size: null, $line-height: null, $letter-spacing: null, $font-weight: null)
 	@if $font-size != null
 		font-size: $font-size * 1px
+	@if $font-weight != null
+		font-weight: $font-weight
 	@if $line-height != null
 		line-height: $line-height/$font-size
 	@if $letter-spacing != null
