@@ -54,13 +54,21 @@
 	+fontpath('Karla Bold', 'Karla-Bold', karla-bold)
 
 //FONTS CALL
-=f($name, $font-size: null, $line-height: null, $letter-spacing: null)
-	$font-family: null
-	@if $name == "reg"
-		$font-family: "Karla"
-	font-family: $font-family, Helvetica Neue, Helvetica, Arial, sans-serif
-	@if $font-family != null
-		font-weight: normal
+// =f($name, $font-size: null, $line-height: null, $letter-spacing: null)
+// 	$font-family: null
+// 	@if $name == "reg"
+// 		$font-family: "Karla"
+// 	font-family: $font-family, Helvetica Neue, Helvetica, Arial, sans-serif
+// 	@if $font-family != null
+// 		font-weight: normal
+// 	@if $font-size != null
+// 		font-size: $font-size * 1px
+// 	@if $line-height != null
+// 		line-height: $line-height/$font-size
+// 	@if $letter-spacing != null
+// 		letter-spacing: ($letter-spacing / 1000) * 1em
+
+=f($font-size: null, $line-height: null, $letter-spacing: null)
 	@if $font-size != null
 		font-size: $font-size * 1px
 	@if $line-height != null
