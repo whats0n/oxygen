@@ -1,0 +1,152 @@
+.roadmap
+	overflow: hidden
+	padding: 135px 0 145px
+	color: $black
+	background: $lightGrayBG
+	+lg
+		padding: 65px 0 75px
+	+sm
+		padding: 10px 0 37px
+	&__title
+		margin-bottom: 71px
+	&__items
+		font-size: 0
+	&__item
+		padding: 25px 15px
+		display: inline-block
+		vertical-align: top
+		width: 33.33%
+		+lg
+			width: 50%
+		+sm
+			padding: 15px 0
+			width: 100%
+		//DESKTOP
+		//start
+		&:first-child
+			.roadmap__info:before
+				left: 0
+				width: 5000px
+		//start of each row on desktop
+		&:nth-child(3n + 4)
+			&:not(:nth-last-child(3))
+				.roadmap__info:before
+					left: -5000px
+					right: -5000px
+		//end
+		&:nth-last-child(2)
+			.roadmap__info:before
+				right: 3px
+				width: 5000px
+		&:first-child,
+		&:nth-child(3n + 4):not(:nth-last-child(3)),
+		&:nth-last-child(2)
+			.roadmap__info:before
+				content: ''
+				position: absolute
+				top: 31px
+				border-top: 3px solid $green
+				+lg
+					display: none
+		//TABLET
+		&:first-child,
+		&:nth-child(2n + 3):not(:nth-last-child(2))
+			.roadmap__info:before
+				content: ''
+				position: absolute
+				top: 31px
+				border-top: 3px solid $green
+				+lg
+					display: block
+		&:nth-child(2n + 3)
+			&:not(:last-child)
+				.roadmap__info:before
+					+lg
+						left: -5000px
+						right: -5000px
+		//MOBILE
+		.roadmap__info:before
+			+sm
+				content: ''
+				position: absolute
+				top: 31px
+				left: -5000px
+				right: -5000px
+				display: block !important
+				border-top: 3px solid $green
+				width: auto
+		&:nth-last-child(2)
+			.roadmap__info:before
+				+sm
+					width: auto
+		//main
+		&_main
+			+lg
+				display: block
+				margin: 0 auto
+				width: 100%
+				max-width: 493px
+			.roadmap
+				&__info
+					padding-top: 22px
+					+lg 
+						padding-top: 0
+						padding-left: 81px
+					+sm
+						padding-left: 50px
+					&:before
+						+lg
+							top: 9px !important
+							right: 100%
+							width: 5000px
+						+sm
+							right: 100%
+							margin-right: -21px
+				&__subtitle
+					padding: 0 0 5px
+					+f(18, 24, null, 700)
+					+sm
+						+f(16, 22)
+				&__description
+					+f(16, 22)
+					+sm
+						+f(14, 20)
+				&__subtitle,
+				&__description
+					letter-spacing: -0.02em
+			.icon-arrow-right
+				display: none
+				top: 0 !important
+				right: 100% !important
+				margin-right: -4px
+				+lg
+					display: block !important
+				+sm
+					margin-right: -25px
+	&__info
+		position: relative
+		+clr
+	&__meta
+		margin-bottom: 24px
+		color: $green
+		+f(14, 17, null, 700)
+	&__subtitle,
+	&__description
+		padding: 5px 0
+		letter-spacing: -0.02em
+	&__subtitle
+		+f(16, 22)
+		span
+			color: $green
+	&__description
+		clear: both
+		color: $lightGray
+		+f(14, 20)
+	.icon-arrow-right
+		position: absolute
+		top: 22px
+		right: 0
+		color: $green
+		font-size: 21px
+		+lg
+			display: none
