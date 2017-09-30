@@ -2,7 +2,12 @@
             <filter id="a" filterUnits="userSpaceOnUse" x="0" y=".4" width="17.9" height="15.5">
                 <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
             </filter>
-        </defs><symbol id="icon-doc" viewBox="0 0 60 60">
+        </defs><symbol id="icon-arrow-right" viewBox="0 0 13 20">
+    <title>
+        Path 12
+    </title>
+    <path d="M2.4 20.1L.2 17.9 8 10.2-.1 2.1 2.1-.1l10.2 10.3z"/>
+</symbol><symbol id="icon-doc" viewBox="0 0 60 60">
     <title>
         Group 6 Copy 7
     </title>
@@ -24,6 +29,14 @@
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-info-logo" viewBox="0 0 12 20">
+    <title>
+        Group 7
+    </title>
+    <g fill-rule="nonzero" opacity=".504">
+        <path d="M6.021 19.512l6.024-8.46-6.024 3.545L0 11.053z"/>
+        <path d="M6.021 13.511l6.021-3.548L6.022 0 0 9.963z"/>
+    </g>
 </symbol><symbol id="icon-linkedin-full" viewBox="0 0 24 24">
     <title>
         linkedin

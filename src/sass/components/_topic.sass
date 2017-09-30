@@ -1,14 +1,83 @@
 .topic
-	padding: 217px 0 210px
+	position: relative
+	padding: 220px 0 210px
 	text-align: center
 	&__inner
 	&__logo
 	&__title
+		margin-top: 25px
 		+f(32, 37, null, 700)
-	&__info
+		letter-spacing: 0.08em 
+	&__sub-title
+		margin-top: 12px
 	&__text
+		margin-top: 40px
+		font-size: 18px
+	&__subscription
+		margin-top: 25px
+	&__info
+		margin-top: 65px
+	&__creators
+		margin-top: 31px
+
 .info
+	position: relative
+	padding-left: 22px
+	vertical-align: top 
+	letter-spacing: 0.17em
+	font-size: 12px
+	color: rgba($white, .5) 
+	text-transform: uppercase
+	display: inline-block
 	&__icon
+		position: absolute
+		top: -1px
+		left: 0
+		.icon
+			font-size: 20px
 .creators
 	&__text
+		margin-top: 10px
+		+f(12, 24)
+		letter-spacing: 0.17em 
+		text-transform: uppercase
+	&__text,
 	&__list
+		vertical-align: top
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 40px
+	&__item
+		vertical-align: middle
+		font-size: 0
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 22px
+		&_text
+			font-size: 14px
+
+.clouds
+	position: absolute
+	top: 0
+	left: 50%
+	right: 0
+	bottom: 0
+	transform: translateX(-50%)
+	width: 2034px
+	& > div 
+		position: absolute
+	img
+		display: block
+	&__top
+		top: 0
+		left: 50%
+		width: 100vw
+		transform: translateX(-50%)
+		img
+			width: 100%
+	&__bottom-left
+		left: -35px
+		bottom: -502px
+	&__bottom-right
+		right: 34px
+		bottom: -458px

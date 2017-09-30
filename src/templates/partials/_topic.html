@@ -1,24 +1,37 @@
 <!-- topic -->
 <div class="topic">
+	<div class="clouds">
+		<div class="clouds__top">
+			<img src="./img/cloud-top.png" alt="img">
+		</div>
+		<div class="clouds__bottom-left">
+			<img src="./img/cloud-bottom-left.png" alt="img">
+		</div>
+		<div class="clouds__bottom-right">
+			<img src="./img/cloud-bottom-right.png" alt="img">
+		</div>
+	</div>
 	<div class="topic__inner inner">
 		<div class="topic__logo">
 			<img src="./img/logo-big.svg" alt="img">
 		</div>
 		<h1 class="topic__title">OXYGEN</h1>
-		<div class="topic__info">Above peer-to-peer lending:Decentralized REPO market of tokens and coins.</div>
+		<div class="topic__sub-title">Above peer-to-peer lending:<br>Decentralized REPO market of tokens and coins.</div>
 		<div class="topic__text">Apply for Whitelist to become early-adopted and get 20% bonus:</div>
 		<!-- form -->
-		<form action="" class="form">
+		<form action="/" class="topic__subscription subscription">
 			<div class="field">
 				<div class="input">
 					<input type="text" placeholder="mail@example.com">
-					<button class="btn-arrow" type="button"></button>
+					<button class="btn-arrow" type="button">
+						{{mixins.icon('arrow-right')}}
+					</button>
 				</div>
 			</div>
 		</form>
 		<!-- ¯\_(ツ)_/¯ -->
 		<!-- info -->
-		<div class="info">
+		<div class="topic__info info">
 			<div class="info__icon">
 				{{mixins.icon('info-logo')}}
 			</div>
@@ -26,12 +39,12 @@
 		</div>
 		<!-- ¯\_(ツ)_/¯ -->
 		<!-- creators -->
-		<div class="creators">
-			<div class="creators__text"></div>
+		<div class="topic__creators creators">
+			<div class="creators__text">From the creators of</div>
 			<ul class="creators__list">
-				<li class="item"><img src="./img/logo-chan-white.svg" alt="creators-logo"></li>
-				<li class="item">&amp;</li>
-				<li class="item"><img src="./img/logo-miner-white.svg" alt="creators-logo"></li>
+				<li class="creators__item"><img src="./img/logo-chan-white.svg" alt="creators-logo"></li>
+				<li class="creators__item creators__item_text">&amp;</li>
+				<li class="creators__item"><img src="./img/logo-miner-white.svg" alt="creators-logo"></li>
 			</ul>
 		</div>
 		<!-- ¯\_(ツ)_/¯ -->

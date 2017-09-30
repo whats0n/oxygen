@@ -1,0 +1,43 @@
+.subscription
+	margin: 0 auto
+	width: 377px
+
+.field
+	position: relative
+
+.input input
+	padding: 12px 15px 15px 15px
+	height: 50px
+	width: 100%
+	color: $white
+	border: 1px solid $inputBorder
+	border-radius: 4px
+	background-color: transparent 
+	font-family: 'Karla', Arial, sans-serif
+	+f(16)
+	display: block
+	.subscription &
+		padding-right: 50px
+	&:focus
+		&::placeholder
+			font-size: 0
+	&::placeholder
+		color: rgba($white, 0.3) 
+.btn-arrow
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 1
+	width: 47px
+	height: 50px
+	text-align: center
+	vertical-align: top
+	transition: background-color .3s ease-in-out
+	border-radius: 0 4px 4px 0
+	background-color: $shamrock 
+	display: inline-block
+	+hover
+		background-color: lighten($shamrock, 10)
+	.icon
+		font-size: 18px
+		color: $black 
