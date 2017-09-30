@@ -1,10 +1,16 @@
 .introducing
-	padding: 164px 0 100px
+	padding: 164px 0 75px
+	+md
+		padding: 100px 0
+	+sm
+		padding: 43px 0
 	&__inner
 		max-width: 960px
 	&__title
 		&:not(:last-child)
 			margin-bottom: 26px
+	&__sm-description
+		line-height: (26/13) 
 	&__diagram
 		margin: 91px auto 0
 		padding: 0 15px
@@ -13,3 +19,4 @@
 		svg
 			width: 100%
 			display: block
+			border: 1px solid

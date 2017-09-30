@@ -5,10 +5,19 @@ body
 	+font-smoothing
 	background: $black
 
-.inner,
-.inner-small
+.out
+	position: relative
+	min-height: 100%
+	overflow: hidden
+
+.inner
 	position: relative
 	padding: 0 15px
 	margin: 0 auto
+	z-index: 1
 	max-width: 1200px
 	+clr
+	+md
+		padding: 0 25px
+	+sm
+		padding: 0 15px

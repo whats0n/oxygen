@@ -1,6 +1,10 @@
 .features
 	padding: 100px 0
 	text-align: center
+	+md
+		padding: 53px 0
+	+sm
+		padding: 40px 0
 	&__inner
 		max-width: 1036px
 	&__title
@@ -13,16 +17,38 @@
 		+clr
 		&:not(:first-child)
 			margin-top: 80px
+			+md
+				margin-top: 98px 
+			+md
+				margin-top: 53px 
 	&__col
 		float: left
 		margin-bottom: 50px
 		padding: 0 60px
 		width: 50%
+		+md
+			margin-bottom: 47px
+			float: none
+			width: 100%
+		+sm
+			margin-bottom: 28px
+			padding: 0
+			font-size: 14px
+			line-height: (22/14) 
 	&__ico
 		&:not(:last-child)
 			margin-bottom: 18px
+			+md
+				margin-bottom: 14px 
+			+sm
+				margin-bottom: 19px 
 	&__title-md
 		+f(26, 24, null, 400) 
 		color: $shamrock 
 		&:not(:last-child)
 			margin-bottom: 15px
+			+md
+				margin-bottom: 18px 
+			+sm
+				margin-bottom: 21px 
+				font-size: 20px
