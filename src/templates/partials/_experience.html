@@ -29,23 +29,51 @@
 	</div>
 	<div class="experience__wrap">
 		{% for row in data %}
-			<div class="experience__row {% if row.class %}experience__row_{{row.class}}{% endif %}">
-				<div class="experience__left">
-					<div class="experience__img">
-						<img src="./img/{{row.img}}.jpg" alt="img">
+			{% if row.class %}
+				<div class="experience__row experience__row_{{row.class}}">
+					<div class="experience__left">
+						<div class="experience__text">
+							<div class="experience__text-wrap">
+								<h4 class="experience__title-md">{{row.title}}</h4>
+								<p>{{row.text}}</p>
+								<div class="experience__footer">
+									<a href="#" class="experience__link">{{row.link}}</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					{% if row.info %}
-						<div class="experience__info">{{row.info}}</div>
-					{% endif %}
-				</div>
-				<div class="experience__description">
-					<div class="experience__text">
-						<h4 class="experience__title">{{row.title}}</h4>
-						<p>{{row.title}}</p>
-						<a href="#" class="experience__link">{{row.link}}</a>
+					<div class="experience__right">
+						<div class="experience__img">
+							<img src="./img/{{row.img}}.jpg" alt="img">
+						</div>
+						{% if row.info %}
+							<div class="experience__info">{{row.info}}</div>
+						{% endif %}
 					</div>
 				</div>
-			</div>
+			{% else %}
+				<div class="experience__row">
+					<div class="experience__left">
+						<div class="experience__img">
+							<img src="./img/{{row.img}}.jpg" alt="img">
+						</div>
+						{% if row.info %}
+							<div class="experience__info">{{row.info}}</div>
+						{% endif %}
+					</div>
+					<div class="experience__right">
+						<div class="experience__text">
+							<div class="experience__text-wrap">
+								<h4 class="experience__title-md">{{row.title}}</h4>
+								<p>{{row.text}}</p>
+								<div class="experience__footer">
+									<a href="#" class="experience__link">{{row.link}}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
 		{% endfor %}
 	</div>
 </div>

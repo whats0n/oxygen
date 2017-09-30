@@ -1,0 +1,99 @@
+.experience
+	padding: 69px 0 
+	&__inner
+		max-width: 1000px 
+	&__title
+		margin-bottom: 20px
+	&__wrap
+		margin-top: 95px
+		padding: 0 15px
+	&__row
+		display: table
+		table-layout: fixed
+		width: 100%
+		+clr
+	&__left,
+	&__right
+		vertical-align: middle
+		display: table-cell
+		+clr
+	&__left
+		padding-right: 22px
+		width: 64.3%
+		.experience__row_mod &
+			padding-right: 20px
+			width: 35.7%
+	&__right
+		padding-left: 20px
+		width: 35.7%
+		.experience__row_mod &
+			padding-left: 25px
+			width: 64.3%
+	&__img
+		margin: -52px 0 0 
+		+clr
+		img
+			float: right
+			border: 2px solid $blue
+			display: block
+			.experience__row_mod &
+				float: left
+				border: 2px solid $green
+	&__info
+		float: right
+		margin-top: 30px
+		max-width: 770px
+		+f(14, 20)
+		color: rgba($white, 0.5) 
+	&__text
+		position: relative
+		min-height: 303px
+		width: 100%
+		max-width: 360px
+		margin-top: -52px
+		padding: 10px 0
+		display: table
+		.experience__row_mod &
+			float: right
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: -20px
+			bottom: 0
+			width: 1px
+			background-color: $lightGray 
+			.experience__row_mod &
+				left: auto
+				right: -20px
+		&:after
+			position: absolute
+			content: ""
+			top: 50%
+			left: -95px
+			width: 75px
+			height: 1px 
+			background-color: $lightGray 
+			.experience__row_mod &
+				left: auto
+				right: -95px
+	&__text-wrap
+		width: 100%
+		font-size: 16px
+		text-align: left
+		vertical-align: middle
+		display: table-cell
+		.experience__row_mod &
+			text-align: right
+	&__title-md
+		margin-bottom: 20px
+		+f(18, 22, null, 700)
+	&__footer
+		margin-top: 20px
+	&__link
+		color: $blue 
+		+f(12, 24, 70, 700)
+		text-transform: uppercase
+		transition: color .3s ease-in-out
+		+hover
+			color: lighten($blue, 20) 
