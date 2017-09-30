@@ -20,7 +20,10 @@
 			vertical-align: top
 			padding: 10px
 			color: $white
-			fill: #BEBEBE
 			font-size: 24px
 			+hover
-				fill: darken(#BEBEBE, 10%)
+				svg 
+					fill: darken(#BEBEBE, 10%)
+			svg
+				fill: #BEBEBE
+				transition: fill 0.175s ease-in-out
