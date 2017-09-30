@@ -1,5 +1,141 @@
 <!-- begin team -->
 <div class="team">
-	
+	<div class="inner team__inner">
+		<h2 class="title-lg team__title">The Team</h2>
+		{% set members = [
+			{
+				title: 'Konstantin Gladych',
+				description: 'is a CEO at Changelly, #1 instant exchanger on cryptocurrency market. Blockchain enthusiast.',
+				img: 'kostya.jpg',
+				social: [ 'linkedin-full', 'twitter-full', 'telegram-full' ]
+			},
+			{
+				title: 'Nikolay Volf',
+				description: 'is a Software developer. Core developer of Parity Ethereum Client since ... till initial release. ',
+				img: 'kolya.jpg',
+				social: [ 'linkedin-full', 'telegram-full' ]
+			},
+			{
+				title: 'Vladimir Nikul',
+				description: 'is a financial strategy development and consultant. ',
+				img: 'vova.jpg',
+				social: [ 'linkedin-full', 'telegram-full' ]
+			}
+		] %}
+		<div class="team__members">
+			<div class="team__svg">
+				<svg 
+					width="248.5px" 
+					height="248.5px" 
+					viewBox="0 0 248.5 248.5" 
+					enable-background="new 0 0 248.5 248.5" 
+					xml:space="preserve">
+					<!-- begin gradients -->
+					<linearGradient 
+						id="member-gradient1" 
+						x1="-1.11022302e-14%" 
+						y1="1.72254642e-14%" 
+						x2="105.916355%" 
+						y2="1.72254645e-14%">
+						<stop offset="0%" style="stop-color:#43E695"/>
+						<stop offset="100%" style="stop-color:#3BB2B8"/>
+					</linearGradient>
+					<linearGradient 
+						id="member-gradient2" 
+						x1="105.916355%" 
+						y1="1.11022302e-14%" 
+						x2="-2.22044605e-14%" 
+						y2="2.22044605e-14%">
+						<stop offset="0%" style="stop-color:#43E695"/>
+						<stop offset="100%" style="stop-color:#3BB2B8"/>
+					</linearGradient>
+					<linearGradient 
+						id="member-gradient3" 
+						x1="-1.11022302e-14%" 
+						y1="1.72254642e-14%" 
+						x2="105.916355%" 
+						y2="1.72254645e-14%">
+					    <stop offset="0%" style="stop-color:#43E695"></stop>
+					    <stop offset="100%" style="stop-color:#3BB2B8"></stop>
+					</linearGradient>
+					<!-- end gradients -->
+
+					<!-- begin borders -->
+					<symbol id="member-border1">
+						<g transform="translate(-596.000000, -7187.000000)">
+							<g transform="translate(583.000000, 7173.000000)">
+								<g transform="translate(137.421356, 138.000000) rotate(-315.000000) translate(-137.421356, -138.000000) ">
+									<path fill="none" 
+										stroke="url(#member-gradient1)" 
+										stroke-width="3" 
+										d="M79,39.8h117c22.1,0,40,17.9,40,40v117c0,22.1-17.9,40-40,40H79c-22.1,0-40-17.9-40-40v-117C39,57.7,56.9,39.8,79,39.8z"></path>
+								</g>
+							</g>
+						</g>
+					</symbol>
+					<symbol id="member-border2">
+						<g transform="translate(-596.000000, -7187.000000)">
+							<g transform="translate(583.000000, 7173.000000)">
+								<g transform="translate(137.421356, 138.000000) rotate(-315.000000) translate(-137.421356, -138.000000) ">
+									<path fill="none" 
+										stroke="url(#member-gradient2)" 
+										stroke-width="3" 
+										d="M79,39.8h117c22.1,0,40,17.9,40,40v117c0,22.1-17.9,40-40,40H79c-22.1,0-40-17.9-40-40v-117C39,57.7,56.9,39.8,79,39.8z"></path>
+								</g>
+							</g>
+						</g>
+					</symbol>
+					<symbol id="member-border3">
+						<g transform="translate(-596.000000, -7187.000000)">
+							<g transform="translate(583.000000, 7173.000000)">
+								<g transform="translate(137.421356, 138.000000) rotate(-315.000000) translate(-137.421356, -138.000000) ">
+									<path fill="none" 
+										stroke="url(#member-gradient2)" 
+										stroke-width="3" 
+										d="M79,39.8h117c22.1,0,40,17.9,40,40v117c0,22.1-17.9,40-40,40H79c-22.1,0-40-17.9-40-40v-117C39,57.7,56.9,39.8,79,39.8z"></path>
+								</g>
+							</g>
+						</g>
+					</symbol>
+					<!-- end borders -->
+
+					<!-- begin figure -->
+					<mask id="member-mask">
+						<g transform="translate(-596.000000, -7187.000000)">
+							<g transform="translate(583.000000, 7173.000000)">
+								<g transform="translate(137.421356, 138.000000) rotate(-315.000000) translate(-137.421356, -138.000000) ">
+									<path 
+										fill="#ffffff" 
+										d="M80.2,40.9l114.6,0.1C217,41,235,59,235,81.2l0.1,114.6c0,22.2-18,40.2-40.2,40.2l-114.6-0.1c-22.2,0-40.2-18-40.3-40.3L40,81C40,58.8,58,40.8,80.2,40.9z"></path>
+								</g>
+							</g>
+						</g>
+					</mask>
+					<!-- end figure -->
+				</svg>
+			</div>
+			{% for item in members %}
+				<div class="member team__member">
+					<div class="member__img">
+						<svg width="248.4" height="248.4">
+							<use xlink:href="#member-border{{loop.index}}" />
+							<g mask="url(#member-mask)">
+								<image xlink:href="img/{{item.img}}" class="member__img-in" />
+							</g>
+						</svg>
+					</div>
+					<div class="member__title">{{item.title}}</div>
+					<div class="member__description">{{item.description}}</div>
+					<div class="member__social">
+						{% for item in item.social %}
+							<a href="#">
+								{{mixins.icon(item)}}
+							</a>
+						{% endfor %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </div>
 <!-- end team -->
