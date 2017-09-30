@@ -1,2 +1,25 @@
+$titleWidth: 37.2
+
 .info-list
-	
+	&__item
+		padding: 16px
+		+clr
+	&__title,
+	&__description
+		float: left
+		padding: 0 15px
+	&__title,
+	&__description p
+		padding-top: 5px
+		padding-bottom: 5px
+	&__title
+		width: $titleWidth + %
+		color: $blue
+		+f(12, 24)
+		letter-spacing: 0.2em
+		text-align: right
+		text-transform: uppercase
+	&__description
+		width: 100 - $titleWidth + %
+		+f(16, 24)
+		text-align: left
