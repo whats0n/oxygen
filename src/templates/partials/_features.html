@@ -28,12 +28,12 @@
 <div class="features">
 	<div class="features__inner inner">
 		<h2 class="features__title title-lg">Key features</h2>
-		<p>Following cutting-edge technologies support market creation of tokens and coins, beneficial for traders and cryptocurrency stakeholders. </p>
+		<div class="features__sm-description sm-description">Following cutting-edge technologies support market creation of tokens and coins, beneficial for traders and cryptocurrency stakeholders. </div>
 		<div class="features__wrap">
 			{% for data in keys %}
 				<div class="features__col">
 					<div class="features__ico">
-						{{mixins.icon('doc')}}
+						<img src="./img/doc.svg" alt="img">
 					</div>
 					<h4 class="features__title-md title-md">{{data.title}}</h4> 
 					<p>{{data.text}}</p>
