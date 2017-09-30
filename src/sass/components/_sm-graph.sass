@@ -4,14 +4,14 @@
 			&__title
 				color: $green
 			&__line
-				&:before
+				&:before, &-in
 					background: $green
 	&_blue
 		.sm-graph
 			&__title
 				color: $blue
 			&__line
-				&:before
+				&:before, &-in
 					background: $blue
 	&__title
 		margin-bottom: 20px
@@ -25,11 +25,19 @@
 	&__box
 		display: table-cell
 		min-width: 67px
+		+lg
+			width: 100% !important
+			margin-bottom: 20px
 		&:nth-child(even)
 			.sm-graph
 				&__line
 					&:before
 						opacity: 0.5
+	&__container,
+	&__row,
+	&__box
+		+lg
+			display: block
 	&__line
 		position: relative
 		padding: 0 1px
@@ -42,11 +50,22 @@
 			left: 1px
 			right: 1px
 			bottom: 0
+			+lg
+				opacity: 0.5
+		&-in
+			display: none
+			height: 100%
+			+lg
+				display: block
 	&__info
 		padding: 8px 15px 0 1px
+		+lg
+			padding: 10px 0 0
 	&__value,
 	&__description
 		padding: 5px 0
+		+lg
+			padding: 0
 	&__value
 		+f(16, 24, null, 700)
 	&__description
