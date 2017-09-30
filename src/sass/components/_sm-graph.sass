@@ -16,6 +16,11 @@
 	&__title
 		margin-bottom: 20px
 		+f(18, 22, null, 700)
+		+lg
+			margin-bottom: 50px
+		+sm
+			margin-bottom: 28px
+			+f(16, 24)
 	&__container
 		display: table
 		table-layout: fixed
@@ -27,15 +32,16 @@
 		min-width: 67px
 		+lg
 			width: 100% !important
-			margin-bottom: 20px
+			margin-bottom: 4px
 		&:nth-child(even)
 			.sm-graph
 				&__line
-					&:before
+					&:before, &-in
 						opacity: 0.5
 	&__container,
 	&__row,
 	&__box
+		position: relative
 		+lg
 			display: block
 	&__line
@@ -43,6 +49,13 @@
 		padding: 0 1px
 		height: 11px
 		opacity: 0.5
+		+lg
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			height: auto
 		&:before
 			content: ''
 			position: absolute
@@ -51,22 +64,40 @@
 			right: 1px
 			bottom: 0
 			+lg
-				opacity: 0.5
+				display: none
 		&-in
 			display: none
 			height: 100%
 			+lg
 				display: block
 	&__info
+		position: relative
 		padding: 8px 15px 0 1px
+		+clr
 		+lg
-			padding: 10px 0 0
+			padding: 0
+			height: 60px
+			font-size: 0
+			line-height: 60px
 	&__value,
 	&__description
 		padding: 5px 0
 		+lg
+			display: inline-block
+			vertical-align: middle
 			padding: 0
 	&__value
 		+f(16, 24, null, 700)
+		+lg
+			padding: 0 0 0 18px
+			width: 70px
+			+f(18, 24)
 	&__description
 		+f(14, 22)
+		+lg
+			padding: 0
+			width: 350px
+			+f(16, 22)
+		+sm
+			width: 210px
+			+f(14, 20)
