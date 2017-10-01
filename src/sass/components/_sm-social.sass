@@ -1,0 +1,24 @@
+.sm-social
+	font-size: 0
+	&__label,
+	&__list,
+	&__item,
+	&__link
+		display: inline-block
+		vertical-align: middle
+	&__label
+		padding-left: 40px
+		color: #F3F3F8
+		+f(14, 17)
+	&__link
+		padding: 0 40px 0 20px
+		+hover
+			.icon
+				opacity: 0.5
+		.icon
+			color: $white
+			opacity: 0.5
+			font-size: 36px
+			transition: opacity 0.175s ease-in-out
+			&-twitter
+				font-size: 30px
