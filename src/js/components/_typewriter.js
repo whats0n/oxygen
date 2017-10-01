@@ -38,7 +38,7 @@ export default (function() {
       probability: 0.2,
       glitches: '-|/\\',
       blank: '',
-      duration: text.length * 40,
+      duration: text.length * 5,
       ease: 'easeInOutQuad',
       delay: 0.0
     };
