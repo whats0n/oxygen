@@ -21,83 +21,76 @@
 				<div class="diagram__lines-fork" data-diagram="fork-2"></div>
 				<div class="diagram__lines-fork" data-diagram="fork-3"></div>
 			</div>
-			<div class="diagram__header">
-				<div class="diagram__header-col" data-diagram="header-col-1">
-					<div class="diagram__header-label">Lender</div>
-					<div class="diagram__header-value">Placement request</div>
-				</div>
-				<div class="diagram__header-col" data-diagram="header-col-2">
-					<div class="diagram__header-label">Borrower</div>
-					<div class="diagram__header-value">Loan request</div>
-				</div>
-			</div>
-			<div class="diagram__body">
-				<div class="diagram__box diagram__box_lg" data-diagram="box-1" data-diagram-modal="parent">
-					<div class="diagram__box-in">Matching engine</div>
-					<div class="diagram__modal" data-diagram-modal="child">
-						<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
-						<ul>
-							<li>Borrowed token type (ERC20)</li>
-							<li>Amount of borrowed token</li>
-							<li>Length of the deal</li>
-							<li>Type of the token used as collateral</li>
-							<li>Interest rate</li>
-						</ul>
+			<div class="diagram__in">
+				<div class="diagram__header">
+					<div class="diagram__header-col" data-diagram="header-col-1">
+						<div class="diagram__header-label">Lender</div>
+						<div class="diagram__header-value">Placement request</div>
+					</div>
+					<div class="diagram__header-col" data-diagram="header-col-2">
+						<div class="diagram__header-label">Borrower</div>
+						<div class="diagram__header-value">Loan request</div>
 					</div>
 				</div>
-				<div class="diagram__fork" data-diagram="fork-1">
-					<div class="diagram__fork-hint">Foundation</div>
-					<div class="diagram__fork-title">System fee</div>
-					<div class="diagram__fork-label" data-diagram="percent-1">%</div>
-					<div class="diagram__fork-label" data-diagram="percent-2">%</div>
-					<div class="diagram__box" data-diagram="fork-box-1">
-						<div class="diagram__box-in">Loan</div>
+				<div class="diagram__body">
+					<div class="diagram__box diagram__box_lg" data-diagram="box-1">
+						<div class="diagram__box-in">Matching engine</div>
 					</div>
-					<div class="diagram__box" data-diagram="fork-box-2">
-						<div class="diagram__box-in">Collateral</div>
+					<div class="diagram__fork" data-diagram="fork-1">
+						<div class="diagram__fork-hint">Foundation</div>
+						<div class="diagram__fork-title">System fee</div>
+						<div class="diagram__fork-label" data-diagram="percent-1">%</div>
+						<div class="diagram__fork-label" data-diagram="percent-2">%</div>
+						<div class="diagram__box" data-diagram="fork-box-1">
+							<div class="diagram__box-in">Loan</div>
+						</div>
+						<div class="diagram__box" data-diagram="fork-box-2">
+							<div class="diagram__box-in">Collateral</div>
+						</div>
+					</div>
+					<div class="diagram__box diagram__box_lg js-diagram-modal-open" data-diagram="box-2" data-diagram-modal="parent">
+						<div class="diagram__box-in">Conditions</div>
+						<div class="diagram__modal" data-diagram-modal="child">
+							<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+							<ul>
+								<li>Borrowed token type (ERC20)</li>
+								<li>Amount of borrowed token</li>
+								<li>Length of the deal</li>
+								<li>Type of the token used as collateral</li>
+								<li>Interest rate</li>
+							</ul>
+						</div>
+					</div>
+					<div class="diagram__fork" data-diagram="fork-2">
+						<div class="diagram__fork-color diagram__fork-color_blue">Default</div>
+						<div class="diagram__fork-color diagram__fork-color_green">Completion</div>
+					</div>
+					<div class="diagram__fork" data-diagram="fork-3">
+						<div class="diagram__box" data-diagram="fork-sm-box-1">
+							<div class="diagram__box-in">Borrower rating <strong>DOWN</strong></div>
+						</div>
+						<div class="diagram__box" data-diagram="fork-sm-box-2">
+							<div class="diagram__box-in">Borrower rating <strong>UP</strong></div>
+						</div>
+						<div class="diagram__box" data-diagram="fork-sm-box-3">
+							<div class="diagram__box-in">Collateral realisation</div>
+						</div>
+						<div class="diagram__box" data-diagram="fork-sm-box-4">
+							<div class="diagram__box-in">Interest realisation</div>
+						</div>
+					</div>
+					<div class="diagram__hints" data-diagram="hints-1">
+						<div class="diagram__hints-label" data-diagram="hint-label-1">Lender</div>
+						<div class="diagram__hints-item" data-diagram="hint-item-1">Interest</div>
+						<div class="diagram__hints-item diagram__hints-item_blue" data-diagram="hint-item-2">Repayment</div>
+						<div class="diagram__hints-item" data-diagram="hint-item-3">Loan</div>
+					</div>
+					<div class="diagram__hints" data-diagram="hints-2">
+						<div class="diagram__hints-label" data-diagram="hint-label-1">Borrower</div>
+						<div class="diagram__hints-item" data-diagram="hint-item-4">Collateral <small>(minus interest)</small></div>
 					</div>
 				</div>
-				<div class="diagram__box diagram__box_lg" data-diagram="box-2" data-diagram-modal="parent">
-					<div class="diagram__box-in">Conditions</div>
-					<div class="diagram__modal" data-diagram-modal="child">
-						<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
-						<ul>
-							<li>Borrowed token type (ERC20)</li>
-							<li>Amount of borrowed token</li>
-							<li>Length of the deal</li>
-							<li>Type of the token used as collateral</li>
-							<li>Interest rate</li>
-						</ul>
-					</div>
-				</div>
-				<div class="diagram__fork" data-diagram="fork-2">
-					<div class="diagram__fork-color diagram__fork-color_blue">Default</div>
-					<div class="diagram__fork-color diagram__fork-color_green">Completion</div>
-				</div>
-				<div class="diagram__fork" data-diagram="fork-3">
-					<div class="diagram__box" data-diagram="fork-sm-box-1">
-						<div class="diagram__box-in">Borrower rating <strong>DOWN</strong></div>
-					</div>
-					<div class="diagram__box" data-diagram="fork-sm-box-2">
-						<div class="diagram__box-in">Borrower rating <strong>UP</strong></div>
-					</div>
-					<div class="diagram__box" data-diagram="fork-sm-box-3">
-						<div class="diagram__box-in">Collateral realisation</div>
-					</div>
-					<div class="diagram__box" data-diagram="fork-sm-box-4">
-						<div class="diagram__box-in">Interest realisation</div>
-					</div>
-				</div>
-				<div class="diagram__hints" data-diagram="hints-1">
-					<div class="diagram__hints-label" data-diagram="hint-label-1">Lender</div>
-					<div class="diagram__hints-item" data-diagram="hint-item-1">Interest</div>
-					<div class="diagram__hints-item diagram__hints-item_blue" data-diagram="hint-item-2">Repayment</div>
-					<div class="diagram__hints-item" data-diagram="hint-item-3">Loan</div>
-				</div>
-				<div class="diagram__hints" data-diagram="hints-2">
-					<div class="diagram__hints-label" data-diagram="hint-label-1">Borrower</div>
-					<div class="diagram__hints-item" data-diagram="hint-item-4">Collateral <small>(minus interest)</small></div>
-				</div>
+				<div class="diagram__overlay js-diagram-modal-overlay"></div>
 			</div>
 			<div class="diagram__logo">
 				<img src="img/ethereum-logo.svg" alt="Ethereum">

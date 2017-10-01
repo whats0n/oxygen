@@ -12,6 +12,22 @@
 		margin-bottom: 0
 		max-width: 290px
 		height: auto 
+	&__in,
+	&__overlay
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	&__overlay
+		z-index: 5
+		opacity: 0
+		visibility: hidden
+		background: rgba($black, 0.5)
+		transition: opacity 0.2s ease, visibility 0.2s
+		&.is-open
+			opacity: 1
+			visibility: visible
 	//bg
 	&__bg
 		position: absolute
@@ -566,12 +582,14 @@
 				margin-bottom: 16px
 	[data-diagram-modal="parent"]
 		transition: color 0.2s ease, background 0.2s
-		+hover
-			color: $black
-			background: $white
-			[data-diagram-modal="child"]
-				opacity: 1
-				visibility: visible
+		&.is-active
+			.no-touch &
+				color: $black
+				background: $white
+				z-index: 10
+				[data-diagram-modal="child"]
+					opacity: 1
+					visibility: visible
 	&__modal
 		position: absolute
 		z-index: 10
