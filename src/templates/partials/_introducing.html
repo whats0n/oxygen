@@ -5,7 +5,7 @@
 		<div class="sm-description">Oxygen is introducing to the cryptocurrency paradigm something similar to the REPO market—clear, simple and efficient. It is designed to assist you to get the most out of your digital assets and offers support for all ERC20 compliant tokens.</div>
 	</div>
 	<div class="introducing__diagram">
-		<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+		{#<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 		<svg width="1225px" height="693px" viewBox="0 0 1225 693" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
 		    <title>scheme</title>
@@ -417,7 +417,143 @@
 		            </g>
 		        </g>
 		    </g>
-		</svg>
+		</svg>#}
+		<div class="diagram">
+			<div class="diagram__bg">
+				<div class="diagram__bg-header"></div>
+				<div class="diagram__bg-body">
+					<div class="diagram__bg-fork">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="diagram__lines">
+				<div class="diagram__lines-hint"></div>
+				<div class="diagram__lines-fork" data-diagram="fork-1"></div>
+				<div class="diagram__lines-fork" data-diagram="fork-2"></div>
+				<div class="diagram__lines-fork" data-diagram="fork-3"></div>
+			</div>
+			<div class="diagram__header">
+				<div class="diagram__header-col" data-diagram="header-col-1">
+					<div class="diagram__header-label">Lender</div>
+					<div class="diagram__header-value">Placement request</div>
+				</div>
+				<div class="diagram__header-col" data-diagram="header-col-2">
+					<div class="diagram__header-label">Borrower</div>
+					<div class="diagram__header-value">Loan request</div>
+				</div>
+			</div>
+			<div class="diagram__body">
+				<div class="diagram__box diagram__box_lg" data-diagram="box-1" data-diagram-modal="parent">
+					<div class="diagram__box-in">Matching engine</div>
+					<div class="diagram__modal" data-diagram-modal="child">
+						<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+						<ul>
+							<li>Borrowed token type (ERC20)</li>
+							<li>Amount of borrowed token</li>
+							<li>Length of the deal</li>
+							<li>Type of the token used as collateral</li>
+							<li>Interest rate</li>
+						</ul>
+					</div>
+				</div>
+				<div class="diagram__fork" data-diagram="fork-1">
+					<div class="diagram__fork-hint">Foundation</div>
+					<div class="diagram__fork-title">System fee</div>
+					<div class="diagram__fork-label" data-diagram="percent-1">%</div>
+					<div class="diagram__fork-label" data-diagram="percent-2">%</div>
+					<div class="diagram__box" data-diagram="fork-box-1">
+						<div class="diagram__box-in">Loan</div>
+					</div>
+					<div class="diagram__box" data-diagram="fork-box-2">
+						<div class="diagram__box-in">Collateral</div>
+					</div>
+				</div>
+				<div class="diagram__box diagram__box_lg" data-diagram="box-2" data-diagram-modal="parent">
+					<div class="diagram__box-in">Conditions</div>
+					<div class="diagram__modal" data-diagram-modal="child">
+						<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+						<ul>
+							<li>Borrowed token type (ERC20)</li>
+							<li>Amount of borrowed token</li>
+							<li>Length of the deal</li>
+							<li>Type of the token used as collateral</li>
+							<li>Interest rate</li>
+						</ul>
+					</div>
+				</div>
+				<div class="diagram__fork" data-diagram="fork-2">
+					<div class="diagram__fork-color diagram__fork-color_blue">Default</div>
+					<div class="diagram__fork-color diagram__fork-color_green">Completion</div>
+				</div>
+				<div class="diagram__fork" data-diagram="fork-3">
+					<div class="diagram__box" data-diagram="fork-sm-box-1">
+						<div class="diagram__box-in">Borrower rating <strong>DOWN</strong></div>
+					</div>
+					<div class="diagram__box" data-diagram="fork-sm-box-2">
+						<div class="diagram__box-in">Borrower rating <strong>UP</strong></div>
+					</div>
+					<div class="diagram__box" data-diagram="fork-sm-box-3">
+						<div class="diagram__box-in">Collateral realisation</div>
+					</div>
+					<div class="diagram__box" data-diagram="fork-sm-box-4">
+						<div class="diagram__box-in">Interest realisation</div>
+					</div>
+				</div>
+				<div class="diagram__hints" data-diagram="hints-1">
+					<div class="diagram__hints-label" data-diagram="hint-label-1">Lender</div>
+					<div class="diagram__hints-item" data-diagram="hint-item-1">Interest</div>
+					<div class="diagram__hints-item diagram__hints-item_blue" data-diagram="hint-item-2">Repayment</div>
+					<div class="diagram__hints-item" data-diagram="hint-item-3">Loan</div>
+				</div>
+				<div class="diagram__hints" data-diagram="hints-2">
+					<div class="diagram__hints-label" data-diagram="hint-label-1">Borrower</div>
+					<div class="diagram__hints-item" data-diagram="hint-item-4">Collateral <small>(minus interest)</small></div>
+				</div>
+			</div>
+			<div class="diagram__logo">
+				<img src="img/ethereum-logo.svg" alt="Ethereum">
+			</div>
+			<div class="diagram__info">
+				{% set diagramInfo = [
+					{
+						icon: 'diagram-management',
+						title: 'Risk management toolkit',
+						description: 'Provides advisory on market'
+					},
+					{
+						icon: 'diagram-exchange',
+						title: 'Exchange',
+						description: 'Runs continious auction'
+					},
+					{
+						icon: 'diagram-contract',
+						title: 'REPO smart contract',
+						description: 'Core of decentralised orders processing'
+					},
+					{
+						icon: 'diagram-system',
+						title: 'Credit rating system',
+						description: 'Supplies trustful users ratings'
+					},
+					{
+						icon: 'diagram-etherdelta',
+						title: 'Etherdelta',
+						description: 'Decentralised exchange integrated'
+					}
+				] %}
+				{% for item in diagramInfo %}
+					<div class="diagram__info-box" data-diagram="info-{{loop.index}}">
+						<div class="diagram__info-icon">
+							<img src="img/{{item.icon}}.svg" alt="/">
+						</div>
+						<div class="diagram__info-title">{{item.title}}</div>
+						<div class="diagram__info-description">{{item.description}}</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </div>
 <!-- ¯\_(ツ)_/¯ -->
