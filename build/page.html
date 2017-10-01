@@ -40,9 +40,9 @@
       <!-- topic -->
       <div class="topic">
         <div class="clouds">
-          <div class="clouds__top"> <img src="./img/cloud-top.png" alt="img"> </div>
-          <div class="clouds__bottom-left"> <img src="./img/cloud-bottom-left.png" alt="img"> </div>
-          <div class="clouds__bottom-right"> <img src="./img/cloud-bottom-right.png" alt="img"> </div>
+          <div class="clouds__top"> <img src="./img/cloud-top.png" alt="img" class="oxy oxy-1"> </div>
+          <div class="clouds__bottom-left"> <img src="./img/cloud-bottom-left.png" alt="img" class="oxy oxy-2"> </div>
+          <div class="clouds__bottom-right"> <img src="./img/cloud-bottom-right.png" alt="img" class="oxy oxy-3"> </div>
         </div>
         <div class="topic__inner inner">
           <div class="topic__logo"> <img src="./img/logo-big.svg" alt="img"> </div>
@@ -81,9 +81,10 @@
       <!-- ¯\_(ツ)_/¯ -->
       <!-- article -->
       <div class="article">
-        <div class="article__inner inner">
-          <article class="article__text"> Today, holders of numerous coins and tokens have nothing to do with their equity. They simply wait patiently for it to flourish or they sell the assets, regardless of their potential for future growth. There are not currently any REPO instruments
-            in existence that offer safe short positions and margin trading, without doubling the commission on crypto-to-fiat currency exchanges. We believe that expensive and unsafe crypto-loaning is in need of Oxygen. </article>
+        <div class="article__inner inner" id="container">
+          <article class="article__text" id="message">
+            <!--Today, holders of numerous coins and tokens have nothing to do with their equity. They simply wait patiently for it to flourish or they sell the assets, regardless of their potential for future growth. There are not currently any REPO instruments in existence that offer safe short positions and margin trading, without doubling the commission on crypto-to-fiat currency exchanges. We believe that expensive and unsafe crypto-loaning is in need of Oxygen.-->
+          </article>
         </div>
       </div>
       <!-- ¯\_(ツ)_/¯ -->
@@ -864,6 +865,77 @@
         </div>
       </div>
       <!-- end team -->
+      <!-- begin roadmap -->
+      <div class="roadmap">
+        <div class="inner roadmap__inner">
+          <h2 class="title-lg roadmap__title">Development roadmap</h2>
+          <div class="roadmap__items">
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q2.2017</div>
+                <div class="roadmap__subtitle"> First breath. Business opportunities research.</div>
+                <div class="roadmap__description">Concept development.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q3.2017</div>
+                <div class="roadmap__subtitle"> Community white-paper released. Legal background. Private seed funding.</div>
+                <div class="roadmap__description">Technical white-paper. Specifications.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q4.2017</div>
+                <div class="roadmap__subtitle"> Team hiring. Incorporation. ICO.</div>
+                <div class="roadmap__description">Alpha: Ethereum based smart-contract. All ERC20-tokens support. Joint loans &amp; collaterals.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q1.2018</div>
+                <div class="roadmap__subtitle"> OXY starts trading at Exchanges. Meet first users. OXYGEN is market maker for the start. OXY is accepted as collateral already.</div>
+                <div class="roadmap__description">Beta: DAPP including smart-contract interaction, requests browser.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q2.2018</div>
+                <div class="roadmap__subtitle"> Marketing campaign starts. Community expands.</div>
+                <div class="roadmap__description">Matching engine. Full-featured interfaces. Decentralised credit rating implementation.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q3.2018</div>
+                <div class="roadmap__subtitle"> Major cryptofonds partnership.</div>
+                <div class="roadmap__description">Decentralised exchanges integration (Etherdelta). AI-based risk-management toolkit.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info">
+                <div class="roadmap__meta">Q4.2018</div>
+                <div class="roadmap__subtitle"> First exchanges are outsourcing margin trading with OXYGEN.</div>
+                <div class="roadmap__description">SaaS for B2B integrity available. Community voting system established.</div>
+              </div>
+            </div>
+            <div class="roadmap__item ">
+              <div class="roadmap__info"> <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+                <div class="roadmap__meta">Q1.2019</div>
+                <div class="roadmap__subtitle"> Turnover is increasing significantly due to new features. World wide expansion.</div>
+                <div class="roadmap__description">Collaterized pools (CDO-like) and CDS-like contracts added.</div>
+              </div>
+            </div>
+            <div class="roadmap__item roadmap__item_main">
+              <div class="roadmap__info"> <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+                <div class="roadmap__subtitle"><span>Q2.2019</span> OXYGEN is world-leading REPO platform in the cryptocurrency world.</div>
+                <div class="roadmap__description">True cross-chain solution. Bitcoin, Litecoin and tokens based on other blockchains are available for REPO operations.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end roadmap -->
       <!-- begin info-block -->
       <div class="info-block">
         <div class="inner info-block__inner">
@@ -1039,6 +1111,60 @@
         </div>
       </div>
       <!-- end info-block -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="inner footer__inner">
+          <h2 class="title-lg footer__title">Token sale is coming</h2>
+          <div class="footer__text">Apply for Whitelist to become early-adopted and get 20% bonus:</div>
+          <!-- begin form -->
+          <form action="/" class="subscription footer__subscription">
+            <div class="field">
+              <div class="input"> <input type="text" placeholder="mail@example.com"> <button class="btn-arrow" type="button">
+						
+<svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+
+					</button> </div>
+            </div>
+          </form>
+          <!-- end form -->
+          <!-- begin social -->
+          <div class="sm-social footer__social">
+            <div class="sm-social__label">Follow us:</div>
+            <ul class="sm-social__list">
+              <li class="sm-social__item"> <a href="#" class="sm-social__link">
+							
+<svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+
+						</a> </li>
+              <li class="sm-social__item"> <a href="#" class="sm-social__link">
+							
+<svg class="icon icon-slack"><use xlink:href="img/sprite.svg#icon-slack"></use></svg>
+
+						</a> </li>
+              <li class="sm-social__item"> <a href="#" class="sm-social__link">
+							
+<svg class="icon icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+
+						</a> </li>
+            </ul>
+          </div>
+          <!-- end social -->
+          <div class="footer__logos">
+            <div> <a href="#" class="footer__logo-main">
+					<img src="img/logo-small.svg" alt="oxygen">
+				</a> <span class="footer__splitter">by</span> </div>
+            <div> <a href="#" class="footer__logo-changelly">
+					<img src="img/logo-chan-white.svg" alt="changelly">
+				</a> <span class="footer__splitter">&</span> <a href="#" class="footer__logo-minergate">
+					<img src="img/logo-miner-white.svg" alt="minergate">
+				</a> </div>
+          </div>
+          <div class="footer__info">THIS WEBSITE AND ALL INFORMATION, PRODUCTS AND SERVICES PROVIDED THROUGH THIS WEBSITE ARE APPROVED ‘AS IS’ AND ON AN ‘AS AVAILABLE’ GUARANTEES WHATSOEVER OF ANY KIND INCLUDING, WITHOUT LIMITATION, ANY REPRESENTATIONS, WARRANTIES, PROMISES OR
+            GUARANTEES REGARDING THE ACCURACY, CURRENCY, COMPLETENESS, ADEQUACY, AVAILABILITY, SUITABILITY OR OPERATION OF THIS WEBSITE, ANY PRODUCTS OR SERVICES WE MAY PROVIDE THROUGH IT OR THE INFORMATION OR MATERIAL IT CONTAINS.</div>
+          <div class="footer__copy">Copyright © 2017 Oxygen. All rights reserved.</div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

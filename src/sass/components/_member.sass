@@ -2,17 +2,34 @@
 	padding: 20px 15px
 	text-align: center
 	&__img
-		margin-bottom: 25px
+		position: relative
+		margin: 0 auto 25px
+		width: 248px
+		height: 248px
+		+lg
+			width: 170px
+			height: 170px
 		&-in
 			width: 110%
 			transform: translate3d(-5%,0,0)
+		svg
+			+lg
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate3d(-50%,-50%,0) scale(.6844)
 	&__title
 		margin-bottom: 13px
 		+f(16, 19, null, 700)
+		+lg
+			margin-bottom: 14px
 	&__description
-		margin-bottom: 13px
+		margin-bottom: 3px
 		color: $lightGray
 		+f(16, 24)
+		+lg
+			margin-bottom: 20px
+			+f(14, 22)
 	&__social
 		font-size: 0
 		a
@@ -20,10 +37,10 @@
 			vertical-align: top
 			padding: 10px
 			color: $white
-			font-size: 24px
 			+hover
 				svg 
 					fill: darken(#BEBEBE, 10%)
 			svg
 				fill: #BEBEBE
+				font-size: 24px
 				transition: fill 0.175s ease-in-out

@@ -1,0 +1,54 @@
+<!-- begin footer -->
+<footer class="footer">
+	<div class="inner footer__inner">
+		<h2 class="title-lg footer__title">Token sale is coming</h2>
+		<div class="footer__text">Apply for Whitelist to become early-adopted and get 20% bonus:</div>
+		<!-- begin form -->
+		<form action="/" class="subscription footer__subscription">
+			<div class="field">
+				<div class="input">
+					<input type="text" placeholder="mail@example.com">
+					<button class="btn-arrow" type="button">
+						{{mixins.icon('arrow-right')}}
+					</button>
+				</div>
+			</div>
+		</form>
+		<!-- end form -->
+		<!-- begin social -->
+		{% set social = [ 'fb', 'slack', 'twitter' ] %}
+		<div class="sm-social footer__social">
+			<div class="sm-social__label">Follow us:</div>
+			<ul class="sm-social__list">
+				{% for item in social %}
+					<li class="sm-social__item">
+						<a href="#" class="sm-social__link">
+							{{mixins.icon(item)}}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<!-- end social -->
+		<div class="footer__logos">
+			<div>
+				<a href="#" class="footer__logo-main">
+					<img src="img/logo-small.svg" alt="oxygen">
+				</a>
+				<span class="footer__splitter">by</span>
+			</div>
+			<div>
+				<a href="#" class="footer__logo-changelly">
+					<img src="img/logo-chan-white.svg" alt="changelly">
+				</a>
+				<span class="footer__splitter">&</span>
+				<a href="#" class="footer__logo-minergate">
+					<img src="img/logo-miner-white.svg" alt="minergate">
+				</a>
+			</div>
+		</div>
+		<div class="footer__info">THIS WEBSITE AND ALL INFORMATION, PRODUCTS AND SERVICES PROVIDED THROUGH THIS WEBSITE ARE APPROVED ‘AS IS’ AND ON AN ‘AS AVAILABLE’ GUARANTEES WHATSOEVER OF ANY KIND INCLUDING, WITHOUT LIMITATION, ANY REPRESENTATIONS, WARRANTIES, PROMISES OR GUARANTEES REGARDING THE ACCURACY, CURRENCY, COMPLETENESS, ADEQUACY, AVAILABILITY, SUITABILITY OR OPERATION OF THIS WEBSITE, ANY PRODUCTS OR SERVICES WE MAY PROVIDE THROUGH IT OR THE INFORMATION OR MATERIAL IT CONTAINS.</div>
+		<div class="footer__copy">Copyright © 2017 Oxygen. All rights reserved.</div>
+	</div>
+</footer>
+<!-- end footer -->

@@ -3,10 +3,14 @@
 	color: $black
 	background: $lightGrayBG
 	text-align: center
-	+sm 
-		padding: 100px 0 80px
+	+lg
+		padding: 60px 0
+	+sm
+		padding: 50px 0 20px
 	&__title
 		margin-bottom: 50px
+		+lg
+			margin-bottom: 40px
 	&__svg
 		position: relative
 		overflow: hidden
@@ -14,6 +18,8 @@
 			position: absolute
 			top: 0
 			left: 0
+			width: 248px
+			height: 248px
 	&__members
 		margin: 0 auto
 		max-width: 1200px
@@ -21,16 +27,28 @@
 	&__member
 		float: left
 		width: 33.33%
-		+md 
+		+sm
 			float: none
-			margin: 0 auto 30px
+			margin: 0 auto 
 			width: 100%
-			max-width: 400px
+			max-width: 290px
 	&__row
 		margin: 0 auto
 		max-width: 1087px
 		+clr
+		+lg
+			max-width: 487px
 	&__col
 		float: left
 		width: 50%
 		padding: 0 57px
+		+lg
+			width: 100%
+			padding: 25px 0
+	&__subtitle
+		margin-bottom: 30px
+		+f(18, 22, null, 700)
+		+lg 
+			margin-bottom: 23px
+		+sm
+			margin-bottom: 9px
