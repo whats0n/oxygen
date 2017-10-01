@@ -10,15 +10,23 @@
 		padding-left: 40px
 		color: #F3F3F8
 		+f(14, 17)
+		+sm 
+			padding: 0 15px
 	&__link
 		padding: 0 40px 0 20px
+		+sm
+			padding: 0 15px
 		+hover
 			.icon
-				opacity: 0.5
+				opacity: 1
 		.icon
 			color: $white
 			opacity: 0.5
 			font-size: 36px
 			transition: opacity 0.175s ease-in-out
+			+sm
+				font-size: 28px
 			&-twitter
 				font-size: 30px
+				+sm 
+					font-size: 24px
