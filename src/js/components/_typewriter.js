@@ -6,18 +6,23 @@ export default (function() {
 
   MESSAGES.push({
     delay: 0,
-    text: 'Today, holders of numerous coins and tokens have nothing to do with their equity. They simply wait patiently for it to flourish or they sell the assets, regardless of their potential for future growth. There are not currently any REPO instruments in existence that offer safe short positions and margin trading, without doubling the commission on crypto-to-fiat currency exchanges. We believe that expensive and unsafe crypto-loaning is in need of Oxygen.'
+    text: 'Today, holders of numerous coins and tokens have nothing to do with their equity. '
   });
 
-  // MESSAGES.push({
-  //   delay: 3600,
-  //   text: "Centralised exchanges are the bottleneck for the rapidly growing blockchain economy."
-  // });
+  MESSAGES.push({
+    delay: 600,
+    text: 'They simply wait patiently for it to flourish or they sell the assets, regardless of their potential for future growth. '
+  });
 
-  // MESSAGES.push({
-  //   delay: 5200,
-  //   text: "Does it bother you that we're not real?"
-  // });
+  MESSAGES.push({
+    delay: 1200,
+    text: 'There are not currently any REPO instruments in existence that offer safe short positions and margin trading, without doubling the commission on crypto-to-fiat currency exchanges. '
+  });
+
+  MESSAGES.push({
+    delay: 1800,
+    text: 'We believe that expensive and unsafe crypto-loaning is in need of Oxygen.'
+  });
 
   $container = $('#container');
 
