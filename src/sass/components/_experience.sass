@@ -6,10 +6,12 @@
 		padding: 37px 0 40px 
 	&__inner
 		max-width: 1000px 
+		+md
+			padding: 0 15px
 	&__title
 		margin-bottom: 20px
 		+md
-			margin-bottom: 25px 
+			margin-bottom: 21px
 	&__wrap
 		margin-top: 149px
 		padding: 0 15px
@@ -52,10 +54,9 @@
 			+md
 				order: 2
 	&__right
-		padding-left: 20px
+		padding-left: 25px
 		width: 35.7%
 		.experience__row_mod &
-			padding-left: 25px
 			width: 64.3%
 			+md
 				order: 1
@@ -79,13 +80,14 @@
 	&__info
 		margin-top: 30px
 		padding-right: 22px
+		padding-left: 15px
 		width: 64.3%
 		+f(14, 20)
 		color: rgba($white, 0.5) 
 		+clr
 		+md
 			margin-top: 0
-			padding-right: 0
+			padding: 0
 			width: 100%
 	&__info-text
 		float: right
@@ -100,8 +102,8 @@
 		min-height: 303px
 		width: 100%
 		max-width: 360px
-		margin-top: -52px
-		padding: 10px 0
+		margin-top: -45px
+		padding: 27px 0 2px
 		display: table
 		+md
 			margin: 0 auto
@@ -111,6 +113,22 @@
 			display: block
 		+sm
 			padding: 19px 0 28px
+		.experience__row:first-child &
+			margin-top: -178px
+			padding: 10px 0
+			+md
+				margin: 0 auto
+				padding: 30px 0 50px
+			+sm
+				padding: 19px 0 28px
+		.experience__row:last-child &
+			margin-top: -2px
+			padding: 10px 0
+			+md
+				margin: 0 auto
+				padding: 30px 0 43px
+			+sm
+				padding: 19px 0 28px
 		.experience__row_mod &
 			float: right
 			+md
@@ -137,7 +155,9 @@
 			width: 75px
 			height: 1px 
 			.experience__row_mod &
-				right: -95px
+				left: auto
+				width: 50px
+				right: -69px
 	&__text-wrap
 		width: 100%
 		font-size: 16px
@@ -154,7 +174,7 @@
 		+sm
 			+f(14,22)
 	&__title-md
-		margin-bottom: 20px
+		margin-bottom: 19px
 		+f(18, 22, null, 700)
 		+md
 			margin-bottom: 18px 
@@ -162,12 +182,13 @@
 			margin-bottom: 12px 
 			font-size: 16px
 	&__footer
-		margin-top: 20px
+		margin-top: 17px
 		+md
 			display: none
 	&__link
 		color: $blue 
-		+f(12, 24, 70, 700)
+		+f(12, 24, null, 700)
+		letter-spacing: .158em 
 		text-transform: uppercase
 		transition: color .3s ease-in-out
 		+hover

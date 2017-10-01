@@ -117,7 +117,7 @@
 			{% for item in members %}
 				<div class="member team__member">
 					<div class="member__img">
-						<svg width="248.4" height="248.4">
+						<svg width="248.4" height="248.4" viewBox="0 0 248.4 248.4" >
 							<use xlink:href="#member-border{{loop.index}}" />
 							<g mask="url(#member-mask)">
 								<image xlink:href="img/{{item.img}}" class="member__img-in" />
@@ -153,7 +153,8 @@
 				]
 			},
 			{
-				img: 'minergate-logo.svg',
+				img: 'minergate_logo_x2.png',
+				imgClass: 'box__img_minergate',
 				alt: 'MinerGate',
 				text: '#1 Cryptocurrency GUI miner and Mining Pool from crypto community.',
 				info: [
@@ -175,7 +176,7 @@
 					<div class="team__col">
 						<div class="box">
 							<div class="box__img">
-								<img src="img/{{item.img}}" alt="{{item.alt}}">
+								<img {% if item.imgClass %}class="{{item.imgClass}}"{% endif %} src="img/{{item.img}}" alt="{{item.alt}}">
 							</div>
 							<div class="box__text">{{item.text}}</div>
 							<div class="box__row">

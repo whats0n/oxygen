@@ -1,30 +1,29 @@
 .member
 	padding: 20px 15px
 	text-align: center
+	+md
+		padding: 24px 12px
+	+sm
+		padding: 21px 12px 
 	&__img
 		position: relative
-		margin: 0 auto 25px
-		width: 248px
-		height: 248px
-		+lg
-			width: 170px
-			height: 170px
+		margin: 0 auto 16px
+		+md
+			margin: 0 auto 20px 
 		&-in
 			width: 110%
 			transform: translate3d(-5%,0,0)
 		svg
 			+lg
-				position: absolute
-				top: 50%
-				left: 50%
-				transform: translate3d(-50%,-50%,0) scale(.6844)
+				width: 173px
+				height: 173px
 	&__title
 		margin-bottom: 13px
 		+f(16, 19, null, 700)
 		+lg
 			margin-bottom: 14px
 	&__description
-		margin-bottom: 3px
+		margin-bottom: 14px
 		color: $lightGray
 		+f(16, 24)
 		+lg

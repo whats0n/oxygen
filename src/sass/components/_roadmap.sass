@@ -1,18 +1,26 @@
 .roadmap
 	overflow: hidden
-	padding: 135px 0 145px
+	padding: 135px 0 142px
 	color: $black
 	background: $lightGrayBG
 	+lg
 		padding: 65px 0 75px
+	+md
+		padding: 72px 0 70px
 	+sm
-		padding: 10px 0 37px
+		padding: 17px 0 37px
+	&__innter
+		padding: 0
 	&__title
 		margin-bottom: 71px
+		+md
+			margin-bottom: 48px 
+		+sm
+			margin-bottom: 33px 
 	&__items
 		font-size: 0
 	&__item
-		padding: 25px 15px
+		padding: 23px 15px
 		display: inline-block
 		vertical-align: top
 		width: 33.33%
@@ -92,6 +100,8 @@
 					+lg 
 						padding-top: 0
 						padding-left: 81px
+					+md
+						padding-left: 56px
 					+sm
 						padding-left: 50px
 					&:before
@@ -99,6 +109,8 @@
 							top: 9px !important
 							right: 100%
 							width: 5000px
+						+md
+							right: 105%
 						+sm
 							right: 100%
 							margin-right: -21px
@@ -121,6 +133,8 @@
 				margin-right: -4px
 				+lg
 					display: block !important
+				+md
+					right: 105% !important
 				+sm
 					margin-right: -25px
 	&__info

@@ -8,9 +8,11 @@
 	+sm
 		padding: 50px 0 20px
 	&__title
-		margin-bottom: 50px
+		margin-bottom: 32px
 		+lg
 			margin-bottom: 40px
+		+sm
+			margin-bottom: 33px
 	&__svg
 		position: relative
 		overflow: hidden
@@ -24,6 +26,14 @@
 		margin: 0 auto
 		max-width: 1200px
 		+clr
+		+md
+			margin: 0 -25px
+	&__info
+		margin-top: 95px 
+		+md
+			margin-top: 68px 
+		+sm
+			margin-top: 45px 
 	&__member
 		float: left
 		width: 33.33%
@@ -38,17 +48,32 @@
 		+clr
 		+lg
 			max-width: 487px
+		+md
+			max-width: 480px
 	&__col
 		float: left
 		width: 50%
-		padding: 0 57px
+		padding: 0 0 0 55px
+		&:first-child
+			padding: 0 60px 0 0
+			+md
+				padding: 0
+		&:not(:first-child)
+			+md
+				margin-top: 32px
+			+sm
+				margin-top: 28px 
 		+lg
 			width: 100%
 			padding: 25px 0
+		+md
+			padding: 15px 0 
 	&__subtitle
 		margin-bottom: 30px
 		+f(18, 22, null, 700)
 		+lg 
 			margin-bottom: 23px
+		+md
+			margin-bottom: 38px 
 		+sm
-			margin-bottom: 9px
+			margin-bottom: 26px
