@@ -1,82 +1,163 @@
 .experience
 	padding: 69px 0 
+	+md
+		padding: 96px 0 84px
+	+sm
+		padding: 37px 0 40px 
 	&__inner
 		max-width: 1000px 
+		+md
+			padding: 0 15px
 	&__title
 		margin-bottom: 20px
+		+md
+			margin-bottom: 21px
 	&__wrap
 		margin-top: 149px
 		padding: 0 15px
+		+md
+			margin-top: 49px
+			padding: 0 23px
+		+md
+			padding: 0 14px 
 	&__row
 		display: table
 		table-layout: fixed
 		width: 100%
 		+clr
+		+md
+			display: block
+		&_mod
+			+md
+				display: flex
+				flex-direction: column
 	&__left,
 	&__right
 		vertical-align: middle
 		display: table-cell
 		+clr
+		+md
+			padding: 0
+			width: 100%
+			text-align: center
+			display: block
+		.experience__row_mod &
+			+md
+				padding: 0
+				width: 100%
 	&__left
 		padding-right: 22px
 		width: 64.3%
 		.experience__row_mod &
 			padding-right: 20px
 			width: 35.7%
+			+md
+				order: 2
 	&__right
-		padding-left: 20px
+		padding-left: 25px
 		width: 35.7%
 		.experience__row_mod &
-			padding-left: 25px
 			width: 64.3%
+			+md
+				order: 1
 	&__img
 		margin: -52px 0 0 
 		+clr
+		+md
+			margin: 0
 		img
 			float: right
 			border: 2px solid $blue
 			display: block
+			+md
+				float: none
+				width: 100%
 			.experience__row_mod &
 				float: left
 				border: 2px solid $green
+				+md
+					float: none
 	&__info
-		float: right
 		margin-top: 30px
-		max-width: 770px
+		padding-right: 22px
+		padding-left: 15px
+		width: 64.3%
 		+f(14, 20)
 		color: rgba($white, 0.5) 
+		+clr
+		+md
+			margin-top: 0
+			padding: 0
+			width: 100%
+	&__info-text
+		float: right
+		max-width: 770px
+		+md
+			float: none
+			margin: 0 auto
+			max-width: 597px
+			text-align: center
 	&__text
 		position: relative
 		min-height: 303px
 		width: 100%
 		max-width: 360px
-		margin-top: -52px
-		padding: 10px 0
+		margin-top: -45px
+		padding: 27px 0 2px
 		display: table
+		+md
+			margin: 0 auto
+			padding: 30px 0 50px
+			max-width: 597px
+			min-height: auto 
+			display: block
+		+sm
+			padding: 19px 0 28px
+		.experience__row:first-child &
+			margin-top: -178px
+			padding: 10px 0
+			+md
+				margin: 0 auto
+				padding: 30px 0 50px
+			+sm
+				padding: 19px 0 28px
+		.experience__row:last-child &
+			margin-top: -2px
+			padding: 10px 0
+			+md
+				margin: 0 auto
+				padding: 30px 0 43px
+			+sm
+				padding: 19px 0 28px
 		.experience__row_mod &
 			float: right
+			+md
+				float: none
+		&:after,
 		&:before
 			position: absolute
 			content: ""
+			background-color: $lightGray 
+			+md
+				display: none
+			.experience__row_mod &
+				left: auto
+		&:before
 			top: 0
 			left: -20px
 			bottom: 0
 			width: 1px
-			background-color: $lightGray 
 			.experience__row_mod &
-				left: auto
 				right: -20px
 		&:after
-			position: absolute
-			content: ""
 			top: 50%
 			left: -95px
 			width: 75px
 			height: 1px 
-			background-color: $lightGray 
 			.experience__row_mod &
 				left: auto
-				right: -95px
+				width: 50px
+				right: -69px
 	&__text-wrap
 		width: 100%
 		font-size: 16px
@@ -85,14 +166,29 @@
 		display: table-cell
 		.experience__row_mod &
 			text-align: right
+			+md
+				text-align: center
+		+md
+			text-align: center
+			display: block
+		+sm
+			+f(14,22)
 	&__title-md
-		margin-bottom: 20px
+		margin-bottom: 19px
 		+f(18, 22, null, 700)
+		+md
+			margin-bottom: 18px 
+		+sm
+			margin-bottom: 12px 
+			font-size: 16px
 	&__footer
-		margin-top: 20px
+		margin-top: 17px
+		+md
+			display: none
 	&__link
 		color: $blue 
-		+f(12, 24, 70, 700)
+		+f(12, 24, null, 700)
+		letter-spacing: .158em 
 		text-transform: uppercase
 		transition: color .3s ease-in-out
 		+hover

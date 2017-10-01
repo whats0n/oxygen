@@ -1,10 +1,22 @@
 .profiles
 	padding: 105px 0 215px
+	+md
+		padding: 105px 0 202px
+	+sm
+		padding: 61px 0 51px
 	&__out
 		&:not(:first-child)
 			margin-top: 87px
+			+md
+				margin-top: 49px 
+			+sm
+				margin-top: 50px 
 	&__title
 		margin-bottom: 22px
+		+md
+			margin-bottom: 22px 
+		+sm
+			margin-bottom: 25px 
 	&__title-md
 		+f(16,19,100,700)
 		text-transform: uppercase
@@ -13,21 +25,34 @@
 			left: 0
 			right: 0
 			bottom: 0
+			+sm
+				position: relative
 	&__row
 		color: $blue
 		text-align: center
 		font-size: 0
 		&:not(:last-child)
 			margin-bottom: 6px
+			+md
+				margin-bottom: 9px 
+			+sm
+				margin-bottom: 49px 
 		&_mod
 			color: $green 
 	&__wrap
 		position: relative
 		&:not(:first-child)
 			margin-top: 36px
+			+sm
+				margin-top: 26px 
 		.profiles__row_mod &
 			margin-top: 0
 			padding-bottom: 62px
+			+md
+				padding-bottom: 58px 
+			+sm
+				padding-bottom: 0
+
 	&__item
 		position: relative
 		width: 150px
@@ -36,12 +61,23 @@
 		font-size: 18px
 		vertical-align: top 
 		display: inline-block
+		+sm
+			width: auto
+			height: auto
+			line-height: initial 
+			display: block
 		&:not(:last-child)
 			margin-right: 50px
+			+md
+				margin-right: 34px 
+			+sm
+				margin: 0 0 13px
 	&__svg
 		position: absolute
 		top: 0
 		left: 0
+		+sm
+			display: none
 		svg,
 		svg path
 			stroke: currentColor
@@ -52,3 +88,6 @@
 		line-height: 1.5
 		vertical-align: middle
 		display: inline-block
+		+sm
+			max-width: 100%
+			display: block
