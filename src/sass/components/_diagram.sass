@@ -583,13 +583,12 @@
 	[data-diagram-modal="parent"]
 		transition: color 0.2s ease, background 0.2s
 		&.is-active
-			.no-touch &
-				color: $black
-				background: $white
-				z-index: 10
-				[data-diagram-modal="child"]
-					opacity: 1
-					visibility: visible
+			color: $black
+			background: $white
+			z-index: 10
+			[data-diagram-modal="child"]
+				opacity: 1
+				visibility: visible
 	&__modal
 		position: absolute
 		z-index: 10
