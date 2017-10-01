@@ -10,13 +10,18 @@ export default (function() {
   });
 
   // MESSAGES.push({
-  //   delay: 3600,
-  //   text: "Centralised exchanges are the bottleneck for the rapidly growing blockchain economy."
+  //   delay: 600,
+  //   text: ''
   // });
 
   // MESSAGES.push({
-  //   delay: 5200,
-  //   text: "Does it bother you that we're not real?"
+  //   delay: 1200,
+  //   text: ''
+  // });
+
+  // MESSAGES.push({
+  //   delay: 1800,
+  //   text: ''
   // });
 
   $container = $('#container');
@@ -33,7 +38,7 @@ export default (function() {
       probability: 0.2,
       glitches: '-|/\\',
       blank: '',
-      duration: text.length * 40,
+      duration: text.length * 5,
       ease: 'easeInOutQuad',
       delay: 0.0
     };
