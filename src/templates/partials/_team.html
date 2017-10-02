@@ -1,25 +1,56 @@
 <!-- begin team -->
 <div class="team">
 	<div class="inner team__inner">
-		<h2 class="title-lg team__title">The Team</h2>
+		<h2 class="title-lg team__title">Team</h2>
 		{% set members = [
 			{
-				title: 'Konstantin Gladych',
-				description: 'is a CEO at Changelly, #1 instant exchanger on cryptocurrency market. Blockchain enthusiast.',
+				title: "Konstantin Gladych, CEO",
+				description: "is CEO of Changelly, #1 instant exchanger on the cryptocurrency market. Blockchain enthusiast.",
 				img: 'kostya.jpg',
-				social: [ 'linkedin-full', 'twitter-full', 'telegram-full' ]
+				social: [
+					{
+						ico: 'linkedin-full',
+						link: 'https://www.linkedin.com/in/gladkos/'
+					},
+					{
+						ico: 'twitter-full',
+						link: 'https://twitter.com/gladkos/ '
+					},
+					{
+						ico: 'telegram-full',
+						link: 'https://t.me/gladkos '
+					}
+				]
 			},
 			{
-				title: 'Nikolay Volf',
-				description: 'is a Software developer. Core developer of Parity Ethereum Client since ... till initial release. ',
+				title: "Nick Volf, CTO",
+				description: 'is a software developer. Core developer of Parity Ethereum Client since 2016.',
 				img: 'kolya.jpg',
-				social: [ 'linkedin-full', 'telegram-full' ]
+				social: [ 
+					{
+						ico: 'linkedin-full',
+						link: 'https://www.linkedin.com/in/nikolayvolf/'
+					},
+					{
+						ico: 'telegram-full',
+						link: 'https://t.me/nikolay_volf '
+					}
+				]
 			},
 			{
-				title: 'Vladimir Nikul',
-				description: 'is a financial strategy development and consultant. ',
+				title: "Vladimir Nikul, PM",
+				description: 'is a financial strategy development and consultant.',
 				img: 'vova.jpg',
-				social: [ 'linkedin-full', 'telegram-full' ]
+				social: [ 
+					{
+						ico: 'linkedin-full',
+						link: 'https://www.linkedin.com/in/nikolayvolf/'
+					},
+					{
+						ico: 'telegram-full',
+						link: 'https://t.me/Serb_i_molod'
+					}
+				]
 			}
 		] %}
 		<div class="team__members">
@@ -118,12 +149,12 @@
 							<image x="0" y="0" xlink:href="img/{{item.img}}" width="100%" height="100%" mask="url(#member-mask)"></image>
 						</svg>
 					</div>
-					<div class="member__title">{{item.title}}</div>
-					<div class="member__description">{{item.description}}</div>
+					<div class="member__title">{{item.title | safe}}</div>
+					<div class="member__description">{{item.description | safe}}</div>
 					<div class="member__social">
-						{% for item in item.social %}
-							<a href="#">
-								{{mixins.icon(item)}}
+						{% for data in item.social %}
+							<a href="{{data.link}}" target="_blank">
+								{{mixins.icon(data.ico)}}
 							</a>
 						{% endfor %}
 					</div>
@@ -138,7 +169,7 @@
 				info: [
 					{
 						value: '50 000 BTC',
-						desc: 'monthly exchange volume'
+						desc: 'monthly exchange <br>volume'
 					},
 					{
 						value: '400 000',
@@ -177,7 +208,7 @@
 								{% for item in item.info %}
 									<div class="box__col">
 										<div class="box__value">{{item.value}}</div>
-										<div class="box__description">{{item.desc}}</div>
+										<div class="box__description">{{item.desc | safe}}</div>
 									</div>
 								{% endfor %}
 							</div>

@@ -6,7 +6,7 @@ export default (function() {
 
   MESSAGES.push({
     delay: 0,
-    text: 'Today, holders of numerous coins and tokens have nothing to do with their equity. They simply wait patiently for it to flourish or they sell the assets, regardless of their potential for future growth. There are not currently any REPO instruments in existence that offer safe short positions and margin trading, without doubling the commission on crypto-to-fiat currency exchanges. We believe that expensive and unsafe crypto-loaning is in need of Oxygen.'
+    text: 'Today, coin- and token-holders do not engage with their equity. They wait for it to flourish or they sell the assets, regardless of their potential for future growth. There are currently no affordable tools offering traders safe short positions and margin trading without leading to illegal interest rates. We believe that expensive and unsafe crypto-loaning is in need of changes'
   });
 
   // MESSAGES.push({
