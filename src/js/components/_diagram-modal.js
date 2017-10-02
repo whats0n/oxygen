@@ -23,6 +23,8 @@ export default (function() {
     });
 
   	$modalTarget.on('mousemove', function(e) {
+      
+      	if (window.matchMedia(`(max-width: ${1280}px)`).matches) return;
 
   		const offset = $modalTarget.offset();
   		const offsetTop = offset.top;
