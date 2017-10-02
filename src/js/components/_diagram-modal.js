@@ -22,35 +22,35 @@ export default (function() {
       $modalOverlay.removeClass(OPEN);
     });
 
-  	$modalTarget.on('mousemove', function(e) {
+  	// $modalTarget.on('mousemove', function(e) {
       
-      	if (window.matchMedia(`(max-width: ${1280}px)`).matches) return;
+    //    	if (window.matchMedia(`(max-width: ${1280}px)`).matches) return;
 
-  		const offset = $modalTarget.offset();
-  		const offsetTop = offset.top;
-  		const offsetLeft = offset.left;
+  	// 	const offset = $modalTarget.offset();
+  	// 	const offsetTop = offset.top;
+  	// 	const offsetLeft = offset.left;
 
-  		const scrollTop = $(window).scrollTop();
-  		const scrollLeft = $(window).scrollLeft();
+  	// 	const scrollTop = $(window).scrollTop();
+  	// 	const scrollLeft = $(window).scrollLeft();
 
-  		const mouseY = e.clientY;
-  		const mouseX = e.clientX;
+  	// 	const mouseY = e.clientY;
+  	// 	const mouseX = e.clientX;
 
-  		console.log(offsetTop, offsetLeft);
-  		console.log(mouseY, mouseX);
+  	// 	console.log(offsetTop, offsetLeft);
+  	// 	console.log(mouseY, mouseX);
 
-  		const top = mouseY - (offsetTop - scrollTop);
-  		const left = mouseX - (offsetLeft - scrollLeft);
+  	// 	const top = mouseY - (offsetTop - scrollTop);
+  	// 	const left = mouseX - (offsetLeft - scrollLeft);
 
-  		console.log(scrollTop);
-  		console.log(scrollLeft);
+  	// 	console.log(scrollTop);
+  	// 	console.log(scrollLeft);
 
-  		$modalWindow.css({
-  			top: `${top}px`,
-  			left: `${left}px`
-  		});
+  	// 	$modalWindow.css({
+  	// 		top: `${top}px`,
+  	// 		left: `${left}px`
+  	// 	});
 
-  	});
+  	// });
   
   });
 
