@@ -34,7 +34,9 @@
 				</div>
 				<div class="diagram__body">
 					<div class="diagram__box diagram__box_lg" data-diagram="box-1">
-						<div class="diagram__box-in">Matching engine</div>
+						<div class="diagram__box-target">
+							<div class="diagram__box-in">Matching engine</div>
+						</div>
 					</div>
 					<div class="diagram__fork" data-diagram="fork-1">
 						<div class="diagram__fork-hint">Foundation</div>
@@ -49,8 +51,10 @@
 						</div>
 					</div>
 					<div class="diagram__box diagram__box_lg js-diagram-modal-open" data-diagram="box-2" data-diagram-modal="parent">
-						<div class="diagram__box-in">Conditions</div>
-						<div class="diagram__modal" data-diagram-modal="child">
+						<div class="diagram__box-target js-diagram-modal-target">
+							<div class="diagram__box-in">Conditions</div>
+						</div>
+						<div class="diagram__modal js-diagram-modal-window" data-diagram-modal="child">
 							<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
 							<ul>
 								<li>Borrowed token type (ERC20)</li>

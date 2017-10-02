@@ -361,6 +361,13 @@
 			+xl
 				width: 200px
 				height: 104px
+		&-target
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			+vertical
 		&-in
 			display: inline-block
 			vertical-align: middle
@@ -595,7 +602,7 @@
 		top: 100%
 		left: 100%
 		padding: 15px 20px 18px
-		margin: -21px 0 0 -64px
+		//margin: -21px 0 0 -64px
 		border-radius: 10px
 		width: 400px
 		opacity: 0
@@ -604,6 +611,7 @@
 		background: #30363D
 		+f(13, 19)	
 		text-align: left
+		pointer-events: none
 		transition: opacity 0.2s ease, visibility 0.2s
 		+xl
 			display: none
