@@ -50,19 +50,9 @@
 							<div class="diagram__box-in">Collateral</div>
 						</div>
 					</div>
-					<div class="diagram__box diagram__box_lg js-diagram-modal-open" data-diagram="box-2" data-diagram-modal="parent">
-						<div class="diagram__box-target js-diagram-modal-target">
+					<div class="diagram__box diagram__box_lg" data-diagram="box-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_content">
+						<div class="diagram__box-target">
 							<div class="diagram__box-in">Conditions</div>
-						</div>
-						<div class="diagram__modal js-diagram-modal-window" data-diagram-modal="child">
-							<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
-							<ul>
-								<li>Borrowed token type (ERC20)</li>
-								<li>Amount of borrowed token</li>
-								<li>Length of the deal</li>
-								<li>Type of the token used as collateral</li>
-								<li>Interest rate</li>
-							</ul>
 						</div>
 					</div>
 					<div class="diagram__fork" data-diagram="fork-2">
@@ -85,7 +75,7 @@
 					</div>
 					<div class="diagram__hints" data-diagram="hints-1">
 						<div class="diagram__hints-label" data-diagram="hint-label-1">Lender</div>
-						<div class="diagram__hints-item" data-diagram="hint-item-1">Interest</div>
+						<div class="diagram__hints-item" data-diagram="hint-item-1" data-diagram-modal="parent" data-tooltip-content="#tooltip_content2">Interest</div>
 						<div class="diagram__hints-item diagram__hints-item_blue" data-diagram="hint-item-2">Repayment</div>
 						<div class="diagram__hints-item" data-diagram="hint-item-3">Loan</div>
 					</div>
@@ -138,6 +128,28 @@
 				{% endfor %}
 			</div>
 		</div>
+	</div>
+	<div class="tooltip_templates">
+		<span id="tooltip_content">
+			<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+			<ul>
+				<li>Borrowed token type (ERC20)</li>
+				<li>Amount of borrowed token</li>
+				<li>Length of the deal</li>
+				<li>Type of the token used as collateral</li>
+				<li>Interest rate</li>
+			</ul>
+		</span>
+		<span id="tooltip_content2">
+			<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+			<ul>
+				<li>Borrowed token type (ERC20)</li>
+				<li>Amount of borrowed token</li>
+				<li>Length of the deal</li>
+				<li>Type of the token used as collateral</li>
+				<li>Interest rate</li>
+			</ul>
+		</span>
 	</div>
 </div>
 <!-- ¯\_(ツ)_/¯ -->
