@@ -27,9 +27,12 @@ export default (function() {
       anchor: 'top-left',
       minWidth: 400,
       maxWidth: 400,
+      delay: 0,
+      animationDuration: 200,
       offset: [0, -25],
       plugins: ['follower']
     });
+
   
   });
 
