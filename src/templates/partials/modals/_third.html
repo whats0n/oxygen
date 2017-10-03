@@ -1,0 +1,39 @@
+{% import "partials/_mixins.html" as mixins %}
+<!-- begin step -->
+<div class="step">
+	<h2 class="title-lg step__title">Thank you for your interest!</h2>
+	<div class="step__subtitle">The confirmation letter was sent to your e-mail. We'll get back soon with the details of the crowdsale and bring some Oxygen to expensive and unsafe crypto-loaning.</div>
+	<div class="step__checked">
+		{{mixins.icon('check')}}
+	</div>
+	{% set stepSocial = [
+		{
+			ico: 'fb',
+			link: 'https://www.facebook.com/OxygenTrade-895211577297422/ '
+		},
+		{
+			ico: 'slack',
+			link: 'http://oxygentrade.herokuapp.com/ '
+		},
+		{
+			ico: 'twitter',
+			link: 'https://twitter.com/oxygen_trade'
+		}
+	] %}
+	<div class="step__social">
+		<div class="step__social-label">Follow us in any convenient channel or media you like:</div>
+		<ul class="step__social-list">
+			{% for item in stepSocial %}
+				<li>
+					<a href="{{item.link}}">
+						{{mixins.icon(item.ico)}}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="step__footer">
+		<button class="btn step__btn">Close</button>
+	</div>
+</div>
+<!-- end step -->

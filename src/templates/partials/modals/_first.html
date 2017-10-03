@@ -1,0 +1,34 @@
+{% import "partials/_mixins.html" as mixins %}
+<!-- begin step -->
+<div class="step">
+	<form action="/">
+		<h2 class="title-lg step__title">Oxygen Whitelist</h2>
+		<div class="step__description">
+			<p>Disclaimer: This website and all information, products and services provided through this website are approved ‘as is’ and on an ‘as available’ guarantees whatsoever of any kind including, without limitation, any representations, warranties, promises or guarantees regarding the accuracy, currency, completeness, adequacy, availability, suitability or operation of this website, any products or services we may provide through it or the information or material it contains.</p>
+		</div>
+		{% set stepList = [
+			{ text: "Check here to confirm that you are you are NOT a United States citizen, resident or entity, nor are you signing on behalf of a United States citizen, resident or entity." },
+			{ text: "Check here to confirm that you are NOT a citizen, resident of or entity formed out of the People's Republic of China, nor are you signing on behalf of a citizen, resident of or entity formed out of People's republic of China." },
+			{ text: "Check here to confirm that you are NOT a citizen, resident of or entity formed out of South Korea, nor are you signing on behalf of a citizen, resident of or entity formed out of South Korea." },
+			{ text: "Check here to confirm that you have read the <a href='#'>Oxygen whitepaper</a>." },
+			{ text: "Check here to confirm that you have read the disclaimer terms mentioned above." }
+		] %}
+		<ul class="step__list">
+			{% for item in stepList %}
+				<li>
+					<label class="checkbox step__checkbox">
+						<input type="checkbox" {{item.inputAttrs | safe}}>
+						<span class="checkbox__icon">
+							{{mixins.icon('check')}}
+						</span>
+					</label>
+					<span class="step__text">{{item.text | safe}}</span>
+				</li>
+			{% endfor %}
+		</ul>
+		<div class="step__footer">
+			<button class="btn step__btn" disabled>Next</button>
+		</div>
+	</form>
+</div>
+<!-- end step -->

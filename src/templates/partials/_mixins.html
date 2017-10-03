@@ -1,3 +1,14 @@
 {% macro icon(i) %}
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
+
+{% macro select(props) %}
+<div class="select">
+	{{icon('arrow-down')}}
+	<select {{props.selectAttrs | safe}}>
+		{% for item in props.options %}
+			<option value="{{item}}">{{item}}</option>
+		{% endfor %}
+	</select>
+</div>
+{% endmacro %}

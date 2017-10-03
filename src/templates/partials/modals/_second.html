@@ -1,0 +1,50 @@
+{% import "partials/_mixins.html" as mixins %}
+<!-- begin step -->
+<div class="step">
+	<form action="/">
+		<h2 class="title-lg step__title">Oxygen Whitelist</h2>
+		<div class="step__description">
+			<p>If you are interested in BREATH tokens sale please fill in as many fields below as possible to gain access to our Whitelist.</p>
+			<p>It is important for us to understand who will become part of Oxygen environment and which extent is comfortable to the participants interested in its development. Therefore, we have decided to create a Whitelist for the most involved contributors in our project. For a more detailed description of our vision please see our <a href="#">whitepaper</a>.</p>
+		</div>
+		{% set stepFields = [
+			{ label: 'E-mail' },
+			{ label: 'Company' },
+			{ 
+				label: 'Country of residence', 
+				select: {
+					options: [
+						'Russian Federation',
+						'Russian Federation 1',
+						'Russian Federation 2',
+						'Russian Federation 3'
+					]
+				}
+			},
+			{ 
+				inputClassList: 'step__field-number', 
+				label: 'Amount in USD you plan to&nbsp;spend on our tokens'
+			}
+		] %}
+		<div class="step__form">
+			{% for item in stepFields %}
+				<div class="step__box">
+					<div class="step__label">
+						<div class="step__label-in">{{item.label | safe}}</div>
+					</div>
+					<div class="step__field">
+						{% if not item.select %}
+							<input type="text" class="sm-input {{item.inputClassList}}">
+						{% else %}
+							{{mixins.select(item.select)}}
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="step__footer">
+			<button class="btn step__btn" disabled>Apply</button>
+		</div>
+	</form>
+</div>
+<!-- end step -->
