@@ -19,11 +19,11 @@
 		<div class="topic__sub-title">Above peer-to-peer lending:<br>Decentralized REPO market of tokens and coins.</div>
 		<div class="topic__text">To become early-adopted and get a 20% bonus, please apply for Whitelist</div>
 		<!-- form -->
-		<form action="/" class="topic__subscription subscription">
+		<form action="/" class="topic__subscription subscription js-validation" data-validation-step="first">
 			<div class="field">
 				<div class="input">
-					<input type="text" placeholder="mail@example.com">
-					<button class="btn-arrow" type="button">
+					<input type="text" placeholder="mail@example.com" data-validation="email">
+					<button class="btn-arrow" type="submit">
 						{{mixins.icon('arrow-right')}}
 					</button>
 				</div>

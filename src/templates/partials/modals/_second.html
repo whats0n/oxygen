@@ -1,18 +1,19 @@
 {% import "partials/_mixins.html" as mixins %}
 <!-- begin step -->
 <div class="step">
-	<form action="/">
+	<form action="/" class="js-validation" data-validation-step="third">
 		<h2 class="title-lg step__title">Oxygen Whitelist</h2>
 		<div class="step__description">
 			<p>If you are interested in BREATH tokens sale please fill in as many fields below as possible to gain access to our Whitelist.</p>
 			<p>It is important for us to understand who will become part of Oxygen environment and which extent is comfortable to the participants interested in its development. Therefore, we have decided to create a Whitelist for the most involved contributors in our project. For a more detailed description of our vision please see our <a href="#">whitepaper</a>.</p>
 		</div>
 		{% set stepFields = [
-			{ label: 'E-mail' },
-			{ label: 'Company' },
+			{ label: 'E-mail', validation: 'email' },
+			{ label: 'Company', validation: 'required' },
 			{ 
 				label: 'Country of residence', 
 				select: {
+					validation: 'required',
 					options: [
 						'Russian Federation',
 						'Russian Federation 1',
@@ -23,7 +24,8 @@
 			},
 			{ 
 				inputClassList: 'step__field-number', 
-				label: 'Amount in USD you plan to&nbsp;spend on our tokens'
+				label: 'Amount in USD you plan to&nbsp;spend on our tokens',
+				validation: 'number'
 			}
 		] %}
 		<div class="step__form">
@@ -34,7 +36,7 @@
 					</div>
 					<div class="step__field">
 						{% if not item.select %}
-							<input type="text" class="sm-input {{item.inputClassList}}">
+							<input type="text" class="sm-input {{item.inputClassList}}" data-validation="{{item.validation}}">
 						{% else %}
 							{{mixins.select(item.select)}}
 						{% endif %}
@@ -43,7 +45,7 @@
 			{% endfor %}
 		</div>
 		<div class="step__footer">
-			<button class="btn step__btn" disabled>Apply</button>
+			<button class="btn step__btn">Apply</button>
 		</div>
 	</form>
 </div>

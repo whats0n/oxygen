@@ -1,6 +1,6 @@
 {% macro call(props) %}
 	<!-- begin modal -->
-	<div class="modal {{props.classList}}">
+	<div class="modal {{props.classList}} js-modal">
 		<div class="modal__container">
 			{% include 'partials/modals/' + props.file + '.html' %}
 		</div>

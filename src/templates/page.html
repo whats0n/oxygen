@@ -18,13 +18,16 @@ title: Index page
 	{% include "partials/_footer.html" %}
 
 	{{modal.call({
-		file: '_first'
+		file: '_first',
+		classList: 'js-modal-first'
 	})}}
 	{{modal.call({
-		file: '_second'
+		file: '_second',
+		classList: 'js-modal-second'
 	})}}
 	{{modal.call({
-		file: '_third'
+		file: '_third',
+		classList: 'js-modal-third'
 	})}}
 
 {% endblock %}
