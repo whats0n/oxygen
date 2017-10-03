@@ -40,10 +40,8 @@
       <!-- ¯\_(ツ)_/¯ -->
       <!-- topic -->
       <div class="topic">
-        <div class="clouds">
-          <div class="clouds__top"> <img src="./img/cloud-top.png" alt="img" class="oxy oxy-1"> </div>
-          <div class="clouds__bottom-left"> <img src="./img/cloud-bottom-left.png" alt="img" class="oxy oxy-2"> </div>
-          <div class="clouds__bottom-right"> <img src="./img/cloud-bottom-right.png" alt="img" class="oxy oxy-3"> </div>
+        <div class="clouds js-clouds" data-clouds-paralax="true">
+          <div class="clouds__word js-clouds-word"></div>
         </div>
         <div class="topic__inner inner">
           <div class="topic__logo"> <img src="./img/logo-big.svg" alt="img"> </div>
@@ -352,13 +350,6 @@
 										<path d="M84.496 3.907a19 19 0 0 0-18.992 0l-55 31.735A19 19 0 0 0 1 52.099v63.45a19 19 0 0 0 9.504 16.456l55 31.735a19 19 0 0 0 18.992 0l55-31.735A19 19 0 0 0 149 115.548v-63.45a19 19 0 0 0-9.504-16.456l-55-31.735z" stroke-width="2" fill="none" fill-rule="evenodd"/>
 									</svg> </div>
                   <div class="profiles__name">Traders</div>
-                </div>
-                <div class="profiles__item">
-                  <div class="profiles__svg"> <svg width="150" height="168" viewBox="0 0 150 168" xmlns="http://www.w3.org/2000/svg">
-										<title>honeycomb-svg</title>
-										<path d="M84.496 3.907a19 19 0 0 0-18.992 0l-55 31.735A19 19 0 0 0 1 52.099v63.45a19 19 0 0 0 9.504 16.456l55 31.735a19 19 0 0 0 18.992 0l55-31.735A19 19 0 0 0 149 115.548v-63.45a19 19 0 0 0-9.504-16.456l-55-31.735z" stroke-width="2" fill="none" fill-rule="evenodd"/>
-									</svg> </div>
-                  <div class="profiles__name">Early adopters</div>
                 </div>
               </div>
             </div>
@@ -828,6 +819,9 @@
       <!-- end info-block -->
       <!-- begin footer -->
       <footer class="footer">
+        <div class="clouds js-clouds" data-clouds="6">
+          <div class="clouds__word js-clouds-word"></div>
+        </div>
         <div class="inner footer__inner">
           <h2 class="title-lg footer__title">Token sale is coming. Apply for Whitelist</h2>
           <!-- begin form -->

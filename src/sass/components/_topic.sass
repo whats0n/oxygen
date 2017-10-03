@@ -38,7 +38,7 @@
 		margin-top: 65px
 		+sm
 			margin-top: 32px
-			max-width: 205px  
+			max-width: 205px	
 	&__creators
 		margin-top: 31px
 		+md
@@ -102,26 +102,75 @@
 .clouds
 	position: absolute
 	top: 0
-	left: 50%
+	left: 0
 	right: 0
-	bottom: 0
-	transform: translateX(-50%)
-	width: 2034px
-	& > div 
+	width: 100%
+	height: 1470px
+	-webkit-perspective: 1000
+	-moz-perspective: 1000
+	-o-perspective: 1000
+	perspective: 1000
+	overflow: hidden
+	&__word
 		position: absolute
-	img
-		display: block
-	&__top
-		top: -20px
+		top: 0
 		left: 50%
-		width: 100vw
 		transform: translateX(-50%)
-		img
-			margin: 0 -5%
-			width: 110%
-	&__bottom-left
-		left: -35px
-		bottom: -502px
-	&__bottom-right
-		right: 34px
-		bottom: -458px
+		width: 100%
+		min-width: 2034px
+		height: 1470px
+		-webkit-transform-style: preserve-3d
+		-moz-transform-style: preserve-3d
+		-o-transform-style: preserve-3d
+		transform-style: preserve-3d
+	.cloudBase
+		position: absolute
+		left: 256px
+		top: 256px
+		width: 20px
+		height: 20px
+		margin-left: -10px
+		margin-top: -10px
+	[class^="cloudBase-"]
+		position: absolute
+		opacity: 0.7
+	.cloudBase-1
+		top: 150px
+		left: 30%
+	.cloudBase-2
+		top: 200px
+		left: 40%
+	.cloudBase-3
+		top: 250px
+		left: 50%
+	.cloudBase-4
+		top: 200px
+		left: 60%
+	.cloudBase-5
+		top: 150px
+		left: 70%
+		
+	.cloudBase-6
+		top: 830px
+		left: 20%
+	.cloudBase-7
+		top: 830px
+		left: 30%
+	.cloudBase-8
+		top: 830px
+		left: 60%
+	.cloudBase-9
+		top: 830px
+		left: 70%
+		
+	.cloudLayer
+		position: absolute
+		left: 50%
+		top: 50%
+		width: 256px
+		height: 256px
+		margin-left: -128px
+		margin-top: -128px
+		-webkit-transition: opacity .5s ease-out
+		-moz-transition: opacity .5s ease-out
+		-o-transition: opacity .5s ease-out
