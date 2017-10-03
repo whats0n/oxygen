@@ -129,7 +129,8 @@ import Rellax from 'rellax';
       update();
     }, 100);
   });
-
+  
+  if (TOUCH()) return;
   var rellax = new Rellax('[data-clouds-paralax] [class*="cloudBase-"]');
   
 })();

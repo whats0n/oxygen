@@ -1,7 +1,8 @@
 {% set keys = [
 	{
 		title: 'Blockchain-recorded credit rating',
-		text: 'The REPO Ethereum-based smart-contract updates decentralized credit rating, whether the loan is complete or default. The platform will feature a transparent algorithm to avoid fraud and build a trustworthy market.'
+		text: 'The REPO Ethereum-based smart-contract updates decentralized credit rating, whether the loan is complete or default. The platform will feature a transparent algorithm to avoid fraud and build a trustworthy market.',
+		img: 'formula'
 	},
 	{
 		title: 'Community-driven orderbook',
@@ -37,6 +38,11 @@
 					</div>
 					<h4 class="features__title-md title-md">{{data.title}}</h4> 
 					<p>{{data.text}}</p>
+					{% if data.img %}
+						<div class="features__formula">
+							<img src="./img/{{data.img}}.png" alt="img">
+						</div>
+					{% endif %}
 				</div>
 			{% endfor %}
 		</div>
