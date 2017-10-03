@@ -17,4 +17,14 @@ title: Index page
 	{% include "partials/_info-block.html" %}
 	{% include "partials/_footer.html" %}
 
+	{{modal.call({
+		file: '_first'
+	})}}
+	{{modal.call({
+		file: '_second'
+	})}}
+	{{modal.call({
+		file: '_third'
+	})}}
+
 {% endblock %}

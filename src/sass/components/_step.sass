@@ -1,0 +1,139 @@
+.step
+	position: relative
+	padding: 50px 100px 140px
+	+lg
+		padding: 40px 40px 140px
+	+sm
+		padding: 40px 15px 140px
+	&__title
+		margin-bottom: 21px
+	&__description
+		opacity: 0.8
+		p 
+			padding: 12px 0
+			+sm
+				padding: 11px 0
+	&__list
+		padding: 17px 36px 0 122px
+		text-align: left
+		+lg
+			padding: 17px 0 0
+		li
+			position: relative
+			padding: 14px 0 14px 78px
+			+sm
+				padding-left: 44px
+	&__checkbox
+		position: absolute
+		z-index: 1
+		top: 18px
+		left: 0
+	&__text
+		color: #808080
+	a
+		color: $green
+		transition: color 0.175s ease
+		+hover
+			color: darken($green, 10%)
+	&__footer
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 50px
+		text-align: center
+	&__btn
+		width: 100%
+		max-width: 200px
+	&__form
+		padding-top: 22px
+	&__box
+		padding: 15px 100px 15px 66px
+		+clr
+		+sm
+			padding: 10px 0
+			margin: 0 auto
+			max-width: 360px
+	&__label
+		padding-right: 30px
+		width: 39%
+		line-height: 50px
+		+sm
+			padding: 0 0 8px
+			line-height: normal
+		&-in
+			display: inline-block
+			vertical-align: middle
+			width: 100%
+			color: #808080
+			+f(16, 24)
+			text-align: right
+			+sm
+				text-align: left
+	&__field
+		width: 61%
+		&-number
+			max-width: 170px
+	&__label,
+	&__field
+		float: left
+		+sm 
+			width: 100%
+	&__subtitle
+		padding: 15px 0 62px
+		+f(20, 28)
+		+sm 
+			font-size: 18px
+			padding-bottom: 40px
+	&__checked
+		margin: 0 auto 62px
+		border: 5px solid rgba($green, 0.1)
+		border-radius: 50%
+		width: 250px
+		height: 250px
+		color: rgba($green, 0.5)
+		+vertical 
+		+lg
+			width: 200px
+			height: 200px
+		+sm
+			margin-bottom: 40px
+			width: 150px
+			height: 150px
+		.icon
+			display: inline-block
+			vertical-align: middle
+			font-size: 117px
+			+lg
+				font-size: 85px
+			+sm
+				font-size: 55px
+	&__social
+		padding-bottom: 60px
+		+sm
+			padding-bottom: 10px
+		&-label 
+			margin-bottom: 28px
+			color: $lightGray
+			+f(18, 26, null, 700)
+			+sm 
+				font-size: 16px
+		&-list
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+			a
+				display: inline-block
+				vertical-align: top
+				padding: 0 30px
+				opacity: 0.3
+				transition: opacity 0.2s ease-in-out
+				+hover
+					opacity: 0.5
+				+sm 
+					padding: 0 15px
+			.icon
+				color: $black
+				font-size: 36px
+			.icon-twitter
+				font-size: 30px
