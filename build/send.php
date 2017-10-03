@@ -48,8 +48,6 @@
     $message_step_second .= "Checkbox 4:\n ".$step_checkbox_fourth.$new_line;
     $message_step_second .= "Checkbox 5:\n ".$step_checkbox_fifth.$new_line;
 
-    //$message_step_second = $message_checkbox_first.$message_checkbox_second.$message_checkbox_third.$message_checkbox_fourth.$message_checkbox_fifth;
-
     //third step
     $message_step_third_title = "Step 3: ".$new_line;
 
@@ -57,8 +55,6 @@
     $message_step_third .= "Company:\n ".$step_company_third.$new_line;
     $message_step_third .= "Country:\n ".$step_country_third.$new_line;
     $message_step_third .= "Amount:\n ".$step_amount_third.$new_line;
-
-    //$message_step_third = $message_step_third_title.$message_step_third_mail.$message_step_third_company.$message_step_third_country.$message_step_third_amount;
 
     //META INFO
     $message_meta = "\n<br>\n\n"."\n<br>\n\n"."Useragent:".$_SERVER['HTTP_USER_AGENT']."\n\n\t\t=====\\" . $_SERVER['REMOTE_ADDR'];
