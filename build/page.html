@@ -51,7 +51,7 @@
           <!-- form -->
           <form action="/" class="topic__subscription subscription js-validation" data-validation-step="first">
             <div class="field">
-              <div class="input"> <input type="text" placeholder="mail@example.com" data-validation="email"> <button class="btn-arrow" type="submit">
+              <div class="input"> <input type="text" placeholder="mail@example.com" name="step_1-email" data-validation="email"> <button class="btn-arrow" type="submit">
 						
 <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
 
@@ -110,92 +110,92 @@
             </div>
             <div class="diagram__in">
               <div class="diagram__header">
-                <div class="diagram__header-col" data-diagram="header-col-1">
+                <div class="diagram__header-col" data-diagram="header-col-1" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_placement-request">
                   <div class="diagram__header-label">Lender</div>
                   <div class="diagram__header-value">Placement request</div>
                 </div>
-                <div class="diagram__header-col" data-diagram="header-col-2">
+                <div class="diagram__header-col" data-diagram="header-col-2" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_loan-request">
                   <div class="diagram__header-label">Borrower</div>
                   <div class="diagram__header-value">Loan request</div>
                 </div>
               </div>
               <div class="diagram__body">
-                <div class="diagram__box diagram__box_lg" data-diagram="box-1">
+                <div class="diagram__box diagram__box_lg" data-diagram="box-1" data-diagram-modal="parent" data-tooltip-content="#tooltip_matching">
                   <div class="diagram__box-target">
                     <div class="diagram__box-in">Matching engine</div>
                   </div>
                 </div>
                 <div class="diagram__fork" data-diagram="fork-1">
                   <div class="diagram__fork-hint">Foundation</div>
-                  <div class="diagram__fork-title">System fee</div>
+                  <div class="diagram__fork-title" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_system-free">System fee</div>
                   <div class="diagram__fork-label" data-diagram="percent-1">%</div>
                   <div class="diagram__fork-label" data-diagram="percent-2">%</div>
-                  <div class="diagram__box" data-diagram="fork-box-1">
+                  <div class="diagram__box" data-diagram="fork-box-1" data-diagram-modal="parent" data-tooltip-content="#tooltip_loan">
                     <div class="diagram__box-in">Loan</div>
                   </div>
-                  <div class="diagram__box" data-diagram="fork-box-2">
+                  <div class="diagram__box" data-diagram="fork-box-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_collateral">
                     <div class="diagram__box-in">Collateral</div>
                   </div>
                 </div>
-                <div class="diagram__box diagram__box_lg" data-diagram="box-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_content">
+                <div class="diagram__box diagram__box_lg" data-diagram="box-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_conditions">
                   <div class="diagram__box-target">
                     <div class="diagram__box-in">Conditions</div>
                   </div>
                 </div>
                 <div class="diagram__fork" data-diagram="fork-2">
-                  <div class="diagram__fork-color diagram__fork-color_blue js-diagram-modal-target">Default</div>
-                  <div class="diagram__fork-color diagram__fork-color_green">Completion</div>
+                  <div class="diagram__fork-color diagram__fork-color_blue" data-diagram-modal="parent" data-tooltip-content="#tooltip_default">Default</div>
+                  <div class="diagram__fork-color diagram__fork-color_green" data-diagram-modal="parent" data-tooltip-content="#tooltip_completion">Completion</div>
                 </div>
                 <div class="diagram__fork" data-diagram="fork-3">
-                  <div class="diagram__box" data-diagram="fork-sm-box-1">
+                  <div class="diagram__box" data-diagram="fork-sm-box-1" data-diagram-modal="parent" data-tooltip-content="#tooltip_rating-down">
                     <div class="diagram__box-in">Borrower rating <strong>DOWN</strong></div>
                   </div>
-                  <div class="diagram__box" data-diagram="fork-sm-box-2">
+                  <div class="diagram__box" data-diagram="fork-sm-box-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_rating-up">
                     <div class="diagram__box-in">Borrower rating <strong>UP</strong></div>
                   </div>
-                  <div class="diagram__box" data-diagram="fork-sm-box-3">
+                  <div class="diagram__box" data-diagram="fork-sm-box-3" data-diagram-modal="parent" data-tooltip-content="#tooltip_collateral-realisation">
                     <div class="diagram__box-in">Collateral realisation</div>
                   </div>
-                  <div class="diagram__box" data-diagram="fork-sm-box-4">
+                  <div class="diagram__box" data-diagram="fork-sm-box-4" data-diagram-modal="parent" data-tooltip-content="#tooltip_interest-realisation">
                     <div class="diagram__box-in">Interest realisation</div>
                   </div>
                 </div>
                 <div class="diagram__hints" data-diagram="hints-1">
                   <div class="diagram__hints-label" data-diagram="hint-label-1">Lender</div>
-                  <div class="diagram__hints-item" data-diagram="hint-item-1" data-diagram-modal="parent" data-tooltip-content="#tooltip_content2">Interest</div>
-                  <div class="diagram__hints-item diagram__hints-item_blue" data-diagram="hint-item-2">Repayment</div>
-                  <div class="diagram__hints-item" data-diagram="hint-item-3">Loan</div>
+                  <div class="diagram__hints-item" data-diagram="hint-item-1" data-diagram-modal="parent" data-tooltip-content="#tooltip_final-interest">Interest</div>
+                  <div class="diagram__hints-item diagram__hints-item_blue" data-diagram="hint-item-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_final-repayment">Repayment</div>
+                  <div class="diagram__hints-item" data-diagram="hint-item-3" data-diagram-modal="parent" data-tooltip-content="#tooltip_final-loan">Loan</div>
                 </div>
                 <div class="diagram__hints" data-diagram="hints-2">
                   <div class="diagram__hints-label" data-diagram="hint-label-1">Borrower</div>
-                  <div class="diagram__hints-item" data-diagram="hint-item-4">Collateral <small>(minus interest)</small></div>
+                  <div class="diagram__hints-item" data-diagram="hint-item-4" data-diagram-modal="parent" data-tooltip-content="#tooltip_final-collateral">Collateral <small>(minus interest)</small></div>
                 </div>
               </div>
               <div class="diagram__overlay js-diagram-modal-overlay"></div>
             </div>
             <div class="diagram__logo"> <img src="img/ethereum-logo.svg" alt="Ethereum"> </div>
             <div class="diagram__info">
-              <div class="diagram__info-box" data-diagram="info-1">
+              <div class="diagram__info-box" data-diagram="info-1" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-management">
                 <div class="diagram__info-icon"> <img src="img/diagram-management.svg" alt="/"> </div>
                 <div class="diagram__info-title">Risk management toolkit</div>
                 <div class="diagram__info-description">Provides advisory on market</div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-2">
+              <div class="diagram__info-box" data-diagram="info-2" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-exchange">
                 <div class="diagram__info-icon"> <img src="img/diagram-exchange.svg" alt="/"> </div>
                 <div class="diagram__info-title">Exchange</div>
                 <div class="diagram__info-description">Runs continious auction</div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-3">
+              <div class="diagram__info-box" data-diagram="info-3" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-contract">
                 <div class="diagram__info-icon"> <img src="img/diagram-contract.svg" alt="/"> </div>
                 <div class="diagram__info-title">REPO smart contract</div>
                 <div class="diagram__info-description">Core of decentralised orders processing</div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-4">
+              <div class="diagram__info-box" data-diagram="info-4" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-system">
                 <div class="diagram__info-icon"> <img src="img/diagram-system.svg" alt="/"> </div>
                 <div class="diagram__info-title">Credit rating system</div>
                 <div class="diagram__info-description">Supplies trustful users ratings</div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-5">
+              <div class="diagram__info-box" data-diagram="info-5" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-etherdelta">
                 <div class="diagram__info-icon"> <img src="img/diagram-etherdelta.svg" alt="/"> </div>
                 <div class="diagram__info-title">Etherdelta</div>
                 <div class="diagram__info-description">Decentralised exchange integrated</div>
@@ -203,24 +203,87 @@
             </div>
           </div>
         </div>
-        <div class="tooltip_templates"> <span id="tooltip_content">
-			<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+        <div class="tooltip_templates"> <span id="tooltip_conditions">
+			<p>Matched conditions from the two parties (the borrower and the lender) activate the deal in the public REPO contract. Activation means that the two parties agree on all terms, including:</p>
 			<ul>
-				<li>Borrowed token type (ERC20)</li>
-				<li>Amount of borrowed token</li>
+				<li>Type and amount of borrowed token (ERC20)</li>
 				<li>Length of the deal</li>
-				<li>Type of the token used as collateral</li>
+				<li>Type of token used as collateral</li>
 				<li>Interest rate</li>
 			</ul>
-		</span> <span id="tooltip_content2">
-			<p>Matched conditions from two parties (Borrower and Lender) activate the deal in the public REPO Contract. Activation means that two parties agree on all terms including:</p>
+		</span> <span id="tooltip_placement-request">
+			<p>A placement request is initiated by an asset holder willing to lend a specific amount of his asset. While it can be generated automatically by the matching engine, any interested party can interact with the REPO contract directly on the Ethereum network by sending transactions.</p>
+			<p>The asset holder must specify:</p>
 			<ul>
-				<li>Borrowed token type (ERC20)</li>
-				<li>Amount of borrowed token</li>
+				<li>Type and amount of token he wants to lend</li>
+				<li>Desirable tokens and quantity of each to use as a collateral</li>
+				<li>Minimum credit rating of the borrower</li>
 				<li>Length of the deal</li>
-				<li>Type of the token used as collateral</li>
-				<li>Interest rate</li>
+				<li>Interest rate (overall)</li>
+				<li>Whether his deal can be split into smaller deals</li>
+				<li>Expiration time of the proposal</li>
+				<li>Minimal rating of the borrower</li>
 			</ul>
+		</span> <span id="tooltip_loan-request">
+			<p>A loan request is initiated by a borrower who needs a specific ERC20 token and can offer another token(s) in security for the loan deal. While loan requests can also be processed automatically by the matching engine, any party can invoke the REPO contract to directly post a deal proposal.</p>
+			<p>The borrower must specify:</p>
+			<ul>
+				<li>Desired ERC20 token</li>
+				<li>Quantity of token</li>
+				<li>Length of the deal</li>
+				<li>Which ERC20 token(s) the borrower will use as a collateral (and the quantity of each)</li>
+				<li>Expiration time of the proposal</li>
+			</ul>
+		</span> <span id="tooltip_matching">
+			<p>Part of the continuous real-time auction. We provide not only matching services, but also the dissemination of price-forks to participants based on models that incorporate both book-value and market-data pricing models.</p>
+		</span>
+          <!-- for diagram info --><span id="tooltip_diagram-management">
+			<p>The risk management toolkit uses data collected from all previous exchange deals to provide advice on future deals.</p>
+		</span> <span id="tooltip_diagram-exchange">
+			<p>A set of helpful web applications and decentralized apps that help participants to interact with the decentralized REPO contract.</p>
+		</span> <span id="tooltip_diagram-contract">
+			<p>The core of decentralized REPO deals. While heavily used by the matching engine, any party can use this smart-contract directly on Ethereum network.</p>
+		</span> <span id="tooltip_diagram-system">
+			<p>The credit rating is decentralised and managed by another smart-contract on Ethereum network. Every participant’s rating starts at 0 and can be increased by completing deals as the borrower. Asset holders looking to lend their ERC20 tokens can specify the minimum desired rating of the borrower in their placements.</p>
+		</span> <span id="tooltip_diagram-etherdelta">
+			<p>Etherdelta is a decentralized exchange. When the collateral goes through, the original asset holder might prefer (optional) to get assets in the original tokens that he was borrowing rather than the collateral tokens. This is done using Etherdelta.</p>
+		</span>
+          <!-- end --><span id="tooltip_system-free">
+			<p>The system fee is a small ETH value included in any transaction to the REPO contract.</p>
+		</span> <span id="tooltip_loan">
+			<p>A loan is given by the asset holder who wishes to lend his assets for a specific amount of time and rate of interest.</p>
+		</span> <span id="tooltip_collateral">
+			<p>The collateral is the agreed amount of ERC20 tokens used in security for the loan deal.</p>
+		</span> <span id="tooltip_default">
+			<p>If the borrower fails to return borrowed tokens when the deal has expired, the deal is automatically considered default. The lender will then be able to claim the collateral from the contract.</p>
+		</span> <span id="tooltip_completion">
+			<p>When the borrower successfully returns borrowed tokens with interests while the deal is still active (not expired), the deal is automatically considered complete.</p>
+		</span> <span id="tooltip_rating-down">
+			<p>The borrower rating is updated according to the outcome of the deal.</p>
+			<ul>
+			    <li>In case of default deal, it goes down.</li>
+			    <li>Rating change is proportionate to the volume of the deal.</li>
+			    <li>Rating of all participants is stored in a separate contract.</li>
+			</ul>
+		</span> <span id="tooltip_rating-up">
+			<p>The borrower rating is updated according to the outcome of the deal.</p>
+			<ul>
+			    <li>In case of completed deal, it goes up.</li>
+			    <li>Rating change is proportionate to the volume of the deal.</li>
+			    <li>Rating of all participants is stored in a separate contract.</li>
+			</ul>
+		</span> <span id="tooltip_collateral-realisation">
+			<p>In case of default deal, collateral is claimed by the lender. It can go through the decentralized Etherdelta exchange to convert into lender-preferred tokens. This operation is optional and can be chosen by lender during smart contract creation.</p>
+		</span> <span id="tooltip_interest-realisation">
+			<p>In case of completed deal, interests and borrowed tokens are transferred to the lender. It can go through the decentralized Etherdelta exchange to convert into lender-preferred tokens.This operation is optional and can be chosen by lender during smart contract creation.</p>
+		</span> <span id="tooltip_final-interest">
+			<p>In case of default, repayment is the process of transferring collateral tokens locked in the REPO Contract to the Lender. This leads to 100% secure refund.</p>
+		</span> <span id="tooltip_final-repayment">
+			<p>Original tokens the Borrower used according to the deal are returned to the Lender fully using the ERC20 contract interface.</p>
+		</span> <span id="tooltip_final-loan">
+			<p>Interest is an agreed percentage of the collateral assets. The lender claims it when the deal is closed gracefully.</p>
+		</span> <span id="tooltip_final-collateral">
+			<p>When the deal is closed gracefully, the collateral is unblocked from the REPO contract and is returned to the borrower. Interests are payed to the lender.</p>
 		</span> </div>
       </div>
       <!-- ¯\_(ツ)_/¯ -->
@@ -825,7 +888,7 @@
         <div class="inner footer__inner">
           <h2 class="title-lg footer__title">Token sale is coming. Apply for Whitelist</h2>
           <!-- begin form -->
-          <form action="/" class="subscription footer__subscription js-validation" data-validation-step="first">
+          <form action="/" class="subscription footer__subscription js-validation" name="step_1-email" data-validation-step="first">
             <div class="field">
               <div class="input"> <input type="text" placeholder="mail@example.com" data-validation="email"> <button class="btn-arrow" type="submit">
 						
@@ -886,7 +949,7 @@
               </div>
               <ul class="step__list">
                 <li> <label class="checkbox step__checkbox">
-						<input type="checkbox"  class="js-validation-checkbox">
+						<input type="checkbox"  class="js-validation-checkbox" name="step_2-checkbox-1">
 						<span class="checkbox__icon">
 							
 <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>
@@ -894,7 +957,7 @@
 						</span>
 					</label> <span class="step__text">Check here to confirm that you are you are NOT a United States citizen, resident or entity, nor are you signing on behalf of a United States citizen, resident or entity.</span> </li>
                 <li> <label class="checkbox step__checkbox">
-						<input type="checkbox"  class="js-validation-checkbox">
+						<input type="checkbox"  class="js-validation-checkbox" name="step_2-checkbox-2">
 						<span class="checkbox__icon">
 							
 <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>
@@ -902,7 +965,7 @@
 						</span>
 					</label> <span class="step__text">Check here to confirm that you are NOT a citizen, resident of or entity formed out of the People's Republic of China, nor are you signing on behalf of a citizen, resident of or entity formed out of People's republic of China.</span>                  </li>
                 <li> <label class="checkbox step__checkbox">
-						<input type="checkbox"  class="js-validation-checkbox">
+						<input type="checkbox"  class="js-validation-checkbox" name="step_2-checkbox-3">
 						<span class="checkbox__icon">
 							
 <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>
@@ -910,7 +973,7 @@
 						</span>
 					</label> <span class="step__text">Check here to confirm that you are NOT a citizen, resident of or entity formed out of South Korea, nor are you signing on behalf of a citizen, resident of or entity formed out of South Korea.</span> </li>
                 <li> <label class="checkbox step__checkbox">
-						<input type="checkbox"  class="js-validation-checkbox">
+						<input type="checkbox"  class="js-validation-checkbox" name="step_2-checkbox-4">
 						<span class="checkbox__icon">
 							
 <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>
@@ -918,7 +981,7 @@
 						</span>
 					</label> <span class="step__text">Check here to confirm that you have read the <a href='#'>Oxygen whitepaper</a>.</span> </li>
                 <li> <label class="checkbox step__checkbox">
-						<input type="checkbox"  class="js-validation-checkbox">
+						<input type="checkbox"  class="js-validation-checkbox" name="step_2-checkbox-5">
 						<span class="checkbox__icon">
 							
 <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>
@@ -950,20 +1013,20 @@
                   <div class="step__label">
                     <div class="step__label-in">E-mail</div>
                   </div>
-                  <div class="step__field"> <input type="text" class="sm-input " data-validation="email"> </div>
+                  <div class="step__field"> <input type="text" class="sm-input " data-validation="email" name="step_3-email"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
                     <div class="step__label-in">Company</div>
                   </div>
-                  <div class="step__field"> <input type="text" class="sm-input " data-validation="required"> </div>
+                  <div class="step__field"> <input type="text" class="sm-input " data-validation="required" name="step_3-company"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
                     <div class="step__label-in">Country of residence</div>
                   </div>
                   <div class="step__field">
-                    <div class="select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select data-validation="required">
+                    <div class="select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select name="step_3-country" data-validation="required">
 		
 			<option value="Russian Federation">Russian Federation</option>
 		
@@ -980,7 +1043,7 @@
                   <div class="step__label">
                     <div class="step__label-in">Amount in USD you plan to&nbsp;spend on our tokens</div>
                   </div>
-                  <div class="step__field"> <input type="text" class="sm-input step__field-number" data-validation="number"> </div>
+                  <div class="step__field"> <input type="text" class="sm-input step__field-number" data-validation="number" name="step_3-amount"> </div>
                 </div>
               </div>
               <div class="step__footer"> <button class="btn step__btn">Apply</button> </div>

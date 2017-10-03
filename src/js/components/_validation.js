@@ -13,6 +13,12 @@ export default (function() {
   const FIRST = 'first';
   const SECOND = 'second';
   const THIRD = 'third';
+  const DATA = {
+    first: null,
+    second: null,
+    third: null,
+    result: null
+  };
 
   //utils
   const nextStep = ($nextModal, $prevModal) => {
@@ -30,6 +36,19 @@ export default (function() {
   };
 
   const closeModal = $modal => $modal.removeClass(OPEN);
+
+  const sendMessage = props => {
+    console.log(props.data);
+    $.ajax({
+      type: 'POST',
+      // url: 'http://www.whats0n.pro/send.php',
+      url: './send.php',
+      data: props.data, // serializes the form's elements.
+      success: function(data) {
+        nextStep($modalThird, $modalSecond);
+      }
+    });
+  };
 
   //functionality
   $modalClose.on('click', function(e) {
@@ -53,12 +72,19 @@ export default (function() {
         switch(step) {
           case FIRST:
             nextStep($modalFirst, null);
+            DATA.first = $currentForm.serialize();
             return false;
           case SECOND:
             nextStep($modalSecond, $modalFirst);
+            DATA.second = $currentForm.serialize();
             return false;
           case THIRD:
             nextStep($modalThird, $modalSecond);
+            DATA.third = $currentForm.serialize();
+            DATA.result = `${DATA.first}&${DATA.second}&${DATA.third}`;
+            sendMessage({
+              data: DATA.result
+            });
             return false;
         }
       }
