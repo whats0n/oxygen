@@ -59,6 +59,7 @@
     "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
+    "jquery-form-validator": "^2.3.77",
     "svg4everybody": "^2.1.9",
     "tooltipster": "^4.2.5",
     "tooltipster-follower": "^0.1.5"
