@@ -133,7 +133,7 @@ import Rellax from 'rellax';
     let cloudLenght = $(el).data('clouds');
     let paralax = $(el).data('clouds-paralax');
     generate(world, cloudLenght, paralax);
-    // if (TOUCH()) return;
+    if (TOUCH()) return;
     window.addEventListener( 'mousemove', (e) => onMouseMove(e, world) );
   });
 
