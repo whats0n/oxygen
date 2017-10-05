@@ -66,10 +66,10 @@
 						<div class="diagram__box" data-diagram="fork-sm-box-2" data-diagram-modal="parent" data-tooltip-content="#tooltip_rating-up">
 							<div class="diagram__box-in">Borrower rating <strong>UP</strong></div>
 						</div>
-						<div class="diagram__box" data-diagram="fork-sm-box-3" data-diagram-modal="parent" data-tooltip-content="#tooltip_collateral-realisation">
+						<div class="diagram__box diagram__box_optional" data-diagram="fork-sm-box-3" data-diagram-modal="parent" data-tooltip-content="#tooltip_collateral-realisation">
 							<div class="diagram__box-in">Collateral realisation</div>
 						</div>
-						<div class="diagram__box" data-diagram="fork-sm-box-4" data-diagram-modal="parent" data-tooltip-content="#tooltip_interest-realisation">
+						<div class="diagram__box diagram__box_optional" data-diagram="fork-sm-box-4" data-diagram-modal="parent" data-tooltip-content="#tooltip_interest-realisation">
 							<div class="diagram__box-in">Interest realisation</div>
 						</div>
 					</div>
@@ -179,6 +179,7 @@
 		</span>
 		<span id="tooltip_diagram-system">
 			<p>The credit rating is decentralised and managed by another smart-contract on Ethereum network. Every participant’s rating starts at 0 and can be increased by completing deals as the borrower. Asset holders looking to lend their ERC20 tokens can specify the minimum desired rating of the borrower in their placements.</p>
+			<img src="./img/formula.png" alt="formula" class="diagram__formula">
 		</span>
 		<span id="tooltip_diagram-etherdelta">
 			<p>Etherdelta is a decentralized exchange. When the collateral goes through, the original asset holder might prefer (optional) to get assets in the original tokens that he was borrowing rather than the collateral tokens. This is done using Etherdelta.</p>
@@ -222,13 +223,13 @@
 			<p>In case of completed deal, interests and borrowed tokens are transferred to the lender. It can go through the decentralized Etherdelta exchange to convert into lender-preferred tokens.This operation is optional and can be chosen by lender during smart contract creation.</p>
 		</span>
 		<span id="tooltip_final-interest">
-			<p>In case of default, repayment is the process of transferring collateral tokens locked in the REPO Contract to the Lender. This leads to 100% secure refund.</p>
+			<p>Interest is an agreed percentage of the collateral assets. The lender claims it when the deal is closed gracefully.</p>
 		</span>
 		<span id="tooltip_final-repayment">
-			<p>Original tokens the Borrower used according to the deal are returned to the Lender fully using the ERC20 contract interface.</p>
+			<p>In case of default, repayment is the process of transferring collateral tokens locked in the REPO Contract to the Lender. This leads to 100% secure refund.</p>
 		</span>
 		<span id="tooltip_final-loan">
-			<p>Interest is an agreed percentage of the collateral assets. The lender claims it when the deal is closed gracefully.</p>
+			<p>Original tokens the Borrower used according to the deal are returned to the Lender fully using the ERC20 contract interface.</p>
 		</span>
 		<span id="tooltip_final-collateral">
 			<p>When the deal is closed gracefully, the collateral is unblocked from the REPO contract and is returned to the borrower. Interests are payed to the lender.</p>
