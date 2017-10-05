@@ -1,0 +1,20 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        kf-robo-x3
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="30" cy="30" r="29.5" stroke="#36CD98" opacity=".299"/>
+        <g transform="translate(11 11)">
+            <g transform="translate(4 11)" stroke="#36CD98">
+                <rect x=".5" y=".5" width="29" height="21" rx="3"/>
+                <circle cx="7.5" cy="7.5" r="2"/>
+                <circle cx="22.5" cy="7.5" r="2"/>
+            </g>
+            <path stroke="#36CD98" d="M14.5 27.5h9v1h-9z"/>
+            <path d="M34 18a4 4 0 1 1 0 8v-8z" fill="#36CD98"/>
+            <path d="M4 18a4 4 0 1 0 0 8v-8z" fill="#36CD98"/>
+            <circle stroke="#36CD98" cx="19" cy="3" r="2.5"/>
+            <path fill="#36CD98" d="M18 6h2v5h-2z"/>
+        </g>
+    </g>
+</svg>
