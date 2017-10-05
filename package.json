@@ -8,6 +8,7 @@
   },
   "authors": "valeraderevshukov & whats0n",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.1.25",
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.3",

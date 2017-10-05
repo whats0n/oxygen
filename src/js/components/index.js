@@ -4,3 +4,4 @@ import './_diagram-modal.js';
 import './_validation.js';
 import './_modal.js';
 import './_clouds.js';
+import './_fansy.js';

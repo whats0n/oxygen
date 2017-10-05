@@ -3,7 +3,17 @@ import { DOC, BODY } from '../_constants';
 import Rellax from 'rellax';
 
 ;(function() {
-
+  
+  let fireFox = false;
+  let detectFirefox = () => {
+    var ua = navigator.userAgent;
+    if (ua.search(/Firefox/) > 0) {
+      BODY.addClass('is-firefox');
+      fireFox = true;
+    }
+  };
+  detectFirefox();
+  
   let clouds = $( '.js-clouds' );
   if (!clouds.length) return;
 
@@ -103,8 +113,8 @@ import Rellax from 'rellax';
     let x = e.clientX || e.touches[ 0 ].clientX;
     let y = e.clientY || e.touches[ 0 ].clientY;
 
-    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 45;
-    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 45;
+    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 35;
+    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 35;
     updateView(world);
     event.preventDefault();
 
