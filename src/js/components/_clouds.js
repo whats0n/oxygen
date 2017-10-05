@@ -100,8 +100,8 @@ import Rellax from 'rellax';
 
   function onMouseMove( e, world ) {
 
-    let x = e.clientX;
-    let y = e.clientY;
+    let x = e.clientX || e.touches[ 0 ].clientX;
+    let y = e.clientY || e.touches[ 0 ].clientY;
 
     worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 45;
     worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 45;
@@ -144,7 +144,7 @@ import Rellax from 'rellax';
   };
 
   update();
-
+  if (TOUCH()) return;
   let timeout;
   DOC.on('scroll', () => {
     cancelAnimationFrame(frame);
