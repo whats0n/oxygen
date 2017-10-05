@@ -3,7 +3,17 @@ import { DOC, BODY } from '../_constants';
 import Rellax from 'rellax';
 
 ;(function() {
-
+  
+  let fireFox = false;
+  let detectFirefox = () => {
+    var ua = navigator.userAgent;
+    if (ua.search(/Firefox/) > 0) {
+      BODY.addClass('is-firefox');
+      fireFox = true;
+    }
+  };
+  detectFirefox();
+  
   let clouds = $( '.js-clouds' );
   if (!clouds.length) return;
 
@@ -74,7 +84,9 @@ import Rellax from 'rellax';
       let y = randomInteger(-150, 150);
       let z = 100 - ( Math.random() * 200 );
       let a = Math.random() * 360;
-      let s = 2 + Math.random() * (1 - 3);
+      let s = 1.8 + Math.random() * (1 - 2.8);
+      // ? 2.8 + Math.random() * (1 - 3.8)
+      // : 1.8 + Math.random() * (1 - 2.8);
       x *= 0.2; y *= 0.2;
       
       cloud.data = {
@@ -103,8 +115,8 @@ import Rellax from 'rellax';
     let x = e.clientX || e.touches[ 0 ].clientX;
     let y = e.clientY || e.touches[ 0 ].clientY;
 
-    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 45;
-    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 45;
+    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 35;
+    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 35;
     updateView(world);
     event.preventDefault();
 
