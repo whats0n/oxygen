@@ -1,0 +1,44 @@
+<!-- begin faq -->
+<div class="faq">
+	<div class="clouds js-clouds" data-clouds-paralax="true">
+		<div class="clouds__word js-clouds-word"></div>
+	</div>
+	<div class="inner">
+		<div class="faq__inner">
+			<img src="img/logo-full.svg" alt="oxygen" class="faq__logo">
+			<h2 class="title-lg faq__title">FAQ</h2>
+			<div class="faq__content">
+				<h3 class="faq__subtitle">About the platform</h3>
+				{% set content = [
+					{
+						label: 'WHAT IS OXYGEN?',
+						text: 'Oxygen is analogue to the REPO market in the cryptocurrency world. Being fully decentralized platform it solves the problem of unsafe and expensive crypto-loans for short positions and margin trading.'
+					},
+					{
+						label: 'What service will Oxygen provide?',
+						text: 'Oxygen will provide REPO operations in ERC20 tokens and Ethereum. Plans to extend it to BTC and other cryptographic assets are considered, but no formal commitment can be made at this stage of the project due to current technological lag in true cross-chain solutions. Essentially Oxygen will provide a specialized peer-to-peer environment for the purpose of lending assets specifically for trading purposes.'
+					},
+					{
+						label: 'Why does Oxygen stand beyond peer-to-peer lending?',
+						text: 'Peer-to-peer trading is the analogue of consumer/commercial credit agreements and therefore does not capture the specific needs and risks associated with trading. While Oxygen can be used for the purpose of peer-to-peer lending, it reflects a different economic activity through a specialized set of rules and therefore may or may not be suitable for certain transactions.'
+					},
+					{
+						label: 'How is Oxygen different from short at Poloniex or Bitfinex?',
+						text: 'Oxygen is not a short or a long position (even though synthetically some operations may reflect long and short position). Oxygen is a tool enabling token holders to offer margin trading to third-parties (independently whenever the margin is long or short).'
+					},
+					{
+						label: 'How is Oxygen different from Bancor?',
+						text: 'Bancor positions itself as a market-maker and supply/demand management system for token holders. This is not related to margin trading or any activities which are beyond spot trading.'
+					}
+				] %}
+				{% for item in content %}
+				    <div class="faq__box">
+				    	<h4 class="faq__label">{{item.label}}</h4>
+				    	<p>{{item.text}}</p>
+				    </div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end faq -->
