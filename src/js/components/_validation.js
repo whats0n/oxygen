@@ -7,7 +7,6 @@ export default (function() {
   const $modalFirst = $('.js-modal-first');
   const $modalSecond = $('.js-modal-second');
   const $modalThird = $('.js-modal-third');
-  const $modalClose = $('.js-modal-close');
 
   //steps
   const FIRST = 'first';
@@ -51,13 +50,6 @@ export default (function() {
   };
 
   //functionality
-  $modalClose.on('click', function(e) {
-    e.preventDefault();
-    $(this)
-      .closest('.js-modal')
-      .removeClass(OPEN);
-  });
-
   $form.each(function() {
     const $this = $(this);
 

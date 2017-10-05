@@ -18,7 +18,7 @@
     <title>
         close
     </title>
-    <g transform="rotate(45 16.97 10.243)" fill-rule="evenodd" opacity=".196">
+    <g transform="rotate(45 16.97 10.243)" fill-rule="evenodd">
         <rect x="12.75" width="4.5" height="30" rx="2"/>
         <rect y="12.75" width="30" height="4.5" rx="2"/>
     </g>
