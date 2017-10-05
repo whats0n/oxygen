@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Oxygen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.196331522">
+        <g id="whitelist" transform="translate(-1152.000000, -157.000000)" fill="#000000">
+            <g id="Group-2" transform="translate(235.000000, 128.000000)">
+                <g id="close" transform="translate(908.000000, 20.000000)">
+                    <g id="Group-4" transform="translate(21.213203, 21.213203) rotate(-315.000000) translate(-21.213203, -21.213203) translate(6.213203, 6.213203)">
+                        <rect id="Rectangle-3" x="12.75" y="0" width="4.5" height="30" rx="2"></rect>
+                        <rect id="Rectangle-3" x="0" y="12.75" width="30" height="4.5" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,7 +1,11 @@
+{% import "partials/_mixins.html" as mixins %}
 {% macro call(props) %}
 	<!-- begin modal -->
 	<div class="modal {{props.classList}} js-modal">
-		<div class="modal__container">
+		<div class="modal__container js-modal-container">
+			<button class="modal__close js-modal-close">
+				{{mixins.icon('close')}}
+			</button>
 			{% include 'partials/modals/' + props.file + '.html' %}
 		</div>
 	</div>
