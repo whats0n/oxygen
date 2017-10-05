@@ -1,5 +1,5 @@
 import { TOUCH } from '../_utils';
-import { DOC } from '../_constants';
+import { DOC, BODY } from '../_constants';
 import Rellax from 'rellax';
 
 ;(function() {
@@ -44,7 +44,7 @@ import Rellax from 'rellax';
   function createCloud(world, paralax) {
     let div = document.createElement( 'div' );
     div.className = 'cloudBase-'+number+'';
-    if (paralax) div.setAttribute('data-rellax-speed', randomInteger(-1, 1));
+    if (paralax) div.setAttribute('data-rellax-speed', randomInteger(-0.2, -0.2));
     div.setAttribute('data-rellax-zindex', 0);
     div.setAttribute('data-rellax-percentage', 0);
     number++;
@@ -54,6 +54,7 @@ import Rellax from 'rellax';
     div.style.webkitTransform = t;
     div.style.MozTransform = t;
     div.style.oTransform = t;
+    div.style.transform = t;
     world.appendChild( div );
 
     let cloudsRandom = Math.round( Math.random() * 5 );
@@ -88,6 +89,7 @@ import Rellax from 'rellax';
       cloud.style.webkitTransform = t;
       cloud.style.MozTransform = t;
       cloud.style.oTransform = t;
+      cloud.style.transform = t;
 
       div.appendChild( cloud );
       layers.push( cloud );
@@ -95,13 +97,34 @@ import Rellax from 'rellax';
 
     return div;
   }
+
+  function onMouseMove( e, world ) {
+
+    let x = e.clientX;
+    let y = e.clientY;
+
+    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 45;
+    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 45;
+    updateView(world);
+    event.preventDefault();
+
+  }
+
+  function updateView(world) {
+    let t = 'translateZ( ' + d + 'px ) rotateX( ' + worldXAngle + 'deg) rotateY( ' + worldYAngle + 'deg)';
+    world.style.webkitTransform = t;
+    world.style.MozTransform = t;
+    world.style.oTransform = t;
+    world.style.transform = t;
+  }
   
   clouds.each(function(i, el) {
     let world = $(el).find('.js-clouds-word')[0];
     let cloudLenght = $(el).data('clouds');
     let paralax = $(el).data('clouds-paralax');
-    console.log(paralax);
     generate(world, cloudLenght, paralax);
+    if (TOUCH()) return;
+    window.addEventListener( 'mousemove', (e) => onMouseMove(e, world) );
   });
 
   let frame;
@@ -114,6 +137,7 @@ import Rellax from 'rellax';
       layer.style.webkitTransform = t;
       layer.style.MozTransform = t;
       layer.style.oTransform = t;
+      layer.style.transform = t;
     }
     if (TOUCH()) return;
     frame = requestAnimationFrame( update );
@@ -127,10 +151,10 @@ import Rellax from 'rellax';
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       update();
-    }, 100);
+    }, 200);
   });
-  
-  if (TOUCH()) return;
-  var rellax = new Rellax('[data-clouds-paralax] [class*="cloudBase-"]');
+
+  // if (TOUCH()) return;
+  // var rellax = new Rellax('[data-clouds-paralax] [class*="cloudBase-"]');
   
 })();
