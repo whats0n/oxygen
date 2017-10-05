@@ -4,7 +4,8 @@
 		<h2 class="title-lg team__title">Team</h2>
 		{% set members = [
 			{
-				title: "Konstantin Gladych, CEO",
+				title: "Konstantin Gladych",
+				sub: "CEO",
 				description: "is CEO of Changelly, #1 instant exchanger on the cryptocurrency market. Blockchain enthusiast.",
 				img: 'kostya.jpg',
 				social: [
@@ -23,7 +24,8 @@
 				]
 			},
 			{
-				title: "Nick Volf, CTO",
+				title: "Nick Volf",
+				sub: "CTO",
 				description: 'is a software developer. Core developer of Parity Ethereum Client since 2016.',
 				img: 'kolya.jpg',
 				social: [ 
@@ -38,7 +40,8 @@
 				]
 			},
 			{
-				title: "Vladimir Nikul, PM",
+				title: "Vladimir Nikul",
+				sub: "PM",
 				description: 'is a financial strategy development and consultant.',
 				img: 'vova.jpg',
 				social: [ 
@@ -149,7 +152,10 @@
 							<image x="0" y="0" xlink:href="img/{{item.img}}" width="100%" height="100%" mask="url(#member-mask)"></image>
 						</svg>
 					</div>
-					<div class="member__title">{{item.title | safe}}</div>
+					<div class="member__title">
+						<div>{{item.title | safe}}</div> 
+						<strong>{{item.sub}}</strong>
+					</div>
 					<div class="member__description">{{item.description | safe}}</div>
 					<div class="member__social">
 						{% for data in item.social %}
