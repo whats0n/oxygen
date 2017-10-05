@@ -103,8 +103,8 @@ import Rellax from 'rellax';
     let x = e.clientX;
     let y = e.clientY;
 
-    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 45;
-    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 45;
+    worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 20;
+    worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 20;
     updateView(world);
     event.preventDefault();
 
