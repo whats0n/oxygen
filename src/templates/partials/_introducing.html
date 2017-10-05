@@ -118,12 +118,17 @@
 					}
 				] %}
 				{% for item in diagramInfo %}
-					<div class="diagram__info-box" data-diagram="info-{{loop.index}}" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_{{item.icon}}">
-						<div class="diagram__info-icon">
-							<img src="img/{{item.icon}}.svg" alt="/">
+					<div class="diagram__info-box js-diagram-info-box" data-diagram="info-{{loop.index}}" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_{{item.icon}}">
+						<div class="diagram__info-box-left js-diagram-info-box-open">
+							<div class="diagram__info-icon">
+								<img src="img/{{item.icon}}.svg" alt="/">
+							</div>
+							<div class="diagram__info-plus"></div>
 						</div>
-						<div class="diagram__info-title">{{item.title}}</div>
-						<div class="diagram__info-description">{{item.description}}</div>
+						<div class="diagram__info-box-in">
+							<div class="diagram__info-title">{{item.title}}</div>
+							<div class="diagram__info-description">{{item.description}}</div>
+						</div>
 					</div>
 				{% endfor %}
 			</div>

@@ -9,6 +9,24 @@ export default (function() {
   const $modalOpen = $('[data-diagram-modal="parent"]');
   const $modalOverlay = $('.js-diagram-modal-overlay');
 
+  const $infoBox = $('.js-diagram-info-box');
+
+  $infoBox.each(function() {
+    const $this = $(this);
+    const $infoBoxOpen = $this.find('.js-diagram-info-box-open');
+
+    $infoBoxOpen.on('click', function(e) {
+      if (!window.matchMedia(`(max-width: ${767}px)`).matches) return;
+      e.preventDefault();
+      if ($this.hasClass(OPEN)) {
+        $this.removeClass(OPEN);
+      } else {
+        $infoBox.removeClass(OPEN);
+        $this.addClass(OPEN);
+      }
+    });
+  });
+
   $modalOpen.each(function() {
     const $this = $(this);
 

@@ -23,9 +23,9 @@
           <!-- menu -->
           <ul class="menu">
             <li><a href="/faq.html">FAQ</a></li>
-            <li><a target="_blank" href="/one-pager-oxygen.pdf">Whitepaper</a></li>
-            <li><a href="#">One pager</a></li>
-            <li><a href="#">Apply for Whitelist</a></li>
+            <li><a href="#">Whitepaper</a></li>
+            <li><a target="_blank" href="/one-pager-oxygen.pdf">One pager</a></li>
+            <li><a href="#" class="js-modal-open" data-modal-target="modal-step-1">Apply for Whitelist</a></li>
           </ul>
           <!-- ¯\_(ツ)_/¯ -->
           <!-- btn-menu --><button class="btn-menu js-btn-menu" type="button">
@@ -175,30 +175,55 @@
             </div>
             <div class="diagram__logo"> <img src="img/ethereum-logo.svg" alt="Ethereum"> </div>
             <div class="diagram__info">
-              <div class="diagram__info-box" data-diagram="info-1" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-management">
-                <div class="diagram__info-icon"> <img src="img/diagram-management.svg" alt="/"> </div>
-                <div class="diagram__info-title">Risk management toolkit</div>
-                <div class="diagram__info-description">Provides advisory on market</div>
+              <div class="diagram__info-box js-diagram-info-box" data-diagram="info-1" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-management">
+                <div class="diagram__info-box-left js-diagram-info-box-open">
+                  <div class="diagram__info-icon"> <img src="img/diagram-management.svg" alt="/"> </div>
+                  <div class="diagram__info-plus"></div>
+                </div>
+                <div class="diagram__info-box-in">
+                  <div class="diagram__info-title">Risk management toolkit</div>
+                  <div class="diagram__info-description">Provides advisory on market</div>
+                </div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-2" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-exchange">
-                <div class="diagram__info-icon"> <img src="img/diagram-exchange.svg" alt="/"> </div>
-                <div class="diagram__info-title">Exchange</div>
-                <div class="diagram__info-description">Runs continious auction</div>
+              <div class="diagram__info-box js-diagram-info-box" data-diagram="info-2" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-exchange">
+                <div class="diagram__info-box-left js-diagram-info-box-open">
+                  <div class="diagram__info-icon"> <img src="img/diagram-exchange.svg" alt="/"> </div>
+                  <div class="diagram__info-plus"></div>
+                </div>
+                <div class="diagram__info-box-in">
+                  <div class="diagram__info-title">Exchange</div>
+                  <div class="diagram__info-description">Runs continious auction</div>
+                </div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-3" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-contract">
-                <div class="diagram__info-icon"> <img src="img/diagram-contract.svg" alt="/"> </div>
-                <div class="diagram__info-title">REPO smart contract</div>
-                <div class="diagram__info-description">Core of decentralised orders processing</div>
+              <div class="diagram__info-box js-diagram-info-box" data-diagram="info-3" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-contract">
+                <div class="diagram__info-box-left js-diagram-info-box-open">
+                  <div class="diagram__info-icon"> <img src="img/diagram-contract.svg" alt="/"> </div>
+                  <div class="diagram__info-plus"></div>
+                </div>
+                <div class="diagram__info-box-in">
+                  <div class="diagram__info-title">REPO smart contract</div>
+                  <div class="diagram__info-description">Core of decentralised orders processing</div>
+                </div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-4" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-system">
-                <div class="diagram__info-icon"> <img src="img/diagram-system.svg" alt="/"> </div>
-                <div class="diagram__info-title">Credit rating system</div>
-                <div class="diagram__info-description">Supplies trustful users ratings</div>
+              <div class="diagram__info-box js-diagram-info-box" data-diagram="info-4" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-system">
+                <div class="diagram__info-box-left js-diagram-info-box-open">
+                  <div class="diagram__info-icon"> <img src="img/diagram-system.svg" alt="/"> </div>
+                  <div class="diagram__info-plus"></div>
+                </div>
+                <div class="diagram__info-box-in">
+                  <div class="diagram__info-title">Credit rating system</div>
+                  <div class="diagram__info-description">Supplies trustful users ratings</div>
+                </div>
               </div>
-              <div class="diagram__info-box" data-diagram="info-5" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-etherdelta">
-                <div class="diagram__info-icon"> <img src="img/diagram-etherdelta.svg" alt="/"> </div>
-                <div class="diagram__info-title">Etherdelta</div>
-                <div class="diagram__info-description">Decentralised exchange integrated</div>
+              <div class="diagram__info-box js-diagram-info-box" data-diagram="info-5" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-etherdelta">
+                <div class="diagram__info-box-left js-diagram-info-box-open">
+                  <div class="diagram__info-icon"> <img src="img/diagram-etherdelta.svg" alt="/"> </div>
+                  <div class="diagram__info-plus"></div>
+                </div>
+                <div class="diagram__info-box-in">
+                  <div class="diagram__info-title">Etherdelta</div>
+                  <div class="diagram__info-description">Decentralised exchange integrated</div>
+                </div>
               </div>
             </div>
           </div>
@@ -941,7 +966,7 @@
       </footer>
       <!-- end footer -->
       <!-- begin modal -->
-      <div class="modal js-modal-first js-modal">
+      <div class="modal js-modal-first js-modal" data-modal="modal-step-1">
         <div class="modal__container js-modal-container"> <button class="modal__close js-modal-close">
 				
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
@@ -1005,7 +1030,7 @@
       </div>
       <!-- end modal -->
       <!-- begin modal -->
-      <div class="modal js-modal-second js-modal">
+      <div class="modal js-modal-second js-modal" data-modal="modal-step-2">
         <div class="modal__container js-modal-container"> <button class="modal__close js-modal-close">
 				
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
@@ -1066,7 +1091,7 @@
       </div>
       <!-- end modal -->
       <!-- begin modal -->
-      <div class="modal js-modal-third js-modal">
+      <div class="modal js-modal-third js-modal" data-modal="modal-step-3">
         <div class="modal__container js-modal-container"> <button class="modal__close js-modal-close">
 				
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>

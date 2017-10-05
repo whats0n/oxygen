@@ -8,10 +8,10 @@
 		width: 720px
 		height: 1130px
 	+sm
-		padding-top: 1160px
+		overflow: hidden
 		margin-bottom: 0
-		max-width: 290px
-		height: auto 
+		max-width: 320px
+		height: 1216px 
 	&__in,
 	&__overlay
 		position: absolute
@@ -19,15 +19,51 @@
 		left: 0
 		right: 0
 		bottom: 0
+	&__in
+		+sm
+			left: 52px
+			right: 29px
+			bottom: 86px
 	&__overlay
 		z-index: 5
 		opacity: 0
 		visibility: hidden
 		background: rgba($black, 0.5)
 		transition: opacity 0.2s ease, visibility 0.2s
+		+sm
+			left: -52px
+			right: -29px
 		&.is-open
 			opacity: 1
 			visibility: visible
+	//footer
+	&__logo
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		padding: 16px 0 0
+		font-size: 0
+		text-align: center
+		+xl
+			padding-top: 26px
+		+sm
+			top: auto
+			bottom: 0
+			padding: 0
+		&:after
+			content: ''
+			display: block
+			margin: 0 auto
+			border-top: 3px solid #1A1A1A
+			max-width: 1120px
+		img 
+			margin-bottom: 16px
+			width: 143px
+			+xl
+				margin-bottom: 19px
+			+sm 
+				margin-bottom: 16px
 	//bg
 	&__bg
 		position: absolute
@@ -40,7 +76,7 @@
 			left: 0
 			right: 0
 		+sm
-			display: none
+			bottom: 86px
 		&-header,
 		&-body
 			position: absolute
@@ -59,6 +95,8 @@
 				bottom: auto
 				width: auto
 				height: 100px
+			+sm
+				height: 102px
 		&-body
 			left: 248px
 			right: 0
@@ -66,6 +104,8 @@
 				top: 266px
 				left: 0
 				bottom: 41px
+			+sm
+				top: 
 		&-fork
 			position: absolute
 			top: 10px
@@ -77,6 +117,11 @@
 				left: 20px
 				right: 20px
 				bottom: 193px
+			+sm
+				top: 445px
+				left: 0
+				right: 0
+				bottom: auto
 			div
 				display: inline-block
 				vertical-align: top
@@ -96,6 +141,11 @@
 		left: 50px
 		right: 50px
 		bottom: 0
+		+sm
+			top: 0
+			left: 0
+			right: 0
+			bottom: 86px
 		&-fork,
 		&-hint
 			background-repeat: no-repeat
@@ -114,6 +164,9 @@
 					left: 195px
 					transform: rotate(90deg)
 					transform-origin: left top
+				+sm
+					top: 160px
+					left: 270px
 			&[data-diagram="fork-2"]
 				top: 67px
 				left: 545px
@@ -125,6 +178,15 @@
 					left: 166px
 					transform: rotate(90deg)
 					transform-origin: left top
+				+sm
+					top: 550px
+					left: auto
+					right: 75px
+					border-left: 1px solid $white
+					border-right: 1px solid $white
+					width: 108px
+					background: none
+					+gpu
 			&[data-diagram="fork-3"]
 				top: 66px
 				right: 127px
@@ -137,6 +199,12 @@
 					width: 226px
 					height: 477px
 					background-image: url(../img/diagram-fork-3-tablet.svg) 
+				+sm
+					top: 642px
+					left: 75px
+					width: 190px
+					height: 395px
+					background-image: url(../img/diagram-fork-3-mobile.svg) 
 		&-hint
 			position: absolute
 			top: -43px
@@ -149,6 +217,20 @@
 				left: -25px
 				transform: rotate(-90deg) scaleX(-1)
 				transform-origin: left top
+			+sm
+				top: 299px
+				left: 65px
+				height: 200px
+			&:before
+				+sm
+					content: ''
+					position: absolute
+					top: 0
+					right: 2px
+					border-radius: 50%
+					width: 5px
+					height: 5px
+					background: $white
 	//info
 	&__info
 		position: absolute
@@ -164,8 +246,10 @@
 			width: 373px
 			height: auto
 		+sm
-			position: relative
-			width: 100%
+			left: 0
+			right: auto
+			width: 40px
+			bottom: 86px
 		&-box
 			position: absolute
 			top: 0
@@ -177,31 +261,81 @@
 				width: 100%
 				+f(16, 22)
 			+sm
-				position: static
-				padding: 0 0 30px
-				text-align: center
+				z-index: 5
+				padding: 0 0 0 40px
+			// +sm
+			// 	position: static
+			// 	padding: 0 0 30px
+			// 	text-align: center
+			&:nth-child(odd)
+				.diagram__info
+					&-box-left,
+					&-box-in
+						+sm
+							background: $green
+			&:nth-child(even)
+				.diagram__info
+					&-box-left,
+					&-box-in
+						+sm
+							background: $blue
 			&[data-diagram="info-1"]
 				left: 0
 				+xl
 					top: 64px
+				+sm
+					top: 40px
+					height: 102px
+				.diagram__info
+					&-box-left
+						+sm 
+							padding-top: 21px
 			&[data-diagram="info-2"]
 				left: 124px
 				+xl
 					top: 164px
+				+sm
+					top: 145px
+					height: 118px
+				.diagram__info
+					&-box-left
+						+sm 
+							padding-top: 20px
 			&[data-diagram="info-3"]
 				left: 248px
 				width: 250px
 				+xl
 					top: 290px
 					width: 100%
+				+sm
+					top: 266px
+					height: 100px
+				.diagram__info
+					&-box-left
+						+sm 
+							padding-top: 20px
 			&[data-diagram="info-4"]
 				left: 692px
 				+xl
 					top: 732px
+				+sm
+					top: 711px
+					height: 90px
+				.diagram__info
+					&-box-left
+						+sm 
+							padding-top: 15px
 			&[data-diagram="info-5"]
 				left: 816px
 				+xl
 					top: 824px
+				+sm
+					top: 804px
+					height: 90px
+				.diagram__info
+					&-box-left
+						+sm 
+							padding-top: 15px
 			&[data-diagram="info-1"],
 			&[data-diagram="info-2"],
 			&[data-diagram="info-3"],
@@ -210,6 +344,33 @@
 				+xl
 					left: auto
 					right: 0
+				+sm
+					left: 0
+					right: auto
+					width: 40px
+			&.is-open
+				.diagram__info-box-in
+					+sm 
+						+gpu
+			&-left
+				+sm 
+					position: absolute
+					z-index: 2
+					top: 0
+					left: 0
+					bottom: 0
+					width: 40px
+					padding-left: 5px
+					padding-right: 5px
+			&-in
+				+sm
+					position: relative
+					z-index: 1
+					padding: 24px 15px 0 25px
+					width: 280px
+					min-height: 100%
+					transform: translate3d(-100%,0,0)
+					transition: transform 0.2s ease-in-out
 		&-icon
 			margin-bottom: 15px
 			font-size: 0
@@ -219,6 +380,7 @@
 				left: 0
 			+sm 
 				position: relative
+				margin-bottom: 10px
 			img
 				width: 30px
 		&-title
@@ -227,6 +389,35 @@
 			+xl
 				margin-bottom: 10px
 				+f(18, 20)
+		&-description
+			+sm
+				+f(14, 20)
+		&-plus
+			position: relative
+			display: none
+			margin: 0 auto
+			border-radius: 50%
+			width: 20px
+			height: 20px
+			background: rgba($black, 0.1)
+			+sm
+				display: block
+			&:before,
+			&:after
+				content: ""
+				position: absolute
+				background: $white
+			&:before
+				top: 5px
+				left: 9px
+				right: 9px
+				bottom: 5px
+			&:after
+				top: 9px
+				left: 5px
+				right: 5px
+				bottom: 9px
+
 	//header
 	&__header
 		position: absolute
@@ -236,6 +427,9 @@
 		+xl
 			top: 0
 			left: 67px
+		+sm
+			left: auto
+			right: 0
 		&-col
 			position: relative
 			padding: 21px 30px 18px 72px
@@ -249,6 +443,8 @@
 				width: 90px
 				height: 136px
 				text-align: center
+			+sm
+				margin: 0 0 0 19px
 			&[data-diagram-modal]
 				&.is-active
 					color: $black
@@ -315,7 +511,8 @@
 		border-radius: 3px
 		background: #30363D
 		+vertical
-
+		+sm
+			+nosel
 		&[data-diagram="box-1"],
 		&[data-diagram="box-2"]
 			top: 17px
@@ -324,11 +521,17 @@
 			+xl
 				top: 11px
 				left: 67px
+			+sm
+				left: auto
+				right: 0
 		&[data-diagram="box-2"]
 			left: 330px
 			+xl
 				top: 330px
 				left: 67px
+			+sm
+				left: auto
+				right: 0
 		&[data-diagram="fork-box-1"]
 			top: 0
 			+xl
@@ -372,6 +575,8 @@
 			padding: 0 10px
 			width: 104px
 			height: 70px
+			+sm
+				width: 90px
 			strong
 				display: block
 		&_lg
@@ -406,6 +611,9 @@
 				top: 126px
 				left: 67px
 				width: 200px
+			+sm
+				left: auto
+				right: 0
 		&[data-diagram="fork-2"]
 			top: 46px
 			left: 454px
@@ -413,6 +621,10 @@
 				top: 485px
 				left: 45px
 				width: 241px
+			+sm
+				left: auto
+				right: 0
+				width: 200px
 		&[data-diagram="fork-3"]
 			top: 17px
 			left: 569px
@@ -420,6 +632,10 @@
 				top: 577px
 				left: 45px
 				width: 241px
+			+sm
+				left: auto
+				right: 0
+				width: 200px
 		&-hint
 			position: absolute
 			top: -77px
@@ -435,6 +651,10 @@
 				width: 40px
 				height: 110px
 				writing-mode: vertical-lr
+			+sm
+				left: -40px
+				border: none
+				font-size: 14px
 		&-label
 			position: absolute
 			left: 20px
@@ -491,6 +711,8 @@
 			+xl
 				position: absolute
 				top: 0
+			+sm
+				width: 90px
 			&_blue
 				background: $blue
 				+xl
@@ -508,6 +730,9 @@
 		+xl
 			padding: 11px 10px 62px
 			width: 120px
+		+sm
+			padding: 5px 5px 47px
+			width: 90px
 		&[data-diagram="hints-1"]
 			top: 28px
 			height: 220px
@@ -516,6 +741,9 @@
 				left: 35px
 				right: auto
 				height: 222px
+			+sm
+				left: auto
+				right: 109px
 			&:before
 				content: ''
 				position: absolute
@@ -532,6 +760,11 @@
 				top: 865px
 				left: 171px
 				height: 125px
+			+sm
+				top: 860px
+				left: auto
+				right: 0
+				height: 130px
 		&-label
 			position: absolute
 			top: 0
@@ -561,6 +794,9 @@
 			font-size: 14px
 			line-height: 15px
 			text-align: center
+			+sm
+				width: 100%
+				font-size: 13px
 			&_blue
 				color: $blue
 			&[data-diagram="hint-item-1"]
@@ -584,36 +820,8 @@
 			small
 				display: block
 				font-size: 11px
-	&__logo
-		position: absolute
-		top: 100%
-		left: 0
-		right: 0
-		padding: 16px 0 0
-		font-size: 0
-		text-align: center
-		+xl
-			padding-top: 26px
-		+sm
-			position: relative
-			top: auto
-			padding-top: 6px
-			padding-bottom: 26px
-		&:after
-			content: ''
-			display: block
-			margin: 0 auto
-			border-top: 3px solid #1A1A1A
-			max-width: 1120px
-		img 
-			margin-bottom: 16px
-			width: 143px
-			+xl
-				margin-bottom: 19px
-			+sm 
-				margin-bottom: 16px
 	[data-diagram-modal="parent"]
-		cursor: default
+		cursor: pointer
 		transition: color 0.2s ease, background 0.2s
 		&.is-active
 			z-index: 10
