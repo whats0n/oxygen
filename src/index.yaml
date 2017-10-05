@@ -3,3 +3,5 @@ ProjectTitle: oxygen
 PageList:
 - file: page.html
   ready: 50
+- file: faq.html
+  ready: 50

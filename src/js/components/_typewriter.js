@@ -28,6 +28,8 @@ export default (function() {
 
   $message = $('#message');
 
+  if (!$message.length) return;
+
   $animate = $('#animate');
 
   $paragraph = null;

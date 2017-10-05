@@ -1,0 +1,25 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+	{% include 'partials/_faq.html' %}
+	{% include "partials/_footer.html" %}
+
+	{{modal.call({
+		file: '_first',
+		classList: 'js-modal-first'
+	})}}
+	{{modal.call({
+		file: '_second',
+		classList: 'js-modal-second'
+	})}}
+	{{modal.call({
+		file: '_third',
+		classList: 'js-modal-third'
+	})}}
+
+{% endblock %}
