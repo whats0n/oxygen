@@ -75,7 +75,7 @@ import Rellax from 'rellax';
       let r = Math.random();
       let src = './img/cloud.png';
       ( function( img ) { img.addEventListener( 'load', function() {
-        img.style.opacity = 0.3;
+        img.style.opacity = 0.2;
       } ); } )( cloud );
       cloud.setAttribute( 'src', src );
       cloud.className = 'cloudLayer';
