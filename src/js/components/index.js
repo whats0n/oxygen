@@ -5,3 +5,4 @@ import './_validation.js';
 import './_modal.js';
 import './_clouds.js';
 import './_fansy.js';
+import './_stickyMenu.js';
