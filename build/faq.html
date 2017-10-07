@@ -174,9 +174,9 @@
         <div class="inner footer__inner">
           <h2 class="title-lg footer__title">Token sale is coming. Apply for Whitelist</h2>
           <!-- begin form -->
-          <form action="/" class="subscription footer__subscription js-validation" name="step_1-email" data-validation-step="first">
+          <form action="/" class="subscription footer__subscription js-validation" data-validation-step="first">
             <div class="field">
-              <div class="input"> <input type="text" placeholder="mail@example.com" data-validation="email"> <button class="btn-arrow" type="submit">
+              <div class="input"> <input type="text" placeholder="mail@example.com" name="step_1-email" data-validation="email" class="js-validation-email-first"> <button class="btn-arrow" type="submit">
 						
 <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
 
@@ -278,6 +278,14 @@
 
 						</span>
 					</label> <span class="step__text">Check here to confirm that you have read the disclaimer terms mentioned above.</span> </li>
+                <li> <label class="checkbox step__checkbox">
+						<input type="checkbox"  class="js-validation-checkbox" name="step_2-checkbox-6">
+						<span class="checkbox__icon">
+							
+<svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg>
+
+						</span>
+					</label> <span class="step__text">Check here to confirm that you have read <a href='#'>Terms of Service</a> and <a href='#'>Privacy Policy</a>.</span> </li>
               </ul>
               <div class="step__footer"> <button class="btn step__btn js-validation-submit" disabled type="submit">Next</button> </div>
             </form>
@@ -305,9 +313,9 @@
               <div class="step__form">
                 <div class="step__box">
                   <div class="step__label">
-                    <div class="step__label-in">Name</div>
+                    <div class="step__label-in">E-mail</div>
                   </div>
-                  <div class="step__field"> <input type="text" class="sm-input " data-validation="required" name="step_3-name"> </div>
+                  <div class="step__field"> <input type="text" class="sm-input js-validation-email-second" data-validation="required" name="step_3-email"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
