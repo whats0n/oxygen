@@ -18,7 +18,7 @@
     $step_checkbox_fourth = $_POST['step_2-checkbox-4'];
     $step_checkbox_fifth = $_POST['step_2-checkbox-5'];
     //step 3
-    $step_name_third = $_POST['step_3-name'];
+    $step_email_third = $_POST['step_3-email'];
     $step_company_third = $_POST['step_3-company'];
     $step_country_third = $_POST['step_3-country'];
     $step_amount_third = $_POST['step_3-amount'];
@@ -51,7 +51,7 @@
     //third step
     $message_step_third_title = "Step 3: ".$new_line;
 
-    $message_step_third = "Name:\n ".$step_name_third.$new_line;
+    $message_step_third = "E-mail:\n ".$step_email_third.$new_line;
     $message_step_third .= "Company:\n ".$step_company_third.$new_line;
     $message_step_third .= "Country:\n ".$step_country_third.$new_line;
     $message_step_third .= "Amount:\n ".$step_amount_third.$new_line;
