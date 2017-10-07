@@ -63,6 +63,13 @@ export default (function() {
         const step = $currentForm.data('validation-step');
         switch(step) {
           case FIRST:
+            const $emailFieldFirst = $currentForm.find('.js-validation-email-first');
+            const $emailFieldSecond = $('.js-validation-email-second');
+
+            const emailValue = $emailFieldFirst.val();
+
+            $emailFieldSecond.val(emailValue);
+
             nextStep($modalFirst, null);
             DATA.first = $currentForm.serialize();
             return false;
@@ -98,5 +105,6 @@ export default (function() {
     });
 
   });
+
 
 })();

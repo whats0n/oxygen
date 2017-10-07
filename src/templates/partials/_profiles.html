@@ -17,6 +17,7 @@
 		<div class="profiles__out">
 			{% for row in data %}
 				<div class="profiles__row {% if row.class %}profiles__row_{{row.class}}{% endif %}">
+					<div class="profiles__line"></div>
 					<h4 class="profiles__title-md">{{row.title}}</h4>
 					<div class="profiles__wrap">
 						{% for item in row.items %}

@@ -28,6 +28,7 @@
 			+sm
 				position: relative
 	&__row
+		position: relative
 		color: $blue
 		text-align: center
 		font-size: 0
@@ -36,9 +37,53 @@
 			+md
 				margin-bottom: 9px 
 			+sm
-				margin-bottom: 49px 
+				// margin-bottom: 49px 
+				margin-bottom: 130px
+			.profiles__line
+				bottom: -60px
+				background-image: url(../img/profiles-individuals-line.svg)
+				background-position: bottom center
+				// &:before,
+				// &:after
+				// 	top: 0
+				// 	border-color: $blue
+				// &:before
+				// 	transform: rotate(45deg)
+				// 	transform-origin: top right
+				// &:after
+				// 	transform-origin: top left
 		&_mod
 			color: $green 
+			.profiles__line
+				top: -60px
+				background-image: url(../img/profiles-businesses-line.svg)
+				background-position: top center
+				// &:before,
+				// &:after
+				// 	bottom: 0
+				// 	border-color: $green
+	&__line
+		position: absolute
+		left: 50%
+		display: none
+		margin-left: -165px
+		width: 330px
+		height: 96px
+		background-size: contain
+		background-repeat: no-repeat
+		pointer-events: none
+		+sm
+			display: block
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			width: 700px
+			border-top: 2px solid $black
+		&:before
+			right: 100%
+		&:after
+			left: 100%
 	&__wrap
 		position: relative
 		&:not(:first-child)
