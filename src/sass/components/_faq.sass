@@ -23,6 +23,13 @@
 		text-align: center
 		+sm 
 			margin-bottom: 40px
+	&__section
+		&:not(:first-child)
+			padding-top: 75px
+			+md 
+				padding-top: 60px
+			+sm
+				padding-top: 45px
 	&__subtitle
 		margin-bottom: 22px
 		color: $lightGray
@@ -37,6 +44,13 @@
 			padding: 15px 0
 		p 
 			+f(16, 24)
+		a
+			color: $green
+		ul 
+			margin-top: 24px
+			+f(16, 24)
+			list-style-type: disc
+			list-style-position: inside
 	&__label
 		padding-bottom: 10px
 		color: $blue

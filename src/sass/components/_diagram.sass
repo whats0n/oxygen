@@ -263,10 +263,6 @@
 			+sm
 				z-index: 5
 				padding: 0 0 0 40px
-			// +sm
-			// 	position: static
-			// 	padding: 0 0 30px
-			// 	text-align: center
 			&:nth-child(odd)
 				.diagram__info
 					&-box-left,
@@ -310,10 +306,19 @@
 				+sm
 					top: 266px
 					height: 100px
+				&.is-open
+					&:before
+						+sm
+							+gpu
 				.diagram__info
 					&-box-left
 						+sm 
 							padding-top: 20px
+				&:before
+					height: 341px
+					background: $green
+					+sm
+						display: block
 			&[data-diagram="info-4"]
 				left: 692px
 				+xl
@@ -336,6 +341,12 @@
 					&-box-left
 						+sm 
 							padding-top: 15px
+				&:before
+					margin-top: 3px
+					height: 192px
+					background: $green
+					+sm
+						display: block
 			&[data-diagram="info-1"],
 			&[data-diagram="info-2"],
 			&[data-diagram="info-3"],
@@ -352,6 +363,19 @@
 				.diagram__info-box-in
 					+sm 
 						+gpu
+				.diagram__info-plus
+					+sm
+						transform: rotate(45deg)
+			&:before
+				content: ''
+				position: absolute
+				top: 100%
+				left: 0
+				display: none
+				width: 320px
+				opacity: 0.3
+				transform: translate3d(-280px,0,0)
+				transition: transform 0.2s ease-in-out
 			&-left
 				+sm 
 					position: absolute
@@ -400,6 +424,8 @@
 			width: 20px
 			height: 20px
 			background: rgba($black, 0.1)
+			+gpu
+			transition: transform 0.2s ease-in-out
 			+sm
 				display: block
 			&:before,
@@ -588,8 +614,6 @@
 		&_optional
 			border: 1px dotted rgba($white, 0.5)
 			background: #232629
-			// +sm
-			// 	background: #30363D
 		&-target
 			position: absolute
 			top: 0
