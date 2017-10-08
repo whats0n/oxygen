@@ -4,6 +4,11 @@ body
 	color: $white 
 	+font-smoothing
 	background: $black
+	position: fixed
+	overflow-y: hidden
+	&.unfix
+		position: static
+		overflow-y: auto
 
 .out
 	position: relative
