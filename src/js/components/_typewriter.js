@@ -6,7 +6,7 @@ export default (function() {
 
   MESSAGES.push({
     delay: 0,
-    text: 'Today, coin- and token-holders do not engage with their equity. They wait for it to flourish or they sell the assets, regardless of their potential for future growth. There are currently no affordable tools offering traders safe short positions and margin trading without leading to illegal interest rates. We believe that expensive and unsafe crypto-loaning is in need of changes'
+    text: 'To this day, stakeholders cannot effectively use their assets because the existing tools for margin-trading are too expensive and unsafe. Oxygen is here to change that.'
   });
 
   // MESSAGES.push({
