@@ -35,6 +35,7 @@
 	&__box
 		display: table-cell
 		min-width: 67px
+		vertical-align: top
 		+lg
 			width: 100% !important
 			margin-bottom: 4px
@@ -91,6 +92,10 @@
 			display: inline-block
 			vertical-align: middle
 			padding: 0
+		.sm-graph__box_text-right &
+			float: right
+			+xl
+				float: none
 	&__value
 		+f(16, 24, null, 700)
 		+lg
