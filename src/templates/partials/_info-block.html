@@ -74,16 +74,21 @@
 					title: 'Tokens allocation plan',
 					boxes: [
 						{
-							value: '75%',
+							value: '76%',
 							desc: 'Token sale contributors'
 						},
 						{
-							value: '12%',
-							desc: 'Foundation long-term budget'
+							mod: '_text-right',
+							value: '3%',
+							desc: 'Bonus tokens'
 						},
 						{
-							value: '12%',
-							desc: 'Team members, advisors, partners and early contributors'
+							value: '10%',
+							desc: 'Foundation long term budget'
+						},
+						{
+							value: '10%',
+							desc: 'Foundation long term budget'
 						},
 						{
 							value: '1%',
@@ -125,7 +130,7 @@
 						<div class="sm-graph__container">
 							<div class="sm-graph__row">
 								{% for item in item.boxes %}
-									<div class="sm-graph__box" style="width: {{item.value}}">
+									<div class="sm-graph__box {% if item.mod %}sm-graph__box{{item.mod}}{% endif %}" style="width: {{item.value}}">
 										<div class="sm-graph__line">
 											<div class="sm-graph__line-in" style="width: {{item.value}}"></div>
 										</div>
