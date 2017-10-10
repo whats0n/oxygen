@@ -159,12 +159,12 @@ import Rellax from 'rellax';
     bbb = fps.getFPS();
   }
   window.onload = gameLoop;
-  $(document).ready(function() {
+  // $(document).ready(function() {
     
-    setTimeout(function() {
-      alert(bbb/2);
-    }, 5000);
-  });
+  //   setTimeout(function() {
+  //     alert(bbb/2);
+  //   }, 5000);
+  // });
   let frame;
   const update = () => {
 
