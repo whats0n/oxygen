@@ -137,6 +137,34 @@ import Rellax from 'rellax';
     window.addEventListener( 'mousemove', (e) => onMouseMove(e, world) );
   });
 
+  var fps = { 
+    startTime : 0, 
+    frameNumber : 0, 
+    getFPS : function() { 
+      this.frameNumber++; 
+      var d = new Date().getTime(), 
+        currentTime = ( d - this.startTime ) / 1000, 
+        result = Math.floor( ( this.frameNumber / currentTime ) ); 
+      if( currentTime > 1 ) { 
+        this.startTime = new Date().getTime(); this.frameNumber = 0; 
+      } return result; 
+    } 
+  };
+
+  var f = document.querySelector('#fps'); 
+  let bbb = 0;
+  function gameLoop() { 
+    setTimeout( gameLoop,1000 / 60 ); 
+    f.innerHTML = fps.getFPS()/2;
+    bbb = fps.getFPS();
+  }
+  window.onload = gameLoop;
+  $(document).ready(function() {
+    
+    setTimeout(function() {
+      alert(bbb/2);
+    }, 5000);
+  });
   let frame;
   const update = () => {
 
