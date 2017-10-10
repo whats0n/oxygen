@@ -1,68 +1,132 @@
 .topic
 	position: relative
-	padding: 220px 0 210px
-	text-align: center
-	+md
-		padding: 220px 0 110px
+	padding: 10.4493vh 0 200px
+	min-height: 100vh
+	background: #002D4A
+	+lg
+		padding: 47px 0 55px
+		min-height: initial
 	+sm
-		padding: 18vh 0 121px
+		padding-bottom: 47px
 	&__inner
-		+sm
-			display: flex
-			flex-flow: row wrap
+		padding-top: 60px
+		+lg
+			padding-top: 0
 	&__logo
+		float: left
+		padding: 16px 0 0
+		width: 150px
+		font-size: 0
+		text-align: center
+		+lg
+			float: none
+			padding: 0 0 47px
+		+md
+			padding-bottom: 62px
+		+sm 
+			padding-bottom: 34px
+			width: 90px
 		img
 			max-width: 100%
-		+sm
-			margin: 0 auto
-			width: 65px
-			font-size: 0
+			+lg
+				width: 68px
+			+sm
+				width: 42px
 	&__title
 		margin-top: 25px
 		+f(32, 37, null, 700)
 		letter-spacing: 0.08em 
+		+lg
+			margin-top: 30px
 		+sm
-			margin-top: 20px
-			+f(20, 20)
-			width: 100%
-	&__sub-title
-		margin-top: 12px
-		+sm
-			margin: 23px auto 0
-			max-width: 242px
-			font-size: 14px
-			line-height: 22px
-	&__text
-		margin-top: 40px
-		font-size: 18px
-		+sm
-			// margin-top: 82px
-			margin-top: 181px
-			width: 100%
-			font-size: 16px
-			-webkit-order: 6
-			-ms-order: 6
-			order: 6
-	&__subscription
-		margin-top: 25px
-		+sm
-			margin-top: 17px
-			-webkit-order: 7
-			-ms-order: 7
-			order: 7
-			width: 100%
-	&__info
-		margin-top: 65px
-		+sm
-			margin: 5vh 0 0
-			width: 100%
-	&__creators
-		margin-top: 31px
+			margin-top: 13px
+			+f(16, 19)
+	&__content
+		overflow: hidden
+		padding: 0 103px 0 120px
+		+lg 
+			padding: 0 0 64px
 		+md
-			margin-top: 37px
+			padding-bottom: 74px
 		+sm
-			margin-top: 10vh
-			width: 100%
+			padding-bottom: 10px
+	&__sub-title
+		margin-bottom: 23px
+		+f(60, 74, null, 700)
+		+md
+			margin-bottom: 18px
+			+f(46, 54)
+		+sm
+			+f(26, 30)
+	&__description
+		+f(26, 32)
+		+sm 
+			+f(16, 22)
+		p
+			padding: 10px 0
+			+sm
+				padding: 5px 0
+	&__subscription
+		float: left
+		width: 100%
+		max-width: 467px
+		+lg 
+			max-width: 467px
+		+sm
+			position: relative
+			padding: 21px 0 35px
+			max-width: 100%
+		+xxs
+			padding: 13px 0 27px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			bottom: 0
+			width: 2000px
+			background: rgba($black, 0.2)
+			transform: translate3d(-50%,0,0)
+		.subscription__label,
+		.field
+			+sm
+				position: relative
+				z-index: 2
+		.field
+			+xxs
+				padding-bottom: 62px
+	&__sm-info
+		float: right
+		padding-top: 41px
+		width: 100%
+		max-width: 467px
+		+lg
+			float: left
+			padding-top: 45px
+		+sm
+			padding-top: 23px
+	&__bottom
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 88px
+		+lg
+			position: relative
+			left: auto
+			right: auto
+			bottom: auto
+	.inner
+		+lg
+			margin: 0 auto
+			max-width: 850px
+		+md
+			padding: 0 48px 0 128px
+			max-width: 768px
+		+sm
+			padding: 0 20px 0 31px
+			max-width: 100%
+		+xxs 
+			padding: 0 26px 0 31px
 
 .info
 	position: relative

@@ -6,40 +6,65 @@
 	<div class="topic__inner inner">
 		<div class="topic__logo">
 			<img src="./img/logo-big.svg" alt="img">
+			<h1 class="topic__title">OXYGEN</h1>
 		</div>
-		<h1 class="topic__title">OXYGEN</h1>
-		<div class="topic__sub-title">Above peer-to-peer lending:<br>Decentralized REPO market of tokens and coins.</div>
-		<div class="topic__text">Apply for Whitelist to get a bonus of up to 20%</div>
-		<!-- form -->
-		<form action="/" class="topic__subscription subscription js-validation" data-validation-step="first">
-			<div class="field">
-				<div class="input">
-					<input type="text" placeholder="mail@example.com" name="step_1-email" data-validation="email" class="js-validation-email-first">
-					<button class="btn-arrow" type="submit">
-						{{mixins.icon('arrow-right')}}
-					</button>
+		<div class="topic__content">
+			<div class="topic__sub-title">Above peer-to-peer lending. <br>Decentralized REPO market of tokens & coins</div>
+			<div class="topic__description">
+				<p>To this day, stakeholders cannot effectively use their assets because the existing tools for margin-trading are too expensive and unsafe.</p>
+				<p>Oxygen is here to change that.</p>
+			</div>
+		</div>
+	</div>
+	<div class="topic__bottom">
+		<div class="inner">
+			<!-- form -->
+			<form action="/" class="topic__subscription subscription subscription_simple js-validation" data-validation-step="first">
+				<div class="subscription__label">Apply for Whitelist to get a bonus of up to 20%</div>
+				<div class="field">
+					<button class="btn btn_blue subscription__btn" type="submit">Apply</button>
+					<div class="input subscription__input">
+						<input type="text" placeholder="Leave email" name="step_1-email" data-validation="email" class="js-validation-email-first">
+					</div>
+				</div>
+			</form>
+			<!-- ¯\_(ツ)_/¯ -->
+			<!-- begin sm-info -->
+			{% set smInfo = [
+				{
+					classList: 'sm-info__col_smart-contracts',
+					img: 'sm-info_smart-contracts.svg',
+					alt: 'logo',
+					title: 'BASED ON ETHEREUM <br>SMART-CONTRACTS'
+				},
+				{
+					classList: 'sm-info__col_changelly',
+					link: 'https://changelly.com/',
+					img: 'sm-info_changelly.svg',
+					alt: 'Changelly',
+					title: 'PROJECT OF <br><a href="https://changelly.com/">CHANGELLY.COM</a>'
+				}
+			] %}
+			<div class="sm-info topic__sm-info">
+				<div class="sm-info__row">
+					{% for item in smInfo %}
+						<div class="sm-info__col {{item.classList}}">
+							{% if item.link %}
+								<a href="#" class="sm-info__icon">
+									<img src="img/{{item.img}}" alt="{{item.alt}}">
+								</a>
+							{% else %}
+								<div class="sm-info__icon">
+									<img src="img/{{item.img}}" alt="{{item.alt}}">
+								</div>
+							{% endif %}
+							<div class="sm-info__title">{{item.title | safe}}</div>
+						</div>
+					{% endfor %}
 				</div>
 			</div>
-		</form>
-		<!-- ¯\_(ツ)_/¯ -->
-		<!-- info -->
-		<div class="topic__info info">
-			<div class="info__icon">
-				{{mixins.icon('info-logo')}}
-			</div>
-			<div class="info__text">Based on Ethereum smart-contracts</div>
+			<!-- ¯\_(ツ)_/¯ -->
 		</div>
-		<!-- ¯\_(ツ)_/¯ -->
-		<!-- creators -->
-		<div class="topic__creators creators">
-			<div class="creators__text">From the creators of</div>
-			<ul class="creators__list">
-				<li class="creators__item"><a target="_blank" href="https://changelly.com/"><img src="./img/logo-chan-white.svg" alt="creators-logo"></a></li>
-				{# <li class="creators__item creators__item_text">&amp;</li>
-				<li class="creators__item"><a target="_blank" href="https://minergate.com/"><img src="./img/logo-miner-white.svg" alt="creators-logo"></a></li> #}
-			</ul>
-		</div>
-		<!-- ¯\_(ツ)_/¯ -->
 	</div>
 </div>
 <!-- ¯\_(ツ)_/¯ -->

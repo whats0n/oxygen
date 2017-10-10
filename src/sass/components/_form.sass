@@ -3,6 +3,39 @@
 	max-width: 377px
 	+md
 		max-width: 475px
+	&_simple
+		.subscription
+			&__btn
+				float: right
+				border-top-left-radius: 0
+				border-bottom-left-radius: 0
+				+sm
+					padding-left: 10px
+					padding-right: 10px
+				+xxs
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0
+					float: none
+					border-radius: 4px
+					width: 100%
+			&__input
+				overflow: hidden
+				input
+					border-right-width: 0
+					border-top-right-radius: 0
+					border-bottom-right-radius: 0
+					+xxs
+						border-right-width: 1px
+						border-radius: 4px
+	&__label
+		margin-bottom: 16px
+		+f(16, 25)
+		+sm
+			margin-bottom: 12px
+			max-width: 255px
+
 
 .field
 	position: relative
