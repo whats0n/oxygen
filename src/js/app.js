@@ -20,13 +20,13 @@ function gameLoop() {
 }
 window.onload = gameLoop;
 $(document).ready(function() {
-
+    
   setTimeout(function() {
     alert(bbb);
     if (bbb<60) {
       clearTimeout(timeOut);
     }
-  }, 3000);
+  }, 5000);
 });
 
 import common from './_common';
