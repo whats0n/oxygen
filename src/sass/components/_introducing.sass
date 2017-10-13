@@ -1,18 +1,23 @@
 .introducing
-	padding: 164px 0 75px
+	padding: 83px 0 66px
+	background: #102F61
 	+md
 		padding: 100px 0
 	+sm
 		padding: 43px 0
 	&__inner
-		max-width: 960px
+		// max-width: 960px
+		max-width: 1160px
 	&__title
+		+f(40, 40)
+		text-align: left
 		&:not(:last-child)
-			margin-bottom: 26px
-	&__sm-description
-		line-height: (26/13) 
+			margin-bottom: 28px
+	&__description
+		max-width: 780px
+		+f(20, 30)
 	&__diagram
-		margin: 91px auto 0
+		margin: 57px auto 0
 		padding: 0 15px
 		max-width: 1250px
 		+sm
@@ -22,3 +27,7 @@
 		// 	width: 100%
 		// 	display: block
 		// 	border: 1px solid
+	&__logo
+		padding: 36px 0 32px
+		font-size: 0
+		text-align: center
