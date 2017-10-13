@@ -1,17 +1,17 @@
 .diagram
 	position: relative
-	margin: 0 auto 80px
+	margin: 0 auto 
 	width: 1220px
 	height: 620px
 	+xl
-		margin-bottom: 50px
+		// margin-bottom: 50px
 		width: 720px
 		height: 1130px
 	+sm
 		overflow: hidden
-		margin-bottom: 0
+		// margin-bottom: 0
 		max-width: 320px
-		height: 1216px 
+		height: 1130px 
 	&__in,
 	&__overlay
 		position: absolute
@@ -23,12 +23,12 @@
 		+sm
 			left: 52px
 			right: 29px
-			bottom: 86px
+			bottom: 0px
 	&__overlay
 		z-index: 5
 		opacity: 0
 		visibility: hidden
-		background: rgba($black, 0.5)
+		background: rgba(#102F61, 0.5)
 		transition: opacity 0.2s ease, visibility 0.2s
 		+sm
 			left: -52px
@@ -76,7 +76,7 @@
 			left: 0
 			right: 0
 		+sm
-			bottom: 86px
+			bottom: 0
 		&-header,
 		&-body
 			position: absolute
@@ -129,7 +129,7 @@
 				border-radius: 3px
 				width: 124px
 				height: 100%
-				background: #232629
+				background: rgba($white, 0.1)
 				+xl
 					margin: 0 0 2px
 					width: 100%
@@ -317,7 +317,7 @@
 						+sm 
 							padding-top: 20px
 				&:before
-					height: 341px
+					height: 343px
 					background: $green
 					+sm
 						display: block
@@ -337,15 +337,16 @@
 				+xl
 					top: 824px
 				+sm
-					top: 804px
+					top: 803px
 					height: 90px
 				.diagram__info
 					&-box-left
 						+sm 
 							padding-top: 15px
 				&:before
-					margin-top: 3px
-					height: 192px
+					margin-top: 2px
+					border-radius: 0 0 0 3px
+					height: 194px
 					background: $green
 					+sm
 						display: block
@@ -537,7 +538,7 @@
 	&__box
 		position: absolute
 		border-radius: 3px
-		background: #30363D
+		background: #061D42
 		+vertical
 		+sm
 			+nosel
@@ -615,7 +616,7 @@
 				height: 104px
 		&_optional
 			border: 1px dotted rgba($white, 0.5)
-			background: #232629
+			background: #061D42
 		&-target
 			position: absolute
 			top: 0
@@ -743,7 +744,7 @@
 				+xl
 					right: 0
 			&_green
-				background: $green
+				background: #7EAC0E
 				+xl
 					left: 0
 	&__hints
@@ -751,7 +752,7 @@
 		right: 0
 		border-radius: 3px
 		width: 204px
-		background: rgba(#30363D, 0.5)
+		background: rgba(#183151, 0.5)
 		+xl
 			padding: 11px 10px 62px
 			width: 120px
@@ -775,7 +776,7 @@
 				top: 84px
 				left: 0
 				right: 50px
-				border-top: 4px solid #1a1a1a
+				border-top: 4px solid #284471
 				+xl
 					display: none
 		&[data-diagram="hints-2"]
@@ -814,8 +815,8 @@
 			padding: 7px 0 8px
 			border-radius: 3px
 			width: 103px
-			color: $green
-			background: #30363D
+			color: #A3DD14
+			background: #0C1C3A
 			font-size: 14px
 			line-height: 15px
 			text-align: center
