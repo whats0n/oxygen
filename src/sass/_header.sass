@@ -25,7 +25,7 @@
 			display: block
 .menu
 	float: right
-	margin-top: 17px
+	margin-top: 3px 
 	+sm
 		float: none
 		position: absolute
@@ -46,17 +46,39 @@
 		+sm
 			display: block
 		&:not(:first-child)
-			margin-left: 28px
+			margin-left: 20px
 			+sm
 				margin: 20px 0 0
 	a
+		position: relative
+		padding-top: 17px
+		display: block
 		+f(13, 15, null, 700)
 		color: $white 
 		transition: color .3s ease-in-out
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0
+			right: 0
+			height: 6px
+			border-radius: 2px
+			opacity: 0
+			transition: opacity .2s ease-in-out
+			background-color: $scooter  
+		&:after
+			position: absolute
+			content: ""
+			top: 0
+			left: -10px
+			right: -10px
+			bottom: -10px 
 		+sm
 			color: $black 
 		+hover
-			color: $blue 
+			&:before
+				opacity: 1
 
 .btn-menu
 	position: relative
@@ -112,3 +134,22 @@
 			.is-open &
 				transform: translateX(50%)
 				opacity: 0
+
+.based
+	position: relative
+	float: right
+	margin: 14px 0 0 40px
+	padding-left: 26px
+	width: 180px
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: .16em
+	line-height: 1.4 
+	&__logo
+		position: absolute
+		left: 0
+		top: 0
+		width: 18px
+		img
+			max-width: 100%
+			display: block
