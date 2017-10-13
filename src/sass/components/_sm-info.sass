@@ -1,82 +1,29 @@
 .sm-info
-	&__row
-		margin: 0 -30px
-		font-size: 0
-		+sm
-			margin: 0 -20px
-	&__col
-		position: relative
-		display: inline-block
-		vertical-align: middle
-		padding: 0 30px
-		width: 50%
-		+sm
-			padding: 0 15px
-			width: 44%
-		+xxs
-			width: 100%
-		&:nth-child(2)
-			+sm
-				width: 56%
-			+xxs
-				width: 100%
-		&:not(:last-child)
-			+xxs
-				padding-bottom: 28px
-			&:before
-				content: ''
-				position: absolute
-				top: 0
-				right: 0
-				border-left: 1px solid $white
-				height: 42px
-				opacity: 0.3
-				+sm
-					top: 6px
-		&_smart-contracts
-			.sm-info__icon
-				padding-top: 1px
-				+sm
-					padding-top: 6px
-				img
-					width: 28px
-					+sm
-						width: 19px
-		&_changelly
-			.sm-info__icon
-				img
-					width: 72px
-					+sm
-						width: 56px
-	&__icon
+	position: relative
+	padding: 6px 0 5px 27px
+	border-left: 4px solid $scooter
+	&.topic__sm-info
 		float: right
-		font-size: 0
-		+xxs
-			float: left
-			margin-right: 31px
-			width: 56px
-			text-align: center
-		img
-			width: 100%
-	&__title
-		overflow: hidden
-		padding: 3px 0
-		color: $white
-		+f(12, 20)
-		letter-spacing: 0.2em
-		+sm
-			padding-right: 15px
-			+f(10, 14)
-			letter-spacing: 0.16em
-		+xxs
-			padding: 7px 0 3px
+	&__text
 		a
-			color: $white
-			text-decoration: underline
-			+sm
-				text-decoration: none
-			+hover
-				text-decoration: none
-		br 
-			+xxs 
-				display: none
+			color: #60C9FF 
+	&__wrap
+		margin-top: 19px
+	&__logo,
+	&__indicators,
+	&__col
+		vertical-align: top
+		display: inline-block
+	&__logo
+		img
+			display: block
+	&__indicators
+		padding-top: 4px 
+		&:not(:first-child)
+			margin-left: 36px
+	&__col
+		max-width: 200px
+		&:not(:last-child)
+			margin-right: 19px
+	&__title
+		+f(26, 30, null, 700)

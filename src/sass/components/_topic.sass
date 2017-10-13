@@ -33,7 +33,7 @@
 			+sm
 				width: 42px
 	&__title
-		margin-top: 25px
+		margin-top: 28px
 		+f(32, 37, null, 700)
 		letter-spacing: 0.08em 
 		+lg
@@ -43,7 +43,7 @@
 			+f(16, 19)
 	&__content
 		overflow: hidden
-		padding: 0 103px 0 120px
+		padding: 0 103px 0 116px
 		+lg 
 			padding: 0 0 64px
 		+md
@@ -51,7 +51,7 @@
 		+sm
 			padding-bottom: 10px
 	&__sub-title
-		margin-bottom: 23px
+		margin-bottom: 6vh
 		+f(60, 74, null, 700)
 		+md
 			margin-bottom: 18px
@@ -60,7 +60,8 @@
 			+f(26, 30)
 	&__description
 		max-width: 570px
-		+f(26, 32)
+		font-size: 26px
+		line-height: 1.42 
 		+sm 
 			+f(16, 22)
 		p
@@ -68,6 +69,7 @@
 			+sm
 				padding: 5px 0
 	&__subscription
+		margin-bottom: 12px 
 		float: left
 		width: 100%
 		max-width: 467px
@@ -99,16 +101,6 @@
 		.field
 			+xxs
 				padding-bottom: 62px
-	&__sm-info
-		float: right
-		padding-top: 41px
-		width: 100%
-		max-width: 467px
-		+lg
-			float: left
-			padding-top: 45px
-		+sm
-			padding-top: 23px
 	&__bottom
 		position: absolute
 		left: 0
@@ -119,6 +111,14 @@
 			left: auto
 			right: auto
 			bottom: auto
+			
+		.inner
+			display: table
+			width: 100%
+	&__t-coll
+		vertical-align: bottom
+		display: table-cell
+		+clr
 	.inner
 		+lg
 			margin: 0 auto
