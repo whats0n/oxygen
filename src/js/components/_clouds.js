@@ -84,7 +84,7 @@ import Rellax from 'rellax';
       let y = randomInteger(-150, 150);
       let z = 100 - ( Math.random() * 200 );
       let a = Math.random() * 360;
-      let s = 2 + Math.random() * (1 - 3);
+      let s = 1.8 + Math.random() * (1 - 3);
       x *= 0.2; y *= 0.2;
       
       cloud.data = {
@@ -159,12 +159,12 @@ import Rellax from 'rellax';
     bbb = fps.getFPS();
   }
   window.onload = gameLoop;
-  $(document).ready(function() {
+  // $(document).ready(function() {
     
-    setTimeout(function() {
-      alert(bbb/2);
-    }, 5000);
-  });
+  //   setTimeout(function() {
+  //     alert(bbb/2);
+  //   }, 5000);
+  // });
   let frame;
   const update = () => {
 
