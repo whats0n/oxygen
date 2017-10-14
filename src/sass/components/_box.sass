@@ -1,10 +1,12 @@
 .box
-	text-align: center
+	text-align: left
 	+clr
+	+sm
+		text-align: center
 	&__info
 		float: left
 		padding: 34px 0 33px
-		width: 51.75%
+		width: 50%
 		+md
 			float: none
 			width: 100%
@@ -37,7 +39,7 @@
 		position: relative
 		float: right
 		padding-left: 55px
-		width: 48.25%
+		width: 50%
 		text-align: left
 		+md
 			float: none
@@ -64,11 +66,11 @@
 				border-top: 2px solid $green
 				border-left: none
 	&__text
-		margin: 0 auto 14px
-		max-width: 370px
+		margin-bottom: 14px
+		max-width: 360px
 		+f(16, 25)
 		+sm
-			margin-bottom: 11px
+			margin: 0 auto 11px
 			+f(14, 22)
 	&__row
 		margin: 0 auto
@@ -83,9 +85,9 @@
 			padding: 15px 0
 			width: 100%
 		&_big
-			width: 65%
+			width: 61%
 		&_small
-			width: 35%
+			width: 39%
 	&__value
 		+f(26, 30, null, 700)
 		+md

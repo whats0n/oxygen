@@ -3,8 +3,10 @@
 	&__item
 		display: inline-block
 		vertical-align: top
-		padding: 16px 20px 16px 0
+		padding: 16px 0
 		+clr
+		+lg
+			padding-right: 20px
 		+sm 
 			padding: 10px 0
 			width: 100%
@@ -16,7 +18,7 @@
 				+lg
 					width: $i + %
 	&__title
-		margin-bottom: 12px
+		margin-bottom: 5px
 		color: $blue
 		+f(20, 24, null, 700)
 	&__description

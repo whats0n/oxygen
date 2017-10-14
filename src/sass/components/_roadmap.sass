@@ -12,7 +12,7 @@
 	&__innter
 		padding: 0
 	&__title
-		margin-bottom: 55px
+		margin-bottom: 62px
 		text-align: left
 		+md
 			margin-bottom: 48px 
@@ -24,10 +24,11 @@
 		+sm
 			margin: 0
 	&__item
-		padding: 23px 15px
+		padding: 16px 15px
 		display: inline-block
 		vertical-align: top
 		width: 33.33%
+		min-height: 208px
 		+lg
 			width: 50%
 		+sm
@@ -119,18 +120,11 @@
 						+sm
 							right: 100%
 							margin-right: -21px
-				&__subtitle
-					padding: 0 0 5px
-					+f(18, 24, null, 700)
-					+sm
-						+f(16, 22)
 				&__description
-					+f(16, 22)
+					margin-top: 2px
+					+f(16, 25)
 					+sm
 						+f(14, 20)
-				&__subtitle,
-				&__description
-					letter-spacing: -0.02em
 			.icon-arrow-right
 				display: none
 				top: 0 !important
@@ -153,7 +147,6 @@
 	&__subtitle,
 	&__description
 		padding: 5px 0
-		letter-spacing: -0.02em
 	&__subtitle
 		+f(18, 25, null, bold)
 		span
