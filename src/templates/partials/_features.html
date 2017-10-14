@@ -1,30 +1,36 @@
 {% set keys = [
 	{
 		ico: 'kf-stars-x3',
+		icoName: 'stars',
 		title: 'Blockchain-recorded credit rating',
 		text: 'The REPO Ethereum-based smart-contract updates decentralized credit rating, whether the loan is complete or default. The platform will feature a transparent algorithm to avoid fraud and build a trustworthy market.'
 	},
-	{
-		ico: 'kf-ppl-x3',
-		title: 'Community-driven orderbook',
-		text: 'Lenders and borrowers push requests to a dynamically generated orderbook. Continuous auction results in several matched requests. Users can choose to lock down their assets, as secured requests match faster. '
-	},
 	{	ico: 'kf-coins-x3',
+		icoName: 'coins',
 		title: 'Joint loans',
 		text: 'Lenders and borrowers are also able to participate in joint loans by accepting requests in part. Joint loans are available for secured requests if selected by the owner upon request setup. '
 	},
 	{
-		ico: 'kf-robo-x3',
-		title: 'AI-based risk management toolkit',
-		text: 'Oxygen neural network aggregates plenty of data sources and offers indicative rates, default-risk coefficients, discount factors and other market data to accurately estimate the value of a potential offer.'
-	},
-	{
 		ico: 'kf-net-x3',
+		icoName: 'net',
 		title: 'Truly decentralized platform',
 		text: 'Oxygen delivers a fully decentralized collateral acquisition and settlement system. There is no centralized custody at any stage of user exchange, guaranteeing lenders and borrowers unbreakable fund safety.'
 	},
 	{
+		ico: 'kf-ppl-x3',
+		icoName: 'ppl',
+		title: 'Community-driven orderbook',
+		text: 'Lenders and borrowers push requests to a dynamically generated orderbook. Continuous auction results in several matched requests. Users can choose to lock down their assets, as secured requests match faster. '
+	},
+	{
+		ico: 'kf-robo-x3',
+		icoName: 'robo',
+		title: 'AI-based risk management toolkit',
+		text: 'Oxygen neural network aggregates plenty of data sources and offers indicative rates, default-risk coefficients, discount factors and other market data to accurately estimate the value of a potential offer.'
+	},
+	{
 		ico: 'kf-clouds-x3',
+		icoName: 'clouds',
 		title: 'B2B Integrations available',
 		text: "Today's cryptocurrency exchanges face a lack of REPO instruments and cannot offer safe short positions and margin trading to their clients. Oxygen prioritises the development and implementation of SAAS applications for businesses."
 	}
@@ -37,7 +43,7 @@
 		<div class="features__wrap">
 			{% for data in keys %}
 				<div class="features__col">
-					<div class="features__ico">
+					<div class="features__ico features__ico_{{data.icoName}}">
 						<img src="./img/{{data.ico}}.png" alt="img">
 					</div>
 					<h4 class="features__title-md title-md">{{data.title}}</h4> 

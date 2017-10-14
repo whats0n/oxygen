@@ -1,31 +1,34 @@
 .features
-	padding: 100px 0
+	padding: 49px 0 74px
 	background-color: #002D4A 
 	+md
 		padding: 53px 0
 	+sm
 		padding: 40px 0
-	&__inner
-		max-width: 1036px
 	&__title
 		&:not(:last-child)
 			margin-bottom: 26px
+	// &__sm-description
+	// 	margin: 0 auto
+	// 	max-width: 970px
 	&__sm-description
-		margin: 0 auto
-		max-width: 970px
+		max-width: 704px
 	&__wrap
+		margin: 0 -30px
 		font-size: 0
 		+clr
+		+sm
+			margin: 0
 		&:not(:first-child)
-			margin-top: 80px
+			margin-top: 67px
 			+md
 				margin-top: 98px 
-			+md
+			+sm
 				margin-top: 53px 
 	&__col
 		margin-bottom: 50px
-		padding: 0 60px
-		width: 50%
+		padding: 0 30px
+		width: 33.3%
 		font-size: 16px
 		display: inline-block
 		vertical-align: top
@@ -39,18 +42,31 @@
 			font-size: 14px
 			line-height: (22/14) 
 	&__ico
+		&_stars
+			width: 85px
+		&_ppl
+			width: 57px
+		&_coins
+			width: 53px
+		&_robo
+			width: 61px
+		&_net
+			width: 68px
+		&_clouds
+			width: 61px
 		&:not(:last-child)
-			margin-bottom: 18px
+			margin-bottom: 25px
 			+md
 				margin-bottom: 14px 
 			+sm
 				margin-bottom: 19px 
 		img
-			width: 60px
+			max-width: 100%
+			display: block
 	&__title-md
-		+f(26, 24, null, 400) 
+		+f(26, 25, null, 700) 
 		&:not(:last-child)
-			margin-bottom: 15px
+			margin-bottom: 20px
 			+md
 				margin-bottom: 18px 
 			+sm
