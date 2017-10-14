@@ -3,6 +3,7 @@
 	background-color: #002D4A 
 	+md
 		padding: 53px 0
+		text-align: center
 	+sm
 		padding: 40px 0
 	&__title
@@ -13,6 +14,8 @@
 	// 	max-width: 970px
 	&__sm-description
 		max-width: 704px
+		+md
+			max-width: 100%
 	&__wrap
 		margin: 0 -30px
 		font-size: 0
@@ -42,6 +45,9 @@
 			font-size: 14px
 			line-height: (22/14) 
 	&__ico
+		+md
+			vertical-align: top
+			display: inline-block
 		&_stars
 			width: 85px
 		&_ppl
