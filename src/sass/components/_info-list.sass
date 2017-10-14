@@ -3,10 +3,18 @@
 	&__item
 		display: inline-block
 		vertical-align: top
-		// padding: 16px 0
-		// +clr
-		// +sm 
-			// padding: 10px 0
+		padding: 16px 20px 16px 0
+		+clr
+		+sm 
+			padding: 10px 0
+			width: 100%
+		@for $i from 1 through 100
+			&_#{$i}
+				width: $i + %
+		@for $i from 1 through 100
+			&_tablet-#{$i}
+				+lg
+					width: $i + %
 	&__title
 		margin-bottom: 12px
 		color: $blue

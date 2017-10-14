@@ -7,10 +7,16 @@
 	&_green
 		.sm-graph
 			&__title
-				color: $green
+				color: #7EAC0E
 			&__line
 				&:before, &-in
-					background: $green
+					background: #7EAC0E
+			&__box
+				&:nth-child(even)
+					.sm-graph
+						&__line
+							&:before, &-in
+								background: #334406
 	&_blue
 		.sm-graph
 			&__title
@@ -18,6 +24,12 @@
 			&__line
 				&:before, &-in
 					background: $blue
+			&__box
+				&:nth-child(even)
+					.sm-graph
+						&__line
+							&:before, &-in
+								background: #0E2B41
 	&__title
 		margin-bottom: 20px
 		+f(18, 22, null, 700)
@@ -39,11 +51,6 @@
 		+lg
 			width: 100% !important
 			margin-bottom: 4px
-		&:nth-child(even)
-			.sm-graph
-				&__line
-					&:before, &-in
-						opacity: 0.5
 	&__container,
 	&__row,
 	&__box
@@ -54,7 +61,6 @@
 		position: relative
 		padding: 0 1px
 		height: 11px
-		opacity: 0.5
 		+lg
 			position: absolute
 			top: 0
@@ -97,17 +103,17 @@
 			+xl
 				float: none
 	&__value
-		+f(16, 24, null, 700)
+		+f(26, 25, null, 700)
 		+lg
 			padding: 0 0 0 18px
 			width: 70px
 			+f(18, 24)
 	&__description
-		+f(14, 22)
+		+f(14, 20)
+		max-width: 160px
 		+lg
 			padding: 0
 			width: 350px
-			+f(16, 22)
 		+sm
 			width: 210px
 			+f(14, 20)

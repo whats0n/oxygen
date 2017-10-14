@@ -15,38 +15,42 @@
 				{
 					items: [
 						{
-							title: 'CAMPAIGN STARTS:',
+							mod: 'info-list__item_23 info-list__item_tablet-33',
+							title: 'Campaign starts',
 							desc: [ 'Fixed block of the beginning. ' ]
 						},
 						{
-							title: 'CAMPAIGN ENDS:',
-							desc: [ '3 weeks or as soon as hard cap is reached.' ]
+							mod: '34',
+							title: 'Campaign ends',
+							desc: [ '3 weeks or as soon as hard cap is <br>reached.' ]
 						}
 					]
 				},
 				{
 					items: [
 						{
-							title: 'EMISSION ',
-							desc: [
-								'Only during the crowdsale',
-								'100% tokens will be issued.'
-							]
+							mod: 'info-list__item_23 info-list__item_tablet-33',
+							title: 'Emission',
+							desc: [ 'Only during the crowdsale 100% tokens will be issued.' ]
 						},
 						{
-							title: 'TOTAL SUPPLY ',
-							desc: [ '500 000 000 (Five hundred million) units (limited)' ]
+							mod: 'info-list__item_19 info-list__item_tablet-33',
+							title: 'Total supply',
+							desc: [ '500 000 000 <br>(Five hundred million) <br>units (limited)' ]
 						},
 						{
-							title: 'EXCHANGE RATE ',
+							mod: 'info-list__item_20 info-list__item_tablet-33',
+							title: 'Exchange rate',
 							desc: [ '$0,06 = 1 BREATH (bETH)' ]
 						},
 						{
-							title: 'HARD CAP ',
+							mod: 'info-list__item_16 info-list__item_tablet-33',
+							title: 'Hard cap',
 							desc: [ '$30 000 000' ]
 						},
 						{
-							title: 'CROWDFUNDING CURRENCY ',
+							mod: 'info-list__item_22 info-list__item_tablet-33',
+							title: 'Crowdfunding currencies',
 							desc: [ 'BTC / ETH' ]
 						}
 					]
@@ -54,7 +58,8 @@
 				{
 					items: [
 						{
-							title: 'options for token holders',
+							mod: 'info-list__item_62 info-list__item_tablet-62',
+							title: 'Token holders options',
 							desc: [
 								'Deals in bETH tokens under more advantageous conditions (up to 50% rebate)',
 								'Priority in the order book queue (if credit-rating permits)',
@@ -64,8 +69,9 @@
 							]
 						},
 						{
-							title: 'CROWDFUNDING GOAL ',
-							desc: [ 'Service development, floating capital required for market making, international marketing.' ]
+							mod: 'info-list__item_38 info-list__item_tablet-38',
+							title: 'Crowdfunding goal',
+							desc: [ 'Service development, floating capital <br>required for market making, <br>international marketing.' ]
 						}
 					]
 				}
@@ -75,7 +81,7 @@
 					<div class="info-block__row">
 						<ul class="info-list info-block__list">
 							{% for item in row.items %}
-								<li class="info-list__item">
+								<li class="info-list__item {{item.mod}}">
 									<div class="info-list__title">{{item.title}}</div>
 									<div class="info-list__description">
 										{% for item in item.desc %}
