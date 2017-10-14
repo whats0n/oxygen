@@ -7,22 +7,23 @@
 		display: inline-block
 		vertical-align: middle
 	&__label
-		padding-left: 40px
+		padding-right: 40px
 		color: #F3F3F8
-		+f(14, 17)
+		+f(14, 17, null, 400)
 		+sm 
-			padding: 0 15px
+			padding-right: 30px
+	&__item
+		&:not(:last-child)
+			margin-right: 40px
+			+sm
+				margin-right: 30px
 	&__link
-		padding: 0 40px 0 20px
 		color: $white
-		+sm
-			padding: 0 15px
 		+hover
 			.icon
 				opacity: 1
 		.icon
 			color: $white
-			opacity: 0.5
 			font-size: 36px
 			transition: opacity 0.175s ease-in-out
 			+sm

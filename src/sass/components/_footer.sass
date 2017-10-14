@@ -3,6 +3,7 @@
 	padding: 123px 0 53px
 	text-align: center
 	background-size: contain
+	background-color: #003064 
 	+lg
 		padding: 46px 0 33px
 	+md
@@ -10,7 +11,7 @@
 	+sm 
 		padding: 10px 0 26px
 	&__title
-		margin-bottom: 62px
+		margin-bottom: 45px
 		+sm
 			margin-bottom: 29px
 	&__text
@@ -22,9 +23,16 @@
 			letter-spacing: -0.017px
 			margin-bottom: 17px
 	&__subscription
-		margin-bottom: 65px
+		margin-bottom: 89px
+		max-width: 468px 
 		+sm
 			margin-bottom: 50px
+		&__subscription
+			min-width: 100% 
+		.btn
+			padding: 15px 42px 16px
+			text-transform: uppercase
+			+f(16, 19, 10, 700) 
 	&__social
 		margin-bottom: 73px
 		+sm
@@ -71,6 +79,11 @@
 		text-transform: lowercase
 		+sm 
 			+f(10, 16)
+	&__cookie
+		margin: 18px 0
+		+f(14, 17, 5, 700)
+		a
+			color: inherit 
 	&__copy
 		opacity: 0.8
 		+f(12, 14)
