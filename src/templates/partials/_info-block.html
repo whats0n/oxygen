@@ -3,71 +3,91 @@
 	<div class="inner info-block__inner">
 		<div class="info-block__header">
 			<img src="img/logo-full.svg" alt="logo" class="info-block__logo">
-			<h2 class="title-lg info-block__title">Token crowdsale</h2>
-			<div class="sm-description">
-				<p>The BREATH (bETH) tokens will be used to cover Oxygen's commission fee with respect to trades and contracts. The fee schedule will be similar to the one used by most exchanges, with makers receiving rebates and takers paying full fees at all times.</p>
+			<div class="info-block__header-in">
+				<h2 class="title-lg info-block__title">Token crowdsale</h2>
+				<div class="sm-description">
+					<p>The BREATH (bETH) tokens will be used to cover Oxygen's commission fee with respect to trades and contracts. The fee schedule will be similar to the one used by most exchanges, with makers receiving rebates and takers paying full fees at all times.</p>
+				</div>
 			</div>
 		</div>
 		<div class="info-block__body">
-			{% set list = [
+			{% set rows = [
 				{
-					title: 'options for token holders',
-					desc: [
-						'Deals in bETH tokens under more advantageous conditions (up to 50% rebate)',
-						'Priority in the order book queue (if credit-rating permits)',
-						'Last look on trades',
-						'Liabilities coverage to avoid penalty in case of credit-event',
-						'Right to vote on the implementation of new features'
+					items: [
+						{
+							title: 'CAMPAIGN STARTS:',
+							desc: [ 'Fixed block of the beginning. ' ]
+						},
+						{
+							title: 'CAMPAIGN ENDS:',
+							desc: [ '3 weeks or as soon as hard cap is reached.' ]
+						}
 					]
 				},
 				{
-					title: 'TOTAL SUPPLY ',
-					desc: [ '500 000 000 (Five hundred million) units (limited)' ]
-				},
-				{
-					title: 'EMISSION ',
-					desc: [
-						'Only during the crowdsale',
-						'100% tokens will be issued.'
+					items: [
+						{
+							title: 'EMISSION ',
+							desc: [
+								'Only during the crowdsale',
+								'100% tokens will be issued.'
+							]
+						},
+						{
+							title: 'TOTAL SUPPLY ',
+							desc: [ '500 000 000 (Five hundred million) units (limited)' ]
+						},
+						{
+							title: 'EXCHANGE RATE ',
+							desc: [ '$0,06 = 1 BREATH (bETH)' ]
+						},
+						{
+							title: 'HARD CAP ',
+							desc: [ '$30 000 000' ]
+						},
+						{
+							title: 'CROWDFUNDING CURRENCY ',
+							desc: [ 'BTC / ETH' ]
+						}
 					]
 				},
 				{
-					title: 'EXCHANGE RATE ',
-					desc: [ '$0,06 = 1 BREATH (bETH)' ]
-				},
-				{
-					title: 'HARD CAP ',
-					desc: [ '$30 000 000' ]
-				},
-				{
-					title: 'CROWDFUNDING GOAL ',
-					desc: [ 'Service development, floating capital required for market making, international marketing.' ]
-				},
-				{
-					title: 'CROWDFUNDING CURRENCY ',
-					desc: [ 'BTC / ETH' ]
-				},
-				{
-					title: 'CAMPAIGN STARTS:',
-					desc: [ 'Fixed block of the beginning. ' ]
-				},
-				{
-					title: 'CAMPAIGN ENDS:',
-					desc: [ '3 weeks or as soon as hard cap is reached.' ]
+					items: [
+						{
+							title: 'options for token holders',
+							desc: [
+								'Deals in bETH tokens under more advantageous conditions (up to 50% rebate)',
+								'Priority in the order book queue (if credit-rating permits)',
+								'Last look on trades',
+								'Liabilities coverage to avoid penalty in case of credit-event',
+								'Right to vote on the implementation of new features'
+							]
+						},
+						{
+							title: 'CROWDFUNDING GOAL ',
+							desc: [ 'Service development, floating capital required for market making, international marketing.' ]
+						}
+					]
 				}
 			] %}
-			<ul class="info-list info-block__content">
-				{% for item in list %}
-					<li class="info-list__item">
-						<div class="info-list__title">{{item.title}}</div>
-						<div class="info-list__description">
-							{% for item in item.desc %}
-								<p>{{item | safe}}</p>
+			<div class="info-block__content">
+				{% for row in rows %}
+					<div class="info-block__row">
+						<ul class="info-list info-block__list">
+							{% for item in row.items %}
+								<li class="info-list__item">
+									<div class="info-list__title">{{item.title}}</div>
+									<div class="info-list__description">
+										{% for item in item.desc %}
+											<p>{{item | safe}}</p>
+										{% endfor %}
+									</div>
+								</li>
 							{% endfor %}
-						</div>
-					</li>
+						</ul>
+					</div>
 				{% endfor %}
-			</ul>
+			</div>
 			{% set graphs = [
 				{
 					classList: 'sm-graph_green',

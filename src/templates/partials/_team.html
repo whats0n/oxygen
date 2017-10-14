@@ -170,18 +170,21 @@
 		{% set boxes = [
 			{
 				link: 'https://changelly.com/',
-				img: 'changelly-logo.png',
+				img: 'changelly-inline.png',
 				imgClass: 'box__img_changelly',
 				alt: 'Changelly',
+				label: 'From the creators of',
 				text: 'An instant cryptocurrency exchange providing the best crypto-to-crypto rates on the market.',
 				info: [
 					{
 						value: '50 000 BTC',
-						desc: 'monthly exchange <br>volume'
+						desc: 'monthly exchange volume',
+						classList: 'box__col_big'
 					},
 					{
 						value: '400 000',
-						desc: 'customers'
+						desc: 'customers',
+						classList: 'box__col_small'
 					}
 				]
 			}
@@ -195,36 +198,56 @@
 			info: [
 				{
 					value: '50 000 ',
-					desc: 'miners online'
+					desc: 'miners online',
+					classList: 'box__col_big'
 				},
 				{
 					value: 'over 1.2 mln',
-					desc: 'registered users'
+					desc: 'registered users',
+					classList: 'box__col_small'
 				}
 			]
 		} #}
 		<div class="team__info">
-			<div class="team__subtitle">From the creators of</div>
 			<div class="team__row">
 				{% for item in boxes %}
 					<div class="team__col">
 						<div class="box">
-							<a target="_blank" href="{{item.link}}" class="box__img {{item.imgClass}}">
-								<img src="img/{{item.img}}" alt="{{item.alt}}">
-							</a>
-							<div class="box__text">{{item.text}}</div>
-							<div class="box__row">
-								{% for item in item.info %}
-									<div class="box__col">
-										<div class="box__value">{{item.value}}</div>
-										<div class="box__description">{{item.desc | safe}}</div>
-									</div>
-								{% endfor %}
+							<div class="box__info">
+								<div class="box__label">{{item.label}}</div>
+								<a target="_blank" href="{{item.link}}" class="box__img {{item.imgClass}}">
+									<img src="img/{{item.img}}" alt="{{item.alt}}">
+								</a>
+							</div>
+							<div class="box__content">
+								<div class="box__text">{{item.text}}</div>
+								<div class="box__row">
+									{% for item in item.info %}
+										<div class="box__col {{item.classList}}">
+											<div class="box__value">{{item.value}}</div>
+											<div class="box__description">{{item.desc | safe}}</div>
+										</div>
+									{% endfor %}
+								</div>
 							</div>
 						</div>
 					</div>
 				{% endfor %}
 			</div>
+		</div>
+		{% set partners = [
+			'cointelegraph',
+			'coindesk',
+			'forbes',
+			'bitcoin',
+			'cryptocoins'
+		] %}
+		<div class="team__partners">
+			{% for item in partners %}
+				<div class="team__partner">
+					<img src="img/{{item}}.jpg" alt="{{item}}">
+				</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>

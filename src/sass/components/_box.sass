@@ -1,11 +1,18 @@
 .box
 	text-align: center
+	+clr
+	&__info
+		float: left
+		padding: 34px 0 33px
+		width: 51.75%
+		+md
+			float: none
+			width: 100%
 	&__img
 		position: relative
-		display: block
-		margin: 0 auto 20px
-		max-width: 210px
-		height: 130px
+		display: inline-block
+		vertical-align: top
+		max-width: 208px
 		// +vertical
 		&:after
 			content: ''
@@ -17,22 +24,49 @@
 		img
 			display: inline-block
 			vertical-align: top
-	&__img_changelly
-		padding-top: 6px
-		img 
-			width: 140px
-		&:after
-			background-image: linear-gradient(-268deg, rgba(255,255,255,0.00) 0%, rgba(54,205,152,0.59) 28%, #36CD98 48%, rgba(243,252,248,0.00) 99%)
-	&__img_minergate
-		img 
-			width: 106px
-		&:after
-			background-image: linear-gradient(-268deg, rgba(255,255,255,0.00) 0%, rgba(142,202,255,0.59) 28%, #40A5FF 48%, rgba(243,252,248,0.00) 99%)
+			width: 100%
+	&__label
+		display: inline-block
+		vertical-align: top
+		padding: 11px 20px 14px 0
+		+f(18, 25, null, 700)
+		+xs
+			display: block
+			padding: 11px 0 14px
+	&__content
+		position: relative
+		float: right
+		padding-left: 55px
+		width: 48.25%
+		text-align: left
+		+md
+			float: none
+			padding: 40px 0 0
+			margin: 0 auto
+			width: 100%
+			max-width: 370px
+		+sm
+			text-align: center
+		&:before
+			content: ''
+			position: absolute
+			top: 4px
+			left: 0
+			bottom: 3px
+			border-left: 2px solid $green
+			+md 
+				top: 0
+				left: 50%
+				bottom: auto
+				margin-left: -100px
+				max-width: 200px
+				width: 100%
+				border-top: 2px solid $green
+				border-left: none
 	&__text
-		margin: 0 auto 36px
+		margin: 0 auto 14px
 		max-width: 370px
-		color: $lightGray
-		+f(16, 24)
+		+f(16, 25)
 		+sm
 			margin-bottom: 11px
 			+f(14, 22)
@@ -40,18 +74,21 @@
 		margin: 0 auto
 		max-width: 437px
 		+clr 
-		+md
-			padding: 0 22px 
+		// +md
+		// 	padding: 0 22px 
 	&__col
 		float: left 
 		width: 50%
 		+sm 
 			padding: 15px 0
 			width: 100%
+		&_big
+			width: 65%
+		&_small
+			width: 35%
 	&__value
-		+f(24, 24, null, 700)
+		+f(26, 30, null, 700)
 		+md
 			margin-bottom: 2px 
 	&__description
-		color: $lightGray
-		+f(16, 24)
+		+f(16, 25)
