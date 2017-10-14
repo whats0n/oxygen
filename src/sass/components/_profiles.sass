@@ -1,22 +1,50 @@
 .profiles
-	padding: 105px 0 175px
-	+md
-		padding: 105px 0 202px
+	padding: 140px 0 115px
+	background: #102F61
+	// +md
+	// 	padding: 105px 0 202px
 	+sm
 		padding: 61px 0 51px
+	&__content
+		float: left
+		padding: 110px 0 
+		width: 35%
+		text-align: left
+		+lg
+			float: none
+			padding: 0 0 110px
+			margin: 0 auto
+			width: 100%
+			max-width: 430px
+			text-align: center
 	&__out
-		&:not(:first-child)
-			margin-top: 87px
-			+md
-				margin-top: 49px 
-			+sm
-				margin-top: 50px 
+		position: relative
+		float: left
+		width: 65%
+		+lg
+			float: none
+			margin: 0 auto
+			width: 100%
+			max-width: 760px
+		&:before
+			content: ''
+			position: absolute
+			top: -25px
+			right: -17px
+			bottom: -76px	
+			left: -413px
+			background: url(../img/profile-bg.svg) no-repeat right top
+			background-size: contain
+			pointer-events: none
 	&__title
-		margin-bottom: 22px
-		+md
-			margin-bottom: 22px 
+		margin-bottom: 26px
+		text-align: left
+		+lg
+			text-align: center
 		+sm
 			margin-bottom: 25px 
+	&__description
+		+f(20, 30)
 	&__title-md
 		+f(16,19,100,700)
 		text-transform: uppercase
@@ -53,7 +81,7 @@
 				// &:after
 				// 	transform-origin: top left
 		&_mod
-			color: $green 
+			color: #7EAC0E 
 			.profiles__line
 				top: -60px
 				background-image: url(../img/profiles-businesses-line.svg)
@@ -80,6 +108,7 @@
 			position: absolute
 			width: 700px
 			border-top: 2px solid $black
+			display: none
 		&:before
 			right: 100%
 		&:after

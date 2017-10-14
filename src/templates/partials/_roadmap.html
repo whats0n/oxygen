@@ -56,10 +56,8 @@
 						{% if loop.index == 8 or loop.last %}
 							{{mixins.icon('arrow-right')}}
 						{% endif %}
-						{% if not loop.last %}
-							<div class="roadmap__meta">{{item.meta}}</div>
-						{% endif %}
-						<div class="roadmap__subtitle">{% if loop.last %}<span>{{item.meta}}</span>{% endif %} {{item.title | safe}}</div>
+						<div class="roadmap__meta">{{item.meta}}</div>
+						<div class="roadmap__subtitle {% if loop.last %}roadmap__subtitle_blue{% endif %} ">{{item.title | safe}}</div>
 						<div class="roadmap__description">{{item.desc}}</div>
 					</div>
 				</div>

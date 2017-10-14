@@ -18,7 +18,7 @@
 						<rect id="path-1" x="3.5" y="-4.1" fill="#FFFFFF" width="320" height="106"/>
 					</g>
 				</mask>
-				<path mask="url(#mask-2)" fill="none" stroke="#36CD98" stroke-width="2" d="M0.5,94.8L151.6,4.5l0,0c7.9-4.7,17.9-4.7,25.8,0.1
+				<path mask="url(#mask-2)" fill="none" stroke="#7EAC0E" stroke-width="2" d="M0.5,94.8L151.6,4.5l0,0c7.9-4.7,17.9-4.7,25.8,0.1
 					l149.1,90.2"/>
 			</g>
 		</g>

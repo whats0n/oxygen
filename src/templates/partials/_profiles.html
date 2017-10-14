@@ -12,8 +12,10 @@
 <!-- profiles -->
 <div class="profiles">
 	<div class="profiles__inner inner">
-		<h3 class="profiles__title title-lg">Member profiles</h3>
-		<div class="profiles__sm-description sm-description">Who will most benefit from the REPO market on blockchain with the help of OXYGEN?</div>
+		<div class="profiles__content">
+			<h3 class="profiles__title title-lg">Member profiles</h3>
+			<div class="profiles__description">Who will most benefit from the REPO market on blockchain with the help of OXYGEN?</div>	
+		</div>
 		<div class="profiles__out">
 			{% for row in data %}
 				<div class="profiles__row {% if row.class %}profiles__row_{{row.class}}{% endif %}">
