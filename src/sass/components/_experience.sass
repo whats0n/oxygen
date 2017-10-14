@@ -1,17 +1,23 @@
 .experience
-	padding: 69px 0 
+	padding: 92px 0 107px
+	color: $black 
+	background: $white 
 	+md
 		padding: 96px 0 84px
+		text-align: center
 	+sm
 		padding: 37px 0 40px 
 	&__inner
-		max-width: 1000px 
 		+md
 			padding: 0 15px
 	&__title
 		margin-bottom: 20px
 		+md
 			margin-bottom: 21px
+	&__sm-description
+		max-width: 810px
+		+md
+			max-width: 100%
 	&__wrap
 		margin-top: 149px
 		padding: 0 15px
@@ -63,28 +69,31 @@
 	&__img
 		margin: -52px 0 0 
 		+clr
+		max-width: 900px
 		display: block
 		+md
 			margin: 0
 		img
 			float: right
-			border: 2px solid $blue
+			max-width: 100%
+			// border: 2px solid $blue
 			display: block
+			box-shadow: 0 0 30px 0 rgba(0,0,0,0.20)
 			+md
 				float: none
 				width: 100%
 			.experience__row_mod &
 				float: left
-				border: 2px solid $green
+				// border: 2px solid $green
 				+md
 					float: none
 	&__info
-		margin-top: 30px
+		margin-top: 41px
 		padding-right: 22px
 		padding-left: 15px
 		width: 64.3%
 		+f(14, 20)
-		color: rgba($white, 0.5) 
+		color: rgba($black, 0.5) 
 		+clr
 		+md
 			margin-top: 0
@@ -138,6 +147,7 @@
 		&:before
 			position: absolute
 			content: ""
+			opacity: 0.5
 			background-color: $lightGray 
 			+md
 				display: none
@@ -176,7 +186,7 @@
 			+f(14,22)
 	&__title-md
 		margin-bottom: 19px
-		+f(18, 22, null, 700)
+		+f(26, 31, null, 700)
 		+md
 			margin-bottom: 18px 
 		+sm
