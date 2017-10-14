@@ -7,12 +7,22 @@
 	+sm
 		padding: 50px 0 28px
 	&__header
+		position: relative
 		margin: 0 auto 66px
 		text-align: left
 		+lg
 			margin-bottom: 30px
 		+sm 
 			margin-bottom: 40px
+		&:before
+			content: ''
+			position: absolute
+			top: -68px
+			left: -151px
+			width: 276px
+			height: 296px
+			background: url(../img/info-block-bg.png) no-repeat center center
+			background-size: contain
 		&-in
 			overflow: hidden
 			padding: 4px 0 0
