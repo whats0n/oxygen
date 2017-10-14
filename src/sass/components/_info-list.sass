@@ -1,5 +1,8 @@
 .info-list
+	font-size: 0
 	&__item
+		display: inline-block
+		vertical-align: top
 		// padding: 16px 0
 		// +clr
 		// +sm 
@@ -7,7 +10,7 @@
 	&__title
 		margin-bottom: 12px
 		color: $blue
-		+f(20, 24)
+		+f(20, 24, null, 700)
 	&__description
 		+f(16, 24)
 		+sm
