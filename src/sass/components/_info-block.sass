@@ -6,6 +6,7 @@
 		padding: 100px 0 60px
 	+sm
 		padding: 50px 0 28px
+		text-align: center
 	&__header
 		position: relative
 		margin: 0 auto 66px
@@ -14,6 +15,7 @@
 			margin-bottom: 30px
 		+sm 
 			margin-bottom: 40px
+			text-align: center
 		&:before
 			content: ''
 			position: absolute
@@ -23,6 +25,8 @@
 			height: 296px
 			background: url(../img/info-block-bg.png) no-repeat center center
 			background-size: contain
+			+sm 
+				display: none
 		&-in
 			overflow: hidden
 			padding: 4px 0 0
@@ -34,19 +38,25 @@
 			margin-bottom: 22px
 		+sm 
 			margin-bottom: 17px
+			text-align: center
 	&__logo
 		float: left
 		margin: 0 38px 11px 0
 		width: 120px	
 		+sm
+			float: none
+			display: inline-block
+			vertical-align: top
 			margin-bottom: 22px
 			width: 60px
 	&__content
 		margin: 0 auto 243px
+		text-align: left
 		+lg
 			margin-bottom: 60px
 		+sm
 			margin-bottom: 30px
+			text-align: center
 	&__row
 		padding: 10px 0 11px
 		margin: 0 33px 0 2px
@@ -64,4 +74,5 @@
 		+md
 			padding: 18px 0 
 		+sm
-			max-width: 100%
+			// max-width: 100%
+			max-width: 400px
