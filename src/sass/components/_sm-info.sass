@@ -2,9 +2,17 @@
 	position: relative
 	padding: 6px 0 5px 27px
 	border-left: 4px solid $scooter
+	+sm
+		padding: 16px 0 15px 27px
+		margin: 0 -9px 0 9px
+		font-size: 14px
 	&.topic__sm-info
 		float: right
+		+lg
+			float: none
 	&__text
+		+sm
+			padding-left: 78px
 		a
 			color: #60C9FF 
 	&__wrap
@@ -15,15 +23,29 @@
 		vertical-align: top
 		display: inline-block
 	&__logo
+		+sm
+			position: absolute
+			top: 15px
+			left: 19px 
+			width: 72px 
 		img
+			max-width: 100%
 			display: block
 	&__indicators
 		padding-top: 4px 
 		&:not(:first-child)
 			margin-left: 36px
+			+sm
+				margin: 21px 0 0
 	&__col
 		max-width: 200px
+		+sm
+			font-size: 14px
+		+xxs
+			max-width: 115px
 		&:not(:last-child)
 			margin-right: 19px
 	&__title
 		+f(26, 30, null, 700)
+		+sm
+			font-size: 16px

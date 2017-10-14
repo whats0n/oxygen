@@ -34,6 +34,15 @@
         <div class="header__in inner">
           <!-- logo -->
           <!-- ¯\_(ツ)_/¯ -->
+          <!-- btn-menu --><button class="btn-menu js-btn-menu" type="button">
+			
+			<span class="btn-menu__wrap">
+				<span class="btn-menu__line"></span>
+			</span>
+		</button>
+          <!-- ¯\_(ツ)_/¯ -->
+          <!-- apply --><a href="#" class="apply js-modal-open" data-modal-target="modal-step-1">Apply for Whitelist</a>
+          <!-- ¯\_(ツ)_/¯ -->
           <!-- based -->
           <div class="based">
             <div class="based__logo"> <img src="./img/info-logo-header.svg" alt="img"> </div>
@@ -47,13 +56,6 @@
             <li><a target="_blank" href="/one-pager-oxygen.pdf">One pager</a></li>
             <li><a href="#" class="js-modal-open" data-modal-target="modal-step-1">Apply for Whitelist</a></li>
           </ul>
-          <!-- ¯\_(ツ)_/¯ -->
-          <!-- btn-menu --><button class="btn-menu js-btn-menu" type="button">
-			<span class="btn-menu__text">menu</span>
-			<span class="btn-menu__wrap">
-				<span class="btn-menu__line"></span>
-			</span>
-		</button>
           <!-- ¯\_(ツ)_/¯ -->
         </div>
       </div>
@@ -111,10 +113,43 @@
         </div>
       </div>
       <!-- ¯\_(ツ)_/¯ -->
-      <!-- article -->
-      <div class="article">
-        <div class="article__inner inner" id="container">
-          <div class="article__text" id="message"> </div>
+      <!-- features -->
+      <div class="features">
+        <div class="features__inner inner">
+          <h2 class="features__title title-lg">Introducing Oxygen</h2>
+          <div class="features__sm-description sm-description">Following cutting-edge technologies support market creation of tokens and coins, beneficial for traders and cryptocurrency stakeholders. </div>
+          <div class="features__wrap">
+            <div class="features__col">
+              <div class="features__ico"> <img src="./img/kf-stars-x3.png" alt="img"> </div>
+              <h4 class="features__title-md title-md">Blockchain-recorded credit rating</h4>
+              <p>The REPO Ethereum-based smart-contract updates decentralized credit rating, whether the loan is complete or default. The platform will feature a transparent algorithm to avoid fraud and build a trustworthy market.</p>
+            </div>
+            <div class="features__col">
+              <div class="features__ico"> <img src="./img/kf-ppl-x3.png" alt="img"> </div>
+              <h4 class="features__title-md title-md">Community-driven orderbook</h4>
+              <p>Lenders and borrowers push requests to a dynamically generated orderbook. Continuous auction results in several matched requests. Users can choose to lock down their assets, as secured requests match faster. </p>
+            </div>
+            <div class="features__col">
+              <div class="features__ico"> <img src="./img/kf-coins-x3.png" alt="img"> </div>
+              <h4 class="features__title-md title-md">Joint loans</h4>
+              <p>Lenders and borrowers are also able to participate in joint loans by accepting requests in part. Joint loans are available for secured requests if selected by the owner upon request setup. </p>
+            </div>
+            <div class="features__col">
+              <div class="features__ico"> <img src="./img/kf-robo-x3.png" alt="img"> </div>
+              <h4 class="features__title-md title-md">AI-based risk management toolkit</h4>
+              <p>Oxygen neural network aggregates plenty of data sources and offers indicative rates, default-risk coefficients, discount factors and other market data to accurately estimate the value of a potential offer.</p>
+            </div>
+            <div class="features__col">
+              <div class="features__ico"> <img src="./img/kf-net-x3.png" alt="img"> </div>
+              <h4 class="features__title-md title-md">Truly decentralized platform</h4>
+              <p>Oxygen delivers a fully decentralized collateral acquisition and settlement system. There is no centralized custody at any stage of user exchange, guaranteeing lenders and borrowers unbreakable fund safety.</p>
+            </div>
+            <div class="features__col">
+              <div class="features__ico"> <img src="./img/kf-clouds-x3.png" alt="img"> </div>
+              <h4 class="features__title-md title-md">B2B Integrations available</h4>
+              <p>Today&#39;s cryptocurrency exchanges face a lack of REPO instruments and cannot offer safe short positions and margin trading to their clients. Oxygen prioritises the development and implementation of SAAS applications for businesses.</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- ¯\_(ツ)_/¯ -->
@@ -344,46 +379,6 @@
 		</span> <span id="tooltip_final-collateral">
 			<p>When the deal is closed gracefully, the collateral is unblocked from the REPO contract and is returned to the borrower. Interests are payed to the lender.</p>
 		</span> </div>
-      </div>
-      <!-- ¯\_(ツ)_/¯ -->
-      <!-- features -->
-      <div class="features">
-        <div class="features__inner inner">
-          <h2 class="features__title title-lg">Key features</h2>
-          <div class="features__sm-description sm-description">The following cutting-edge technologies support the market creation of tokens and coins, which is beneficial for traders and cryptocurrency stakeholders. </div>
-          <div class="features__wrap">
-            <div class="features__col">
-              <div class="features__ico"> <img src="./img/kf-stars-x2.png" alt="img"> </div>
-              <h4 class="features__title-md title-md">Blockchain-recorded credit rating</h4>
-              <p>The REPO Ethereum-based smart-contract updates decentralized credit rating, whether the loan is complete or default. The platform will feature a transparent algorithm to avoid fraud and build a trustworthy market.</p>
-            </div>
-            <div class="features__col">
-              <div class="features__ico"> <img src="./img/kf-ppl-x2.png" alt="img"> </div>
-              <h4 class="features__title-md title-md">Community-driven orderbook</h4>
-              <p>Lenders and borrowers push requests to a dynamically generated orderbook. Continuous auction results in several matched requests. Users can choose to lock down their assets, as secured requests match faster. </p>
-            </div>
-            <div class="features__col">
-              <div class="features__ico"> <img src="./img/kf-coins-x2.png" alt="img"> </div>
-              <h4 class="features__title-md title-md">Joint loans</h4>
-              <p>Lenders and borrowers are also able to participate in joint loans by accepting requests in part. Joint loans are available for secured requests if selected by the owner upon request setup. </p>
-            </div>
-            <div class="features__col">
-              <div class="features__ico"> <img src="./img/kf-robo-x2.png" alt="img"> </div>
-              <h4 class="features__title-md title-md">AI-based risk management toolkit</h4>
-              <p>Oxygen neural network aggregates plenty of data sources and offers indicative rates, default-risk coefficients, discount factors and other market data to accurately estimate the value of a potential offer.</p>
-            </div>
-            <div class="features__col">
-              <div class="features__ico"> <img src="./img/kf-net-x2.png" alt="img"> </div>
-              <h4 class="features__title-md title-md">Truly decentralized platform</h4>
-              <p>Oxygen delivers a fully decentralized collateral acquisition and settlement system. There is no centralized custody at any stage of user exchange, guaranteeing lenders and borrowers unbreakable fund safety.</p>
-            </div>
-            <div class="features__col">
-              <div class="features__ico"> <img src="./img/kf-clouds-x2.png" alt="img"> </div>
-              <h4 class="features__title-md title-md">B2B Integrations available</h4>
-              <p>Today&#39;s cryptocurrency exchanges face a lack of REPO instruments and cannot offer safe short positions and margin trading to their clients. Oxygen prioritises the development and implementation of SAAS applications for businesses.</p>
-            </div>
-          </div>
-        </div>
       </div>
       <!-- ¯\_(ツ)_/¯ -->
       <!-- experience -->
