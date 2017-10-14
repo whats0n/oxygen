@@ -17,7 +17,13 @@
 		&.is-show
 			transform: translateY(0)
 	.inner
-		padding: 0 29px 
+		+sm
+			padding: 0 29px 
+	&__logo
+		display: none
+		.is-fixed &
+			display: block
+		
 
 .logo
 	float: left
@@ -146,7 +152,7 @@
 	float: right
 	margin: 14px 0 0 40px
 	padding-left: 26px
-	max-width: 177px
+	max-width: 183px
 	font-size: 12px
 	text-transform: uppercase
 	letter-spacing: .16em
