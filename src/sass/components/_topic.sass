@@ -7,7 +7,7 @@
 		padding: 47px 0 55px
 		min-height: initial
 	+sm
-		padding-bottom: 47px
+		padding: 22px 0 47px
 	&__inner
 		padding-top: 60px
 		+lg
@@ -47,7 +47,7 @@
 		+lg 
 			padding: 0 0 64px
 		+md
-			padding-bottom: 74px
+			padding-bottom: 7vh
 		+sm
 			padding-bottom: 10px
 	&__sub-title
@@ -106,19 +106,33 @@
 		left: 0
 		right: 0
 		bottom: 88px
+		+rh(630)
+			bottom: 44px
 		+lg
 			position: relative
 			left: auto
 			right: auto
 			bottom: auto
-			
+			margin-top: 188px
+		+md
+			margin-top: 9vh
+		+sm
+			margin-top: 19px 
 		.inner
 			display: table
 			width: 100%
+			+lg
+				display: block
 	&__t-coll
 		vertical-align: bottom
 		display: table-cell
 		+clr
+		& + .topic__t-coll
+			margin-top: 45px
+			+sm
+				margin-top: 17px 
+		+lg
+			display: block
 	.inner
 		+lg
 			margin: 0 auto
@@ -127,7 +141,7 @@
 			padding: 0 48px 0 128px
 			max-width: 768px
 		+sm
-			padding: 0 20px 0 31px
+			padding: 0 30px
 			max-width: 100%
 		+xxs 
 			padding: 0 26px 0 31px
