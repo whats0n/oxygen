@@ -14,20 +14,21 @@
 	input
 		display: none
 		&:checked + .checkbox__icon
+			border-color: $blue
 			.icon
 				opacity: 1
 				+gpu
 	&__icon
-		border: 1px solid rgba($black, 0.2)
-		border-radius: 3px
-		width: 30px
-		height: 30px
+		border: 1px solid #CFCFCF
+		border-radius: 6px
+		width: 28px
+		height: 28px
 		background: $white
 		.icon
 			position: absolute
-			top: 8px
+			top: 7px
 			left: 5px
-			color: $green
+			color: $blue
 			opacity: 0
 			font-size: 13px
 			transform: translate3d(0,-5px,0)

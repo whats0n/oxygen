@@ -1,33 +1,27 @@
 {% import "partials/_mixins.html" as mixins %}
 <!-- begin step -->
-<div class="step">
+<div class="step step_mod">
 	<form action="/" class="js-validation" data-validation-step="third">
 		<h2 class="title-lg step__title">Oxygen Whitelist</h2>
 		<div class="step__description">
-			<p>If you are interested in BeTH tokens sale, please fill in as many fields below as possible to gain access to our Whitelist.</p>
+			<p>If you are interested in OXG tokens sale, please fill in as many fields below as possible to gain access to our Whitelist.</p>
 			<p>It is important for us to understand who will become a part of the Oxygen environment and to what extent are participants interested in its development. Therefore, we have decided to create <strong>a Whitelist</strong> and <strong>a closed pre-sale</strong> for the most involved contributors in our project.</p>
 		</div>
 		{% set stepFields = [
 			{ name: 'step_3-email', label: 'E-mail', validation: 'required', inputClassList: 'js-validation-email-second' },
-			{ name: 'step_3-company', label: 'Company', validation: 'required' },
+			{ name: 'step_3-phone', label: 'Phone', placeholder: 'Optional' },
 			{
-				label: 'Country of residence', 
+				label: 'Country of Residence', 
 				select: {
 					selectAttrs: 'name="step_3-country"',
 					validation: 'required',
 					options: [
-						'Russian Federation',
+						'India',
 						'Russian Federation 1',
 						'Russian Federation 2',
 						'Russian Federation 3'
 					]
 				}
-			},
-			{
-				name: 'step_3-amount',
-				inputClassList: 'step__field-number', 
-				label: 'Amount in USD you plan to&nbsp;spend on our tokens',
-				validation: 'number'
 			}
 		] %}
 		<div class="step__form">
@@ -38,7 +32,7 @@
 					</div>
 					<div class="step__field">
 						{% if not item.select %}
-							<input type="text" class="sm-input {{item.inputClassList}}" data-validation="{{item.validation}}" name="{{item.name}}">
+							<input type="text" class="sm-input {{item.inputClassList}}" data-validation="{{item.validation}}" name="{{item.name}}" {% if item.placeholder %}placeholder="{{item.placeholder}}"{% endif %}>
 						{% else %}
 							{{mixins.select(item.select)}}
 						{% endif %}
@@ -46,8 +40,36 @@
 				</div>
 			{% endfor %}
 		</div>
-		<div class="step__footer">
-			<button class="btn step__btn">Apply</button>
+		<div class="step__bottom">
+			<h3 class="step__subtitle">Amount of tokens</h3>
+			<div class="sm-calculator">
+				<div class="field-group sm-calculator__group">
+					<div class="field-group__input">
+						<input type="text" class="sm-input" data-validation="required" name="step_3-currency-value">
+					</div>
+					<div class="field-group__select">
+						{{mixins.select({
+							selectAttrs: 'name="step_3-currency-type"',
+							validation: 'required',
+							options: [
+								'BTC',
+								'BTC 1',
+								'BTC 2',
+								'BTC 3'
+							]
+						})}}
+					</div>
+				</div>
+				<div class="sm-calculator__value">
+					<span class="sm-calculator__gray">=</span>
+					<span>15083 OXG</span>
+				</div>
+				<div class="sm-calculator__value-small">
+					<span>=</span>
+					<span>367,38 USD</span>
+				</div>
+			</div>
+			<button class="btn btn_simple text-uppercase step__btn" type="submit">Apply</button>
 		</div>
 	</form>
 </div>
