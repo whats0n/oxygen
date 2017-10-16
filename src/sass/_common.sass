@@ -20,9 +20,12 @@ body
 	.hide-help &
 		transform: translateY(0)
 .clouds
+	opacity: 0
+	transition: opacity 1s ease-in-out
+	.unfix &
+		opacity: 1
 	[data-body-animate] &
 		opacity: 0
-		transition: opacity 1s ease-in-out
 	.hide-help &
 		transition-delay: 0.9s
 		opacity: 1
