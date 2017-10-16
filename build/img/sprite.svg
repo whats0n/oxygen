@@ -2,8 +2,11 @@
             <filter id="a" filterUnits="userSpaceOnUse" x="0" y=".4" width="17.9" height="15.5">
                 <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
             </filter>
-        </defs><symbol id="icon-arrow-down" viewBox="0 0 123.97 123.97">
-    <path d="M51.802 96.062c2.801 2.801 6.5 4.2 10.2 4.2s7.4-1.399 10.2-4.2l47.3-47.3c5.5-5.5 6.101-14.6.8-20.3-5.6-6.1-15.1-6.3-20.899-.5l-30.4 30.3a9.959 9.959 0 0 1-14.1 0l-30.3-30.3c-5.801-5.8-15.301-5.7-20.9.5-5.3 5.7-4.8 14.8.8 20.3l47.299 47.3z"/>
+        </defs><symbol id="icon-arrow-down" viewBox="0 0 123.97 76.55">
+    <title>
+        arrow-down
+    </title>
+    <path d="M51.8 72.35a14.49 14.49 0 0 0 20.4 0l47.3-47.3c5.5-5.5 6.1-14.6.8-20.3a14.47 14.47 0 0 0-20.9-.5L69 34.55a10 10 0 0 1-14.1 0L24.6 4.25a14.39 14.39 0 0 0-20.9.5c-5.3 5.7-4.8 14.8.8 20.3z"/>
 </symbol><symbol id="icon-arrow-right" viewBox="0 0 13 20">
     <title>
         Path 12
@@ -39,6 +42,11 @@
             <path d="M28 38h8v2h-8z"/>
         </g>
     </g>
+</symbol><symbol id="icon-down" viewBox="0 0 40 21.5">
+    <title>
+        down
+    </title>
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M38.5 1.5L20 20 1.5 1.5"/>
 </symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
