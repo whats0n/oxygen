@@ -1,6 +1,5 @@
 .features
-	padding: 49px 0 74px
-	background-color: #002D4A 
+	padding: 49px 0 56px
 	+md
 		padding: 53px 0
 		text-align: center
@@ -8,31 +7,31 @@
 		padding: 40px 0
 	&__title
 		&:not(:last-child)
-			margin-bottom: 26px
-	// &__sm-description
-	// 	margin: 0 auto
-	// 	max-width: 970px
+			margin-bottom: 27px
 	&__sm-description
-		max-width: 704px
+		max-width: 670px
+		font-size: 21px
+		line-height: 30px
 		+md
 			max-width: 100%
 	&__wrap
-		margin: 0 -30px
+		margin: 0 -15px
 		font-size: 0
 		+clr
 		+sm
 			margin: 0
 		&:not(:first-child)
-			margin-top: 67px
+			margin-top: 60px
 			+md
 				margin-top: 98px 
 			+sm
 				margin-top: 53px 
 	&__col
-		margin-bottom: 50px
-		padding: 0 30px
+		margin-bottom: 33px
+		padding: 0 15px
 		width: 33.3%
 		font-size: 16px
+		line-height: (22/16)
 		display: inline-block
 		vertical-align: top
 		+md
@@ -44,33 +43,48 @@
 			padding: 0
 			font-size: 14px
 			line-height: (22/14) 
+		p
+			max-width: 330px
+			+md
+				max-width: none
 	&__ico
+		margin-bottom: 11px
+		height: 68px
 		+md
 			vertical-align: top
 			display: inline-block
 		&_stars
+			padding-top: 10px
 			width: 85px
 		&_ppl
+			padding-top: 11px
 			width: 57px
 		&_coins
+			padding-top: 11px
 			width: 53px
 		&_robo
+			padding-top: 4px
 			width: 61px
 		&_net
 			width: 68px
 		&_clouds
+			padding-top: 14px
+			margin-left: 5px
 			width: 61px
-		&:not(:last-child)
-			margin-bottom: 25px
-			+md
-				margin-bottom: 14px 
-			+sm
-				margin-bottom: 19px 
+		// &:not(:last-child)
+		// 	margin-bottom: 25px
+		// 	+md
+		// 		margin-bottom: 14px 
+		// 	+sm
+		// 		margin-bottom: 19px 
 		img
 			max-width: 100%
 			display: block
 	&__title-md
-		+f(26, 25, null, 700) 
+		max-width: 360px
+		+f(26, 30, null, 700) 
+		+md
+			max-width: none
 		&:not(:last-child)
 			margin-bottom: 20px
 			+md

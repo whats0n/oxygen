@@ -6,7 +6,8 @@
 			<div class="info-block__header-in">
 				<h2 class="title-lg info-block__title">Token crowdsale</h2>
 				<div class="sm-description">
-					<p>The BREATH (bETH) tokens will be used to cover Oxygen's commission fee with respect to trades and contracts. The fee schedule will be similar to the one used by most exchanges, with makers receiving rebates and takers paying full fees at all times.</p>
+					<p>The OXG tokens will be used to cover Oxygen' commission fee with respect to trades and contracts.</p>
+					<p>The fee schedule will be similar to the one used by most exchanges with makers receiving rebates and takes paying full fees at all times.</p>
 				</div>
 			</div>
 		</div>
@@ -20,9 +21,9 @@
 							desc: [ 'Fixed block of the beginning. ' ]
 						},
 						{
-							mod: '34',
+							mod: 'info-list__item_23 info-list__item_tablet-33',
 							title: 'Campaign ends',
-							desc: [ '3 weeks or as soon as hard cap is <br>reached.' ]
+							desc: [ '3 weeks from the start or as soon&nbsp;as hard cap is reached' ]
 						}
 					]
 				},
@@ -31,17 +32,17 @@
 						{
 							mod: 'info-list__item_23 info-list__item_tablet-33',
 							title: 'Emission',
-							desc: [ 'Only during the crowdsale 100% tokens will be issued.' ]
+							desc: [ 'Tokens will be issued only during&nbsp;the crowdsale' ]
 						},
 						{
 							mod: 'info-list__item_19 info-list__item_tablet-33',
 							title: 'Total supply',
-							desc: [ '500 000 000 <br>(Five hundred million) <br>units (limited)' ]
+							desc: [ '500 000 000 units (non&nbsp;reissuable)' ]
 						},
 						{
 							mod: 'info-list__item_20 info-list__item_tablet-33',
 							title: 'Exchange rate',
-							desc: [ '$0,06 = 1 BREATH (bETH)' ]
+							desc: [ '$0,06 = 1 OXG' ]
 						},
 						{
 							mod: 'info-list__item_16 info-list__item_tablet-33',
@@ -61,17 +62,17 @@
 							mod: 'info-list__item_62 info-list__item_tablet-62',
 							title: 'Token holders options',
 							desc: [
-								'Deals in bETH tokens under more advantageous conditions (up to 50% rebate)',
-								'Priority in the order book queue (if credit-rating permits)',
-								'Last look on trades',
+								'Deals in OXG tokens under more advantageous conditions (up to 50% rebate)',
+								'Advance in the order book queue (if credit rating permits)',
+								'Last-look on trades',
 								'Liabilities coverage to avoid penalty in case of credit-event',
-								'Right to vote on the implementation of new features'
+								'Voting right on the implementation of new features'
 							]
 						},
 						{
 							mod: 'info-list__item_38 info-list__item_tablet-38',
 							title: 'Crowdfunding goal',
-							desc: [ 'Service development, floating capital <br>required for market making, <br>international marketing.' ]
+							desc: [ 'Service development, floating capital <br>required for market making, <br>international marketing' ]
 						}
 					]
 				}
@@ -94,83 +95,84 @@
 					</div>
 				{% endfor %}
 			</div>
-			{% set graphs = [
-				{
-					classList: 'sm-graph_green',
-					title: 'Tokens allocation plan',
-					boxes: [
-						{
-							value: '76%',
-							desc: 'Token sale contributors'
-						},
-						{
-							mod: '_text-right',
-							value: '3%',
-							desc: 'Bonus tokens'
-						},
-						{
-							value: '10%',
-							desc: 'Foundation long term budget'
-						},
-						{
-							value: '10%',
-							desc: 'Foundation long term budget'
-						},
-						{
-							value: '1%',
-							desc: 'Bounty'
-						}
-					]
-				},
-				{
-					classList: 'sm-graph_blue',
-					title: 'Funds distribution plan',
-					boxes: [
-						{
-							value: '45%',
-							desc: 'Product Development'
-						},
-						{
-							value: '30%',
-							desc: 'Business Development and marketing'
-						},
-						{
-							value: '10%',
-							desc: 'Floating capital required for&nbsp;market making'
-						},
-						{
-							value: '10%',
-							desc: 'Legal activities'
-						},
-						{
-							value: '5%',
-							desc: 'Reserved funds'
-						}
-					]
-				}
-			] %}
-			{% for item in graphs %}
-				<div class="sm-graph {{item.classList}} info-block__graph">
-					<h4 class="sm-graph__title">{{item.title}}</h4>
-					<div class="sm-graph__body">
-						<div class="sm-graph__container">
-							<div class="sm-graph__row">
-								{% for item in item.boxes %}
-									<div class="sm-graph__box {% if item.mod %}sm-graph__box{{item.mod}}{% endif %}" style="width: {{item.value}}">
-										<div class="sm-graph__line">
-											<div class="sm-graph__line-in" style="width: {{item.value}}"></div>
+			<div class="info-block__graphs">
+				{% set graphs = [
+					{
+						classList: 'sm-graph_green',
+						title: 'Tokens allocation plan',
+						boxes: [
+							{
+								value: '60%',
+								desc: 'Token sale contributors'
+							},
+							{
+								value: '9%',
+								desc: 'Bonus tokens'
+							},
+							{
+								value: '15%',
+								desc: 'Foundation long&nbsp;term <br>budget'
+							},
+							{
+								value: '15%',
+								desc: 'Foundation long&nbsp;term <br>budget'
+							},
+							{
+								value: '1%',
+								desc: 'Bounty'
+							}
+						]
+					},
+					{
+						classList: 'sm-graph_blue',
+						title: 'Funds distribution plan',
+						boxes: [
+							{
+								value: '45%',
+								desc: 'Product Development'
+							},
+							{
+								value: '30%',
+								desc: 'Business Development and marketing'
+							},
+							{
+								value: '10%',
+								desc: 'Floating capital required&nbsp;for market making'
+							},
+							{
+								value: '10%',
+								desc: 'Legal activities'
+							},
+							{
+								value: '5%',
+								desc: 'Reserved funds'
+							}
+						]
+					}
+				] %}
+				{% for item in graphs %}
+					<div class="sm-graph {{item.classList}} info-block__graph">
+						<h4 class="sm-graph__title">{{item.title}}</h4>
+						<div class="sm-graph__body">
+							<div class="sm-graph__container">
+								<div class="sm-graph__row">
+									{% for item in item.boxes %}
+										<div class="sm-graph__box {% if item.mod %}sm-graph__box{{item.mod}}{% endif %}" style="width: {{item.value}}">
+											<div class="sm-graph__line">
+												<div class="sm-graph__line-in" style="width: {{item.value}}"></div>
+											</div>
+											<div class="sm-graph__info">
+												<div class="sm-graph__value">{{item.value | safe}}</div>
+												<div class="sm-graph__description">{{item.desc | safe}}</div>
+											</div>
 										</div>
-										<div class="sm-graph__info">
-											<div class="sm-graph__value">{{item.value | safe}}</div>
-											<div class="sm-graph__description">{{item.desc | safe}}</div>
-										</div>
-									</div>
-								{% endfor %}
+									{% endfor %}
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>

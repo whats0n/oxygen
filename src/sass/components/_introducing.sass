@@ -5,29 +5,42 @@
 		padding: 100px 0
 	+sm
 		padding: 43px 0
-	&__inner
-		// max-width: 960px
-		// max-width: 1160px
 	&__title
 		+f(40, 40)
 		text-align: left
+		+xl
+			text-align: center
 		&:not(:last-child)
 			margin-bottom: 28px
 	&__description
-		max-width: 780px
+		max-width: 585px
 		+f(20, 30)
+		+xl
+			margin: 0 auto
+			text-align: center
 	&__diagram
-		margin: 57px auto 0
+		margin: 88px auto 0
 		padding: 0 15px
 		max-width: 1250px
 		+sm
 			padding: 0
-		// height: 670px
-		// svg
-		// 	width: 100%
-		// 	display: block
-		// 	border: 1px solid
-	&__logo
-		padding: 36px 0 32px
+	&__footer
+		padding-top: 36px
+		padding-bottom: 32px
 		font-size: 0
-		text-align: center
+		+clr
+		+xl
+			text-align: center
+	&__label
+		float: left
+		+f(20, 30)
+		+xl
+			float: none
+		+sm
+			+f(16, 20)
+	&__logo
+		float: right
+		margin-right: 25px
+		+xl
+			float: none
+			margin: 25px 0 0
