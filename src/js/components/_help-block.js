@@ -4,12 +4,16 @@ import { WIN, BODY } from '../_constants';
 
   let btnScroll = $('.js-btn-scroll');
   WIN.on('mousewheel scroll', () => {
-    if (BODY.hasClass('unfix') && !BODY.hasClass('hide-help')) btnScroll.trigger('click');
+  	// BODY.hasClass('unfix') && 
+    if (!BODY.hasClass('hide-help')) btnScroll.trigger('click');
   });
 
   btnScroll.on('click', () => {
     BODY.addClass('hide-help');
-    setTimeout(() => BODY.css('overflow-y', 'auto'), 600);
+    setTimeout(() => BODY.css({
+    	'position': 'static',
+    	'overflow-y': 'auto'
+    }), 600);
     return false;
   });
 

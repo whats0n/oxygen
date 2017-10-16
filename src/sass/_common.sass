@@ -4,16 +4,16 @@ body
 	color: $white 
 	+font-smoothing
 	background: $black
-	position: fixed
-	overflow-y: hidden
-	&.unfix
-		position: static
-		overflow-y: auto
+	// position: fixed
+	// overflow-y: hidden
+	// &.unfix
+	// 	position: static
+	// 	overflow-y: auto
 
 .out
 	position: relative
 	min-height: 100%
-	overflow: hidden
+	// overflow: hidden
 	transition: transform .6s ease-in
 	[data-body-animate] &
 		transform: translateY(100vh)
@@ -30,7 +30,8 @@ body
 		transition-delay: 0.9s
 		opacity: 1
 
-[data-body-animate].unfix
+[data-body-animate]
+	position: fixed
 	overflow: hidden
 
 .inner
