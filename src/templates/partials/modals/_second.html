@@ -41,15 +41,15 @@
 			{% endfor %}
 		</div>
 		<div class="step__bottom">
-			<h3 class="step__subtitle">Amount of tokens</h3>
-			<div class="sm-calculator">
+			<h3 class="step__title-md">Amount of tokens</h3>
+			<div class="sm-calculator step__calculator">
 				<div class="field-group sm-calculator__group">
 					<div class="field-group__input">
-						<input type="text" class="sm-input" data-validation="required" name="step_3-currency-value">
+						<input type="text" class="sm-input" data-validation="required" name="step_3-amount-value">
 					</div>
 					<div class="field-group__select">
 						{{mixins.select({
-							selectAttrs: 'name="step_3-currency-type"',
+							selectAttrs: 'name="step_3-amount-type"',
 							validation: 'required',
 							options: [
 								'BTC',
@@ -64,7 +64,7 @@
 					<span class="sm-calculator__gray">=</span>
 					<span>15083 OXG</span>
 				</div>
-				<div class="sm-calculator__value-small">
+				<div class="sm-calculator__value-small sm-calculator__gray">
 					<span>=</span>
 					<span>367,38 USD</span>
 				</div>

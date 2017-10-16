@@ -14,14 +14,12 @@
     //step 2
     $step_checkbox_first = $_POST['step_2-checkbox-1'];
     $step_checkbox_second = $_POST['step_2-checkbox-2'];
-    $step_checkbox_third = $_POST['step_2-checkbox-3'];
-    $step_checkbox_fourth = $_POST['step_2-checkbox-4'];
-    $step_checkbox_fifth = $_POST['step_2-checkbox-5'];
     //step 3
     $step_email_third = $_POST['step_3-email'];
-    $step_company_third = $_POST['step_3-company'];
+    $step_phone_third = $_POST['step_3-phone'];
     $step_country_third = $_POST['step_3-country'];
-    $step_amount_third = $_POST['step_3-amount'];
+    $step_amount_value_third = $_POST['step_3-amount-value'];
+    $step_amount_type_third = $_POST['step_3-amount-type'];
     // $femail = 'whatever@what.as';
 
 
@@ -44,17 +42,15 @@
 
     $message_step_second = "Checkbox 1:\n ".$step_checkbox_first.$new_line;
     $message_step_second .= "Checkbox 2:\n ".$step_checkbox_second.$new_line;
-    $message_step_second .= "Checkbox 3:\n ".$step_checkbox_third.$new_line;
-    $message_step_second .= "Checkbox 4:\n ".$step_checkbox_fourth.$new_line;
-    $message_step_second .= "Checkbox 5:\n ".$step_checkbox_fifth.$new_line;
 
     //third step
     $message_step_third_title = "Step 3: ".$new_line;
 
     $message_step_third = "E-mail:\n ".$step_email_third.$new_line;
-    $message_step_third .= "Company:\n ".$step_company_third.$new_line;
+    $message_step_third .= "Phone:\n ".$step_phone_third.$new_line;
     $message_step_third .= "Country:\n ".$step_country_third.$new_line;
-    $message_step_third .= "Amount:\n ".$step_amount_third.$new_line;
+    $message_step_third .= "Amount Value:\n ".$step_amount_value_third.$new_line;
+    $message_step_third .= "Amount Type:\n ".$step_amount_type_third.$new_line;
 
     //META INFO
     $message_meta = "\n<br>\n\n"."\n<br>\n\n"."Useragent:".$_SERVER['HTTP_USER_AGENT']."\n\n\t\t=====\\" . $_SERVER['REMOTE_ADDR'];

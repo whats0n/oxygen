@@ -13,7 +13,10 @@
 			margin: 0 auto
 			max-width: 670px
 	&__title
-		margin-bottom: 18px
+		margin: 0 auto 18px
+		max-width: 480px
+		font-size: 36px
+		line-height: 40px
 	&__description
 		opacity: 0.8
 		p 
@@ -61,6 +64,7 @@
 		max-width: 200px
 	&__form
 		padding-top: 22px
+		padding-bottom: 27px
 		margin: 0 auto
 		max-width: 468px
 	&__box
@@ -130,15 +134,14 @@
 			+sm
 				font-size: 55px
 	&__social
-		padding-bottom: 60px
+		padding-top: 38px
+		padding-bottom: 21px
 		+sm
 			padding-bottom: 10px
 		&-label 
-			margin-bottom: 28px
+			margin-bottom: 11px
 			color: $lightGray
-			+f(18, 26, null, 700)
-			+sm 
-				font-size: 16px
+			+f(16, 25)
 		&-list
 			font-size: 0
 			li
@@ -147,15 +150,34 @@
 			a
 				display: inline-block
 				vertical-align: top
-				padding: 0 30px
-				opacity: 0.3
-				transition: opacity 0.2s ease-in-out
+				padding: 0 21px
+				height: 25px
+				+vertical
+				line-height: 1
 				+hover
-					opacity: 0.5
+					.icon
+						color: darken($blue, 10%)
 				+sm 
 					padding: 0 15px
 			.icon
-				color: $black
-				font-size: 36px
+				display: inline-block
+				vertical-align: middle
+				color: $blue
+				font-size: 25px
+				transition: color 0.2s ease-in-out
 			.icon-twitter
-				font-size: 30px
+				font-size: 21px
+	&__bottom
+		padding: 42px 40px 86px
+		margin: 0 -100px 
+		border-radius: 0 0 30px 30px
+		background: #F2F0EC
+	&__title-md
+		margin-bottom: 45px
+		font-size: 26px
+		line-height: 25px
+	&__calculator
+		padding-bottom: 42px
+	&__convert
+		margin-top: 48px
+		margin-bottom: 50px
