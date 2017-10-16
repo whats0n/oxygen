@@ -10,6 +10,7 @@ import { WIN, BODY } from '../_constants';
   btnScroll.on('click', () => {
     BODY.addClass('hide-help');
     setTimeout(() => BODY.css('overflow-y', 'auto'), 600);
+    return false;
   });
 
 })();
