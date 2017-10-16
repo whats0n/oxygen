@@ -14,6 +14,24 @@ body
 	position: relative
 	min-height: 100%
 	overflow: hidden
+	transition: transform .6s ease-in
+	[data-body-animate] &
+		transform: translateY(100vh)
+	.hide-help &
+		transform: translateY(0)
+.clouds
+	opacity: 0
+	transition: opacity 1s ease-in-out
+	.unfix &
+		opacity: 1
+	[data-body-animate] &
+		opacity: 0
+	.hide-help &
+		transition-delay: 0.9s
+		opacity: 1
+
+[data-body-animate].unfix
+	overflow: hidden
 
 .inner
 	position: relative
