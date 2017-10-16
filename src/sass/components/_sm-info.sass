@@ -1,22 +1,31 @@
 .sm-info
 	position: relative
-	padding: 6px 0 5px 27px
-	border-left: 4px solid $scooter
+	padding: 9px 0 8px 30px
+	border-left: 4px solid #3EBDFF
+	+lg
+		padding: 0 0 8px 30px 
 	+sm
 		padding: 16px 0 15px 27px
 		margin: 0 -9px 0 9px
 		font-size: 14px
-	&.topic__sm-info
-		float: right
-		+lg
-			float: none
 	&__text
+		max-width: 184px
+		vertical-align: top
+		display: inline-block
+		+lg
+			margin-bottom: 22px
+			max-width: 314px
+			display: block
 		+sm
 			padding-left: 78px
 		a
 			color: #60C9FF 
 	&__wrap
-		margin-top: 19px
+		margin: 5px 0 0 37px
+		vertical-align: top
+		display: inline-block
+		+lg
+			margin: 0
 	&__logo,
 	&__indicators,
 	&__col
@@ -33,12 +42,18 @@
 			display: block
 	&__indicators
 		padding-top: 4px 
+		+lg
+			padding-top: 0
 		&:not(:first-child)
 			margin-left: 36px
+			+lg
+				margin-left: 27px 
 			+sm
 				margin: 21px 0 0
 	&__col
 		max-width: 200px
+		+lg
+			max-width: 143px
 		+sm
 			font-size: 14px
 		+xxs
