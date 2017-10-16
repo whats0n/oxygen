@@ -20,7 +20,12 @@ title: Oxygen
 		{% include "partials/_info-block.html" %}
 		{% include "partials/_footer.html" %}
 	</div>
-	{{modal.call({
+
+{% endblock %}
+
+{% block modal %}
+
+{{modal.call({
 		file: '_first',
 		classList: 'js-modal-first',
 		name: 'modal-step-1'

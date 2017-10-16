@@ -9,6 +9,10 @@ title: Index page
 	{% include 'partials/_faq.html' %}
 	{% include "partials/_footer.html" %}
 
+{% endblock %}
+
+{% block modal %}
+
 	{{modal.call({
 		file: '_first',
 		classList: 'js-modal-first',

@@ -1,4 +1,5 @@
-import { OPEN } from '../_constants';
+import { OPEN, BODY } from '../_constants';
+import { SCROLL_WIDTH } from './_scrollWidth';
 
 export default (function() {
   const $modalClose = $('.js-modal-close');
@@ -13,7 +14,12 @@ export default (function() {
     const $form = $modal.find('form');
 
     if (!$form.length) return;
-      
+    setTimeout(() => {
+      BODY.css({
+        'paddingRight': 0,
+        'overflow-y': 'auto'
+      });
+    }, 100);
     $form.each(function() {
       this.reset();
     });
@@ -42,6 +48,10 @@ export default (function() {
   $modalOpen.on('click', function(e) {
     e.preventDefault();
     const modalTarget = $(this).data('modal-target');
+    BODY.css({
+      'paddingRight': SCROLL_WIDTH(),
+      'overflow': 'hidden'
+    });
     $modal
       .filter(`[data-modal="${modalTarget}"]`)
       .addClass(OPEN);
