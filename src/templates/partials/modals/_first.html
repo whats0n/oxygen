@@ -4,15 +4,11 @@
 	<form action="/" class="js-validation" data-validation-step="second">
 		<h2 class="title-lg step__title">Oxygen Whitelist</h2>
 		<div class="step__description">
-			<p>Disclaimer: This website and all information, products and services provided through the website are approved ‘as is’ and on an ‘as available’ guarantees whatsoever of any kind including, without limitation, any representations, warranties, promises or guarantees regarding the accuracy, currency, completeness, adequacy, availability, suitability or operation of this website, any products or services we may provide through it or the information or material it contains.</p>
+			<p><strong>Disclaimer:</strong>This website and all information, products and services provided through this website are approved ‘as is’ and on an ‘as available’ guarantees whatsoever of any kind including, without limitation, any representations, warranties, promises or guarantees regarding the accuracy, currency, completeness, adequacy, availability, suitability or operation of this website, any products or services we may provide through it or the information or material it contains.</p>
 		</div>
 		{% set stepList = [
-			{ name: "step_2-checkbox", text: "Check here to confirm that you are you are NOT a United States citizen, resident or entity, nor are you signing on behalf of a United States citizen, resident or entity." },
-			{ name: "step_2-checkbox", text: "Check here to confirm that you are NOT a citizen, resident of or entity formed out of the People's Republic of China, nor are you signing on behalf of a citizen, resident of or entity formed out of People's republic of China." },
-			{ name: "step_2-checkbox", text: "Check here to confirm that you are NOT a citizen, resident of or entity formed out of South Korea, nor are you signing on behalf of a citizen, resident of or entity formed out of South Korea." },
-			{ name: "step_2-checkbox", text: "Check here to confirm that you have read the <a href='#'>Oxygen whitepaper</a>." },
-			{ name: "step_2-checkbox", text: "Check here to confirm that you have read the disclaimer terms mentioned above." },
-			{ name: "step_2-checkbox", text: "Check here to confirm that you have read <a href='#'>Terms of Service</a> and <a href='#'>Privacy Policy</a>." }
+			{ name: "step_2-checkbox", text: "Check here to confirm that you are NOT a citizen, resident of or entity formed out of the United States of America, People's Republic of China and South Korea, or are you signing on behalf of a citizen, resident of or entity formed out of United States, People's republic of China and South Korea." },
+			{ name: "step_2-checkbox", text: "Check here to confirm that you have read the <a href='#'>Oxygen whitepaper</a>, disclaimer terms mentioned above and <a href='#'>Terms of Service</a> and <a href='#'>Privacy Policy</a>." }
 		] %}
 		<ul class="step__list">
 			{% for item in stepList %}
@@ -28,7 +24,7 @@
 			{% endfor %}
 		</ul>
 		<div class="step__footer">
-			<button class="btn step__btn js-validation-submit" disabled type="submit">Next</button>
+			<button class="btn btn_simple text-uppercase step__btn js-validation-submit" disabled type="submit">Next</button>
 		</div>
 	</form>
 </div>

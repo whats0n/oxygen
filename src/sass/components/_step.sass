@@ -1,12 +1,19 @@
 .step
 	position: relative
-	padding: 50px 100px 140px
+	padding: 50px 100px 79px
+	font-size: 16px
+	line-height: 25px
 	+lg
-		padding: 40px 40px 140px
+		padding: 40px 40px 70px
 	+sm
-		padding: 40px 15px 140px
+		padding: 40px 15px 40px
+	&_mod
+		padding-bottom: 0 !important
+		.step__description
+			margin: 0 auto
+			max-width: 670px
 	&__title
-		margin-bottom: 21px
+		margin-bottom: 18px
 	&__description
 		opacity: 0.8
 		p 
@@ -14,15 +21,17 @@
 			+sm
 				padding: 11px 0
 	&__list
-		padding: 17px 36px 0 122px
+		padding: 21px 36px 87px 122px
 		text-align: left
 		+lg
-			padding: 17px 0 0
+			padding: 17px 0 70px
 			margin: 0 auto
 			max-width: 480px
+		+sm
+			padding-bottom: 40px
 		li
 			position: relative
-			padding: 14px 0 14px 78px
+			padding: 14px 0 13px 78px
 			+lg
 				padding-left: 44px
 			+sm
@@ -31,36 +40,45 @@
 		position: absolute
 		z-index: 1
 		top: 18px
-		left: 0
+		left: 30px
+		+lg
+			left: 0
 	&__text
-		color: #808080
+		color: #9B9B9B
 	a
-		color: $green
+		color: $blue
 		transition: color 0.175s ease
 		+hover
-			color: darken($green, 10%)
+			color: darken($blue, 10%)
 	&__footer
-		position: absolute
-		left: 0
-		right: 0
-		bottom: 50px
+		// position: absolute
+		// left: 0
+		// right: 0
+		// bottom: 50px
 		text-align: center
 	&__btn
 		width: 100%
 		max-width: 200px
 	&__form
 		padding-top: 22px
+		margin: 0 auto
+		max-width: 468px
 	&__box
-		padding: 15px 100px 15px 66px
+		position: relative
+		padding-left: 80px
+		margin-bottom: 35px
 		+clr
 		+sm
-			padding: 10px 0
 			margin: 0 auto
 			max-width: 360px
 	&__label
-		padding-right: 30px
-		width: 39%
+		position: absolute
+		top: 0
+		right: 100%
+		margin-right: -64px
 		line-height: 50px
+		text-align: right
+		white-space: nowrap
 		+sm
 			padding: 0 0 8px
 			line-height: normal
@@ -74,12 +92,12 @@
 			+sm
 				text-align: left
 	&__field
-		width: 61%
+		// width: 61%
 		&-number
 			max-width: 170px
 	&__label,
 	&__field
-		float: left
+		// float: left
 		+sm 
 			width: 100%
 	&__subtitle
