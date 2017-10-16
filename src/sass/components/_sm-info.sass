@@ -5,8 +5,8 @@
 	+lg
 		padding: 0 0 8px 30px 
 	+sm
-		padding: 16px 0 15px 27px
-		margin: 0 -9px 0 9px
+		padding: 0 0 15px 9px
+		margin: 0 -20px 0 9px
 		font-size: 14px
 	&__text
 		max-width: 184px
@@ -17,7 +17,13 @@
 			max-width: 314px
 			display: block
 		+sm
-			padding-left: 78px
+			padding-left: 97px
+			margin: 0
+			max-width: 80% 
+			min-height: 62px
+			line-height: 1.3 
+		+xxs
+			max-width: 100%
 		a
 			color: #60C9FF 
 	&__wrap
@@ -26,6 +32,8 @@
 		display: inline-block
 		+lg
 			margin: 0
+		+sm
+			display: block
 	&__logo,
 	&__indicators,
 	&__col
@@ -44,12 +52,15 @@
 		padding-top: 4px 
 		+lg
 			padding-top: 0
+		+sm
+			width: 100%
+			+clr
 		&:not(:first-child)
 			margin-left: 36px
 			+lg
 				margin-left: 27px 
 			+sm
-				margin: 21px 0 0
+				margin: 16px 0 0
 	&__col
 		max-width: 200px
 		+lg
@@ -57,9 +68,14 @@
 		+sm
 			font-size: 14px
 		+xxs
-			max-width: 115px
+			float: left
+			max-width: 92px
 		&:not(:last-child)
 			margin-right: 19px
+			+sm
+				margin: 0
+			+xxs
+				float: right
 	&__title
 		+f(26, 30, null, 700)
 		+sm

@@ -60,6 +60,7 @@
 			max-width: 600px 
 			+f(46, 54)
 		+sm
+			margin-bottom: 12px 
 			+f(26, 30)
 	&__description
 		max-width: 540px
@@ -75,40 +76,40 @@
 			padding: 10px 0
 			+sm
 				padding: 5px 0
-	&__subscription
-		margin-bottom: 12px 
-		float: left
-		width: 100%
-		max-width: 467px
-		+lg 
-			max-width: 467px
-		+sm
-			position: relative
-			padding: 21px 0 35px
-			max-width: 100%
-		+xxs
-			padding: 13px 0 27px
-		&:before
-			content: ''
-			position: absolute
-			top: 0
-			left: 50%
-			bottom: 0
-			display: none
-			width: 1000px
-			z-index: -1
-			background: rgba($black, 0.2)
-			transform: translate3d(-50%,0,0)
-			+sm
-				display: block
-		.subscription__label,
-		.field
-			+sm
-				position: relative
-				z-index: 2
-		.field
-			+xxs
-				padding-bottom: 62px
+	// &__subscription
+	// 	margin-bottom: 12px 
+	// 	float: left
+	// 	width: 100%
+	// 	max-width: 467px
+	// 	+lg 
+	// 		max-width: 467px
+	// 	+sm
+	// 		position: relative
+	// 		padding: 21px 0 35px
+	// 		max-width: 100%
+	// 	+xxs
+	// 		padding: 13px 0 27px
+	// 	&:before
+	// 		content: ''
+	// 		position: absolute
+	// 		top: 0
+	// 		left: 50%
+	// 		bottom: 0
+	// 		display: none
+	// 		width: 1000px
+	// 		z-index: -1
+	// 		background: rgba($black, 0.2)
+	// 		transform: translate3d(-50%,0,0)
+	// 		+sm
+	// 			display: block
+	// 	.subscription__label,
+	// 	.field
+	// 		+sm
+	// 			position: relative
+	// 			z-index: 2
+	// 	.field
+	// 		+xxs
+	// 			padding-bottom: 62px
 	&__bottom
 		position: absolute
 		left: 0
@@ -140,6 +141,8 @@
 		+lg
 			float: left
 			width: auto
+		+sm
+			width: 28%
 		& + .topic__t-coll
 			margin-top: 45px
 			width: 66.2%
@@ -147,7 +150,8 @@
 				margin: 0 0 0 53px
 				width: auto
 			+sm
-				margin-top: 17px 
+				margin: 0
+				width: 72% 
 		+lg
 			display: block
 	.inner
@@ -222,10 +226,27 @@
 
 .signup
 	margin-top: 9vh
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 50%
+		bottom: 0
+		display: none
+		width: 1000px
+		z-index: -1
+		background: rgba($black, 0.2)
+		transform: translate3d(-50%,0,0)
+		+sm
+			display: block
 	+lg
 		margin-top: 28px 
 	+md
 		margin-top: 42px 
+	+sm
+		position: relative
+		margin-top: 18px 
+		padding: 21px 0 35px
 	.btn
 		padding: 15px 70px 16px 
 		+sm
@@ -240,12 +261,18 @@
 		padding: 0 0 0 25px 
 	+md
 		padding: 0
+	+sm
+		font-size: 14px
 	&__text
 		max-width: 124px
 		+lg
 			margin-bottom: 19px
 			max-width: 120px
 			display: block
+		+sm
+			max-width: 80px
+			line-height: 1.3
+			letter-spacing: -0.009em 
 		&:not(:last-child)
 			margin-right: 26px
 			+lg
@@ -256,10 +283,14 @@
 		vertical-align: top
 		display: inline-block
 	&__col
+		+sm
+			display: block
 		&:not(:first-child)
 			margin-left: 51px
 			+lg
 				margin-left: 20px
+			+sm
+				margin: 18px 0 0
 	&__title
 		+f(26, 30, null, 700)
 		+sm
