@@ -1195,12 +1195,12 @@
               </div>
             </div>
             <div class="step__bottom">
-              <h3 class="step__subtitle">Amount of tokens</h3>
-              <div class="sm-calculator">
+              <h3 class="step__title-md">Amount of tokens</h3>
+              <div class="sm-calculator step__calculator">
                 <div class="field-group sm-calculator__group">
-                  <div class="field-group__input"> <input type="text" class="sm-input" data-validation="required" name="step_3-currency-value"> </div>
+                  <div class="field-group__input"> <input type="text" class="sm-input" data-validation="required" name="step_3-amount-value"> </div>
                   <div class="field-group__select">
-                    <div class="select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select name="step_3-currency-type" data-validation="required">
+                    <div class="select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select name="step_3-amount-type" data-validation="required">
 		
 			<option value="BTC">BTC</option>
 		
@@ -1214,7 +1214,7 @@
                   </div>
                 </div>
                 <div class="sm-calculator__value"> <span class="sm-calculator__gray">=</span> <span>15083 OXG</span> </div>
-                <div class="sm-calculator__value-small"> <span>=</span> <span>367,38 USD</span> </div>
+                <div class="sm-calculator__value-small sm-calculator__gray"> <span>=</span> <span>367,38 USD</span> </div>
               </div> <button class="btn btn_simple text-uppercase step__btn" type="submit">Apply</button> </div>
           </form>
         </div>
@@ -1231,11 +1231,18 @@
 			</button>
         <!-- begin step -->
         <div class="step">
-          <h2 class="title-lg step__title">Thank you for your interest!</h2>
-          <div class="step__subtitle">The confirmation letter was sent to your e-mail. We'll get back to you soon with the details of the crowdsale and bring some Oxygen to expensive and unsafe crypto-loaning.</div>
-          <div class="step__checked"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
+          <h2 class="title-lg step__title">Confirm your email address to complete sign up</h2>
+          <div class="step__description">
+            <p>The confirmation letter was sent to your e-mail. Please, confirm your application. We'll get back to you soon with the details of the crowdsale and bring some Oxygen to expensive and unsafe crypto-loaning.</p>
+          </div>
+          <div class="convert step__convert">
+            <div class="convert__back"></div>
+            <div class="convert__front"></div>
+            <div class="convert__letter">Needs confirmation!</div>
+          </div>
+          <div class="step__submit"> <button class="btn btn_simple text-uppercase step__btn js-modal-close">OK</button> </div>
           <div class="step__social">
-            <div class="step__social-label">Please, do not hesitate to follow us on any convenient channel or social media you like:</div>
+            <div class="step__social-label">Follow us</div>
             <ul class="step__social-list">
               <li> <a href="https://www.facebook.com/OxygenTrade-895211577297422/ ">
 						
@@ -1254,7 +1261,6 @@
 					</a> </li>
             </ul>
           </div>
-          <div class="step__footer"> <button class="btn step__btn js-modal-close">Close</button> </div>
         </div>
         <!-- end step -->
       </div>

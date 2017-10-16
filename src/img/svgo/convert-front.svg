@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="230px" height="135px" viewBox="0 0 230 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>convert</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L111.020949,59.5177975 L222.041898,0 L222.041898,122.06826 L222.041898,122.06826 C222.041898,124.829684 219.803322,127.06826 217.041898,127.06826 L5,127.06826 L5,127.06826 C2.23857625,127.06826 7.69608782e-15,124.829684 0,122.06826 L0,0 Z" id="path-1"></path>
+        <filter x="-2.9%" y="-5.9%" width="105.9%" height="110.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.108554121 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0,0 L111.020949,59.5177975 L222.041898,0 L222.041898,122.06826 L222.041898,122.06826 C222.041898,124.829684 219.803322,127.06826 217.041898,127.06826 L5,127.06826 L5,127.06826 C2.23857625,127.06826 7.69608782e-15,124.829684 0,122.06826 L0,0 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-2555.000000, -416.000000)">
+            <g id="convert" transform="translate(2559.000000, 421.000000)">
+                <g id="Rectangle-6-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FBFBFB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Path-2" stroke-width="1" fill-rule="evenodd">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#FDFDFD" xlink:href="#path-3"></use>
+                    <polygon fill-opacity="0.350000024" fill="#E5E5E5" opacity="0.499320652" mask="url(#mask-4)" points="228.463398 128.511372 220.451898 131.167132 112 60 160.806851 88.0014055"></polygon>
+                    <polygon id="Path-2-Copy" fill-opacity="0.350000024" fill="#E5E5E5" opacity="0.5" mask="url(#mask-4)" transform="translate(51.231699, 95.583566) scale(-1, 1) translate(-51.231699, -95.583566) " points="109.463398 128.511372 101.451898 131.167132 -7 60 41.8068513 88.0014055"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
