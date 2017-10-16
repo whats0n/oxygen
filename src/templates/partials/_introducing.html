@@ -1,8 +1,8 @@
 <!-- introducing -->
 <div class="introducing">
 	<div class="introducing__inner inner">
-		<h2 class="introducing__title title-lg">Introducing Oxygen</h2>
-		<div class="introducing__description">Oxygen is establishing the REPO market in the cryptocurrency world — clear, simple and efficient. It is designed to assist you to get the most out of your digital assets and supports all ERC20-compliant tokens.</div>
+		<h2 class="introducing__title title-lg">Transparent workflow and infrastructure</h2>
+		<div class="introducing__description">OXYGEN is a powerful and easy-to-use tool ensuring efficient and 100% secure transactions.</div>
 	</div>
 	<div class="introducing__diagram">
 		<div class="diagram">
@@ -130,115 +130,118 @@
 				{% endfor %}
 			</div>
 		</div>
-		<div class="introducing__logo">
-			<img src="img/ethereum-logo.svg" alt="Ethereum">
+		<div class="tooltip_templates">
+			<span id="tooltip_conditions">
+				<p>If the desired conditions of two parties (the borrower and the lender) match, the deal is activated in the public REPO contract. Activation means that the two parties agree on all terms, including:</p>
+				<ul>
+					<li>Type and amount of borrowed token (ERC20)</li>
+					<li>Length of the deal</li>
+					<li>Type of token used as collateral</li>
+					<li>Interest rate</li>
+				</ul>
+			</span>
+			<span id="tooltip_placement-request">
+				<p>A placement request is initiated by an asset holder willing to lend a specific amount of his asset. While it can be generated automatically by the matching engine, any interested party can interact with the REPO contract directly on Ethereum network by sending transactions.</p>
+				<p>The asset holder must specify:</p>
+				<ul>
+					<li>Type and amount of token he wants to lend</li>
+					<li>Desirable tokens and quantity of each to use as a collateral</li>
+					<li>Minimum credit rating of the borrower</li>
+					<li>Length of the deal</li>
+					<li>Interest rate (overall)</li>
+					<li>Whether his deal can be split into smaller deals</li>
+					<li>Expiration time of the proposal</li>
+					<li>Minimal rating of the borrower</li>
+				</ul>
+			</span>
+			<span id="tooltip_loan-request">
+				<p>A loan request is initiated by a borrower who needs a specific ERC20 token and can offer another token(s) in security for the loan deal. While loan requests can also be processed automatically by the matching engine, any party can invoke the REPO contract to directly post a deal proposal.</p>
+				<p>The borrower must specify:</p>
+				<ul>
+					<li>Desired ERC20 token</li>
+					<li>Quantity of token</li>
+					<li>Length of the deal</li>
+					<li>Which ERC20 token(s) the borrower will use as a collateral (and the quantity of each)</li>
+					<li>Expiration time of the proposal</li>
+				</ul>
+			</span>
+			<span id="tooltip_matching">
+				<p>Part of the continuous real-time auction. We not only provide matching services, but also the dissemination of price-forks to participants based on models that incorporate both book-value and market-data pricing models.</p>
+			</span>
+			<!-- for diagram info -->
+			<span id="tooltip_diagram-management">
+				<p>The risk management toolkit uses data collected from all previous exchange deals to provide advice on future deals.</p>
+			</span>
+			<span id="tooltip_diagram-exchange">
+				<p>A set of helpful web applications and decentralized apps that help participants to interact with the decentralized REPO contract.</p>
+			</span>
+			<span id="tooltip_diagram-contract">
+				<p>The core of decentralized REPO deals. While used mostly by the matching engine, any party can use this smart-contract directly on Ethereum network.</p>
+			</span>
+			<span id="tooltip_diagram-system">
+				<p>The credit rating is decentralized and managed by another smart-contract on Ethereum network. Every participant’s rating starts at 0 and can be increased by completing deals as the borrower. In their placements, asset holders looking to lend their ERC20 tokens can specify the minimum desired rating of the borrower.</p>
+				<img src="./img/formula.png" alt="formula" class="diagram__formula">
+			</span>
+			<span id="tooltip_diagram-etherdelta">
+				<p>Etherdelta is a decentralized exchange. When the collateral goes through, the original asset holder might prefer (optional) to get assets in the original tokens that he was borrowing rather than the collateral tokens. This is done using Etherdelta.</p>
+			</span>
+			<!-- end -->
+			<span id="tooltip_system-free">
+				<p>The system fee is a small ETH price included in any REPO contract transaction.</p>
+			</span>
+			<span id="tooltip_loan">
+				<p>A loan is given by the asset holder who wishes to lend his assets for a specific amount of time and rate of interest.</p>
+			</span>
+			<span id="tooltip_collateral">
+				<p>The collateral is the agreed amount of ERC20 tokens used in security for the loan deal.</p>
+			</span>
+			<span id="tooltip_default">
+				<p>If the borrower fails to return borrowed tokens when the deal has expired, the deal is automatically considered default. The lender will then be able to claim the collateral from the contract.</p>
+			</span>
+			<span id="tooltip_completion">
+				<p>When the borrower successfully returns borrowed tokens with interests while the deal is still active (not expired), the deal is automatically considered complete.</p>
+			</span>
+			<span id="tooltip_rating-down">
+				<p>The borrower rating is updated according to the outcome of the deal.</p>
+				<ul>
+				    <li>In case of default deal, it goes down.</li>
+				    <li>Rating change is proportionate to the volume of the deal.</li>
+				    <li>Rating of all participants is stored in a separate contract.</li>
+				</ul>
+			</span>
+			<span id="tooltip_rating-up">
+				<p>The borrower rating is updated according to the outcome of the deal.</p>
+				<ul>
+				    <li>In case of completed deal, it goes up.</li>
+				    <li>Rating change is proportionate to the volume of the deal.</li>
+				    <li>Rating of all participants is stored in a separate contract.</li>
+				</ul>
+			</span>
+			<span id="tooltip_collateral-realisation">
+				<p>In case of a default deal, the collateral is claimed by the lender. It can go through the decentralized Etherdelta exchange to be converted into lender-preferred tokens. This operation is optional and can be chosen by the lender during smart-contract creation.</p>
+			</span>
+			<span id="tooltip_interest-realisation">
+				<p>In case of a completed deal, interests and borrowed tokens are transferred to the lender. It can go through the decentralized Etherdelta exchange to be converted into lender-preferred tokens.This operation is optional and can be chosen by the lender during smart-contract creation.</p>
+			</span>
+			<span id="tooltip_final-interest">
+				<p>Interest is an agreed percentage of the collateral assets. The lender claims it when the deal is closed gracefully.</p>
+			</span>
+			<span id="tooltip_final-repayment">
+				<p>In case of default, repayment is the process of transferring collateral tokens locked in the REPO contract to the Lender. This leads to a 100% secure refund.</p>
+			</span>
+			<span id="tooltip_final-loan">
+				<p>The original tokens, used by the borrower in accordance with the deal, are returned to the lender using the ERC20 contract interface.</p>
+			</span>
+			<span id="tooltip_final-collateral">
+				<p>When the deal is closed gracefully, the collateral is unblocked from the REPO contract and is returned to the borrower. Interests are payed to the lender.</p>
+			</span>
 		</div>
 	</div>
-	<div class="tooltip_templates">
-		<span id="tooltip_conditions">
-			<p>If the desired conditions of two parties (the borrower and the lender) match, the deal is activated in the public REPO contract. Activation means that the two parties agree on all terms, including:</p>
-			<ul>
-				<li>Type and amount of borrowed token (ERC20)</li>
-				<li>Length of the deal</li>
-				<li>Type of token used as collateral</li>
-				<li>Interest rate</li>
-			</ul>
-		</span>
-		<span id="tooltip_placement-request">
-			<p>A placement request is initiated by an asset holder willing to lend a specific amount of his asset. While it can be generated automatically by the matching engine, any interested party can interact with the REPO contract directly on Ethereum network by sending transactions.</p>
-			<p>The asset holder must specify:</p>
-			<ul>
-				<li>Type and amount of token he wants to lend</li>
-				<li>Desirable tokens and quantity of each to use as a collateral</li>
-				<li>Minimum credit rating of the borrower</li>
-				<li>Length of the deal</li>
-				<li>Interest rate (overall)</li>
-				<li>Whether his deal can be split into smaller deals</li>
-				<li>Expiration time of the proposal</li>
-				<li>Minimal rating of the borrower</li>
-			</ul>
-		</span>
-		<span id="tooltip_loan-request">
-			<p>A loan request is initiated by a borrower who needs a specific ERC20 token and can offer another token(s) in security for the loan deal. While loan requests can also be processed automatically by the matching engine, any party can invoke the REPO contract to directly post a deal proposal.</p>
-			<p>The borrower must specify:</p>
-			<ul>
-				<li>Desired ERC20 token</li>
-				<li>Quantity of token</li>
-				<li>Length of the deal</li>
-				<li>Which ERC20 token(s) the borrower will use as a collateral (and the quantity of each)</li>
-				<li>Expiration time of the proposal</li>
-			</ul>
-		</span>
-		<span id="tooltip_matching">
-			<p>Part of the continuous real-time auction. We not only provide matching services, but also the dissemination of price-forks to participants based on models that incorporate both book-value and market-data pricing models.</p>
-		</span>
-		<!-- for diagram info -->
-		<span id="tooltip_diagram-management">
-			<p>The risk management toolkit uses data collected from all previous exchange deals to provide advice on future deals.</p>
-		</span>
-		<span id="tooltip_diagram-exchange">
-			<p>A set of helpful web applications and decentralized apps that help participants to interact with the decentralized REPO contract.</p>
-		</span>
-		<span id="tooltip_diagram-contract">
-			<p>The core of decentralized REPO deals. While used mostly by the matching engine, any party can use this smart-contract directly on Ethereum network.</p>
-		</span>
-		<span id="tooltip_diagram-system">
-			<p>The credit rating is decentralized and managed by another smart-contract on Ethereum network. Every participant’s rating starts at 0 and can be increased by completing deals as the borrower. In their placements, asset holders looking to lend their ERC20 tokens can specify the minimum desired rating of the borrower.</p>
-			<img src="./img/formula.png" alt="formula" class="diagram__formula">
-		</span>
-		<span id="tooltip_diagram-etherdelta">
-			<p>Etherdelta is a decentralized exchange. When the collateral goes through, the original asset holder might prefer (optional) to get assets in the original tokens that he was borrowing rather than the collateral tokens. This is done using Etherdelta.</p>
-		</span>
-		<!-- end -->
-		<span id="tooltip_system-free">
-			<p>The system fee is a small ETH price included in any REPO contract transaction.</p>
-		</span>
-		<span id="tooltip_loan">
-			<p>A loan is given by the asset holder who wishes to lend his assets for a specific amount of time and rate of interest.</p>
-		</span>
-		<span id="tooltip_collateral">
-			<p>The collateral is the agreed amount of ERC20 tokens used in security for the loan deal.</p>
-		</span>
-		<span id="tooltip_default">
-			<p>If the borrower fails to return borrowed tokens when the deal has expired, the deal is automatically considered default. The lender will then be able to claim the collateral from the contract.</p>
-		</span>
-		<span id="tooltip_completion">
-			<p>When the borrower successfully returns borrowed tokens with interests while the deal is still active (not expired), the deal is automatically considered complete.</p>
-		</span>
-		<span id="tooltip_rating-down">
-			<p>The borrower rating is updated according to the outcome of the deal.</p>
-			<ul>
-			    <li>In case of default deal, it goes down.</li>
-			    <li>Rating change is proportionate to the volume of the deal.</li>
-			    <li>Rating of all participants is stored in a separate contract.</li>
-			</ul>
-		</span>
-		<span id="tooltip_rating-up">
-			<p>The borrower rating is updated according to the outcome of the deal.</p>
-			<ul>
-			    <li>In case of completed deal, it goes up.</li>
-			    <li>Rating change is proportionate to the volume of the deal.</li>
-			    <li>Rating of all participants is stored in a separate contract.</li>
-			</ul>
-		</span>
-		<span id="tooltip_collateral-realisation">
-			<p>In case of a default deal, the collateral is claimed by the lender. It can go through the decentralized Etherdelta exchange to be converted into lender-preferred tokens. This operation is optional and can be chosen by the lender during smart-contract creation.</p>
-		</span>
-		<span id="tooltip_interest-realisation">
-			<p>In case of a completed deal, interests and borrowed tokens are transferred to the lender. It can go through the decentralized Etherdelta exchange to be converted into lender-preferred tokens.This operation is optional and can be chosen by the lender during smart-contract creation.</p>
-		</span>
-		<span id="tooltip_final-interest">
-			<p>Interest is an agreed percentage of the collateral assets. The lender claims it when the deal is closed gracefully.</p>
-		</span>
-		<span id="tooltip_final-repayment">
-			<p>In case of default, repayment is the process of transferring collateral tokens locked in the REPO contract to the Lender. This leads to a 100% secure refund.</p>
-		</span>
-		<span id="tooltip_final-loan">
-			<p>The original tokens, used by the borrower in accordance with the deal, are returned to the lender using the ERC20 contract interface.</p>
-		</span>
-		<span id="tooltip_final-collateral">
-			<p>When the deal is closed gracefully, the collateral is unblocked from the REPO contract and is returned to the borrower. Interests are payed to the lender.</p>
-		</span>
+	<div class="inner">
+		<div class="introducing__footer">
+			<div class="introducing__label">Support of all ERC20-compliant tokens.</div>
+			<img src="img/ethereum-logo.svg" alt="Ethereum" class="introducing__logo">
+		</div>
 	</div>
 </div>
 <!-- ¯\_(ツ)_/¯ -->

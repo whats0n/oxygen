@@ -1,5 +1,5 @@
 .team
-	padding: 90px 0 81px
+	padding: 90px 0 41px
 	color: $black
 	background: $white
 	text-align: center
@@ -8,7 +8,7 @@
 	+sm
 		padding: 50px 0 20px
 	&__title
-		margin-bottom: 32px
+		margin-bottom: 36px
 		text-align: center
 		+lg
 			margin-bottom: 40px
@@ -24,19 +24,21 @@
 			width: 248px
 			height: 248px
 	&__members
-		margin: 0 -15px
+		margin: 0 -25px
 		+clr
 		+md
 			margin: 0 -25px
 	&__info
-		margin-top: 91px 
+		margin-top: 46px 
 		+md
 			margin-top: 68px 
 		+sm
 			margin-top: 45px 
 	&__member
 		float: left
-		width: 33.33%
+		width: 25%
+		+md 
+			width: 50%
 		+sm
 			float: none
 			margin: 0 auto 
@@ -46,25 +48,12 @@
 		margin: 0 auto
 		max-width: 1087px
 		+clr
-		// +lg
-			// max-width: 487px
-		// +md
-			// max-width: 480px
 	&__col
-		// float: left
-		// width: 50%
-		// padding: 0 0 0 55px
 		max-width: 888px
 		margin: 0 auto
 		&:first-child
-			// padding: 0 60px 0 0
 			+md
 				padding: 0
-		// &:not(:first-child)
-		// 	+md
-		// 		margin-top: 32px
-		// 	+sm
-		// 		margin-top: 28px 
 		+lg
 			width: 100%
 			padding: 25px 0
@@ -80,11 +69,15 @@
 		+sm
 			margin-bottom: 26px
 	&__partners
-		padding: 59px 20px 24px
+		padding: 50px 20px 24px
 		font-size: 0
 		+clr
 		+md
 			padding: 50px 0 25px
+	&__label
+		padding: 0 7px 23px
+		+f(18, 25, null, 700)
+		text-align: left
 	&__partner
 		display: inline-block
 		vertical-align: top

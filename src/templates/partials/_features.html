@@ -2,52 +2,52 @@
 	{
 		ico: 'kf-stars-x3',
 		icoName: 'stars',
-		title: 'Blockchain-recorded credit rating',
-		text: 'The REPO Ethereum-based smart-contract updates decentralized credit rating, whether the loan is complete or default. The platform will feature a transparent algorithm to avoid fraud and build a trustworthy market.'
+		title: 'Blockchain-recorded credit&nbsp;rating',
+		text: 'Get access to anonymous and reliable credit reports about your borrowers - the first practical blend of the anonymity and transparency offered by the Blockchain technology.'
 	},
 	{	ico: 'kf-coins-x3',
 		icoName: 'coins',
-		title: 'Joint loans',
-		text: 'Lenders and borrowers are also able to participate in joint loans by accepting requests in part. Joint loans are available for secured requests if selected by the owner upon request setup. '
+		title: 'Collateralized pools',
+		text: 'Lenders or borrowers can participate in contracts together, sharing the risks and profits. This option is available for secured requests if selected by the owner during initial offer submission process.'
 	},
 	{
 		ico: 'kf-net-x3',
 		icoName: 'net',
 		title: 'Truly decentralized platform',
-		text: 'Oxygen delivers a fully decentralized collateral acquisition and settlement system. There is no centralized custody at any stage of user exchange, guaranteeing lenders and borrowers unbreakable fund safety.'
+		text: 'Oxygen delivers a fully decentralized collateral acquisition and settlement system. There is no centralized custody at any stage, which guarantees lenders and borrowers total asset safety.'
 	},
 	{
 		ico: 'kf-ppl-x3',
 		icoName: 'ppl',
 		title: 'Community-driven orderbook',
-		text: 'Lenders and borrowers push requests to a dynamically generated orderbook. Continuous auction results in several matched requests. Users can choose to lock down their assets, as secured requests match faster. '
+		text: 'Find interesting deals at one click. Semi-anonymous order book will provide embedded information about borrower rating in the offers.'
 	},
 	{
 		ico: 'kf-robo-x3',
 		icoName: 'robo',
-		title: 'AI-based risk management toolkit',
-		text: 'Oxygen neural network aggregates plenty of data sources and offers indicative rates, default-risk coefficients, discount factors and other market data to accurately estimate the value of a potential offer.'
+		title: 'AI-based risk management',
+		text: 'Internal neural network aggregates multiple data sources and offers reference rates, default-risk coefficients, discount factors and other market data to provide price forks, floors and ceilings.'
 	},
 	{
 		ico: 'kf-clouds-x3',
 		icoName: 'clouds',
-		title: 'B2B Integrations available',
-		text: "Today's cryptocurrency exchanges face a lack of REPO instruments and cannot offer safe short positions and margin trading to their clients. Oxygen prioritises the development and implementation of SAAS applications for businesses."
+		title: 'B2B integrations available',
+		text: "We prioritize development and implementation of SaaS applications for businesses. The B2B program is designed with the increasing need for treasury management needs of exchanges, traders and long-term position holders."
 	}
 ] %}
 <!-- features -->
 <div class="features">
 	<div class="features__inner inner">
-		<h2 class="features__title title-lg">Introducing Oxygen</h2>
-		<div class="features__sm-description sm-description">Following cutting-edge technologies support market creation of tokens and coins, beneficial for traders and cryptocurrency stakeholders. </div>
+		<h2 class="features__title title-lg">Market-centric features</h2>
+		<div class="features__sm-description sm-description">Our toolkit makes margin trading simple, transparent and effective for both dealers and traders.</div>
 		<div class="features__wrap">
 			{% for data in keys %}
 				<div class="features__col">
 					<div class="features__ico features__ico_{{data.icoName}}">
 						<img src="./img/{{data.ico}}.png" alt="img">
 					</div>
-					<h4 class="features__title-md title-md">{{data.title}}</h4> 
-					<p>{{data.text}}</p>
+					<h4 class="features__title-md title-md">{{data.title | safe}}</h4> 
+					<p>{{data.text | safe}}</p>
 					{# {% if data.img %}
 						<div class="features__formula">
 							<img src="./img/{{data.img}}.png" alt="img">
