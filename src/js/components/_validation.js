@@ -1,3 +1,6 @@
+import '../lib/_module-loader';
+import '../lib/_utils';
+import '../lib/_toggleDisabled';
 import { validate } from 'jquery-form-validator';
 import { OPEN } from '../_constants';
 
@@ -26,11 +29,12 @@ export default (function() {
   };
 
   const validateCheckboxes = ($checkboxes) => {
-    let valid = false;
+    let valid = true;
+
     $checkboxes.each(function() {
-      if (valid) return;
-      valid = $(this).prop('checked');
+      if (!$(this).prop('checked')) valid = false;
     });
+
     return valid;
   };
 
@@ -52,11 +56,8 @@ export default (function() {
   //functionality
   $form.each(function() {
     const $this = $(this);
-
-    $this.submit(e => e.preventDefault());
-
-    $.validate({
-      form: this,
+    const config = {
+      form: $this,
       errorMessageClass: 'error-block',
       scrollToTopOnError: false,
       onSuccess: function($currentForm) {
@@ -87,7 +88,17 @@ export default (function() {
             return false;
         }
       }
-    });
+    };
+
+    if ($this.closest('.js-modal-second').length) {
+      config.modules = 'toggleDisabled';
+      config.disabledFormFilter = $this;
+    };
+
+
+    $this.submit(e => e.preventDefault());
+
+    $.validate(config);
 
     //checkboxes
     const $checkboxes = $this.find('.js-validation-checkbox');
@@ -105,6 +116,5 @@ export default (function() {
     });
 
   });
-
 
 })();
