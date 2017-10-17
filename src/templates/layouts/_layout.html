@@ -29,7 +29,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
-  <body data-body-animate>
+  <body data-body-animate {% if class %}class="{{class}}"{% endif %}>
     <div class="container">
         {% include "partials/_help.html" %}
         {% include "partials/_header.html" %}
