@@ -6,14 +6,13 @@ export default (function() {
 
   MESSAGES.push({
     delay: 0,
-    text: 'To this day, stakeholders cannot effectively use their assets because the existing tools for margin-trading are too expensive and unsafe. Oxygen is here to change that.'
+    text: 'Can’t earn profit from being a passive long-term holder?'
   });
 
-  // MESSAGES.push({
-  //   delay: 600,
-  //   text: ''
-  // });
-
+  MESSAGES.push({
+    delay: 700,
+    text: 'Borrowing costs stopping you from short-selling tokens? '
+  });
   // MESSAGES.push({
   //   delay: 1200,
   //   text: ''
@@ -40,7 +39,7 @@ export default (function() {
       probability: 0.2,
       glitches: '-|/\\',
       blank: '',
-      duration: text.length * 5,
+      duration: text.length * 15,
       ease: 'easeInOutQuad',
       delay: 0.0
     };
@@ -157,14 +156,16 @@ export default (function() {
   var message = $('#message');
   // var h = topDiv.offset().top + topDiv.height();
 
+  setTimeout(() => {
+    initialise();
+  }, 600);
 
+  // win.scroll(function() {
+  //   if ( (win.scrollTop() >= win.height()/2) && (!message.children().length>0) ) {
 
-  win.scroll(function() {
-    if ( (win.scrollTop() >= win.height()/2) && (!message.children().length>0) ) {
+  //     initialise();
+  //   }
 
-      initialise();
-    }
-
-  });
+  // });
 
 })();

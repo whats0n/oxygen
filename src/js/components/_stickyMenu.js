@@ -1,4 +1,4 @@
-import { WIN, SHOW, FIXED } from '../_constants';
+import { WIN, SHOW, FIXED, BODY } from '../_constants';
 
 ;(function() { let header = $('.js-header');
   let lastScrollTop = 0;
@@ -12,6 +12,6 @@ import { WIN, SHOW, FIXED } from '../_constants';
     menuFixed(scrollPosition);
   });
 
-  let menuFixed = (position) => { (position > 0) ? header.addClass(FIXED) : header.removeClass(FIXED); };
+  let menuFixed = (position) => { (position > 10 ) ? header.addClass(FIXED) : header.removeClass(FIXED); };
 
 })();

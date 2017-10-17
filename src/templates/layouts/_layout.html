@@ -30,15 +30,17 @@
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
   <body data-body-animate>
-    {% include "partials/_help.html" %}
-    {% include "partials/_header.html" %}
-    <!-- BEGIN content -->
-    <div class="out">
-      {% block content %}{% endblock %}
+    <div class="container">
+        {% include "partials/_help.html" %}
+        {% include "partials/_header.html" %}
+        <!-- BEGIN content -->
+        <div class="out">
+          {% block content %}{% endblock %}
+        </div>
+        <!-- END content -->
+        {# {% include 'partials/_pass.html' %} #}
+        {% block modal %}{% endblock %}
     </div>
-    <!-- END content -->
-    {# {% include 'partials/_pass.html' %} #}
-    {% block modal %}{% endblock %}
     <!-- BEGIN scripts -->
     <script type="text/javascript" async src="js/app.js"></script>
     <!-- END scripts -->

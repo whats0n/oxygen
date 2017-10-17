@@ -27,7 +27,9 @@
 		vertical-align: top
 		display: inline-block
 	&__middle
-		padding-bottom: 12vh 
+		padding-bottom: 12vh
+		+sm
+			padding-bottom: 3vh 
 		p + p
 			margin-top: 30px
 	&__inner
@@ -40,6 +42,12 @@
 		display: inline-block
 		+sm
 			font-size: 18px
+	&__message
+		min-height: 158px
+		overflow: hidden
+		+gpu
+		+sm
+			min-height: 130px
 	&__link
 		position: relative
 		margin: 25px 0 0 -26px
@@ -58,6 +66,8 @@
 	&__bottom
 		padding-bottom: 5vh
 		align-self: flex-end
+		+sm
+			padding-bottom: 90px
 
 .btn-scroll
 	position: relative
