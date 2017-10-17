@@ -3,9 +3,9 @@
 {% endmacro %}
 
 {% macro select(props) %}
-<div class="select">
+<div class="select js-select">
 	{{icon('arrow-down')}}
-	<select {{props.selectAttrs | safe}} {% if props.validation %}data-validation="{{props.validation}}"{% endif %}>
+	<select style="width: 100%;" {{props.selectAttrs | safe}} {% if props.validation %}data-validation="{{props.validation}}"{% endif %}>
 		{% for item in props.options %}
 			<option value="{{item}}">{{item}}</option>
 		{% endfor %}
