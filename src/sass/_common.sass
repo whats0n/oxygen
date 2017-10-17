@@ -1,0 +1,64 @@
+body
+	font-family: 'Karla', Arial, sans-serif
+	+f(16, 24, null, 400)
+	color: $white 
+	+font-smoothing
+	background: $black
+	// position: fixed
+	// overflow-y: hidden
+	// &.unfix
+	// 	position: static
+	// 	overflow-y: auto
+.container
+	position: relative
+	min-height: 100%
+	overflow: hidden
+	.is-faq &
+		background-image: linear-gradient(to top, #011B37, #043064) 
+.out
+	position: relative
+	min-height: 100%
+	// overflow: hidden
+	transition: transform .6s ease-in
+	[data-body-animate] &
+		transform: translateY(100vh)
+	.hide-help &
+		transform: initial
+.clouds
+	opacity: 0
+	transition: opacity 1s ease-in-out
+	.unfix &
+		opacity: 1
+	[data-body-animate] &
+		opacity: 0
+	.hide-help &
+		transition-delay: 0.9s
+		opacity: 1
+
+[data-body-animate]
+	position: fixed
+	overflow: hidden
+	width: 100%
+	&.is-clear
+		position: relative
+		overflow: initial
+
+.inner
+	position: relative
+	padding: 0 15px
+	margin: 0 auto
+	z-index: 1
+	max-width: 1200px
+	+clr
+	+md
+		padding: 0 25px
+	+sm
+		padding: 0 15px
+
+.error-block
+	display: none
+	
+.md-show
+	display: none !important
+	+sm
+		display: block !important

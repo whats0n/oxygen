@@ -1,0 +1,29 @@
+.article
+	padding: 218px 0 170px
+	font-family: Courier, monospace
+	font-weight: bold 
+	font-size: 18px
+	line-height: (36/18) 
+	letter-spacing: -.001em
+    word-spacing: .01em
+	+md
+		padding: 116px 0 100px
+		font-size: 16px
+		line-height: (34/16)
+	+sm
+		padding: 49px 0 53px
+		font-size: 13px
+		line-height: (26/13) 
+	&__inner
+		max-width: 1003px
+		+md
+			max-width: 653px
+	&__text
+		max-width: 920px
+		min-height: 180px
+		+md
+			min-height: 238px
+		+sm
+			min-height: 230px
+		.glitch
+			opacity: 0.5

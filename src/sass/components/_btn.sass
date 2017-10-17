@@ -1,0 +1,42 @@
+.btn
+	display: inline-block
+	vertical-align: top
+	padding: 12px 20px 15px
+	border-radius: 5px
+	text-align: center
+	color: $white
+	background: $green
+	font-size: 20px
+	line-height: 23px
+	letter-spacing: -0.02em
+	transition: background-color .3s ease-in-out
+	cursor: pointer
+	+hover
+		background-color: darken($green, 10%)
+	&_blue
+		padding: 15px 40px 16px
+		font-size: 16px
+		font-weight: bold
+		line-height: 19px
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		background-color: #3EBDFF
+		+hover
+			background-color: darken(#3EBDFF, 10%)
+	&_christi
+		background-color: $christi 
+		+hover
+			background-color: darken($christi, 10%)
+	&_simple
+		padding: 10px 20px
+		min-width: 200px
+		background-color: #3EBDFF
+		font-size: 20px
+		font-weight: 700
+		line-height: 30px
+		letter-spacing: 0.01em
+		+hover
+			background-color: darken(#3EBDFF, 10%)
+	&:disabled
+		background-color: #ccc
+		pointer-events: none

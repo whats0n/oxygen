@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png"> </head>
+
+  <body data-body-animate>
+    <div class="container">
+      <!-- help -->
+      <div class="help js-help">
+        <div class="help__top">
+          <div class="help__logo"> <img src="./img/logo-help-big.svg" alt="logo"> </div>
+        </div>
+        <div class="help__middle">
+          <div class="help__inner" id="container">
+            <div class="help__message" id="message"> </div> <a href="#" class="help__link js-help-link">We are here to help.</a> </div>
+        </div>
+        <div class="help__bottom"> <button class="btn-scroll js-btn-scroll">
+			<svg width="28px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 21.5"><title>down</title><polyline points="38.5 1.5 20 20 1.5 1.5" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"/></svg>
+		</button> </div>
+      </div>
+      <!-- ¯\_(ツ)_/¯ -->
+      <!-- header -->
+      <div class="header js-header">
+        <div class="header__in inner">
+          <!-- logo --><a href="#" class="header__logo logo">
+			<img src="./img/logo-small.svg" alt="logo">
+		</a>
+          <!-- ¯\_(ツ)_/¯ -->
+          <!-- btn-menu --><button class="btn-menu js-btn-menu" type="button">
+			
+			<span class="btn-menu__wrap">
+				<span class="btn-menu__line"></span>
+			</span>
+		</button>
+          <!-- ¯\_(ツ)_/¯ -->
+          <!-- apply -->
+          <!-- ¯\_(ツ)_/¯ -->
+          <!-- based -->
+          <div class="based">
+            <div class="based__logo"> <img src="./img/info-logo-header.svg" alt="img"> </div>
+            <div class="based__text">BASED ON ETHEREUM SMART-CONTRACTS</div>
+          </div>
+          <!-- ¯\_(ツ)_/¯ -->
+          <!-- menu -->
+          <ul class="menu">
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a target="_blank" href="/ox-cp.pdf">Whitepaper</a></li>
+            <li><a target="_blank" href="/one-pager-oxygen.pdf">One pager</a></li>
+            <li><a href="#" class="js-modal-open" data-modal-target="modal-step-1">Sign up for pre-sale</a></li>
+          </ul>
+          <!-- ¯\_(ツ)_/¯ -->
+        </div>
+      </div>
+      <!-- ¯\_(ツ)_/¯ -->
+      <!-- BEGIN content -->
+      <div class="out">
+        <div class="pass-wrap">
+          <form class="pass"> <label for="password">Take a deep breath</label> <input placeholder="Please type a password" id="password" type="password"> <button>Enter</button> </form>
+        </div>
+        <script>
+          (function()
+          {
+            var passForm = document.querySelector('.pass');
+            var password = document.getElementById('password');
+            var button = document.querySelector('.pass button');
+            var body = document.body;
+            passForm.addEventListener('submit', function(e)
+            {
+              e.preventDefault();
+              if (password.value == 'thematrixhasyou')
+              {
+                passForm.parentElement.style.display = 'none';
+                password.classList.remove('warning');
+                body.classList.add('unfix');
+              }
+              else
+              {
+                password.value = '';
+                button.classList.add('warning');
+                body.classList.remove('unfix');
+              }
+            });
+          })();
+
+        </script>
+      </div>
+      <!-- END content -->
+    </div>
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" async src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

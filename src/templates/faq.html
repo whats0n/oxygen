@@ -1,0 +1,32 @@
+---
+title: Index page
+class: is-faq
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include 'partials/_faq.html' %}
+	{% include "partials/_footer.html" %}
+
+{% endblock %}
+
+{% block modal %}
+
+	{{modal.call({
+		file: '_first',
+		classList: 'js-modal-first',
+		name: 'modal-step-1'
+	})}}
+	{{modal.call({
+		file: '_second',
+		classList: 'js-modal-second',
+		name: 'modal-step-2'
+	})}}
+	{{modal.call({
+		file: '_third',
+		classList: 'js-modal-third',
+		name: 'modal-step-3'
+	})}}
+
+{% endblock %}

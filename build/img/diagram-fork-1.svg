@@ -1,0 +1,9 @@
+<svg width="358" height="153" viewBox="0 0 358 153" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        diagram-fork-1
+    </title>
+    <g stroke="#FFF" fill="none" fill-rule="evenodd">
+        <path d="M0 .5h286.5a5 5 0 0 1 5 5v66a5 5 0 0 0 5 5H357"/>
+        <path d="M0 152.5h286.5a5 5 0 0 0 5-5v-66a5 5 0 0 1 5-5h61"/>
+    </g>
+</svg>

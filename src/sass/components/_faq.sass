@@ -1,0 +1,59 @@
+.faq
+	position: relative
+	padding: 164px 0 38px
+	+md
+		padding-bottom: 65px
+	+sm 
+		padding-bottom: 75px
+	&__inner
+		margin: 0 auto
+		max-width: 570px
+		+md
+			max-width: 595px
+	&__logo
+		display: block
+		margin: 0 auto 23px
+		width: 48px
+		+md
+			margin-bottom: 26px
+		+sm
+			margin-bottom: 34px
+	&__title
+		margin-bottom: 83px
+		text-align: center
+		+sm 
+			margin-bottom: 40px
+	&__section
+		&:not(:first-child)
+			padding-top: 75px
+			+md 
+				padding-top: 60px
+			+sm
+				padding-top: 45px
+	&__subtitle
+		margin-bottom: 22px
+		color: $lightGray
+		+f(18, 24, null, 700)
+		letter-spacing: 0.18em
+		text-transform: uppercase
+		+sm
+			margin-bottom: 17px
+	&__box
+		padding: 25px 0
+		+sm
+			padding: 15px 0
+		p 
+			+f(16, 24)
+		a
+			color: $green
+		ul 
+			margin-top: 24px
+			+f(16, 24)
+			list-style-type: disc
+			list-style-position: inside
+	&__label
+		padding-bottom: 10px
+		color: $blue
+		+f(12, 24, null, 700)
+		letter-spacing: 0.2em
+		text-transform: uppercase

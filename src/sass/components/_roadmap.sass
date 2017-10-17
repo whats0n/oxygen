@@ -1,0 +1,167 @@
+.roadmap
+	overflow: hidden
+	padding: 83px 0 115px
+	color: $black
+	background-color: #F2F0EC 
+	+lg
+		padding: 65px 0 75px
+	+md
+		padding: 72px 0 70px
+	+sm
+		padding: 17px 0 37px
+	&__innter
+		padding: 0
+	&__title
+		margin-bottom: 59px
+		text-align: left
+		+md
+			margin-bottom: 48px 
+		+sm
+			margin-bottom: 33px 
+	&__items
+		margin: 0 -15px 
+		font-size: 0
+		+sm
+			margin: 0
+	&__item
+		padding: 16px 15px
+		display: inline-block
+		vertical-align: top
+		width: 33.33%
+		min-height: 210px
+		+lg
+			width: 50%
+		+sm
+			padding: 15px 0
+			width: 100%
+		//DESKTOP
+		//start
+		&:first-child
+			.roadmap__info:before
+				left: 0
+				width: 5000px
+		//start of each row on desktop
+		&:nth-child(3n + 4)
+			&:not(:nth-last-child(3))
+				.roadmap__info:before
+					left: -5000px
+					right: -5000px
+		//end
+		&:nth-last-child(2)
+			.roadmap__info:before
+				// right: 3px
+				right: -125px
+				width: 5000px
+			.icon-arrow-right
+				right: -128px
+		&:first-child,
+		&:nth-child(3n + 4):not(:nth-last-child(3)),
+		&:nth-last-child(2)
+			.roadmap__info:before
+				content: ''
+				position: absolute
+				top: 35px
+				border-top: 3px solid $blue
+				+lg
+					display: none
+		//TABLET
+		&:first-child,
+		&:nth-child(2n + 3):not(:nth-last-child(2))
+			.roadmap__info:before
+				content: ''
+				position: absolute
+				top: 35px
+				border-top: 3px solid $blue
+				+lg
+					display: block
+		&:nth-child(2n + 3)
+			&:not(:last-child)
+				.roadmap__info:before
+					+lg
+						left: -5000px
+						right: -5000px
+		//MOBILE
+		.roadmap__info:before
+			+sm
+				content: ''
+				position: absolute
+				top: 35px
+				left: -5000px
+				right: -5000px
+				display: block !important
+				border-top: 3px solid $blue
+				width: auto
+		&:nth-last-child(2)
+			.roadmap__info:before
+				+sm
+					width: auto
+		//main
+		&_main
+			+lg
+				display: block
+				margin: 0 auto
+				width: 100%
+				max-width: 493px
+			.roadmap
+				&__info
+					+lg 
+						padding-left: 81px
+					+md
+						padding-left: 56px
+					+sm
+						padding-left: 50px
+					&:before
+						+lg
+							top: 9px !important
+							right: 100%
+							width: 5000px
+						+md
+							right: 105%
+						+sm
+							right: 100%
+							margin-right: -21px
+				&__description
+					margin-top: 2px
+					+f(16, 25)
+					+sm
+						+f(14, 20)
+			.icon-arrow-right
+				display: none
+				top: 0 !important
+				right: 100% !important
+				margin-right: -4px
+				+lg
+					display: block !important
+				+md
+					right: 105% !important
+				+sm
+					margin-right: -25px
+					right: 100%! important 
+	&__info
+		position: relative
+		+clr
+	&__meta
+		margin-bottom: 26px
+		color: $blue
+		+f(18, 22, null, 700)
+	&__subtitle
+		padding: 5px 0 2px
+		margin-right: -10px
+		+f(18, 25, null, bold)
+		span
+			color: $blue
+		&_blue
+			color: $blue
+	&__description
+		padding: 5px 0
+		clear: both
+		color: $lightGray
+		+f(14, 20)
+	.icon-arrow-right
+		position: absolute
+		top: 26px
+		right: 0
+		color: $blue
+		font-size: 21px
+		+lg
+			display: none

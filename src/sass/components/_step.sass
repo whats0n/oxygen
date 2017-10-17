@@ -1,0 +1,183 @@
+.step
+	position: relative
+	padding: 50px 100px 79px
+	font-size: 16px
+	line-height: 25px
+	+lg
+		padding: 40px 40px 70px
+	+sm
+		padding: 40px 15px 40px
+	&_mod
+		padding-bottom: 0 !important
+		.step__description
+			margin: 0 auto
+			max-width: 670px
+	&__title
+		margin: 0 auto 18px
+		max-width: 480px
+		font-size: 36px
+		line-height: 40px
+	&__description
+		opacity: 0.8
+		p 
+			padding: 12px 0
+			+sm
+				padding: 11px 0
+	&__list
+		padding: 21px 36px 87px 122px
+		text-align: left
+		+lg
+			padding: 17px 0 70px
+			margin: 0 auto
+			max-width: 480px
+		+sm
+			padding-bottom: 40px
+		li
+			position: relative
+			padding: 14px 0 13px 78px
+			+lg
+				padding-left: 44px
+			+sm
+				padding-left: 44px
+	&__checkbox
+		position: absolute
+		z-index: 1
+		top: 18px
+		left: 30px
+		+lg
+			left: 0
+	&__text
+		color: #9B9B9B
+	a
+		color: $blue
+		transition: color 0.175s ease
+		+hover
+			color: darken($blue, 10%)
+	&__footer
+		// position: absolute
+		// left: 0
+		// right: 0
+		// bottom: 50px
+		text-align: center
+	&__btn
+		width: 100%
+		max-width: 200px
+	&__form
+		padding-top: 22px
+		padding-bottom: 27px
+		margin: 0 auto
+		max-width: 468px
+	&__box
+		position: relative
+		padding-left: 80px
+		margin-bottom: 35px
+		+clr
+		+sm
+			margin: 0 auto
+			max-width: 360px
+	&__label
+		position: absolute
+		top: 0
+		right: 100%
+		margin-right: -64px
+		line-height: 50px
+		text-align: right
+		white-space: nowrap
+		+sm
+			padding: 0 0 8px
+			line-height: normal
+		&-in
+			display: inline-block
+			vertical-align: middle
+			width: 100%
+			color: #808080
+			+f(16, 24)
+			text-align: right
+			+sm
+				text-align: left
+	&__field
+		// width: 61%
+		&-number
+			max-width: 170px
+	&__label,
+	&__field
+		// float: left
+		+sm 
+			width: 100%
+	&__subtitle
+		padding: 15px 0 62px
+		+f(20, 28)
+		+sm 
+			font-size: 18px
+			padding-bottom: 40px
+	&__checked
+		margin: 0 auto 62px
+		border: 5px solid rgba($green, 0.1)
+		border-radius: 50%
+		width: 250px
+		height: 250px
+		color: rgba($green, 0.5)
+		+vertical 
+		+lg
+			width: 200px
+			height: 200px
+		+sm
+			margin-bottom: 40px
+			width: 150px
+			height: 150px
+		.icon
+			display: inline-block
+			vertical-align: middle
+			font-size: 117px
+			+lg
+				font-size: 85px
+			+sm
+				font-size: 55px
+	&__social
+		padding-top: 38px
+		padding-bottom: 21px
+		+sm
+			padding-bottom: 10px
+		&-label 
+			margin-bottom: 11px
+			color: $lightGray
+			+f(16, 25)
+		&-list
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+			a
+				display: inline-block
+				vertical-align: top
+				padding: 0 21px
+				height: 25px
+				+vertical
+				line-height: 1
+				+hover
+					.icon
+						color: darken($blue, 10%)
+				+sm 
+					padding: 0 15px
+			.icon
+				display: inline-block
+				vertical-align: middle
+				color: $blue
+				font-size: 25px
+				transition: color 0.2s ease-in-out
+			.icon-twitter
+				font-size: 21px
+	&__bottom
+		padding: 42px 40px 86px
+		margin: 0 -100px 
+		border-radius: 0 0 30px 30px
+		background: #F2F0EC
+	&__title-md
+		margin-bottom: 45px
+		font-size: 26px
+		line-height: 25px
+	&__calculator
+		padding-bottom: 42px
+	&__convert
+		margin-top: 48px
+		margin-bottom: 50px

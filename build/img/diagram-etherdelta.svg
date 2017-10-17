@@ -1,0 +1,13 @@
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        diagram-etherdelta
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <circle stroke-opacity=".5" stroke="#FFF" cx="15" cy="15" r="14.5"/>
+        <g fill-rule="nonzero">
+            <path fill="#FFF" d="M14.96 24.317l5.965-8.375-5.964 3.51L9 15.942z"/>
+            <path d="M14.96 17.796l5.272-3.107-5.271-8.722-5.272 8.722 5.272 3.107z" stroke="#FFF"/>
+            <path d="M14.96 17.796l4.84-2.852-4.84-1.979-4.838 1.98 4.839 2.85z" stroke="#FFF"/>
+        </g>
+    </g>
+</svg>

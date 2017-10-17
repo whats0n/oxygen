@@ -1,0 +1,120 @@
+.sm-graph
+	&:not(:last-child)
+		+md
+			margin-bottom: 41px 
+		+sm
+			margin-bottom: 0
+	&_green
+		.sm-graph
+			&__title
+				color: #7EAC0E
+			&__line
+				&:before, &-in
+					background: #7EAC0E
+			&__box
+				&:nth-child(even)
+					.sm-graph
+						&__line
+							&:before, &-in
+								background: #4C6B00
+	&_blue
+		.sm-graph
+			&__title
+				color: $blue
+			&__line
+				&:before, &-in
+					background: #35A8FF
+			&__box
+				&:nth-child(even)
+					.sm-graph
+						&__line
+							&:before, &-in
+								background: #0462A9
+	&__title
+		margin-bottom: 19px
+		+f(26, 31, null, 700)
+		+lg
+			margin-bottom: 50px
+		+sm
+			margin-bottom: 28px
+			+f(16, 24)
+	&__container
+		display: table
+		table-layout: fixed
+		width: 100%
+	&__row
+		display: table-row
+	&__box
+		display: table-cell
+		min-width: 67px
+		vertical-align: top
+		+lg
+			width: 100% !important
+			margin-bottom: 4px
+	&__container,
+	&__row,
+	&__box
+		position: relative
+		+lg
+			display: block
+			text-align: left
+	&__line
+		position: relative
+		padding: 0 1px
+		height: 11px
+		+lg
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			height: auto
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 1px
+			right: 1px
+			bottom: 0
+			+lg
+				display: none
+		&-in
+			display: none
+			height: 100%
+			+lg
+				display: block
+	&__info
+		position: relative
+		padding: 8px 15px 0 0
+		+clr
+		+lg
+			padding: 0
+			height: 60px
+			font-size: 0
+			line-height: 60px
+	&__value,
+	&__description
+		padding: 5px 0
+		+lg
+			display: inline-block
+			vertical-align: middle
+			padding: 0
+		.sm-graph__box_text-right &
+			float: right
+			+xl
+				float: none
+	&__value
+		+f(26, 25, null, 700)
+		+lg
+			padding: 0 0 0 18px
+			width: 70px
+			+f(18, 24)
+	&__description
+		+f(14, 20)
+		max-width: 160px
+		+lg
+			padding: 0
+			width: 350px
+		+sm
+			width: 210px
+			+f(14, 20)

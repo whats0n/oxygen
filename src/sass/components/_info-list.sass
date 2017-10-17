@@ -1,0 +1,34 @@
+.info-list
+	font-size: 0
+	&__item
+		display: inline-block
+		vertical-align: top
+		padding: 16px 0
+		+clr
+		+lg
+			padding-right: 20px
+		+sm 
+			padding: 10px 0
+			width: 100%
+		@for $i from 1 through 100
+			&_#{$i}
+				width: $i + %
+		@for $i from 1 through 100
+			&_tablet-#{$i}
+				+lg
+					width: $i + %
+	&__title
+		margin-bottom: 5px
+		color: $blue
+		+f(20, 24, null, 700)
+	&__description
+		+f(16, 24)
+		+sm
+			+f(14, 22)
+	&__title,
+	&__description p
+		padding-top: 5px
+		padding-bottom: 5px
+		+sm
+			padding-top: 2px
+			padding-bottom: 2px

@@ -1,0 +1,71 @@
+<!-- begin footer -->
+<footer class="footer">
+	<div class="clouds js-clouds" data-clouds="6">
+		<div class="clouds__word js-clouds-word"></div>
+	</div>
+	<div class="inner footer__inner">
+		<h2 class="title-lg footer__title">Token sale is coming. Sign up for pre-sale</h2>
+		{# <div class="footer__text">Apply for Whitelist to become early-adopted and get 20% bonus:</div> #}
+		<!-- form -->
+		<form action="/" class="footer__subscription subscription subscription_simple js-validation" data-validation-step="first">
+			<div class="field">
+				<button class="btn btn_christi subscription__btn" type="submit">Sign up</button>
+				<div class="input subscription__input">
+					<input type="text" placeholder="Leave email" name="step_1-email" data-validation="email" class="js-validation-email-first">
+				</div>
+			</div>
+		</form>
+		<!-- ¯\_(ツ)_/¯ -->
+		<!-- begin social -->
+		{% set social = [
+			{
+				ico: 'fb',
+				link: 'https://www.facebook.com/OxygenTrade-895211577297422/ '
+			},
+			{
+				ico: 'slack',
+				link: 'http://oxygentrade.herokuapp.com/ '
+			},
+			{
+				ico: 'twitter',
+				link: 'https://twitter.com/oxygen_trade'
+			}
+		] %}
+		<div class="sm-social footer__social">
+			<div class="sm-social__label">Follow and contact us:</div>
+			<ul class="sm-social__list">
+				{% for item in social %}
+					<li class="sm-social__item">
+						<a href="{{item.link}}" target="_blank" class="sm-social__link">
+							{{mixins.icon(item.ico)}}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<!-- end social -->
+		<div class="footer__logos">
+			<div>
+				<a href="#" class="footer__logo-main">
+					<img src="img/logo-small.svg" alt="oxygen">
+				</a>
+				<span class="footer__splitter">by</span>
+			</div>
+			<div>
+				<a target="_blank" href="https://changelly.com/" class="footer__logo-changelly">
+					<img src="img/logo-chan-white.svg" alt="changelly">
+				</a>
+				{# <span class="footer__splitter">&</span>
+				<a target="_blank" href="https://minergate.com/" class="footer__logo-minergate">
+					<img src="img/logo-miner-white.svg" alt="minergate">
+				</a> #}
+			</div>
+		</div>
+		<div class="footer__info">This website and all information, products and services provided through this website are approved ‘as is’ and on an ‘as available’ guarantees whatsoever of any kind including, without limitation, any representations, warranties, promises or guarantees regarding the accuracy, currency, completeness, adequacy, availability, suitability or operation of this website, any products or services we may provide through it or the information or material it contains.</div>
+		<div class="footer__cookie">
+			<a href="#">Cookie policy</a>
+		</div>
+		<div class="footer__copy">Copyright © 2017 Oxygen. All rights reserved.</div>
+	</div>
+</footer>
+<!-- end footer -->

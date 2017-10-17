@@ -1,0 +1,14 @@
+{% macro icon(i) %}
+<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+{% endmacro %}
+
+{% macro select(props) %}
+<div class="select js-select">
+	{{icon('arrow-down')}}
+	<select style="width: 100%;" {{props.selectAttrs | safe}} {% if props.validation %}data-validation="{{props.validation}}"{% endif %}>
+		{% for item in props.options %}
+			<option value="{{item}}">{{item}}</option>
+		{% endfor %}
+	</select>
+</div>
+{% endmacro %}

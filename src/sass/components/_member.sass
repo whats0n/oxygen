@@ -1,0 +1,48 @@
+.member
+	padding: 20px 10px
+	text-align: center
+	+md
+		padding: 24px 12px
+	+sm
+		padding: 21px 12px 
+	&__img
+		position: relative
+		margin: 0 auto 19px
+		+md
+			margin: 0 auto 20px 
+		&-in
+			width: 110%
+			transform: translate3d(-5%,0,0)
+		svg
+			+lg
+				width: 173px
+				height: 173px
+	&__title
+		margin-bottom: 10px
+		+f(18, 25, null, 700)
+		+lg
+			margin-bottom: 14px
+		strong
+			display: block
+			font-size: 16px
+			font-weight: 400
+	&__description
+		margin-bottom: 10px
+		+f(16, 22)
+		+lg
+			margin-bottom: 20px
+			+f(14, 22)
+	&__social
+		font-size: 0
+		a
+			display: inline-block
+			vertical-align: top
+			padding: 10px
+			color: $white
+			+hover
+				svg 
+					fill: darken(#BEBEBE, 10%)
+			svg
+				fill: #BEBEBE
+				font-size: 24px
+				transition: fill 0.175s ease-in-out

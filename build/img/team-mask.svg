@@ -1,0 +1,16 @@
+<svg width="249" height="248" viewBox="0 0 249 248" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Mask
+    </title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="105.916%" y2="0%" id="b">
+            <stop stop-color="#43E695" offset="0%"/>
+            <stop stop-color="#3BB2B8" offset="100%"/>
+        </linearGradient>
+        <rect id="a" x="40.421" y="41" width="194" height="194" rx="40"/>
+    </defs>
+    <g transform="rotate(45 147.82 115.308)" fill="none" fill-rule="evenodd">
+        <use fill="#D8D8D8" xlink:href="#a"/>
+        <rect stroke="url(#b)" stroke-width="3" x="38.921" y="39.5" width="197" height="197" rx="40"/>
+    </g>
+</svg>
