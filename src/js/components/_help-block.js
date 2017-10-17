@@ -1,8 +1,9 @@
-import { WIN, BODY } from '../_constants';
+import { WIN, BODY, SHOW } from '../_constants';
 
 ;(function() {
 
   let btnScroll = $('.js-btn-scroll');
+  let link = $('.js-help-link');
   WIN.on('mousewheel scroll', () => {
   	// BODY.hasClass('unfix') && 
     if (!BODY.hasClass('hide-help')) btnScroll.trigger('click');
@@ -16,5 +17,7 @@ import { WIN, BODY } from '../_constants';
     }), 600);
     return false;
   });
+  if (!link.length) return;
+  setTimeout(() => link.addClass(SHOW), 2000);
 
 })();
