@@ -47,11 +47,9 @@ export default (function() {
       maxWidth: 400,
       delay: 0,
       animationDuration: 200,
-      offset: [0, -25],
-      plugins: ['follower']
+      side: 'right',
+      trigger: 'hover'
     });
-
-  
   });
 
 
