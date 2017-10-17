@@ -6,7 +6,7 @@
 		padding: 0 0 8px 30px 
 	+sm
 		padding: 0 0 15px 9px
-		margin: 0 -20px 0 9px
+		margin: 0 0 0 2px
 		font-size: 14px
 	&__text
 		max-width: 184px
@@ -17,7 +17,7 @@
 			max-width: 314px
 			display: block
 		+sm
-			padding-left: 97px
+			padding-left: 94px
 			margin: 0
 			max-width: 80% 
 			min-height: 62px
@@ -42,8 +42,8 @@
 	&__logo
 		+sm
 			position: absolute
-			top: 15px
-			left: 19px 
+			top: 9px
+			left: 15px
 			width: 72px 
 		img
 			max-width: 100%
@@ -60,22 +60,22 @@
 			+lg
 				margin-left: 27px 
 			+sm
-				margin: 16px 0 0
+				margin: 11px 0 0
 	&__col
 		max-width: 200px
 		+lg
 			max-width: 143px
 		+sm
-			font-size: 14px
-		+xxs
 			float: left
-			max-width: 92px
+			width: 95px
+			font-size: 14px
 		&:not(:last-child)
 			margin-right: 19px
 			+sm
 				margin: 0
-			+xxs
 				float: right
+				max-width: 100%
+				width: calc(100% - 95px) 
 	&__title
 		+f(26, 30, null, 700)
 		+sm
