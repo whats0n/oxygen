@@ -1,15 +1,19 @@
 .faq
 	position: relative
-	padding: 164px 0 38px
+	padding: 220px 0 38px
 	+md
 		padding-bottom: 65px
 	+sm 
 		padding-bottom: 75px
-	&__inner
-		margin: 0 auto
-		max-width: 570px
-		+md
-			max-width: 595px
+	&__wrap
+		+clr
+	&__sidebar
+		position: relative
+		float: left
+		width: 40%
+	&__content
+		float: right
+		width: 60%
 	&__logo
 		display: block
 		margin: 0 auto 23px
@@ -20,7 +24,7 @@
 			margin-bottom: 34px
 	&__title
 		margin-bottom: 83px
-		text-align: center
+		text-align: left
 		+sm 
 			margin-bottom: 40px
 	&__section
@@ -40,6 +44,8 @@
 			margin-bottom: 17px
 	&__box
 		padding: 25px 0
+		.faq__sidebar &
+			padding: 0 0 20px
 		+sm
 			padding: 15px 0
 		p 
@@ -51,9 +57,13 @@
 			+f(16, 24)
 			list-style-type: disc
 			list-style-position: inside
+	&__block
+		display: none
 	&__label
 		padding-bottom: 10px
 		color: $blue
 		+f(12, 24, null, 700)
 		letter-spacing: 0.2em
 		text-transform: uppercase
+		.faq__sidebar &
+			padding: 0
