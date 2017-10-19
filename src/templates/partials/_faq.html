@@ -4,9 +4,8 @@
 		<div class="clouds__word js-clouds-word"></div>
 	</div>
 	<div class="inner">
-		<div class="faq__inner">
-			<img src="img/logo-full.svg" alt="oxygen" class="faq__logo">
-			<h2 class="title-lg faq__title">OXYGEN FAQ</h2>
+		<div class="faq__wrap">
+			<h2 class="title-lg faq__title">Frequently asked questions</h2>
 			<div class="faq__content">
 				{% set content = [
 					{
@@ -125,37 +124,37 @@
 					<div class="faq__section">
 						<h3 class="faq__subtitle">{{item.subtitle}}</h3>
 						{% for item in item.info %}
-						    <div class="faq__box">
-						    	<h4 class="faq__label">{{item.label | safe}}</h4>
-						    	<p>{{item.text | safe}}</p>
-						    	{% if item.list %}
-						    		<ul>
-						    			{% for item in item.list %}
-						    				<li>{{item | safe}}</li>
-						    			{% endfor %}
-						    		</ul>
-						    	{% endif %}
-						    	{% if item.table %}
-						    		<div class="fake-table">
-						    			<div class="fake-table__header">
-						    				<div class="fake-table__row">
-						    					{% for item in item.table.header %}
-						    						<div class="fake-table__col" data-column="{{table.columns[loop.index]}}">{{item.title | safe}}</div>
-						    					{% endfor %}
-						    				</div>
-						    			</div>
-						    			<div class="fake-table__body">
-						    				{% for row in item.table.body %}
-						    					<div class="fake-table__row">
-						    						{% for col in row %}
-						    							<div class="fake-table__col" data-column="{{table.columns[loop.index]}}">{{col.text}}</div>
-						    						{% endfor %}
-						    					</div>
-						    				{% endfor %}
-						    			</div>
-						    		</div>
-						    	{% endif %}
-						    </div>
+							<div class="faq__box">
+								<h4 class="faq__label">{{item.label | safe}}</h4>
+								<p>{{item.text | safe}}</p>
+								{% if item.list %}
+									<ul>
+										{% for item in item.list %}
+											<li>{{item | safe}}</li>
+										{% endfor %}
+									</ul>
+								{% endif %}
+								{% if item.table %}
+									<div class="fake-table">
+										<div class="fake-table__header">
+											<div class="fake-table__row">
+												{% for item in item.table.header %}
+													<div class="fake-table__col" data-column="{{table.columns[loop.index]}}">{{item.title | safe}}</div>
+												{% endfor %}
+											</div>
+										</div>
+										<div class="fake-table__body">
+											{% for row in item.table.body %}
+												<div class="fake-table__row">
+													{% for col in row %}
+														<div class="fake-table__col" data-column="{{table.columns[loop.index]}}">{{col.text}}</div>
+													{% endfor %}
+												</div>
+											{% endfor %}
+										</div>
+									</div>
+								{% endif %}
+							</div>
 						{% endfor %}
 					</div>
 				{% endfor %}
