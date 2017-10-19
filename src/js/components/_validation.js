@@ -70,6 +70,9 @@ export default (function() {
             const emailValue = $emailFieldFirst.val();
 
             $emailFieldSecond.val(emailValue);
+            setTimeout(() => {
+              $emailFieldSecond.trigger('change');
+            }, 400);
 
             nextStep($modalFirst, null);
             DATA.first = $currentForm.serialize();
