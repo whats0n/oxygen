@@ -15,10 +15,10 @@ export default (function() {
 
     if (!$form.length) return;
     setTimeout(() => {
-      BODY.css({
-        'paddingRight': 0,
-        'overflow-y': 'auto'
-      });
+      // BODY.css({
+      //   'paddingRight': 0,
+      //   'position': 'relative'
+      // });
     }, 100);
     $form.each(function() {
       this.reset();
@@ -48,10 +48,10 @@ export default (function() {
   $modalOpen.on('click', function(e) {
     e.preventDefault();
     const modalTarget = $(this).data('modal-target');
-    BODY.css({
-      'paddingRight': SCROLL_WIDTH(),
-      'overflow': 'hidden'
-    });
+    // BODY.css({
+    //   'paddingRight': SCROLL_WIDTH(),
+    //   'position': 'fixed'
+    // });
     $modal
       .filter(`[data-modal="${modalTarget}"]`)
       .addClass(OPEN);
