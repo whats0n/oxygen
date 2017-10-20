@@ -1,8 +1,10 @@
 <!-- begin footer -->
 <footer class="footer">
-	<div class="clouds js-clouds" data-clouds="6">
-		<div class="clouds__word js-clouds-word"></div>
-	</div>
+	{% if footerClouds %}
+		<div class="clouds js-clouds" data-clouds="6">
+			<div class="clouds__word js-clouds-word"></div>
+		</div>
+	{% endif %}
 	<div class="inner footer__inner">
 		<h2 class="title-lg footer__title">Token sale is coming. Sign up for pre-sale</h2>
 		{# <div class="footer__text">Apply for Whitelist to become early-adopted and get 20% bonus:</div> #}
