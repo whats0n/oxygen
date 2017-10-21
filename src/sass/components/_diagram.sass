@@ -83,7 +83,8 @@
 			top: 0
 			bottom: 0
 			border-radius: 3px
-			background: rgba($white, .1)
+			// background: rgba($white, .1)
+			background: rgba(#808285, 0.2)
 			+xl
 				left: 0
 				right: 0
@@ -129,11 +130,15 @@
 				border-radius: 3px
 				width: 124px
 				height: 100%
-				background: rgba($white, 0.1)
+				// background: rgba($white, 0.1)
 				+xl
 					margin: 0 0 2px
 					width: 100%
 					height: 90px
+				&:nth-child(1)
+					background: #051a38
+				&:nth-child(2)
+					border: 2px dashed rgba(#bcbec0, 0.4)
 	//lines
 	&__lines
 		position: absolute
@@ -412,6 +417,7 @@
 				width: 30px
 		&-title
 			margin-bottom: 20px
+			min-height: 57px
 			font-weight: 700
 			+xl
 				margin-bottom: 10px
@@ -539,7 +545,8 @@
 	&__box
 		position: absolute
 		border-radius: 3px
-		background: #061D42
+		// background: #061D42
+		background: #051a38
 		+vertical
 		+sm
 			+nosel
@@ -591,6 +598,7 @@
 		&[data-diagram="fork-sm-box-1"],
 		&[data-diagram="fork-sm-box-2"]
 			left: 10px
+			background: #021328
 			+xl
 				top: 5px
 		&[data-diagram="fork-sm-box-3"],
@@ -616,8 +624,9 @@
 				width: 200px
 				height: 104px
 		&_optional
-			border: 1px dotted rgba($white, 0.5)
-			background: #061D42
+			// border: 1px dotted rgba($white, 0.5)
+			color: rgba($white, 0.4)
+			background: rgb(20, 42, 69)
 		&-target
 			position: absolute
 			top: 0
@@ -630,6 +639,14 @@
 			vertical-align: middle
 			width: 100%
 			+f(14, 20)
+		&-label
+			&[data-diagram="label-optional"]
+				position: absolute
+				top: -18px
+				left: 145px
+				width: 80px
+				background: #1b3451
+				text-align: center
 	&__fork
 		position: absolute
 		&[data-diagram="fork-1"]
@@ -753,7 +770,8 @@
 		right: 0
 		border-radius: 3px
 		width: 204px
-		background: rgba(#183151, 0.5)
+		// background: rgba(#183151, 0.5)
+		background: rgba(#051938, 0.4)
 		+xl
 			padding: 11px 10px 62px
 			width: 120px
@@ -777,7 +795,8 @@
 				top: 84px
 				left: 0
 				right: 50px
-				border-top: 4px solid #284471
+				// border-top: 4px solid #284471
+				border-top: 4px solid #1b324d
 				+xl
 					display: none
 		&[data-diagram="hints-2"]
@@ -817,7 +836,8 @@
 			border-radius: 3px
 			width: 103px
 			color: #A3DD14
-			background: #0C1C3A
+			// background: #0C1C3A
+			background: #051a38
 			font-size: 14px
 			line-height: 15px
 			text-align: center
@@ -833,7 +853,7 @@
 			&[data-diagram="hint-item-3"]
 				top: 173px
 			&[data-diagram="hint-item-4"]
-				top: 31px
+				top: 39px
 				padding: 10px 0
 			&[data-diagram="hint-item-1"],
 			&[data-diagram="hint-item-2"],
