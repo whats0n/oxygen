@@ -1,18 +1,20 @@
 <!-- begin footer -->
 <footer class="footer">
-	<div class="clouds js-clouds" data-clouds="6">
-		<div class="clouds__word js-clouds-word"></div>
-	</div>
+	{% if footerClouds %}
+		<div class="clouds js-clouds" data-clouds="6">
+			<div class="clouds__word js-clouds-word"></div>
+		</div>
+	{% endif %}
 	<div class="inner footer__inner">
 		<h2 class="title-lg footer__title">Token sale is coming. Sign up for pre-sale</h2>
 		{# <div class="footer__text">Apply for Whitelist to become early-adopted and get 20% bonus:</div> #}
 		<!-- form -->
 		<form action="/" class="footer__subscription subscription subscription_simple js-validation" data-validation-step="first">
 			<div class="field">
-				<button class="btn btn_christi subscription__btn" type="submit">Sign up</button>
 				<div class="input subscription__input">
 					<input type="text" placeholder="Leave email" name="step_1-email" data-validation="email" class="js-validation-email-first">
 				</div>
+				<button class="btn btn_christi subscription__btn" type="submit">Sign up</button>
 			</div>
 		</form>
 		<!-- ¯\_(ツ)_/¯ -->
@@ -20,11 +22,15 @@
 		{% set social = [
 			{
 				ico: 'fb',
-				link: 'https://www.facebook.com/OxygenTrade-895211577297422/ '
+				link: 'https://www.facebook.com/OxygenTrade-895211577297422/'
 			},
 			{
-				ico: 'slack',
-				link: 'http://oxygentrade.herokuapp.com/ '
+				ico: 'tg_white',
+				link: 'https://t.me/oxygentradechat'
+			},
+			{
+				ico: 'medium',
+				link: 'https://medium.com/@oxygentrade'
 			},
 			{
 				ico: 'twitter',

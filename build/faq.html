@@ -2,6 +2,19 @@
 <html>
 
   <head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107870302-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-107870302-1');
+
+    </script>
     <meta charset="utf-8" />
     <title>Index page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -24,29 +37,29 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png"> </head>
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107870302-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <body data-body-animate class="is-faq">
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-107870302-1');
+
+    </script>
+  </head>
+
+  <body class="is-faq">
     <div class="container">
-      <!-- help -->
-      <div class="help js-help">
-        <div class="help__top">
-          <div class="help__logo"> <img src="./img/logo-help-big.svg" alt="logo"> </div>
-        </div>
-        <div class="help__middle">
-          <div class="help__inner" id="container">
-            <div class="help__message" id="message"> </div> <a href="#" class="help__link js-help-link">We are here to help.</a> </div>
-        </div>
-        <div class="help__bottom"> <button class="btn-scroll js-btn-scroll">
-			<svg width="28px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 21.5"><title>down</title><polyline points="38.5 1.5 20 20 1.5 1.5" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"/></svg>
-		</button> </div>
-      </div>
-      <!-- ¯\_(ツ)_/¯ -->
       <!-- header -->
       <div class="header js-header">
         <div class="header__in inner">
           <!-- logo --><a href="#" class="header__logo logo">
-			<img src="./img/logo-small.svg" alt="logo">
+			<img src="./img/logo-middle.svg" alt="logo">
 		</a>
           <!-- ¯\_(ツ)_/¯ -->
           <!-- btn-menu --><button class="btn-menu js-btn-menu" type="button">
@@ -79,122 +92,248 @@
       <div class="out">
         <!-- begin faq -->
         <div class="faq">
-          <div class="clouds js-clouds" data-clouds-paralax="true">
-            <div class="clouds__word js-clouds-word"></div>
-          </div>
-          <div class="inner">
-            <div class="faq__inner"> <img src="img/logo-full.svg" alt="oxygen" class="faq__logo">
-              <h2 class="title-lg faq__title">OXYGEN FAQ</h2>
+          <div class="faq__inner inner">
+            <h2 class="title-lg faq__title">OXYGEN FAQ</h2>
+            <div class="faq__wrap">
+              <div class="faq__sidebar js-sidebar">
+                <div class="faq__sidebar-wrap js-sidebar-wrap">
+                  <div class="faq__section">
+                    <h3 class="faq__subtitle">About the platform</h3>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-1" class="faq__label js-sidebar-link">What is Oxygen?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Oxygen is an analog to the REPO market in the cryptocurrency world. Being a fully decentralized platform, it will solve the problem of unsafe and expensive cryptoloans for short positions and margin trading.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-2" class="faq__label js-sidebar-link">What services will Oxygen provide?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Oxygen will perform REPO operations in ERC20 tokens and Ethereum platform. We are considering to extend it to BTC and other cryptographic assets, but no formal commitment can be made at this stage of the project, due to technological
+                          lag in true cross-chain solutions. Essentially, Oxygen will provide a specialized peer-to-peer environment for lending assets specifically for trading purposes.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-3" class="faq__label js-sidebar-link">Why does Oxygen go beyond peer-to-peer lending?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Peer-to-peer trading is an analog to consumer/commercial credit agreements and therefore does not address the specific needs and risks associated with trading. While Oxygen can be used for peer-to-peer lending, it is aimed at a
+                          different economic activity, due to a specialized set of rules, and therefore may or may not be suitable for certain transactions.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-4" class="faq__label js-sidebar-link">How is Oxygen different from the short at Poloniex or Bitfinex?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Oxygen is neither a short nor a long position (even though some synthetic operations may work with long and short positions). Oxygen is a tool enabling token holders to offer margin trading to third parties, regardless of the margin
+                          being a long or a short one.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-5" class="faq__label js-sidebar-link">How is Oxygen different from Bancor?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Bancor positions itself as a market-maker and supply/demand management system for token holders. This is not related to margin trading or any activities beyond spot trading.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-6" class="faq__label js-sidebar-link">How decentralized and secure is Oxygen?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Oxygen is a fully decentralized ecosystem deployed in the Ethereum network. There is no central custody in-between transaction participants, due to usage of smart contracts. Therefore, during transactions all assets are stored
+                          inside smart contracts, and Oxygen never holds any equity of users. This makes the platform completely safe.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-7" class="faq__label js-sidebar-link">Why does the Oxygen environment consist of ERC20 tokens only?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Right now there is no feasible and impartial cross-chain solution which would allow secure operations with both ETH and BTC blockchains. On the other hand, for now, Ethereum is probably the most popular platform to perform ICO,
+                          and dozens of tokens are being issued in the ERC20 standard. Moreover, ERC20-capable tokens are essential for transactions based on Ethereum smart contracts. These are the main reasons why we primarily focus on the ERC20 standard.
+                          However, we want to go cross-chain as soon as a true and reliable solution appears.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-8" class="faq__label js-sidebar-link">What is an order book?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>An order book is a list of bids and asks placed by all parties that wish to lend or borrow a given asset. In the case of Oxygen, an order book is a de???centralized exchange built on the ???Disruptor technology, also used by LMAX.
+                          It will run a continuous auction with the books representing different tokens and different expiry blocks. Importantly, it will not be fully anonymous — orders will be highlighted with various colors, depending on the participant’s
+                          credit rating.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__section">
+                    <h3 class="faq__subtitle">About our business model</h3>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-9" class="faq__label js-sidebar-link">How do I use Oxygen for my business?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Oxygen is designed to unlock the hidden potential of your cryptoassets. Basically, you can pledge some of your tokens as a collateral and get a loan you need, or lend them and get your interest rate. But Oxygen is also a powerful
+                          tool for experienced traders and it could be used for the way different cases of margin trading. If you envision a co-operation with us in this sphere, we’d love to hear about your project. You can reach us at <a href="mailto:hello@oxygen.trade">hello@oxygen.trade</a>.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-10" class="faq__label js-sidebar-link">How does the platform earn profit?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Users pay a fee for each transaction. The fee amount depends on transactions' terms and the amount of collateralized and lent tokens.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__section">
+                    <h3 class="faq__subtitle">About crowdfunding</h3>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-11" class="faq__label js-sidebar-link">How do tokens work?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Tokens play a significant role in the Oxygen ecosystem. They will not only be used to cover Oxygen’s fees, but will also open the following benefits to token holders:</p>
+                        <ul>
+                          <li>Deals in bETH tokens under more advantageous conditions (an up to 50 % rebate)</li>
+                          <li>Priority in the order book queue (in case the credit rating permits it)</li>
+                          <li>Last look during trades</li>
+                          <li>Liabilities coverage to avoid penalty in case of a credit event</li>
+                          <li>Right to vote on implementation of new features</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-12" class="faq__label js-sidebar-link">What are the preferences for pre-sale contributors?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Pre-sale contributors will get an up to 20% bonus.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-13" class="faq__label js-sidebar-link">What will you use the funds for?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>We will use 85 % of raised funds for development and promotion of Oxygen.<br><br> 10 % of funds will be used as a floating capital for market-making at launch.<br><br> 5 % of funds will reserved to cover unexpected costs.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-14" class="faq__label js-sidebar-link">Which exchanges will list the OXG token?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Several major exchanges will list OXG tokens once sale is over. More details will be announced.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-15" class="faq__label js-sidebar-link">When will OXG tokens be tradable?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>You will be able to trade OXG tokens starting January 1, 2018.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-16" class="faq__label js-sidebar-link">Is there any volatility hedge?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>All OXG tokens unused during sale, as well as unlocked capital for market making, will be reserved for volatility hedging by token supply or guaranteed buyback.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq__section">
+                    <h3 class="faq__subtitle">About the team</h3>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-17" class="faq__label js-sidebar-link">Who founded Oxygen?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>Oxygen is coming from creators of Changelly.<br><br> Changelly is the #1 instant cryptocurrency exchange providing the best crypto-to-crypto rates on the market.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-18" class="faq__label js-sidebar-link">Who is on the team?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>We are blockchain enthusiasts and professionals in financial technologies, cryptotrading, software engineering and product??? development. We truly believe Oxygen will be an outstanding product on the margin trading market.</p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-19" class="faq__label js-sidebar-link">Are you hiring?</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>If you are interested in joining our team, please contact us at <a href="mailto:join@oxygen.trade">join@oxygen.trade</a></p>
+                      </div>
+                    </div>
+                    <div class="faq__box js-sidebar-box"> <a href="#faq-20" class="faq__label js-sidebar-link">How can I help? volunteer???</a>
+                      <div class="faq__block js-sidebar-block">
+                        <p>If you are interested in helping us volunteering for us???, you can reach us at <a href="mailto:">team@oxygen.trade</a>.<br> We will be excited to hear from you.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="faq__content">
                 <div class="faq__section">
                   <h3 class="faq__subtitle">About the platform</h3>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-1>
                     <h4 class="faq__label">What is Oxygen?</h4>
-                    <p>Oxygen is an analogue to the REPO market in the cryptocurrency world. Being fully decentralized platform it solves the problem of unsafe and expensive crypto-loans for short positions and margin trading.</p>
+                    <p>Oxygen is an analog to the REPO market in the cryptocurrency world. Being a fully decentralized platform, it will solve the problem of unsafe and expensive cryptoloans for short positions and margin trading.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">What service will Oxygen provide?</h4>
-                    <p>Oxygen will provide REPO operations in ERC20 tokens and Ethereum. Plans to extend it to BTC and other cryptographic assets are considered, but no formal commitment can be made at this stage of the project due to the current technological
-                      lag in true cross-chain solutions. Essentially Oxygen will provide a specialized peer-to-peer environment for the purpose of lending assets specifically for trading purposes.</p>
+                  <div class="faq__box js-faq-box" id=faq-2>
+                    <h4 class="faq__label">What services will Oxygen provide?</h4>
+                    <p>Oxygen will perform REPO operations in ERC20 tokens and Ethereum platform. We are considering to extend it to BTC and other cryptographic assets, but no formal commitment can be made at this stage of the project, due to technological
+                      lag in true cross-chain solutions. Essentially, Oxygen will provide a specialized peer-to-peer environment for lending assets specifically for trading purposes.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">Why does Oxygen stand beyond peer-to-peer lending?</h4>
-                    <p>Peer-to-peer trading is an analogue of consumer/commercial credit agreements and therefore does not capture the specific needs and risks associated with trading. While Oxygen can be used for the purpose of peer-to-peer lending, it
-                      reflects a different economic activity through a specialized set of rules and therefore may or may not be suitable for certain transactions.</p>
+                  <div class="faq__box js-faq-box" id=faq-3>
+                    <h4 class="faq__label">Why does Oxygen go beyond peer-to-peer lending?</h4>
+                    <p>Peer-to-peer trading is an analog to consumer/commercial credit agreements and therefore does not address the specific needs and risks associated with trading. While Oxygen can be used for peer-to-peer lending, it is aimed at a different
+                      economic activity, due to a specialized set of rules, and therefore may or may not be suitable for certain transactions.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">How is Oxygen different from short at Poloniex or Bitfinex?</h4>
-                    <p>Oxygen is neither a short nor a long position (even though synthetically some operations may reflect long and short positions). Oxygen is a tool enabling token holders to offer margin trading to third-parties (independently whether
-                      the margin is long or short).</p>
+                  <div class="faq__box js-faq-box" id=faq-4>
+                    <h4 class="faq__label">How is Oxygen different from the short at Poloniex or Bitfinex?</h4>
+                    <p>Oxygen is neither a short nor a long position (even though some synthetic operations may work with long and short positions). Oxygen is a tool enabling token holders to offer margin trading to third parties, regardless of the margin
+                      being a long or a short one.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-5>
                     <h4 class="faq__label">How is Oxygen different from Bancor?</h4>
-                    <p>Bancor positions itself as a market-maker and supply/demand management system for token holders. This is not related to margin trading or any activities which are beyond spot trading.</p>
+                    <p>Bancor positions itself as a market-maker and supply/demand management system for token holders. This is not related to margin trading or any activities beyond spot trading.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">How decentralized and insured is Oxygen?</h4>
-                    <p>Oxygen is a fully decentralized ecosystem deployed to the Ethereum network. There is no central custody in the middle between transaction participants due to usage of smart-contract. Therefore all the assets are being held inside smart-contract
-                      during transactions and Oxygen does not hold any equity of users ever. It makes the platform completely safe.</p>
+                  <div class="faq__box js-faq-box" id=faq-6>
+                    <h4 class="faq__label">How decentralized and secure is Oxygen?</h4>
+                    <p>Oxygen is a fully decentralized ecosystem deployed in the Ethereum network. There is no central custody in-between transaction participants, due to usage of smart contracts. Therefore, during transactions all assets are stored inside
+                      smart contracts, and Oxygen never holds any equity of users. This makes the platform completely safe.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">Why does Oxygen environment consist of ERC20 tokens only?</h4>
-                    <p>There is no feasible and impartial cross-chain solution existing on the market right now allowing trustworthy working with both ETH and BTC blockchains. On the other hand, Ethereum is probably the most popular platform to perform ICO
-                      for now and dozens of tokens matching ERC20 standard are being issued. Moreover, ERC20-capable tokens are essential for transactions based on Ethereum smart-contracts. Here are the main reasons why we decided to focus on the ERC20
-                      standard primarily. However, we are conceiving to implement cross-chain as soon as a true reliable solution would appear.</p>
+                  <div class="faq__box js-faq-box" id=faq-7>
+                    <h4 class="faq__label">Why does the Oxygen environment consist of ERC20 tokens only?</h4>
+                    <p>Right now there is no feasible and impartial cross-chain solution which would allow secure operations with both ETH and BTC blockchains. On the other hand, for now, Ethereum is probably the most popular platform to perform ICO, and
+                      dozens of tokens are being issued in the ERC20 standard. Moreover, ERC20-capable tokens are essential for transactions based on Ethereum smart contracts. These are the main reasons why we primarily focus on the ERC20 standard. However,
+                      we want to go cross-chain as soon as a true and reliable solution appears.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">What is an orderbook?</h4>
-                    <p>An order book is a list of bids and asks placed by all parties that wish to lend or borrow a given asset in a market. In the case of Oxygen an order book is centralized exchange built on the disruptor technology used by LMAX. It will
-                      run a continuous auction with various books representing different tokens and different expiry blocks. Also, it is important to say it won't be fully anonymous — orders posted by participants will flash with different colours based
-                      on the participant’s credit rating.</p>
+                  <div class="faq__box js-faq-box" id=faq-8>
+                    <h4 class="faq__label">What is an order book?</h4>
+                    <p>An order book is a list of bids and asks placed by all parties that wish to lend or borrow a given asset. In the case of Oxygen, an order book is a de???centralized exchange built on the ???Disruptor technology, also used by LMAX.
+                      It will run a continuous auction with the books representing different tokens and different expiry blocks. Importantly, it will not be fully anonymous — orders will be highlighted with various colors, depending on the participant’s
+                      credit rating.</p>
                   </div>
                 </div>
                 <div class="faq__section">
-                  <h3 class="faq__subtitle">About business-model</h3>
-                  <div class="faq__box">
+                  <h3 class="faq__subtitle">About our business model</h3>
+                  <div class="faq__box js-faq-box" id=faq-9>
                     <h4 class="faq__label">How do I use Oxygen for my business?</h4>
-                    <p>Oxygen is designed to unlock hidden potential of your crypto-assets. Basically, you would be able either to pledge some of your tokens as a collateral to get a loan you need or to lend them and get your interest rate. But Oxygen is
-                      also a powerful tool for experienced traders and it could be used for way different cases of margin trading. If you envision a good fit, we’d love to hear about your project and may be open to partnerships. Please reach us at
-                      <a
-                        href="mailto:hello@oxygen.trade">hello@oxygen.trade</a>.</p>
+                    <p>Oxygen is designed to unlock the hidden potential of your cryptoassets. Basically, you can pledge some of your tokens as a collateral and get a loan you need, or lend them and get your interest rate. But Oxygen is also a powerful tool
+                      for experienced traders and it could be used for the way different cases of margin trading. If you envision a co-operation with us in this sphere, we’d love to hear about your project. You can reach us at <a href="mailto:hello@oxygen.trade">hello@oxygen.trade</a>.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-10>
                     <h4 class="faq__label">How does the platform earn profit?</h4>
-                    <p>Users are paying fees to the platform for each transaction. The exact fee amount depends on transaction term and amounts of collateralized and lent tokens.</p>
+                    <p>Users pay a fee for each transaction. The fee amount depends on transactions' terms and the amount of collateralized and lent tokens.</p>
                   </div>
                 </div>
                 <div class="faq__section">
                   <h3 class="faq__subtitle">About crowdfunding</h3>
-                  <div class="faq__box">
-                    <h4 class="faq__label">How does the token work?</h4>
-                    <p>Tokens play a significant role in the Oxygen ecosystem. Beside the fact that tokens will be used to cover Oxygen’ commissions, it would also provide token holders with access to the following benefits:</p>
+                  <div class="faq__box js-faq-box" id=faq-11>
+                    <h4 class="faq__label">How do tokens work?</h4>
+                    <p>Tokens play a significant role in the Oxygen ecosystem. They will not only be used to cover Oxygen’s fees, but will also open the following benefits to token holders:</p>
                     <ul>
-                      <li>Deals in bETH tokens under more advantageous conditions (up to 50% rebate)</li>
+                      <li>Deals in bETH tokens under more advantageous conditions (an up to 50 % rebate)</li>
                       <li>Priority in the order book queue (in case the credit rating permits it)</li>
-                      <li>Last look on trades</li>
-                      <li>Liabilities coverage to avoid penalty in case of credit-event</li>
-                      <li>Right to vote on the implementation of new features</li>
+                      <li>Last look during trades</li>
+                      <li>Liabilities coverage to avoid penalty in case of a credit event</li>
+                      <li>Right to vote on implementation of new features</li>
                     </ul>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-12>
                     <h4 class="faq__label">What are the preferences for pre-sale contributors?</h4>
                     <p>Pre-sale contributors will get an up to 20% bonus.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-13>
                     <h4 class="faq__label">What will you use the funds for?</h4>
-                    <p>We will use 85% of raised funds for development and promotion of Oxygen.<br><br> 10% of funds will be used as floating capital for market making during launch.<br><br> 5% of funds will reserved to cover unexpected costs</p>
+                    <p>We will use 85 % of raised funds for development and promotion of Oxygen.<br><br> 10 % of funds will be used as a floating capital for market-making at launch.<br><br> 5 % of funds will reserved to cover unexpected costs.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-14>
                     <h4 class="faq__label">Which exchanges will list the OXG token?</h4>
-                    <p>Several primary exchanges will list OXG tokens once sale is over. To be announced.</p>
+                    <p>Several major exchanges will list OXG tokens once sale is over. More details will be announced.</p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">When OXG tokens will be tradable?</h4>
-                    <p>You will be able to trade OXG tokens since 01.01.2018.</p>
+                  <div class="faq__box js-faq-box" id=faq-15>
+                    <h4 class="faq__label">When will OXG tokens be tradable?</h4>
+                    <p>You will be able to trade OXG tokens starting January 1, 2018.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-16>
                     <h4 class="faq__label">Is there any volatility hedge?</h4>
-                    <p>All OXG tokens unused during sale and unlocked capital for market making will be reserved for volatility hedging by tokens supply or guaranteed buyback.</p>
+                    <p>All OXG tokens unused during sale, as well as unlocked capital for market making, will be reserved for volatility hedging by token supply or guaranteed buyback.</p>
                   </div>
                 </div>
                 <div class="faq__section">
                   <h3 class="faq__subtitle">About the team</h3>
-                  <div class="faq__box">
-                    <h4 class="faq__label">Who did found Oxygen?</h4>
+                  <div class="faq__box js-faq-box" id=faq-17>
+                    <h4 class="faq__label">Who founded Oxygen?</h4>
                     <p>Oxygen is coming from creators of Changelly.<br><br> Changelly is the #1 instant cryptocurrency exchange providing the best crypto-to-crypto rates on the market.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-18>
                     <h4 class="faq__label">Who is on the team?</h4>
-                    <p>We are blockchain enthusiasts and professionals in financial technology, crypto trading, software engineering and product development. We are passionate about delivering great product to the market of margin trading, such as Oxygen
-                      is.</p>
+                    <p>We are blockchain enthusiasts and professionals in financial technologies, cryptotrading, software engineering and product??? development. We truly believe Oxygen will be an outstanding product on the margin trading market.</p>
                   </div>
-                  <div class="faq__box">
+                  <div class="faq__box js-faq-box" id=faq-19>
                     <h4 class="faq__label">Are you hiring?</h4>
                     <p>If you are interested in joining our team, please contact us at <a href="mailto:join@oxygen.trade">join@oxygen.trade</a></p>
                   </div>
-                  <div class="faq__box">
-                    <h4 class="faq__label">How can I help?</h4>
-                    <p>If you are interested in helping us, please reach us at <a href="mailto:">team@oxygen.trade</a><br> We would be excited to hear from you.</p>
+                  <div class="faq__box js-faq-box" id=faq-20>
+                    <h4 class="faq__label">How can I help? volunteer???</h4>
+                    <p>If you are interested in helping us volunteering for us???, you can reach us at <a href="mailto:">team@oxygen.trade</a>.<br> We will be excited to hear from you.</p>
                   </div>
                 </div>
               </div>
@@ -204,30 +343,31 @@
         <!-- end faq -->
         <!-- begin footer -->
         <footer class="footer">
-          <div class="clouds js-clouds" data-clouds="6">
-            <div class="clouds__word js-clouds-word"></div>
-          </div>
           <div class="inner footer__inner">
             <h2 class="title-lg footer__title">Token sale is coming. Sign up for pre-sale</h2>
             <!-- form -->
             <form action="/" class="footer__subscription subscription subscription_simple js-validation" data-validation-step="first">
-              <div class="field"> <button class="btn btn_christi subscription__btn" type="submit">Sign up</button>
-                <div class="input subscription__input"> <input type="text" placeholder="Leave email" name="step_1-email" data-validation="email" class="js-validation-email-first"> </div>
-              </div>
+              <div class="field">
+                <div class="input subscription__input"> <input type="text" placeholder="Leave email" name="step_1-email" data-validation="email" class="js-validation-email-first"> </div> <button class="btn btn_christi subscription__btn" type="submit">Sign up</button> </div>
             </form>
             <!-- ¯\_(ツ)_/¯ -->
             <!-- begin social -->
             <div class="sm-social footer__social">
               <div class="sm-social__label">Follow and contact us:</div>
               <ul class="sm-social__list">
-                <li class="sm-social__item"> <a href="https://www.facebook.com/OxygenTrade-895211577297422/ " target="_blank" class="sm-social__link">
+                <li class="sm-social__item"> <a href="https://www.facebook.com/OxygenTrade-895211577297422/" target="_blank" class="sm-social__link">
 							
 <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
 
 						</a> </li>
-                <li class="sm-social__item"> <a href="http://oxygentrade.herokuapp.com/ " target="_blank" class="sm-social__link">
+                <li class="sm-social__item"> <a href="https://t.me/oxygentradechat" target="_blank" class="sm-social__link">
 							
-<svg class="icon icon-slack"><use xlink:href="img/sprite.svg#icon-slack"></use></svg>
+<svg class="icon icon-tg_white"><use xlink:href="img/sprite.svg#icon-tg_white"></use></svg>
+
+						</a> </li>
+                <li class="sm-social__item"> <a href="https://medium.com/@oxygentrade" target="_blank" class="sm-social__link">
+							
+<svg class="icon icon-medium"><use xlink:href="img/sprite.svg#icon-medium"></use></svg>
 
 						</a> </li>
                 <li class="sm-social__item"> <a href="https://twitter.com/oxygen_trade" target="_blank" class="sm-social__link">
@@ -332,13 +472,397 @@
                   <div class="step__field">
                     <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-country">
 		
+			<option value="Afghanistan">Afghanistan</option>
+		
+			<option value="Albania">Albania</option>
+		
+			<option value="Algeria">Algeria</option>
+		
+			<option value="Andorra">Andorra</option>
+		
+			<option value="Angola">Angola</option>
+		
+			<option value="Antigua and Deps">Antigua and Deps</option>
+		
+			<option value="Argentina">Argentina</option>
+		
+			<option value="Armenia">Armenia</option>
+		
+			<option value="Australia">Australia</option>
+		
+			<option value="Austria">Austria</option>
+		
+			<option value="Azerbaijan">Azerbaijan</option>
+		
+			<option value="Bahamas">Bahamas</option>
+		
+			<option value="Bahrain">Bahrain</option>
+		
+			<option value="Bangladesh">Bangladesh</option>
+		
+			<option value="Barbados">Barbados</option>
+		
+			<option value="Belarus">Belarus</option>
+		
+			<option value="Belgium">Belgium</option>
+		
+			<option value="Belize">Belize</option>
+		
+			<option value="Benin">Benin</option>
+		
+			<option value="Bhutan">Bhutan</option>
+		
+			<option value="Bolivia">Bolivia</option>
+		
+			<option value="Bosnia Herzegovina">Bosnia Herzegovina</option>
+		
+			<option value="Botswana">Botswana</option>
+		
+			<option value="Brazil">Brazil</option>
+		
+			<option value="Brunei">Brunei</option>
+		
+			<option value="Bulgaria">Bulgaria</option>
+		
+			<option value="Burkina">Burkina</option>
+		
+			<option value="Burundi">Burundi</option>
+		
+			<option value="Cambodia">Cambodia</option>
+		
+			<option value="Cameroon">Cameroon</option>
+		
+			<option value="Canada">Canada</option>
+		
+			<option value="Cape Verde">Cape Verde</option>
+		
+			<option value="Central African Rep">Central African Rep</option>
+		
+			<option value="Chad">Chad</option>
+		
+			<option value="Chile">Chile</option>
+		
+			<option value="China">China</option>
+		
+			<option value="Colombia">Colombia</option>
+		
+			<option value="Comoros">Comoros</option>
+		
+			<option value="Congo">Congo</option>
+		
+			<option value="Congo (Democratic Rep)">Congo (Democratic Rep)</option>
+		
+			<option value="Costa Rica">Costa Rica</option>
+		
+			<option value="Croatia">Croatia</option>
+		
+			<option value="Cuba">Cuba</option>
+		
+			<option value="Cyprus">Cyprus</option>
+		
+			<option value="Czech Republic">Czech Republic</option>
+		
+			<option value="Denmark">Denmark</option>
+		
+			<option value="Djibouti">Djibouti</option>
+		
+			<option value="Dominica">Dominica</option>
+		
+			<option value="Dominican Republic">Dominican Republic</option>
+		
+			<option value="East Timor">East Timor</option>
+		
+			<option value="Ecuador">Ecuador</option>
+		
+			<option value="Egypt">Egypt</option>
+		
+			<option value="El Salvador">El Salvador</option>
+		
+			<option value="Equatorial Guinea">Equatorial Guinea</option>
+		
+			<option value="Eritrea">Eritrea</option>
+		
+			<option value="Estonia">Estonia</option>
+		
+			<option value="Ethiopia">Ethiopia</option>
+		
+			<option value="Fiji">Fiji</option>
+		
+			<option value="Finland">Finland</option>
+		
+			<option value="France">France</option>
+		
+			<option value="Gabon">Gabon</option>
+		
+			<option value="Gambia">Gambia</option>
+		
+			<option value="Georgia">Georgia</option>
+		
+			<option value="Germany">Germany</option>
+		
+			<option value="Ghana">Ghana</option>
+		
+			<option value="Greece">Greece</option>
+		
+			<option value="Grenada">Grenada</option>
+		
+			<option value="Guatemala">Guatemala</option>
+		
+			<option value="Guinea">Guinea</option>
+		
+			<option value="Guinea-Bissau">Guinea-Bissau</option>
+		
+			<option value="Guyana">Guyana</option>
+		
+			<option value="Haiti">Haiti</option>
+		
+			<option value="Honduras">Honduras</option>
+		
+			<option value="Hungary">Hungary</option>
+		
+			<option value="Iceland">Iceland</option>
+		
 			<option value="India">India</option>
 		
-			<option value="Russian Federation 1">Russian Federation 1</option>
+			<option value="Indonesia">Indonesia</option>
 		
-			<option value="Russian Federation 2">Russian Federation 2</option>
+			<option value="Iran">Iran</option>
 		
-			<option value="Russian Federation 3">Russian Federation 3</option>
+			<option value="Iraq">Iraq</option>
+		
+			<option value="Ireland (Republic)">Ireland (Republic)</option>
+		
+			<option value="Israel">Israel</option>
+		
+			<option value="Italy">Italy</option>
+		
+			<option value="Ivory Coast">Ivory Coast</option>
+		
+			<option value="Jamaica">Jamaica</option>
+		
+			<option value="Japan">Japan</option>
+		
+			<option value="Jordan">Jordan</option>
+		
+			<option value="Kazakhstan">Kazakhstan</option>
+		
+			<option value="Kenya">Kenya</option>
+		
+			<option value="Kiribati">Kiribati</option>
+		
+			<option value="Korea North">Korea North</option>
+		
+			<option value="Korea South">Korea South</option>
+		
+			<option value="Kosovo">Kosovo</option>
+		
+			<option value="Kuwait">Kuwait</option>
+		
+			<option value="Kyrgyzstan">Kyrgyzstan</option>
+		
+			<option value="Laos">Laos</option>
+		
+			<option value="Latvia">Latvia</option>
+		
+			<option value="Lebanon">Lebanon</option>
+		
+			<option value="Lesotho">Lesotho</option>
+		
+			<option value="Liberia">Liberia</option>
+		
+			<option value="Libya">Libya</option>
+		
+			<option value="Liechtenstein">Liechtenstein</option>
+		
+			<option value="Lithuania">Lithuania</option>
+		
+			<option value="Luxembourg">Luxembourg</option>
+		
+			<option value="Macedonia">Macedonia</option>
+		
+			<option value="Madagascar">Madagascar</option>
+		
+			<option value="Malawi">Malawi</option>
+		
+			<option value="Malaysia">Malaysia</option>
+		
+			<option value="Maldives">Maldives</option>
+		
+			<option value="Mali">Mali</option>
+		
+			<option value="Malta">Malta</option>
+		
+			<option value="Marshall Islands">Marshall Islands</option>
+		
+			<option value="Mauritania">Mauritania</option>
+		
+			<option value="Mauritius">Mauritius</option>
+		
+			<option value="Mexico">Mexico</option>
+		
+			<option value="Micronesia">Micronesia</option>
+		
+			<option value="Moldova">Moldova</option>
+		
+			<option value="Monaco">Monaco</option>
+		
+			<option value="Mongolia">Mongolia</option>
+		
+			<option value="Montenegro">Montenegro</option>
+		
+			<option value="Morocco">Morocco</option>
+		
+			<option value="Mozambique">Mozambique</option>
+		
+			<option value="Myanmar, (Burma)">Myanmar, (Burma)</option>
+		
+			<option value="Namibia">Namibia</option>
+		
+			<option value="Nauru">Nauru</option>
+		
+			<option value="Nepal">Nepal</option>
+		
+			<option value="Netherlands">Netherlands</option>
+		
+			<option value="New Zealand">New Zealand</option>
+		
+			<option value="Nicaragua">Nicaragua</option>
+		
+			<option value="Niger">Niger</option>
+		
+			<option value="Nigeria">Nigeria</option>
+		
+			<option value="Norway">Norway</option>
+		
+			<option value="Oman">Oman</option>
+		
+			<option value="Pakistan">Pakistan</option>
+		
+			<option value="Palau">Palau</option>
+		
+			<option value="Panama">Panama</option>
+		
+			<option value="Papua New Guinea">Papua New Guinea</option>
+		
+			<option value="Paraguay">Paraguay</option>
+		
+			<option value="Peru">Peru</option>
+		
+			<option value="Philippines">Philippines</option>
+		
+			<option value="Poland">Poland</option>
+		
+			<option value="Portugal">Portugal</option>
+		
+			<option value="Qatar">Qatar</option>
+		
+			<option value="Romania">Romania</option>
+		
+			<option value="Russian Federation">Russian Federation</option>
+		
+			<option value="Rwanda">Rwanda</option>
+		
+			<option value="St Kitts and Nevis">St Kitts and Nevis</option>
+		
+			<option value="St Lucia">St Lucia</option>
+		
+			<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+		
+			<option value="Samoa">Samoa</option>
+		
+			<option value="San Marino">San Marino</option>
+		
+			<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+		
+			<option value="Saudi Arabia">Saudi Arabia</option>
+		
+			<option value="Senegal">Senegal</option>
+		
+			<option value="Serbia">Serbia</option>
+		
+			<option value="Seychelles">Seychelles</option>
+		
+			<option value="Sierra Leone">Sierra Leone</option>
+		
+			<option value="Singapore">Singapore</option>
+		
+			<option value="Slovakia">Slovakia</option>
+		
+			<option value="Slovenia">Slovenia</option>
+		
+			<option value="Solomon Islands">Solomon Islands</option>
+		
+			<option value="Somalia">Somalia</option>
+		
+			<option value="South Africa">South Africa</option>
+		
+			<option value="South Sudan">South Sudan</option>
+		
+			<option value="Spain">Spain</option>
+		
+			<option value="Sri Lanka">Sri Lanka</option>
+		
+			<option value="Sudan">Sudan</option>
+		
+			<option value="Suriname">Suriname</option>
+		
+			<option value="Swaziland">Swaziland</option>
+		
+			<option value="Sweden">Sweden</option>
+		
+			<option value="Switzerland">Switzerland</option>
+		
+			<option value="Syria">Syria</option>
+		
+			<option value="Taiwan">Taiwan</option>
+		
+			<option value="Tajikistan">Tajikistan</option>
+		
+			<option value="Tanzania">Tanzania</option>
+		
+			<option value="Thailand">Thailand</option>
+		
+			<option value="Togo">Togo</option>
+		
+			<option value="Tonga">Tonga</option>
+		
+			<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+		
+			<option value="Tunisia">Tunisia</option>
+		
+			<option value="Turkey">Turkey</option>
+		
+			<option value="Turkmenistan">Turkmenistan</option>
+		
+			<option value="Tuvalu">Tuvalu</option>
+		
+			<option value="Uganda">Uganda</option>
+		
+			<option value="Ukraine">Ukraine</option>
+		
+			<option value="United Arab Emirates">United Arab Emirates</option>
+		
+			<option value="United Kingdom">United Kingdom</option>
+		
+			<option value="United States">United States</option>
+		
+			<option value="Uruguay">Uruguay</option>
+		
+			<option value="Uzbekistan">Uzbekistan</option>
+		
+			<option value="Vanuatu">Vanuatu</option>
+		
+			<option value="Vatican City">Vatican City</option>
+		
+			<option value="Venezuela">Venezuela</option>
+		
+			<option value="Vietnam">Vietnam</option>
+		
+			<option value="Yemen">Yemen</option>
+		
+			<option value="Zambia">Zambia</option>
+		
+			<option value="Zimbabwe">Zimbabwe</option>
 		
 	</select> </div>
                   </div>
@@ -348,23 +872,21 @@
                 <h3 class="step__title-md">Amount of tokens</h3>
                 <div class="sm-calculator step__calculator">
                   <div class="field-group sm-calculator__group">
-                    <div class="field-group__input"> <input type="text" class="sm-input" data-validation="required" name="step_3-amount-value"> </div>
+                    <div class="field-group__input"> <input type="text" class="sm-input" data-validation="required" name="step_3-amount-value" id="step_3-amount-value"> </div>
                     <div class="field-group__select">
-                      <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-amount-type">
+                      <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-amount-type" id="step_3-amount-value-type">
 		
 			<option value="BTC">BTC</option>
 		
-			<option value="BTC 1">BTC 1</option>
+			<option value="ETH">ETH</option>
 		
-			<option value="BTC 2">BTC 2</option>
-		
-			<option value="BTC 3">BTC 3</option>
+			<option value="USD">USD</option>
 		
 	</select> </div>
                     </div>
                   </div>
-                  <div class="sm-calculator__value"> <span class="sm-calculator__gray">=</span> <span>15083 OXG</span> </div>
-                  <div class="sm-calculator__value-small sm-calculator__gray"> <span>=</span> <span>367,38 USD</span> </div>
+                  <div class="sm-calculator__value"> <span class="sm-calculator__gray">=</span> <span id="js-span-oxg-value">0 OXG</span> </div>
+                  <div class="sm-calculator__value-small sm-calculator__gray"> <span>=</span> <span id="js-span-usd-value">0 USD</span> </div>
                 </div> <button class="btn btn_simple text-uppercase step__btn" type="submit">Apply</button> </div>
             </form>
           </div>

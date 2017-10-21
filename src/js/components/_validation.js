@@ -53,6 +53,40 @@ export default (function() {
     });
   };
 
+  const reportStep = (step) => {
+    switch(step) {
+      case FIRST:
+        gtag('config', 'UA-107870302-1',
+          {
+            'page_title': 'step1_confirm',
+            'page_location': 'http://oxygen.trade/step1_confirm',
+            'page_path': '/step1_confirm'
+          }
+        );
+        break;
+
+      case SECOND:
+        gtag('config', 'UA-107870302-1',
+          {
+            'page_title': 'step2_details',
+            'page_location': 'http://oxygen.trade/step2_details',
+            'page_path': '/step2_details'
+          }
+        );
+        break;
+
+      case THIRD:
+        gtag('config', 'UA-107870302-1',
+          {
+            'page_title': 'step3_success',
+            'page_location': 'http://oxygen.trade/step3_success',
+            'page_path': '/step3_success'
+          }
+        );
+        break;
+    }
+  };
+
   //functionality
   $form.each(function() {
     const $this = $(this);
@@ -62,6 +96,7 @@ export default (function() {
       scrollToTopOnError: false,
       onSuccess: function($currentForm) {
         const step = $currentForm.data('validation-step');
+        reportStep(step);
         switch(step) {
           case FIRST:
             const $emailFieldFirst = $currentForm.find('.js-validation-email-first');
@@ -70,6 +105,9 @@ export default (function() {
             const emailValue = $emailFieldFirst.val();
 
             $emailFieldSecond.val(emailValue);
+            setTimeout(() => {
+              $emailFieldSecond.trigger('change');
+            }, 400);
 
             nextStep($modalFirst, null);
             DATA.first = $currentForm.serialize();

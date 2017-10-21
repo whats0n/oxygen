@@ -18,14 +18,13 @@ body
 .out
 	position: relative
 	min-height: 100%
-	// overflow: hidden
-	transition: transform .6s ease-in
+	overflow: hidden
 	[data-body-animate] &
+		transition: transform .6s ease-in
 		transform: translateY(100vh)
 	.hide-help &
 		transform: initial
 .clouds
-	opacity: 0
 	transition: opacity 1s ease-in-out
 	.unfix &
 		opacity: 1

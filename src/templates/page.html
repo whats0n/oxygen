@@ -1,5 +1,8 @@
 ---
 title: Oxygen
+help: true
+class: is-main
+footerClouds: true
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -37,6 +40,13 @@ title: Oxygen
 	file: '_third',
 	classList: 'js-modal-third',
 	name: 'modal-step-3'
+})}}
+
+{{modal.call({
+	file: '_thanks',
+	classList: 'js-modal-thanks',
+	name: 'modal-step-thanks',
+	hash: 'thanks'
 })}}
 
 {% endblock %}

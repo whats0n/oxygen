@@ -1,59 +1,177 @@
 .faq
 	position: relative
-	padding: 164px 0 38px
+	padding: 220px 14px 38px
 	+md
-		padding-bottom: 65px
-	+sm 
-		padding-bottom: 75px
+		padding: 120px 0 30px
+	+sm
+		padding: 75px 0 38px 
 	&__inner
-		margin: 0 auto
-		max-width: 570px
+		position: relative
+		z-index: 1
 		+md
-			max-width: 595px
+			max-width: 640px
+		+sm
+			padding: 0 30px 
+	&__wrap
+		width: 100%
+		display: table
+		+md
+			display: block
+	&__sidebar
+		position: relative
+		width: 40%
+		vertical-align: top
+		display: table-cell
+		+clr
+		+md
+			width: 100%
+			display: block
+	&__sidebar-wrap
+		float: left
+		margin-left: -14px
+		padding: 0 60px 0 14px
+		max-width: 468px
+		+lg
+			max-width: 398px
+		+md
+			padding: 0 0 0 14px
+			width: calc(100% + 14px) 
+			float: none
+			max-width: calc(100% + 14px)
+		.is-fixed &
+			position: fixed
+			top: 0
+			height: 100vh
+			padding: 20px 60px 20px 14px
+			overflow-y: auto
+			+md
+				position: relative
+				height: auto
+		.is-absolute &
+			position: absolute
+			top: auto
+			bottom: 0
+	&__content
+		width: 60%
+		padding-left: 31px 
+		vertical-align: top
+		display: table-cell
+		+md
+			display: none
 	&__logo
 		display: block
 		margin: 0 auto 23px
 		width: 48px
-		+md
-			margin-bottom: 26px
-		+sm
-			margin-bottom: 34px
 	&__title
-		margin-bottom: 83px
-		text-align: center
-		+sm 
-			margin-bottom: 40px
+		margin-bottom: 85px
+		text-align: left
+		+md
+			margin-bottom: 60px
+		+sm
+			margin-bottom: 28px
 	&__section
 		&:not(:first-child)
-			padding-top: 75px
-			+md 
-				padding-top: 60px
-			+sm
+			padding-top: 50px
+			.faq__sidebar &
 				padding-top: 45px
+				+sm
+					padding-top: 23px 
 	&__subtitle
-		margin-bottom: 22px
-		color: $lightGray
-		+f(18, 24, null, 700)
-		letter-spacing: 0.18em
+		margin-bottom: 11px
+		color: #3EBDFF
+		+f(16, 24, null, 700)
+		letter-spacing: .06em
 		text-transform: uppercase
-		+sm
-			margin-bottom: 17px
+		.faq__sidebar &
+			font-size: 20px
+			line-height: 1.4
+			margin-bottom: 21px 
+			+sm
+				margin-bottom: 12px 
+				font-size: 16px
 	&__box
-		padding: 25px 0
+		position: relative
+		padding: 17px 0
+		&:before
+			position: absolute
+			content: ""
+			top: 17px
+			left: -14px
+			bottom: 17px
+			width: 4px
+			opacity: 0
+			transition: opacity .3s ease-in-out
+			border-radius: 2px  
+			background-color: #3EBDFF
+			.faq__sidebar &
+				display: none
+		&.is-active
+			&:before
+				opacity: 1
+		.faq__sidebar &
+			padding: 0 0 14px
+			+sm
+				padding: 0 0 6px 
 		+sm
 			padding: 15px 0
-		p 
-			+f(16, 24)
+		p,
+		ul
+			font-size: 16px
+			line-height: 1.4 
 		a
-			color: $green
+			color: $white
 		ul 
 			margin-top: 24px
-			+f(16, 24)
 			list-style-type: disc
 			list-style-position: inside
+	&__block
+		position: relative
+		padding: 9px 0 9px 14px
+		display: none
+		&:before
+			position: absolute
+			content: ""
+			top: 9px
+			left: 0
+			bottom: 9px
+			width: 4px
+			border-radius: 2px  
+			background-color: #3EBDFF
 	&__label
-		padding-bottom: 10px
-		color: $blue
-		+f(12, 24, null, 700)
-		letter-spacing: 0.2em
-		text-transform: uppercase
+		padding-bottom: 17px
+		color: $white
+		+f(26, null, null, 700)
+		line-height: 1.4
+		letter-spacing: 0
+		.faq__sidebar &
+			padding: 0
+			font-size: 16px
+			font-weight: 400 
+			line-height: 1.3
+			+sm
+				font-size: 16px
+a.faq__label
+	position: relative
+	transition: color .3s ease-in-out
+	vertical-align: top
+	display: inline-block
+	+hover
+		color: #3EBDFF
+	&:before
+		position: absolute
+		content: ""
+		top: 0
+		left: -14px
+		bottom: 0
+		width: 4px
+		opacity: 0
+		transition: opacity .3s ease-in-out
+		border-radius: 2px  
+		background-color: #3EBDFF
+	.is-active &
+		+md
+			color: #3EBDFF
+		&:before
+			opacity: 1
+			+md
+				display: none

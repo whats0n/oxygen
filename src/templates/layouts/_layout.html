@@ -3,6 +3,18 @@
 <!doctype html>
 <html>
   <head>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107870302-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107870302-1');
+    </script>
+
+
     <meta charset="utf-8" />
     <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -28,10 +40,21 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     {# {% include "../partials/_media-tags.html" %} #}
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107870302-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107870302-1');
+    </script>
   </head>
-  <body data-body-animate {% if class %}class="{{class}}"{% endif %}>
+  <body {% if help %} data-body-animate {% endif %} {% if class %}class="{{class}}"{% endif %}>
     <div class="container">
-        {% include "partials/_help.html" %}
+        {% if help %}
+            {% include "partials/_help.html" %}
+        {% endif %}
         {% include "partials/_header.html" %}
         <!-- BEGIN content -->
         <div class="out">

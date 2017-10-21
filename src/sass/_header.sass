@@ -20,19 +20,18 @@
 	.inner
 		+sm
 			padding: 0 29px 
-	.header__logo
-		display: none
-		+sm
-			display: block
-		// .is-fixed &
-		// 	display: block
 		
 
 .logo
 	float: left
 	margin-top: 16px
-	+sm
+	img
+		max-width: 100%
+		display: block
+	.is-main &
 		display: none
+	+sm
+		max-width: 88px
 	.is-fixed &
 		+sm
 			margin-top: 10px 

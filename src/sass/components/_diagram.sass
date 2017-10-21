@@ -216,7 +216,7 @@
 			left: 284px
 			width: 46px
 			height: 225px
-			background-image: url(../img/diagram-hint-1.svg) 
+			// background-image: url(../img/diagram-hint-1.svg) 
 			+xl
 				top: 239px
 				left: -25px
@@ -226,18 +226,18 @@
 				top: 299px
 				left: 65px
 				height: 200px
-			&:before
-				content: ''
-				position: absolute
-				top: 1px
-				right: 0
-				border-radius: 50%
-				width: 5px
-				height: 5px
-				background: $white
-				+sm
-					top: 0
-					right: 2px
+			// &:before
+			// 	content: ''
+			// 	position: absolute
+			// 	top: 1px
+			// 	right: 0
+			// 	border-radius: 50%
+			// 	width: 5px
+			// 	height: 5px
+			// 	background: $white
+			// 	+sm
+			// 		top: 0
+			// 		right: 2px
 	//info
 	&__info
 		position: absolute
@@ -421,6 +421,7 @@
 			font-weight: 700
 			+xl
 				margin-bottom: 10px
+				min-height: 1px
 				+f(18, 20)
 		&-description
 			+sm
@@ -642,11 +643,24 @@
 		&-label
 			&[data-diagram="label-optional"]
 				position: absolute
-				top: -18px
+				top: -16px
 				left: 145px
 				width: 80px
+				color: rgba($white, 0.4)
 				background: #1b3451
+				font-size: 14px
+				font-weight: 700
 				text-align: center
+				text-transform: uppercase
+				+xl
+					top: 100px
+					left: -20px
+					width: auto
+					background: none
+					writing-mode: vertical-lr
+				+sm 
+					left: auto
+					right: -24px
 	&__fork
 		position: absolute
 		&[data-diagram="fork-1"]
@@ -685,13 +699,15 @@
 			position: absolute
 			top: -77px
 			left: 80px
+			padding: 0 10px
 			border-radius: 20px
-			width: 110px
+			// width: 110px
 			line-height: 40px
 			text-align: center
 			+xl
 				top: 79px
 				left: -59px
+				padding: 10px 0
 				width: 40px
 				height: 110px
 				writing-mode: vertical-lr
@@ -699,6 +715,49 @@
 				left: -40px
 				border: none
 				font-size: 14px
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				right: 100%
+				margin-right: 8px
+				width: 39px
+				height: 40px
+				+xl
+					top: auto
+					right: auto
+					left: 50%
+					bottom: 100%
+					margin: 0 0 6px -1px
+					width: 50px
+			&:before
+				border-top: 2px solid rgba(128,130,133,.2)
+				border-left: 2px solid rgba(128,130,133,.2)
+				border-top-left-radius: 8px
+				+xl
+					border-color: #082044
+			&:after
+				margin-top: 40px
+				border-left: 2px solid #082044
+				+xl 
+					margin-top: 0
+					margin-bottom: -10px
+			i
+				position: absolute
+				top: 50%
+				right: 100%
+				margin-top: -4px
+				margin-right: -2px
+				border: 2px solid rgba(128,130,133,.2)
+				border-radius: 50%
+				width: 10px
+				height: 10px
+				+xl
+					top: 0
+					right: 50%
+					margin: 10px -5px 0 0
+					border-color: #082044
 		&-label
 			position: absolute
 			left: 20px
@@ -721,27 +780,57 @@
 					right: 10px
 			&[data-diagram="percent-1"],
 			&[data-diagram="percent-2"]
+				color: rgba($white, 0.2)
+				background: #082044
 				+xl
 					top: 19px
 		&-title
 			position: absolute
 			top: 48px
-			left: 0
+			// left: 0
+			left: 14px
 			width: 37px
 			height: 104px
+			// background: #1a3b60
 			font-size: 14px
 			line-height: 37px
 			text-align: center
 			writing-mode: vertical-lr
 			transform: scale(-1)
 			+xl
-				top: 0
-				left: 0
-				right: 0
+				top: 14px
+				left: 45px
+				right: 45px
 				width: auto
 				height: 37px
 				writing-mode: initial
 				+gpu
+			&:before,
+			&:after
+				content: ""
+				position: absolute
+				left: 46%
+				margin-left: -1px
+				border-left: 2px solid #082044
+				height: 15px
+				+xl
+					left: auto
+					margin: -1px 0 0
+					border-top: 2px solid #082044
+					border-left: none
+					width: 15px
+					height: auto
+			&:before
+				bottom: 98%
+				+xl
+					top: 50%
+					left: 98%
+					bottom: auto
+			&:after
+				top: 98%
+				+xl
+					top: 50%
+					right: 98%
 		&-color
 			position: relative
 			margin-bottom: 61px

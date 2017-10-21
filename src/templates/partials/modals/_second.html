@@ -11,14 +11,206 @@
 			{ name: 'step_3-email', label: 'E-mail', validation: 'email', inputClassList: 'js-validation-email-second' },
 			{ name: 'step_3-phone', label: 'Phone', placeholder: 'Optional' },
 			{
-				label: 'Country of Residence', 
+				label: 'Country of Residence',
 				select: {
 					selectAttrs: 'name="step_3-country"',
 					options: [
-						'India',
-						'Russian Federation 1',
-						'Russian Federation 2',
-						'Russian Federation 3'
+					'Afghanistan',
+					'Albania',
+					'Algeria',
+					'Andorra',
+					'Angola',
+					'Antigua and Deps',
+					'Argentina',
+					'Armenia',
+					'Australia',
+					'Austria',
+					'Azerbaijan',
+					'Bahamas',
+					'Bahrain',
+					'Bangladesh',
+					'Barbados',
+					'Belarus',
+					'Belgium',
+					'Belize',
+					'Benin',
+					'Bhutan',
+					'Bolivia',
+					'Bosnia Herzegovina',
+					'Botswana',
+					'Brazil',
+					'Brunei',
+					'Bulgaria',
+					'Burkina',
+					'Burundi',
+					'Cambodia',
+					'Cameroon',
+					'Canada',
+					'Cape Verde',
+					'Central African Rep',
+					'Chad',
+					'Chile',
+					'China',
+					'Colombia',
+					'Comoros',
+					'Congo',
+					'Congo (Democratic Rep)',
+					'Costa Rica',
+					'Croatia',
+					'Cuba',
+					'Cyprus',
+					'Czech Republic',
+					'Denmark',
+					'Djibouti',
+					'Dominica',
+					'Dominican Republic',
+					'East Timor',
+					'Ecuador',
+					'Egypt',
+					'El Salvador',
+					'Equatorial Guinea',
+					'Eritrea',
+					'Estonia',
+					'Ethiopia',
+					'Fiji',
+					'Finland',
+					'France',
+					'Gabon',
+					'Gambia',
+					'Georgia',
+					'Germany',
+					'Ghana',
+					'Greece',
+					'Grenada',
+					'Guatemala',
+					'Guinea',
+					'Guinea-Bissau',
+					'Guyana',
+					'Haiti',
+					'Honduras',
+					'Hungary',
+					'Iceland',
+					'India',
+					'Indonesia',
+					'Iran',
+					'Iraq',
+					'Ireland (Republic)',
+					'Israel',
+					'Italy',
+					'Ivory Coast',
+					'Jamaica',
+					'Japan',
+					'Jordan',
+					'Kazakhstan',
+					'Kenya',
+					'Kiribati',
+					'Korea North',
+					'Korea South',
+					'Kosovo',
+					'Kuwait',
+					'Kyrgyzstan',
+					'Laos',
+					'Latvia',
+					'Lebanon',
+					'Lesotho',
+					'Liberia',
+					'Libya',
+					'Liechtenstein',
+					'Lithuania',
+					'Luxembourg',
+					'Macedonia',
+					'Madagascar',
+					'Malawi',
+					'Malaysia',
+					'Maldives',
+					'Mali',
+					'Malta',
+					'Marshall Islands',
+					'Mauritania',
+					'Mauritius',
+					'Mexico',
+					'Micronesia',
+					'Moldova',
+					'Monaco',
+					'Mongolia',
+					'Montenegro',
+					'Morocco',
+					'Mozambique',
+					'Myanmar, (Burma)',
+					'Namibia',
+					'Nauru',
+					'Nepal',
+					'Netherlands',
+					'New Zealand',
+					'Nicaragua',
+					'Niger',
+					'Nigeria',
+					'Norway',
+					'Oman',
+					'Pakistan',
+					'Palau',
+					'Panama',
+					'Papua New Guinea',
+					'Paraguay',
+					'Peru',
+					'Philippines',
+					'Poland',
+					'Portugal',
+					'Qatar',
+					'Romania',
+					'Russian Federation',
+					'Rwanda',
+					'St Kitts and Nevis',
+					'St Lucia',
+					'Saint Vincent and the Grenadines',
+					'Samoa',
+					'San Marino',
+					'Sao Tome and Principe',
+					'Saudi Arabia',
+					'Senegal',
+					'Serbia',
+					'Seychelles',
+					'Sierra Leone',
+					'Singapore',
+					'Slovakia',
+					'Slovenia',
+					'Solomon Islands',
+					'Somalia',
+					'South Africa',
+					'South Sudan',
+					'Spain',
+					'Sri Lanka',
+					'Sudan',
+					'Suriname',
+					'Swaziland',
+					'Sweden',
+					'Switzerland',
+					'Syria',
+					'Taiwan',
+					'Tajikistan',
+					'Tanzania',
+					'Thailand',
+					'Togo',
+					'Tonga',
+					'Trinidad and Tobago',
+					'Tunisia',
+					'Turkey',
+					'Turkmenistan',
+					'Tuvalu',
+					'Uganda',
+					'Ukraine',
+					'United Arab Emirates',
+					'United Kingdom',
+					'United States',
+					'Uruguay',
+					'Uzbekistan',
+					'Vanuatu',
+					'Vatican City',
+					'Venezuela',
+					'Vietnam',
+					'Yemen',
+					'Zambia',
+					'Zimbabwe'
 					]
 				}
 			}
@@ -31,11 +223,11 @@
 					</div>
 					<div class="step__field">
 						{% if not item.select %}
-							<input type="text" 
-								class="sm-input {{item.inputClassList}}" 
+							<input type="text"
+								class="sm-input {{item.inputClassList}}"
 								{% if item.validation %}
 									data-validation="{{item.validation}}"
-								{% endif %} 
+								{% endif %}
 								{% if item.placeholder %}placeholder="{{item.placeholder}}"{% endif %}
 								name="{{item.name}}">
 						{% else %}
@@ -50,27 +242,27 @@
 			<div class="sm-calculator step__calculator">
 				<div class="field-group sm-calculator__group">
 					<div class="field-group__input">
-						<input type="text" class="sm-input" data-validation="required" name="step_3-amount-value">
+						<input type="text" class="sm-input" data-validation="required" name="step_3-amount-value" id="step_3-amount-value">
 					</div>
 					<div class="field-group__select">
 						{{mixins.select({
 							selectAttrs: 'name="step_3-amount-type"',
+							id: 'step_3-amount-value-type',
 							options: [
 								'BTC',
-								'BTC 1',
-								'BTC 2',
-								'BTC 3'
+								'ETH',
+								'USD'
 							]
 						})}}
 					</div>
 				</div>
 				<div class="sm-calculator__value">
 					<span class="sm-calculator__gray">=</span>
-					<span>15083 OXG</span>
+					<span id="js-span-oxg-value">0 OXG</span>
 				</div>
 				<div class="sm-calculator__value-small sm-calculator__gray">
 					<span>=</span>
-					<span>367,38 USD</span>
+					<span id="js-span-usd-value">0 USD</span>
 				</div>
 			</div>
 			<button class="btn btn_simple text-uppercase step__btn" type="submit">Apply</button>
