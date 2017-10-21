@@ -4,7 +4,6 @@ import { WIN, SHOW, FIXED, BODY } from '../_constants';
   let lastScrollTop = 0;
   WIN.scroll( function(event) {
     let scrollPosition = $(this).scrollTop();
-    if (WIN.width() > 768) return;
     (scrollPosition > lastScrollTop) 
       ? header.removeClass(SHOW)
       : header.addClass(SHOW);
