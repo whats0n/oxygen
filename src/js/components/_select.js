@@ -8,12 +8,11 @@ export default (function() {
 
     const $this = $(this);
     $this
-      .find('select')
-      .select2({
-      	dropdownParent: $this,
-      	minimumResultsForSearch: Infinity
-      });
-
+      .find('select');
+    $('select').select2({
+      allowClear: true,
+      minimumResultsForSearch: Infinity
+    });
   });
 
 })();

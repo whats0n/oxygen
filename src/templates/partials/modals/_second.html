@@ -9,12 +9,14 @@
 		</div>
 		{% set stepFields = [
 			{ name: 'step_3-email', label: 'E-mail', validation: 'email', inputClassList: 'js-validation-email-second' },
-			{ name: 'step_3-phone', label: 'Phone', placeholder: 'Optional' },
+			{ name: 'step_3-phone', label: 'Phone', type: 'number', pattern: '^[ 0-9+-]+$', placeholder: 'Optional' },
 			{
 				label: 'Country of Residence',
 				select: {
 					selectAttrs: 'name="step_3-country"',
+					placeholder: 'Please select...',
 					options: [
+					'',
 					'Afghanistan',
 					'Albania',
 					'Algeria',
@@ -223,8 +225,16 @@
 					</div>
 					<div class="step__field">
 						{% if not item.select %}
-							<input type="text"
+							<input 
 								class="sm-input {{item.inputClassList}}"
+								{% if item.type %}
+									type="{{item.type}}" 
+									{% else %}
+									type="text" 
+								{% endif %}
+								{% if item.pattern %}
+									pattern="{{item.pattern}}" 
+								{% endif %}
 								{% if item.validation %}
 									data-validation="{{item.validation}}"
 								{% endif %}
@@ -242,7 +252,7 @@
 			<div class="sm-calculator step__calculator">
 				<div class="field-group sm-calculator__group">
 					<div class="field-group__input">
-						<input type="number" class="sm-input" value="10" pattern="^[ 0-9,]+$" data-validation="number" name="step_3-amount-value" id="step_3-amount-value">
+						<input type="number" class="sm-input" value="10" pattern="^[ 0-9,]+$" data-validation="number" name="step_3-amount-value" data-validation-event="keyup change blur" id="step_3-amount-value">
 					</div>
 					<div class="field-group__select">
 						{{mixins.select({

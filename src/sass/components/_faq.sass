@@ -105,6 +105,9 @@
 			background-color: #3EBDFF
 			.faq__sidebar &
 				display: none
+		.faq__sidebar &
+			a
+				color: $white 
 		&.is-active
 			&:before
 				opacity: 1
@@ -119,7 +122,10 @@
 			font-size: 16px
 			line-height: 1.4 
 		a
+			transition: color .3s ease-in-out
 			color: #3ebdff
+			+hover
+				color: lighten(#3ebdff, 20)
 		ul 
 			margin-top: 24px
 			list-style-type: disc
@@ -152,7 +158,6 @@
 				font-size: 16px
 a.faq__label
 	position: relative
-	transition: color .3s ease-in-out
 	vertical-align: top
 	display: inline-block
 	+hover

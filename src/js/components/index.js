@@ -8,5 +8,5 @@ import './_fansy.js';
 import './_stickyMenu.js';
 import './_help-block.js';
 import './_select.js';
-import './_thanksDetect.js';
+import './_hashDetect.js';
 import './_sidebarFaq.js';

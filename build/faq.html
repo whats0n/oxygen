@@ -58,7 +58,7 @@
       <!-- header -->
       <div class="header js-header">
         <div class="header__in inner">
-          <!-- logo --><a href="/" class="header__logo logo">
+          <!-- logo --><a href="http://oxygen.trade/#topic" class="header__logo logo">
 			<img src="./img/logo-middle.svg" alt="logo">
 		</a>
           <!-- ¯\_(ツ)_/¯ -->
@@ -170,11 +170,9 @@
                       <div class="faq__block js-sidebar-block">
                         <p>Tokens play a significant role in the Oxygen platform. They will not only be used to cover Oxygen’s fees, but will also open the following benefits to token holders:</p>
                         <ul>
-                          <li>Deals in OXG tokens under more advantageous conditions (an up to 50 % rebate)</li>
-                          <li>Priority in the order book queue (in case the credit rating permits it)</li>
-                          <li>Last look during trades</li>
-                          <li>Liabilities coverage to avoid penalty in case of a credit event</li>
-                          <li>Right to vote on implementation of new features</li>
+                          <li>REPO deals in OXG tokens</li>
+                          <li>Deals with collateral of OXG tokens will be provided with 0 system fee</li>
+                          <li>Community features for OXG token holders</li>
                         </ul>
                       </div>
                     </div>
@@ -294,11 +292,9 @@
                     <h4 class="faq__label">How do tokens work?</h4>
                     <p>Tokens play a significant role in the Oxygen platform. They will not only be used to cover Oxygen’s fees, but will also open the following benefits to token holders:</p>
                     <ul>
-                      <li>Deals in OXG tokens under more advantageous conditions (an up to 50 % rebate)</li>
-                      <li>Priority in the order book queue (in case the credit rating permits it)</li>
-                      <li>Last look during trades</li>
-                      <li>Liabilities coverage to avoid penalty in case of a credit event</li>
-                      <li>Right to vote on implementation of new features</li>
+                      <li>REPO deals in OXG tokens</li>
+                      <li>Deals with collateral of OXG tokens will be provided with 0 system fee</li>
+                      <li>Community features for OXG token holders</li>
                     </ul>
                   </div>
                   <div class="faq__box js-faq-box" id=faq-12>
@@ -463,20 +459,22 @@
                   <div class="step__label">
                     <div class="step__label-in">E-mail</div>
                   </div>
-                  <div class="step__field"> <input type="text" class="sm-input js-validation-email-second" data-validation="email" name="step_3-email"> </div>
+                  <div class="step__field"> <input class="sm-input js-validation-email-second" type="text" data-validation="email" name="step_3-email"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
                     <div class="step__label-in">Phone</div>
                   </div>
-                  <div class="step__field"> <input type="text" class="sm-input " placeholder="Optional" name="step_3-phone"> </div>
+                  <div class="step__field"> <input class="sm-input " type="number" pattern="^[ 0-9+-]+$" placeholder="Optional" name="step_3-phone"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
                     <div class="step__label-in">Country of Residence</div>
                   </div>
                   <div class="step__field">
-                    <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-country">
+                    <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" class="placeholder" name="step_3-country" data-placeholder="Please select...">
+		
+			<option value=""></option>
 		
 			<option value="Afghanistan">Afghanistan</option>
 		
@@ -878,9 +876,9 @@
                 <h3 class="step__title-md">Amount of tokens</h3>
                 <div class="sm-calculator step__calculator">
                   <div class="field-group sm-calculator__group">
-                    <div class="field-group__input"> <input type="number" class="sm-input" value="10" pattern="^[ 0-9,]+$" data-validation="number" name="step_3-amount-value" id="step_3-amount-value"> </div>
+                    <div class="field-group__input"> <input type="number" class="sm-input" value="10" pattern="^[ 0-9,]+$" data-validation="number" name="step_3-amount-value" data-validation-event="keyup change blur" id="step_3-amount-value"> </div>
                     <div class="field-group__select">
-                      <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-amount-type" id="step_3-amount-value-type">
+                      <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" class="placeholder" name="step_3-amount-type" id="step_3-amount-value-type">
 		
 			<option value="BTC">BTC</option>
 		
