@@ -66,6 +66,7 @@
     "perfect-scrollbar": "^1.1.0",
     "rellax": "^1.3.0",
     "svg4everybody": "^2.1.9",
+    "throttle-debounce": "^1.0.1",
     "tooltipster": "^4.2.5",
     "tooltipster-follower": "^0.1.5"
   }

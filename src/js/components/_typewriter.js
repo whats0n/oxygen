@@ -6,7 +6,7 @@ export default (function() {
 
   MESSAGES.push({
     delay: 0,
-    text: 'Can’t earn profit from being a passive long-term holder?'
+    text: 'Would you like to earn profit from being a passive long-term holder?'
   });
 
   MESSAGES.push({

@@ -2,7 +2,8 @@
 <div class="introducing">
 	<div class="introducing__inner inner">
 		<h2 class="introducing__title title-lg">Transparent workflow and infrastructure</h2>
-		<div class="introducing__description">OXYGEN is a powerful and easy-to-use tool ensuring efficient and 100% secure transactions.</div>
+		<div class="introducing__description">OXYGEN is a powerful and easy-to-use decentralised platform based on Ethereum smart contracts and client-side applications. All private keys are held by client-side applications and Ethereum network provides collateral security.
+</div>
 	</div>
 	<div class="introducing__diagram">
 		<div class="diagram">
@@ -39,7 +40,7 @@
 						</div>
 					</div>
 					<div class="diagram__fork" data-diagram="fork-1">
-						<div class="diagram__fork-hint">Foundation</div>
+						<div class="diagram__fork-hint">Oxygen</div>
 						<div class="diagram__fork-title" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_system-free">System fee</div>
 						<div class="diagram__fork-label" data-diagram="percent-1">%</div>
 						<div class="diagram__fork-label" data-diagram="percent-2">%</div>
@@ -81,7 +82,7 @@
 					</div>
 					<div class="diagram__hints" data-diagram="hints-2">
 						<div class="diagram__hints-label" data-diagram="hint-label-1">Borrower</div>
-						<div class="diagram__hints-item" data-diagram="hint-item-4" data-diagram-modal="parent" data-tooltip-content="#tooltip_final-collateral">Collateral <small>(minus interest)</small></div>
+						<div class="diagram__hints-item" data-diagram="hint-item-4" data-diagram-modal="parent" data-tooltip-content="#tooltip_final-collateral">Collateral</div>
 					</div>
 				</div>
 				<div class="diagram__overlay js-diagram-modal-overlay"></div>
@@ -132,9 +133,9 @@
 		</div>
 		<div class="tooltip_templates">
 			<span id="tooltip_conditions">
-				<p>A deal is defined as an event which has been both registered by the matching (clearing) and the cash flow is triggered by the smart contract.</p>
-				<p>Type and amount of borrowed ERC20 tokens</p>
+				<p>A deal is defined as an event when both counterparties are registered by the matching and settlement is triggered by the smart contract under following conditions:</p>
 				<ul>
+          <li>Type and amount of borrowed ERC20 tokens</li>
 					<li>Deal duration</li>
 					<li>Type of tokens used as a collateral</li>
 					<li>Interest rate</li>
@@ -162,34 +163,34 @@
 				</ul>
 			</span>
 			<span id="tooltip_matching">
-				<p>The matching engine presents various books and maturities where users can either take or provide liquidity (market & limit orders). The auction is organized in the same fashion as the CME interest rate derivatives section.</p>
+				<p>The matching engine has no access to private keys.</p>
 			</span>
 			<!-- for diagram info -->
 			<span id="tooltip_diagram-management">
-				<p>The risk management toolkit provides suggestions, ceiling, floors and indicative rates for offer submission based on market events.</p>
+				<p>Intelligent system provides advisory on market - ceiling, floors and indicative rates for offer submission based on market events.</p>
 			</span>
 			<span id="tooltip_diagram-exchange">
 				<p>A set of web applications where  participants interact with decentralized REPO contracts.</p>
 			</span>
 			<span id="tooltip_diagram-contract">
-				<p>The core of decentralized REPO transaction. Smart contracts can be directly used by any party within Ethereum network. The smart contract acts as the settlement mechanism for deals that occurred through the public auction.</p>
+				<p>The core of decentralized REPO transaction. Security of assets is provided by Ethereum network. The smart contract acts as the settlement mechanism for deals that occurred through the public auction.</p>
 			</span>
 			<span id="tooltip_diagram-system">
 				<p>The rating rewards and penalizes users proportionally to the deal’s volumes. A separate smart contract stores the rating data.</p>
 				{# <img src="./img/formula.png" alt="formula" class="diagram__formula"> #}
 			</span>
 			<span id="tooltip_diagram-etherdelta">
-				<p>A treasury management streamlining feature. The lender can specify that he wants the process of realization to be automatically performed through Etherdelta. In such event, orders are automatically placed and the deal’s proceeds are directly transferred to the the lender.</p>
+				<p>A treasury management streamlining feature. The lender can specify that he wants the process of collateral realization to be automatically performed through Etherdelta. In such event, orders are automatically placed and the deal’s proceeds are directly transferred to the the lender.</p>
 			</span>
 			<!-- end -->
 			<span id="tooltip_system-free">
-				<p>The system fee is paid in LendOS tokens. The fee automatically includes the settlement fee (gas required to interact with the smart contract)</p>
+				<p>System fee is paid in OXG tokens. Gas included.</p>
 			</span>
 			<span id="tooltip_loan">
-				<p>Loan conditions are defined as an interest rate from notional - however the actual cash flow is referenced from the collateral, not the borrowed asset.</p>
+				<p>Loan conditions are defined as an interest rate from notional value of borrowed asset.</p>
 			</span>
 			<span id="tooltip_collateral">
-				<p>Any ERC20-compatible tokens are acceptable as collateral (subject to market’s acceptance). The collateral is held by the smart contract which then delivers it to either party depending on the credit-event.</p>
+				<p>The collateral is held by the smart contract which then delivers it to either party depending on the credit-event.</p>
 			</span>
 			<span id="tooltip_default">
 				<p>If the borrower fails to return borrowed tokens when the deal has expired, the deal is automatically considered default. The lender will then be able to claim the collateral from the contract.</p>
@@ -198,33 +199,28 @@
 				<p>When the borrower successfully returns borrowed tokens with interests while the deal is still active (not expired), the deal is automatically considered complete.</p>
 			</span>
 			<span id="tooltip_rating-down">
-				<p>In case of a successfully closed loan the rating increases</p>
+				<p>In case of a default the rating declines.</p>
 			</span>
 			<span id="tooltip_rating-up">
-				<p>The borrower rating is updated according to the outcome of the deal.</p>
-				<ul>
-				    <li>In case of completed deal, it goes up.</li>
-				    <li>Rating change is proportionate to the volume of the deal.</li>
-				    <li>Rating of all participants is stored in a separate contract.</li>
-				</ul>
+				<p>In case of a successfully closed loan the rating increases.</p>
 			</span>
 			<span id="tooltip_collateral-realisation">
-				<p>Optional. If the lender has specified this clause in the contract automated realization will take place should a default occur.</p>
+				<p>OPTIONAL<br>If the lender has specified this clause in the contract – automated realization.</p>
 			</span>
 			<span id="tooltip_interest-realisation">
 				<p>Optional. If the lender has specified this clause in the contract the interest is paid from the collateral.</p>
 			</span>
 			<span id="tooltip_final-interest">
-				<p>Interest is an agreed percentage of the collateral assets. The lender claims it when the deal is closed gracefully.</p>
+				<p>Interest is an agreed percentage of borrowed assets.</p>
 			</span>
 			<span id="tooltip_final-repayment">
-				<p>All borrowing operations are secured and the lender will always receive the posted collateral if the borrower decides to default on payment. The system is designed to provide valuations which take into account such events and turn them into potential profits.</p>
+				<p>All transactions are secured and the lender will always receive the collateral in case of borrower’s default on payment.</p>
 			</span>
 			<span id="tooltip_final-loan">
-				<p>The original tokens, used by the borrower in accordance with the deal, are returned to the lender using the ERC20 contract interface.</p>
+				<p>Borrowed assets are returned to the lender using the ERC20 contract interface.</p>
 			</span>
 			<span id="tooltip_final-collateral">
-				<p>When the deal is closed gracefully, the collateral is unblocked from the REPO contract and is returned to the borrower. Interests are payed to the lender.</p>
+				<p>The collateral is unblocked from the REPO contract and is returned to the borrower.</p>
 			</span>
 		</div>
 	</div>
