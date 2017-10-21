@@ -9,6 +9,7 @@
 		style="width: 100%;"
 		{{props.selectAttrs | safe}}
 		{% if props.validation %} data-validation="{{props.validation}}"{% endif %}
+		{% if props.placeholder %}data-placeholder="{{props.placeholder}}"{% endif %}
 		{% if props.id %} id="{{props.id}}"{% endif %}>
 		{% for item in props.options %}
 			<option value="{{item}}">{{item}}</option>
