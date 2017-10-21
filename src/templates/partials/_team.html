@@ -256,18 +256,34 @@
 			</div>
 		</div>
 		{% set partners = [
-			'cointelegraph',
-			'coindesk',
-			'forbes',
-			'bitcoin',
-			'cryptocoins'
+			{
+				img: 'cointelegraph',
+				link: 'https://cointelegraph.com/news/changelly-exchange-opens-doors-as-compromised-shapeshift-goes-down'
+			},
+			{
+				img: 'coindesk',
+				link: 'https://www.coindesk.com/press-releases/changelly-announces-partnership-jaxx-wallet/'
+			},
+			{
+				img: 'forbes',
+				link: 'https://www.forbes.com/sites/rogeraitken/2017/01/31/chronobank-crypto-startup-attracts-3m-bitcoin-forges-changelly-app-partnership/#4f112d026413'
+			},
+			{
+				img: 'bitcoin',
+				link: 'https://news.bitcoin.com/changelly-wings-foundation-partner-provide-seamless-multi-currency-support-blockchain-crowdfunding/'
+			},
+			{
+				img: 'cryptocoins',
+				link: 'https://www.cryptocoinsnews.com/changelly-adds-lisk-instant-exchange-service/'
+			}
+			
 		] %}
 		<div class="team__partners">
 			<div class="team__label">Media about founder</div>
 			{% for item in partners %}
-				<div class="team__partner">
-					<img src="img/{{item}}.jpg" alt="{{item}}">
-				</div>
+				<a href="{{item.link}}" target="_blank" class="team__partner">
+					<img src="img/{{item.img}}.jpg" alt="{{item.img}}">
+				</a>
 			{% endfor %}
 		</div>
 	</div>
