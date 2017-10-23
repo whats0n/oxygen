@@ -694,6 +694,10 @@
 		&[data-diagram="fork-1"]
 			top: 17px
 			left: 126px
+			+hover
+				.diagram__fork-title.tooltipstered,
+				.diagram__fork-label
+					color: $white
 			+xl
 				top: 126px
 				left: 67px
@@ -809,6 +813,7 @@
 			width: 29px
 			height: 29px
 			color: $black
+			transition: color .2s
 			background: $white
 			font-size: 20px
 			line-height: 29px
