@@ -72,7 +72,7 @@
       <!-- header -->
       <div class="header js-header">
         <div class="header__in inner">
-          <!-- logo --><a href="http://oxygen.trade/" class="header__logo logo">
+          <!-- logo --><a href="/" class="header__logo logo">
 			<img src="./img/logo-middle.svg" alt="logo">
 		</a>
           <!-- ¯\_(ツ)_/¯ -->
@@ -106,7 +106,7 @@
       <div class="out">
         <div class="top-section">
           <!-- topic -->
-          <div class="topic js-topic" id="topic">
+          <div class="topic">
             <div class="clouds js-clouds" data-clouds-paralax="true">
               <div class="clouds__word js-clouds-word"></div>
             </div>
@@ -115,9 +115,9 @@
                 <h1 class="topic__title">OXYGEN</h1>
               </div>
               <div class="topic__content">
-                <div class="topic__sub-title">Decentralized REPO platform</div>
+                <div class="topic__sub-title">Decentralized Repo platform</div>
                 <div class="topic__description">
-                  <p>Token holders can now safely lend crypto assets for interest rate. Users can borrow tokens for crypto collateral to trade on margin.</p>
+                  <p>Token holders can now safely lend crypto assets for interest rate. Users can borrow tokens against crypto collateral for short-selling or utility use.</p>
                 </div>
                 <div class="signup topic__subscription">
                   <p>Sign up for the limited pre-sale to get an up to 20 % bonus</p> <a href="#" class="btn btn_blue js-modal-open" data-modal-target="modal-step-1">sign up for pre-sale</a> </div>
@@ -171,22 +171,22 @@
           <div class="features">
             <div class="features__inner inner">
               <h2 class="features__title title-lg">Market-centric features</h2>
-              <div class="features__sm-description sm-description">Our toolkit allows to earn profit from being long-term holder and makes margin trading simple, transparent and inexpensive for both dealers and traders.</div>
+              <div class="features__sm-description sm-description">Our toolkit allows to earn profit from being long-term holder or to short great variety of crypto assets. Simply and transparently to both dealers and traders.</div>
               <div class="features__wrap">
                 <div class="features__col">
+                  <div class="features__ico features__ico_net"> <img src="./img/kf-net-x3.png" alt="img"> </div>
+                  <h4 class="features__title-md title-md">Secure decentralized platform</h4>
+                  <p>Oxygen delivers a fully decentralized REPO market and settlement system set up over Ethereum network. There is no centralized custody at any stage.</p>
+                </div>
+                <div class="features__col">
                   <div class="features__ico features__ico_stars"> <img src="./img/kf-stars-x3.png" alt="img"> </div>
-                  <h4 class="features__title-md title-md">Blockchain-recorded credit&nbsp;rating</h4>
-                  <p>Get access to anonymous and reliable credit reports about your borrowers - the first practical blend of the anonymity and transparency offered by the Blockchain technology.</p>
+                  <h4 class="features__title-md title-md">Blockchain-recorded users repayment rating</h4>
+                  <p>Get access to anonymous and reliable reports about your borrowers - the practical blend of the anonymity and transparency offered by the Blockchain technology.</p>
                 </div>
                 <div class="features__col">
                   <div class="features__ico features__ico_coins"> <img src="./img/kf-coins-x3.png" alt="img"> </div>
                   <h4 class="features__title-md title-md">Collateralized pools</h4>
-                  <p>Lenders or borrowers can participate in contracts together, sharing the risks and profits. This option is available for secured requests if selected by the owner during initial offer submission process.</p>
-                </div>
-                <div class="features__col">
-                  <div class="features__ico features__ico_net"> <img src="./img/kf-net-x3.png" alt="img"> </div>
-                  <h4 class="features__title-md title-md">Truly decentralized platform</h4>
-                  <p>Oxygen delivers a fully decentralized collateral acquisition and settlement system set up over Ethereum network. There is no centralized custody at any stage.</p>
+                  <p>Several lenders or borrowers can participate in a single contract together. This option is available if selected by the order owner during initial offer submission.</p>
                 </div>
                 <div class="features__col">
                   <div class="features__ico features__ico_ppl"> <img src="./img/kf-ppl-x3.png" alt="img"> </div>
@@ -212,7 +212,8 @@
         <div class="introducing">
           <div class="introducing__inner inner">
             <h2 class="introducing__title title-lg">Transparent workflow and infrastructure</h2>
-            <div class="introducing__description">OXYGEN is a powerful and easy-to-use decentralised platform based on Ethereum smart contracts and client-side applications. All private keys are held by client-side applications and Ethereum network provides collateral security. </div>
+            <div class="introducing__description">Oxygen is a powerful and easy-to-use decentralised platform based on Ethereum smart contracts and client-side applications. All private keys are held by client-side applications and Ethereum network provides collateral security and settlement.
+              </div>
           </div>
           <div class="introducing__diagram">
             <div class="diagram">
@@ -325,7 +326,7 @@
                   </div>
                   <div class="diagram__info-box-in">
                     <div class="diagram__info-title">Smart contract</div>
-                    <div class="diagram__info-description">Core of decentralised orders processing</div>
+                    <div class="diagram__info-description">Executes decentralized order processing</div>
                   </div>
                 </div>
                 <div class="diagram__info-box js-diagram-info-box" data-diagram="info-4" data-diagram-modal="parent" data-diagram-hover="no" data-tooltip-content="#tooltip_diagram-system">
@@ -345,7 +346,7 @@
                   </div>
                   <div class="diagram__info-box-in">
                     <div class="diagram__info-title">Etherdelta</div>
-                    <div class="diagram__info-description">Decentralized exchange integrated</div>
+                    <div class="diagram__info-description">Ensures decentralized exchange</div>
                   </div>
                 </div>
               </div>
@@ -354,7 +355,7 @@
 				<p>A deal is defined as an event when both counterparties are registered by the matching and settlement is triggered by the smart contract under following conditions:</p>
 				<ul>
           <li>Type and amount of borrowed ERC20 tokens</li>
-					<li>Deal duration</li>
+					<li>Deal maturity</li>
 					<li>Type of tokens used as a collateral</li>
 					<li>Interest rate</li>
 				</ul>
@@ -366,15 +367,16 @@
 					<li>Borrower's minimum credit rating</li>
 					<li>Contract maturity</li>
 					<li>Interest rate</li>
-					<li>Allow pooled offers</li>
-					<li>Proposal expiration</li>
+					<li>If pooled offers are allowed</li>
+					<li>Proposal expiration time</li>
 				</ul>
 			</span> <span id="tooltip_loan-request">
 				<p>The borrower must specify:</p>
 				<ul>
-					<li>Asset and quantity seeked</li>
+					<li>Asset and size to be asked from lenders</li>
 					<li>Contract maturity</li>
-					<li>Collateral he is ready to post</li>
+					<li>Collateral to be settled</li>
+					<li>If pooled offers are allowed</li>
 					<li>Proposal expiration time</li>
 				</ul>
 			</span> <span id="tooltip_matching">
@@ -395,9 +397,9 @@
               <!-- end --><span id="tooltip_system-free">
 				<p>System fee is paid in OXG tokens. Gas included.</p>
 			</span> <span id="tooltip_loan">
-				<p>Loan conditions are defined as an interest rate from notional value of borrowed asset.</p>
+				<p>Loan is transferred to borrower on collateral settlement.</p>
 			</span> <span id="tooltip_collateral">
-				<p>The collateral is held by the smart contract which then delivers it to either party depending on the credit-event.</p>
+				<p>The collateral is locked in the smart contract until the credit-event.</p>
 			</span> <span id="tooltip_default">
 				<p>If the borrower fails to return borrowed tokens when the deal has expired, the deal is automatically considered default. The lender will then be able to claim the collateral from the contract.</p>
 			</span> <span id="tooltip_completion">
@@ -411,7 +413,7 @@
 			</span> <span id="tooltip_interest-realisation">
 				<p>Optional. If the lender has specified this clause in the contract the interest is paid from the collateral.</p>
 			</span> <span id="tooltip_final-interest">
-				<p>Interest is an agreed percentage of borrowed assets.</p>
+				<p>Interest is an agreed percentage of notional value of borrowed assets.</p>
 			</span> <span id="tooltip_final-repayment">
 				<p>All transactions are secured and the lender will always receive the collateral in case of borrower’s default on payment.</p>
 			</span> <span id="tooltip_final-loan">
@@ -430,7 +432,7 @@
         <div class="experience">
           <div class="experience__inner inner">
             <h3 class="experience__title title-lg">Oxygen experience</h3>
-            <div class="experience__sm-description sm-description">The Platform's interface is adapted to any stakeholders’ needs and provides a general overview of current contracts and relevant market data.</div>
+            <div class="experience__sm-description sm-description">Client-side applications contain comprehensive set of interfaces and support all popular extensions as Parity UI, Metamask, MyEtherWallet etc.</div>
           </div>
           <div class="experience__wrap">
             <div class="experience__row">
@@ -444,7 +446,7 @@
                     <h4 class="experience__title-md">Dashboard</h4>
                     <ul>
                       <li>- See the market and your positions in a single place</li>
-                      <li>- Complete details of your ETH address portfolio</li>
+                      <li>- Full details of your ETH address portfolio</li>
                       <li>- Metrics of your active lending and borrowing operations</li>
                       <li>- Real-time exchange rates</li>
                     </ul>
@@ -482,10 +484,9 @@
                   <div class="experience__text-wrap">
                     <h4 class="experience__title-md">Smart contract constructor</h4>
                     <ul>
-                      <li>- Making our approach reflect you</li>
                       <li>- Highly customizable</li>
-                      <li>- Wizards to help you set the right conditions</li>
-                      <li>- Recommendations based on the overall market</li>
+                      <li>- Wizards take assistance to set the right conditions</li>
+                      <li>- Advisory based on the overall market</li>
                     </ul>
                     <div class="experience__footer"> <a href="./img/app-orders-ext.jpg" data-fancybox="gallery-a" class="experience__link">SEE THE PREVIEW</a> </div>
                   </div>
@@ -494,7 +495,7 @@
             </div>
           </div>
           <div class="experience__info">
-            <div class="experience__info-text">All images are for demonstration purposes only. Interest rates and other terms depicted are not representations of valid customer rates. Membership in the OXYGEN platform is required to access real-time updates.</div>
+            <div class="experience__info-text">All images are for demonstration purposes only. Interest rates and other terms depicted are not representations of valid customer rates. Membership in the Oxygen platform is required to access real-time updates.</div>
           </div>
         </div>
         <!-- ¯\_(ツ)_/¯ -->
@@ -503,7 +504,7 @@
           <div class="profiles__inner inner">
             <div class="profiles__content">
               <h3 class="profiles__title title-lg">Users profiles</h3>
-              <div class="profiles__description">Who will take more benefits of REPO market on blockchain with the help of Oxygen?</div>
+              <div class="profiles__description">Who will take more benefits of Repo market on blockchain with the help of Oxygen?</div>
             </div>
             <div class="profiles__out">
               <div class="profiles__row ">
@@ -663,7 +664,7 @@
 						</svg> </div>
                 <div class="member__title">
                   <div>Alex Melikhov</div> <strong>CEO</strong> </div>
-                <div class="member__description">14 years of entrepreneurial and fintech experience. Bitcoin user since 2013. Engineer in applied mathematics. </div>
+                <div class="member__description">14 years of entrepreneurial and fintech experience. Bitcoin user since 2013. Ethereum smart contracts specialist. Engineer in applied mathematics.</div>
                 <div class="member__social"> <a href="https://www.linkedin.com/in/alexander-melikhov-bb272532/" target="_blank">
 								
 <svg class="icon icon-linkedin-full"><use xlink:href="img/sprite.svg#icon-linkedin-full"></use></svg>
@@ -702,7 +703,7 @@
 							<image x="0" y="0" xlink:href="img/kolya.jpg" width="100%" height="100%" mask="url(#member-mask)"></image>
 						</svg> </div>
                 <div class="member__title">
-                  <div>Niko Volf</div> <strong>CTO</strong> </div>
+                  <div>Nikolay Volf</div> <strong>CTO</strong> </div>
                 <div class="member__description">Experienced any-stack software engineer. Rust pioneer. Core developer of Parity Ethereum Client since 2016.</div>
                 <div class="member__social"> <a href="https://www.linkedin.com/in/nikolayvolf/" target="_blank">
 								
@@ -759,7 +760,7 @@
               </div>
             </div>
             <div class="team__partners">
-              <div class="team__label">Media about founder</div> <a href="https://cointelegraph.com/news/changelly-exchange-opens-doors-as-compromised-shapeshift-goes-down" target="_blank" class="team__partner">
+              <div class="team__label">Media about us</div> <a href="https://cointelegraph.com/news/changelly-exchange-opens-doors-as-compromised-shapeshift-goes-down" target="_blank" class="team__partner">
 					<img src="img/cointelegraph.jpg" alt="cointelegraph">
 				</a> <a href="https://www.coindesk.com/press-releases/changelly-announces-partnership-jaxx-wallet/" target="_blank" class="team__partner">
 					<img src="img/coindesk.jpg" alt="coindesk">
@@ -781,7 +782,7 @@
               <div class="roadmap__item ">
                 <div class="roadmap__info roadmap__info_arr"> <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
                   <div class="roadmap__meta">Q2.2017</div>
-                  <div class="roadmap__subtitle  ">First breath. Business opportunities&nbsp;research.</div>
+                  <div class="roadmap__subtitle  ">First breath of Oxygen. Start of product development by founders.</div>
                   <div class="roadmap__description">Concept development.</div>
                 </div>
               </div>
@@ -796,13 +797,13 @@
                 <div class="roadmap__info ">
                   <div class="roadmap__meta">Q4.2017</div>
                   <div class="roadmap__subtitle  ">Team hiring. Incorporation. Token sale.</div>
-                  <div class="roadmap__description">Alpha: Ethereum based smart-contract. All ERC20-tokens support. Joint loans &amp; collaterals.</div>
+                  <div class="roadmap__description">Alpha: Ethereum based smart-contract. All ERC20-tokens support.</div>
                 </div>
               </div>
               <div class="roadmap__item ">
                 <div class="roadmap__info roadmap__info_arr"> <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
                   <div class="roadmap__meta">Q1.2018</div>
-                  <div class="roadmap__subtitle  ">OXG starts trading at Exchanges. Meet first users. Oxygen is market maker for the start. OXG is accepted as collateral already.</div>
+                  <div class="roadmap__subtitle  ">OXG starts trading at Exchanges. OXG is accepted as collateral already. Oxygen is market maker for trading of key token pairs. Meet first users.</div>
                   <div class="roadmap__description">Beta: DAPP including smart-contract interaction, requests browser.</div>
                 </div>
               </div>
@@ -810,7 +811,7 @@
                 <div class="roadmap__info ">
                   <div class="roadmap__meta">Q2.2018</div>
                   <div class="roadmap__subtitle  ">Marketing campaign starts. Community expands.</div>
-                  <div class="roadmap__description">Matching engine. Full-featured interfaces. Decentralised credit rating implementation.</div>
+                  <div class="roadmap__description">Matching engine. Client-side applications. Full-featured interfaces. Decentralised credit rating implementation.</div>
                 </div>
               </div>
               <div class="roadmap__item ">
@@ -823,22 +824,22 @@
               <div class="roadmap__item ">
                 <div class="roadmap__info ">
                   <div class="roadmap__meta">Q4.2018</div>
-                  <div class="roadmap__subtitle  ">First exchanges are outsourcing margin trading with OXYGEN.</div>
-                  <div class="roadmap__description">SaaS for B2B integrity available. Community voting system established. </div>
+                  <div class="roadmap__subtitle  ">First exchanges are outsourcing margin trading with Oxygen.</div>
+                  <div class="roadmap__description">SaaS for B2B integrity available. Collaterized pools (CDO-like) and CDS-like contracts added. </div>
                 </div>
               </div>
               <div class="roadmap__item ">
                 <div class="roadmap__info "> <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
                   <div class="roadmap__meta">Q1.2019</div>
-                  <div class="roadmap__subtitle  ">Turnover is increasing significantly due to new features. Worldwide expansion. </div>
-                  <div class="roadmap__description">Collaterized pools (CDO-like) and CDS-like contracts added.</div>
+                  <div class="roadmap__subtitle  ">Turnover is increasing significantly due to new features.</div>
+                  <div class="roadmap__description">True cross-chain solution. Bitcoin, Litecoin and other blockchains tokens are available for Repo transactions.</div>
                 </div>
               </div>
               <div class="roadmap__item roadmap__item_main">
                 <div class="roadmap__info "> <svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
-                  <div class="roadmap__meta">Q2.2019</div>
-                  <div class="roadmap__subtitle roadmap__subtitle_blue ">Oxygen is world-leading REPO platform in&nbsp;the cryptocurrency world.</div>
-                  <div class="roadmap__description">True cross-chain solution. Bitcoin, Litecoin and tokens based on other blockchains are available for REPO operations.</div>
+                  <div class="roadmap__meta">2020</div>
+                  <div class="roadmap__subtitle roadmap__subtitle_blue ">Part of the interbank market is denominated in Ethereum tokens and available at Oxygen platform.</div>
+                  <div class="roadmap__description"></div>
                 </div>
               </div>
             </div>
@@ -916,7 +917,6 @@
                         <div class="info-list__title">Token holders options</div>
                         <div class="info-list__description">
                           <p>System fee is payed with OXG utility token</p>
-                          <p>REPO deals in OXG tokens</p>
                           <p>Deals with collateral of OXG tokens will be provided with 0 system fee</p>
                           <p>Community features for OXG token holders</p>
                         </div>
@@ -924,7 +924,7 @@
                       <li class="info-list__item info-list__item_38 info-list__item_tablet-38">
                         <div class="info-list__title">Crowdfunding goal</div>
                         <div class="info-list__description">
-                          <p>Liquidity for key token pair <br>trades, product evolution, Asia and global <br>marketing, b2b marketing activities</p>
+                          <p>Liquidity for trading of key token pairs, <br>product evolution, Asia and global <br>marketing, b2b marketing activities</p>
                         </div>
                       </li>
                     </ul>
@@ -960,7 +960,7 @@
                             </div>
                             <div class="sm-graph__info">
                               <div class="sm-graph__value">10%</div>
-                              <div class="sm-graph__description">Liquidity for OXG token pair trades</div>
+                              <div class="sm-graph__description">Liquidity for trading of pairs with OXG token</div>
                             </div>
                           </div>
                           <div class="sm-graph__box " style="width: 9%">
@@ -1005,7 +1005,7 @@
                             </div>
                             <div class="sm-graph__info">
                               <div class="sm-graph__value">50%</div>
-                              <div class="sm-graph__description">Liquidity for key token pair trades</div>
+                              <div class="sm-graph__description">Liquidity for trading of key token pairs</div>
                             </div>
                           </div>
                           <div class="sm-graph__box " style="width: 15%">
@@ -1173,22 +1173,20 @@
                   <div class="step__label">
                     <div class="step__label-in">E-mail</div>
                   </div>
-                  <div class="step__field"> <input class="sm-input js-validation-email-second" type="text" data-validation="email" name="step_3-email"> </div>
+                  <div class="step__field"> <input type="text" class="sm-input js-validation-email-second" data-validation="email" name="step_3-email"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
                     <div class="step__label-in">Phone</div>
                   </div>
-                  <div class="step__field"> <input class="sm-input " type="number" pattern="^[ 0-9+-]+$" placeholder="Optional" name="step_3-phone"> </div>
+                  <div class="step__field"> <input type="text" class="sm-input " placeholder="Optional" name="step_3-phone"> </div>
                 </div>
                 <div class="step__box">
                   <div class="step__label">
                     <div class="step__label-in">Country of Residence</div>
                   </div>
                   <div class="step__field">
-                    <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" class="placeholder" name="step_3-country" data-placeholder="Please select...">
-		
-			<option value=""></option>
+                    <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-country">
 		
 			<option value="Afghanistan">Afghanistan</option>
 		
@@ -1590,9 +1588,9 @@
                 <h3 class="step__title-md">Amount of tokens</h3>
                 <div class="sm-calculator step__calculator">
                   <div class="field-group sm-calculator__group">
-                    <div class="field-group__input"> <input type="number" class="sm-input" value="10" pattern="^[ 0-9,]+$" data-validation="number" name="step_3-amount-value" data-validation-event="keyup change blur" id="step_3-amount-value"> </div>
+                    <div class="field-group__input"> <input type="number" class="sm-input" value="10" pattern="^[ 0-9,]+$" data-validation="number" name="step_3-amount-value" id="step_3-amount-value"> </div>
                     <div class="field-group__select">
-                      <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" class="placeholder" name="step_3-amount-type" id="step_3-amount-value-type">
+                      <div class="select js-select"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> <select style="width: 100%;" name="step_3-amount-type" id="step_3-amount-value-type">
 		
 			<option value="BTC">BTC</option>
 		

@@ -2,7 +2,7 @@
 <div class="introducing">
 	<div class="introducing__inner inner">
 		<h2 class="introducing__title title-lg">Transparent workflow and infrastructure</h2>
-		<div class="introducing__description">OXYGEN is a powerful and easy-to-use decentralised platform based on Ethereum smart contracts and client-side applications. All private keys are held by client-side applications and Ethereum network provides collateral security.
+		<div class="introducing__description">Oxygen is a powerful and easy-to-use decentralised platform based on Ethereum smart contracts and client-side applications. All private keys are held by client-side applications and Ethereum network provides collateral security and settlement.
 </div>
 	</div>
 	<div class="introducing__diagram">
@@ -103,7 +103,7 @@
 					{
 						icon: 'diagram-contract',
 						title: 'Smart contract',
-						description: 'Core of decentralised orders processing'
+						description: 'Executes decentralized order processing'
 					},
 					{
 						icon: 'diagram-system',
@@ -113,7 +113,7 @@
 					{
 						icon: 'diagram-etherdelta',
 						title: 'Etherdelta',
-						description: 'Decentralized exchange integrated'
+						description: 'Ensures decentralized exchange'
 					}
 				] %}
 				{% for item in diagramInfo %}
@@ -137,7 +137,7 @@
 				<p>A deal is defined as an event when both counterparties are registered by the matching and settlement is triggered by the smart contract under following conditions:</p>
 				<ul>
           <li>Type and amount of borrowed ERC20 tokens</li>
-					<li>Deal duration</li>
+					<li>Deal maturity</li>
 					<li>Type of tokens used as a collateral</li>
 					<li>Interest rate</li>
 				</ul>
@@ -150,16 +150,17 @@
 					<li>Borrower's minimum credit rating</li>
 					<li>Contract maturity</li>
 					<li>Interest rate</li>
-					<li>Allow pooled offers</li>
-					<li>Proposal expiration</li>
+					<li>If pooled offers are allowed</li>
+					<li>Proposal expiration time</li>
 				</ul>
 			</span>
 			<span id="tooltip_loan-request">
 				<p>The borrower must specify:</p>
 				<ul>
-					<li>Asset and quantity seeked</li>
+					<li>Asset and size to be asked from lenders</li>
 					<li>Contract maturity</li>
-					<li>Collateral he is ready to post</li>
+					<li>Collateral to be settled</li>
+					<li>If pooled offers are allowed</li>
 					<li>Proposal expiration time</li>
 				</ul>
 			</span>
@@ -188,10 +189,10 @@
 				<p>System fee is paid in OXG tokens. Gas included.</p>
 			</span>
 			<span id="tooltip_loan">
-				<p>Loan conditions are defined as an interest rate from notional value of borrowed asset.</p>
+				<p>Loan is transferred to borrower on collateral settlement.</p>
 			</span>
 			<span id="tooltip_collateral">
-				<p>The collateral is held by the smart contract which then delivers it to either party depending on the credit-event.</p>
+				<p>The collateral is locked in the smart contract until the credit-event.</p>
 			</span>
 			<span id="tooltip_default">
 				<p>If the borrower fails to return borrowed tokens when the deal has expired, the deal is automatically considered default. The lender will then be able to claim the collateral from the contract.</p>
@@ -212,7 +213,7 @@
 				<p>Optional. If the lender has specified this clause in the contract the interest is paid from the collateral.</p>
 			</span>
 			<span id="tooltip_final-interest">
-				<p>Interest is an agreed percentage of borrowed assets.</p>
+				<p>Interest is an agreed percentage of notional value of borrowed assets.</p>
 			</span>
 			<span id="tooltip_final-repayment">
 				<p>All transactions are secured and the lender will always receive the collateral in case of borrower’s default on payment.</p>

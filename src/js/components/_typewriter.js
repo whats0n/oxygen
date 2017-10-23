@@ -11,7 +11,7 @@ export default (function() {
 
   MESSAGES.push({
     delay: 700,
-    text: 'Borrowing costs stopping you from short-selling tokens? '
+    text: 'Are you in need of borrowing any crypto asset to short?'
   });
   // MESSAGES.push({
   //   delay: 1200,
