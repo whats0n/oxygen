@@ -3,6 +3,28 @@
 	margin: 0 auto 
 	width: 1220px
 	height: 620px
+	&:before,
+	&:after
+		position: absolute
+		content: ""
+		z-index: 1
+		pointer-events: none
+		background-repeat: no-repeat
+		background-position: 0 0 
+		+xl
+			display: none
+	&:before
+		bottom: -27px
+		right: -33px
+		width: 617px
+		height: 377px
+		background-image: url(../img/load-interest.svg) 
+	&:after
+		top: 16px
+		right: -33px
+		width: 695px
+		height: 349px
+		background-image: url(../img/loan-arrow.svg) 
 	+xl
 		// margin-bottom: 50px
 		width: 720px
@@ -138,7 +160,7 @@
 				&:nth-child(1)
 					background: #051a38
 				&:nth-child(2)
-					border: 1px dashed rgba(#bcbec0, 0.4)
+					border: 2px dashed rgba(#bcbec0, 0.4)
 	//lines
 	&__lines
 		position: absolute
@@ -193,7 +215,7 @@
 					background: none
 					+gpu
 			&[data-diagram="fork-3"]
-				top: 66px
+				top: 45px
 				right: 127px
 				width: 363px
 				height: 270px
@@ -572,19 +594,23 @@
 			+sm
 				left: auto
 				right: 0
+			svg
+				margin: 25px auto 0
+				opacity: 0.2
+				display: block
 		&[data-diagram="fork-box-1"]
-			top: 0
+			top: 9px
 			+xl
 				left: 0
 		&[data-diagram="fork-box-2"]
-			top: 110px
+			top: 162px
 			+xl
 				left: 110px
 		&[data-diagram="fork-box-1"],
 		&[data-diagram="fork-box-2"]
-			left: 80px
-			width: 84px
-			height: 90px
+			left: 68px
+			width: 102px
+			height: 30px
 			+xl
 				top: 80px
 		&[data-diagram="fork-sm-box-1"],
@@ -595,7 +621,7 @@
 				right: 0
 		&[data-diagram="fork-sm-box-2"],
 		&[data-diagram="fork-sm-box-4"]
-			top: 117px
+			top: 241px
 			+xl
 				left: 0
 		&[data-diagram="fork-sm-box-1"],
@@ -760,6 +786,22 @@
 					right: 50%
 					margin: 10px -5px 0 0
 					border-color: #082044
+			svg
+				position: absolute
+				top: 50%
+				right: 100%
+				margin-top: -7px
+				margin-right: -3px
+				stroke: rgba(128,130,133,.2)
+				polyline 
+					stroke: rgba(128,130,133,.2)
+					+xl
+						stroke:#082044
+				+xl
+					top: 0
+					right: 50%
+					margin: 10px -5px 0 0
+					transform: rotate(90deg)
 		&-label
 			position: absolute
 			left: 20px
@@ -892,8 +934,8 @@
 				+xl
 					display: none
 		&[data-diagram="hints-2"]
-			top: 278px
-			height: 115px
+			top: 252px
+			height: 85px
 			+xl
 				top: 865px
 				left: 171px
@@ -945,7 +987,7 @@
 			&[data-diagram="hint-item-3"]
 				top: 173px
 			&[data-diagram="hint-item-4"]
-				top: 39px
+				top: 24px
 				padding: 10px 0
 			&[data-diagram="hint-item-1"],
 			&[data-diagram="hint-item-2"],
@@ -970,6 +1012,14 @@
 			[data-diagram-modal="child"]
 				opacity: 1
 				visibility: visible
+		span
+			&:before
+				position: absolute
+				content: "" 
+				top: -40px
+				left: 0
+				width: 37px
+				bottom: -40px
 	&__modal
 		position: absolute
 		z-index: 10

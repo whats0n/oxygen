@@ -1,11 +1,11 @@
-<svg width="363" height="270" viewBox="0 0 363 270" xmlns="http://www.w3.org/2000/svg">
+<svg width="364" height="233" viewBox="0 0 364 233" xmlns="http://www.w3.org/2000/svg">
     <title>
         diagram-fork-3
     </title>
-    <g fill="none" fill-rule="evenodd">
-        <path d="M.5.5H356" stroke="#35A8FF"/>
-        <path d="M.5 103.5H363" stroke="#7EAC0E"/>
-        <path d="M.5 99.5v46a5 5 0 0 0 5 5H363" stroke="#7EAC0E"/>
-        <path d="M.5 98.553V264.5a5 5 0 0 0 5 5H363" stroke="#7EAC0E"/>
+    <g stroke-width="2" fill="none" fill-rule="evenodd">
+        <path stroke="#35A8FF" d="M1.5 1.5H357"/>
+        <path d="M1.5 104H364" stroke="#7EAC0E"/>
+        <path d="M1.5 100.5v46a5 5 0 0 0 5 5H364" stroke="#7EAC0E"/>
+        <path d="M1.5 99.54v128.1c0 2.132 2.239 3.86 5 3.86H364" stroke="#7EAC0E"/>
     </g>
 </svg>
