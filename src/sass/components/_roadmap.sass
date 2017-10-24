@@ -8,7 +8,16 @@
 	+md
 		padding: 72px 0 70px
 	+sm
+		position: relative
 		padding: 17px 0 37px
+		&:before
+			position: absolute
+			content: ""
+			top: 70px
+			left: 11px
+			bottom: 50px
+			width: 3px
+			background-color: #35a8ff
 	&__innter
 		padding: 0
 	&__title
@@ -23,6 +32,7 @@
 		font-size: 0
 		+sm
 			margin: 0
+			padding-left: 7px 
 	&__item
 		padding: 16px 15px
 		display: inline-block
@@ -91,7 +101,7 @@
 				top: 35px
 				left: -5000px
 				right: -5000px
-				display: block !important
+				display: block
 				border-top: 3px solid $blue
 				width: auto
 		&:nth-last-child(2)
@@ -105,6 +115,8 @@
 				margin: 0 auto
 				width: 100%
 				max-width: 493px
+			+sm
+				max-width: 100%
 			.roadmap
 				&__info
 					+lg 
@@ -112,7 +124,7 @@
 					+md
 						padding-left: 56px
 					+sm
-						padding-left: 50px
+						padding-left: 0
 					&:before
 						+lg
 							top: 9px !important
@@ -138,11 +150,15 @@
 				+md
 					right: 105% !important
 				+sm
-					margin-right: -25px
-					right: 100%! important 
+					// margin-right: -25px
+					// right: 100%! important 
+					display: none
 	&__info
 		position: relative
 		+clr
+		&:before
+			+sm
+				display: none !important
 	.roadmap__info_arr
 		&:after
 			position: absolute
@@ -163,10 +179,26 @@
 		margin-bottom: 26px
 		color: $blue
 		+f(18, 22, null, 700)
+		+sm
+			position: relative
+		&:before
+			position: absolute
+			content: ""
+			top: 50%
+			left: -8px
+			margin-top: -1px
+			width: 4px
+			height: 3px
+			background-color: #35a8ff  
+			display: none
+			+sm
+				display: block
 	&__subtitle
 		padding: 5px 0 2px
 		margin-right: -10px
 		+f(18, 25, null, bold)
+		+sm
+			margin-right: 0
 		span
 			color: $blue
 		&_blue
@@ -176,6 +208,18 @@
 		clear: both
 		color: $lightGray
 		+f(14, 20)
+	.roadmap__icon-mob
+		position: absolute
+		left: 20px
+		bottom: 88px
+		font-size: 20px
+		color: #35a8ff 
+		display: none
+		svg
+			transform: rotate(90deg)
+			display: block
+		+sm
+			display: block
 	.icon-arrow-right
 		position: absolute
 		top: 26px
@@ -184,3 +228,4 @@
 		font-size: 21px
 		+lg
 			display: none
+			
