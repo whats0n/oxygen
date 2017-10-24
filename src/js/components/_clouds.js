@@ -115,9 +115,19 @@ import Rellax from 'rellax';
 
     worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 35;
     worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 35;
+    console.log(worldYAngle);
     updateView(world);
     event.preventDefault();
 
+  }
+  function onOrientationChange(e, world) {
+    let x = Math.abs(e.beta);
+    let y = Math.abs(e.gamma);
+    let z = Math.abs(e.alpha);
+    worldXAngle = ( x / window.innerHeight ) * 45;
+    worldYAngle = ( y / window.innerWidth ) * 45;
+    d = ( z / window.innerWidth ) * 45;
+    updateView(world);
   }
 
   function updateView(world) {
@@ -133,9 +143,11 @@ import Rellax from 'rellax';
     let cloudLenght = $(el).data('clouds');
     let paralax = $(el).data('clouds-paralax');
     generate(world, cloudLenght, paralax);
+    window.addEventListener('deviceorientation', (e) => onOrientationChange(e, world));
     if (TOUCH()) return;
     window.addEventListener( 'mousemove', (e) => onMouseMove(e, world) );
   });
+
 
   // var fps = { 
   //   startTime : 0, 
