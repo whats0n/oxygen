@@ -3,13 +3,13 @@
 		ico: 'kf-net-x3',
 		icoName: 'net',
 		title: 'Secure decentralized platform',
-		text: 'Oxygen delivers a fully decentralized REPO market and settlement system set up over Ethereum network. There is no centralized custody at any stage.'
+		text: 'Oxygen delivers a fully decentralized repo market and settlement system set up over Ethereum network. There is no centralized custody at any stage.'
 	},
 	{
 		ico: 'kf-stars-x3',
 		icoName: 'stars',
 		title: 'Blockchain-recorded users repayment rating',
-		text: 'Get access to anonymous and reliable reports about your borrowers - the practical blend of the anonymity and transparency offered by the Blockchain technology.'
+		text: 'Get access to reliable reports about your borrowers - the practical blend of the solidity and transparency offered by the Blockchain technology.'
 	},
 	{	ico: 'kf-coins-x3',
 		icoName: 'coins',
@@ -20,7 +20,7 @@
 		ico: 'kf-ppl-x3',
 		icoName: 'ppl',
 		title: 'Community-driven orderbook',
-		text: 'Find interesting deals at one click. Semi-anonymous order book will provide embedded information about borrower rating in the offers.'
+		text: "Find interesting deals at one click. Non anonymous order book will provide competent information on borrower's rating indicated in the offers."
 	},
 	{
 		ico: 'kf-robo-x3',
@@ -32,21 +32,21 @@
 		ico: 'kf-clouds-x3',
 		icoName: 'clouds',
 		title: 'API for B2B integration',
-		text: "We prioritize development and implementation of SaaS applications for businesses. The B2B program is designed with the increasing need for treasury management needs of exchanges, traders and long-term position holders."
+		text: 'We give the highest priority to the implementation of SaaS applications for businesses. The B2B program is designed to meet increasing needs of exchanges, traders and long-term holders in treasury management.'
 	}
 ] %}
 <!-- features -->
 <div class="features">
 	<div class="features__inner inner">
 		<h2 class="features__title title-lg">Market-centric features</h2>
-		<div class="features__sm-description sm-description">Our toolkit allows to earn profit from being long-term holder or to short great variety of crypto assets. Simply and transparently to both dealers and traders.</div>
+		<div class="features__sm-description sm-description">Our toolkit allows to earn profit from being long-term holder or to short great variety of crypto assets. Simple and transparent to both dealers and traders.</div>
 		<div class="features__wrap">
 			{% for data in keys %}
 				<div class="features__col">
 					<div class="features__ico features__ico_{{data.icoName}}">
 						<img src="./img/{{data.ico}}.png" alt="img">
 					</div>
-					<h4 class="features__title-md title-md">{{data.title | safe}}</h4> 
+					<h4 class="features__title-md title-md">{{data.title | safe}}</h4>
 					<p>{{data.text | safe}}</p>
 					{# {% if data.img %}
 						<div class="features__formula">

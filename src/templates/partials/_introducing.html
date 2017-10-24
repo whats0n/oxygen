@@ -125,7 +125,7 @@
 					},
 					{
 						icon: 'diagram-system',
-						title: 'Credit rating system',
+						title: 'Users repayment rating system',
 						description: 'Supplies trustful users ratings'
 					},
 					{
@@ -152,31 +152,31 @@
 		</div>
 		<div class="tooltip_templates">
 			<span id="tooltip_conditions">
-				<p>A deal is defined as an event when both counterparties are registered by the matching and settlement is triggered by the smart contract under following conditions:</p>
+				<p>A deal is defined as an event when both counterparties are registered by the matching engine and settlement is triggered by the smart contract under following conditions:</p>
 				<ul>
           <li>Type and amount of borrowed ERC20 tokens</li>
-					<li>Deal maturity</li>
+					<li>Contract expiration date</li>
 					<li>Type of tokens used as a collateral</li>
 					<li>Interest rate</li>
 				</ul>
 			</span>
 			<span id="tooltip_placement-request">
-				<p>The lender must specify:</p>
+				<p>The lender specifies:</p>
 				<ul>
-					<li>Asset and size to be offered to borrowers</li>
+					<li>Asset and its size to be offered to borrowers</li>
 					<li>Collateral requirements</li>
 					<li>Borrower's minimum credit rating</li>
-					<li>Contract maturity</li>
+					<li>Contract maturity date</li>
 					<li>Interest rate</li>
 					<li>If pooled offers are allowed</li>
 					<li>Proposal expiration time</li>
 				</ul>
 			</span>
 			<span id="tooltip_loan-request">
-				<p>The borrower must specify:</p>
+				<p>The borrower specifies:</p>
 				<ul>
-					<li>Asset and size to be asked from lenders</li>
-					<li>Contract maturity</li>
+					<li>Asset and its size to be asked from lenders</li>
+					<li>Contract maturity date</li>
 					<li>Collateral to be settled</li>
 					<li>If pooled offers are allowed</li>
 					<li>Proposal expiration time</li>
@@ -187,16 +187,16 @@
 			</span>
 			<!-- for diagram info -->
 			<span id="tooltip_diagram-management">
-				<p>Intelligent system provides advisory on market - ceiling, floors and indicative rates for offer submission based on market events.</p>
+				<p>Intelligent system provides advisory on market based on market events - ceilings, floors and indicative rates for offer submission.</p>
 			</span>
 			<span id="tooltip_diagram-exchange">
-				<p>A set of web applications where  participants interact with decentralized REPO contracts.</p>
+				<p>A set of web applications where  participants interact with decentralized repo contracts.</p>
 			</span>
 			<span id="tooltip_diagram-contract">
-				<p>The core of decentralized REPO transaction. Security of assets is provided by Ethereum network. The smart contract acts as the settlement mechanism for deals that occurred through the public auction.</p>
+				<p>The core of decentralized repo transaction. Security of assets is provided by Ethereum network. The smart contract acts as the settlement mechanism for deals that occurred through the public auction.</p>
 			</span>
 			<span id="tooltip_diagram-system">
-				<p>The rating rewards and penalizes users proportionally to the deal’s volumes. A separate smart contract stores the rating data.</p>
+				<p>The rating system rewards and penalizes users proportionally to the deal’s volumes. A separate smart contract stores the rating data.</p>
 				{# <img src="./img/formula.png" alt="formula" class="diagram__formula"> #}
 			</span>
 			<span id="tooltip_diagram-etherdelta">
@@ -240,7 +240,7 @@
 				<p>Borrowed assets are returned to the lender using the ERC20 contract interface.</p>
 			</span>
 			<span id="tooltip_final-collateral">
-				<p>The collateral is unblocked from the REPO contract and is returned to the borrower.</p>
+				<p>The collateral is unblocked from the repo contract and is returned to the borrower.</p>
 			</span>
 		</div>
 	</div>
