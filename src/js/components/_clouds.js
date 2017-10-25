@@ -115,9 +115,7 @@ import Rellax from 'rellax';
 
     worldYAngle = -( 0.5 - ( x / window.innerWidth ) ) * 35;
     worldXAngle = ( 0.5 - ( y / window.innerHeight ) ) * 35;
-    console.log(worldYAngle);
     updateView(world);
-    event.preventDefault();
 
   }
   function onOrientationChange(e, world) {

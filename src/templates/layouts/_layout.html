@@ -61,7 +61,9 @@
           {% block content %}{% endblock %}
         </div>
         <!-- END content -->
-        {# {% include 'partials/_pass.html' %} #}
+        {% if pass %}
+          {% include 'partials/_pass.html' %}
+        {% endif %}
         {% block modal %}{% endblock %}
     </div>
     <!-- BEGIN scripts -->

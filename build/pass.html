@@ -121,6 +121,35 @@
         </script>
       </div>
       <!-- END content -->
+      <div class="pass-wrap">
+        <form class="pass"> <label for="password">Take a deep breath</label> <input placeholder="Please type a password" id="password" type="password"> <button>Enter</button> </form>
+      </div>
+      <script>
+        (function()
+        {
+          var passForm = document.querySelector('.pass');
+          var password = document.getElementById('password');
+          var button = document.querySelector('.pass button');
+          var body = document.body;
+          passForm.addEventListener('submit', function(e)
+          {
+            e.preventDefault();
+            if (password.value == 'thematrixhasyou')
+            {
+              passForm.parentElement.style.display = 'none';
+              password.classList.remove('warning');
+              body.classList.add('unfix');
+            }
+            else
+            {
+              password.value = '';
+              button.classList.add('warning');
+              body.classList.remove('unfix');
+            }
+          });
+        })();
+
+      </script>
     </div>
     <!-- BEGIN scripts -->
     <script type="text/javascript" async src="js/app.js"></script>

@@ -6,7 +6,7 @@
   left: 0
   right: 0
   bottom: 0
-  background-color: #000
+  background-image: linear-gradient(to bottom,#003064,#011b37)
   z-index: 10000
   display: -webkit-box
   display: -ms-flexbox
@@ -55,7 +55,7 @@
   input
     width: 100%
     padding: 10px 20px 10px 20px
-    background-color: #253137
+    background-color: #fff
     height: 50px
     border: none
     color: #fff
@@ -67,7 +67,7 @@
     width: 200px
     height: 50px
     padding: 12px 20px 12px 20px
-    background-color: #36cd98
+    background-color: #0bacff
     border: none
     position: relative
     font-family: 'Karla', sans-serif
@@ -81,7 +81,7 @@
     transition: all .3s
     cursor: pointer
     &:hover, &:active
-      background-color: #93ffd5
+      background-color: lighten(#0bacff, 20%)
     &.warning::after
       content: 'Incorrect password'
       position: absolute
@@ -89,7 +89,7 @@
       font-size: 12px
       left: 0
       width: 100%
-      color: #36cd98
+      color: red
 
 @media (max-width: 600px)
   .pass input
